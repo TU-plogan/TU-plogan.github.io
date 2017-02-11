@@ -5,12 +5,13 @@ All procedures for editing the Encyclopedia Project are listed here. This projec
 [Page 1](test.md)
 
 ## General
-First-letter Frequencies
+[First-Letter-Frequencies](/general/First-Letter-Frequencies)
     
 ## Edition specific:
 
 ### eb03
-Long-s
+
+[Long-s](/eb03/Long-s.md)
 
 ### eb07
 
