@@ -45,14 +45,23 @@
 ```html
 	<td colspan="n"> and sometimes <td colspan="n" rowspan="n"> 
 ```
+
 To retain the attribute value, search for some variation of
+
+
 ```html
 <td colspan="(\d+)" rowspan="(\d+)">
+
 ```
+
 and replace with 
+
+
 ```html
 <td cols="\1" rows="\2">
+
 ```
+
 - AFR also inserts @span for tabular rules, and they all need to be stripped out.
 
 
