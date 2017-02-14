@@ -1,6 +1,6 @@
 # Encyclopedia Project Guide
 
-information on procedures for editing the Encyclopedia Project files is gathered listed here. This project creates accurate text for all entries in four historical editions of the *Encyclopedia Britannica* and is supervised by Dr. Peter Logan at the Digital Scholarship Center, Temple University.
+Information on procedures for editing the Encyclopedia Project files is gathered listed here. This project creates accurate text for all entries in four historical editions of the *Encyclopedia Britannica* and is supervised by Dr. Peter Logan at the Digital Scholarship Center, Temple University.
 
 ## General
 - [First-letter frequencies](general/first-letter-freqs.md)
