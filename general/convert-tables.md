@@ -46,7 +46,7 @@
 	<td colspan="n"> and sometimes <td colspan="n" rowspan="n"> 
 ```
 
-To retain the attribute value, search for some variation of
+To retain the attribute value, search for some variation of:
 
 
 ```html
@@ -54,7 +54,7 @@ To retain the attribute value, search for some variation of
 
 ```
 
-and replace with 
+and replace with: 
 
 
 ```html
