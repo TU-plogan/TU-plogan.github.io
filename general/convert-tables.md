@@ -28,11 +28,11 @@
 ## Conversion
 
 | HTML | TEI |
-|:-----:|: ----:|
-tr | row
-td | cell
-@colspan | @cols
-@rowspan | @rows
+|:-----:|:----:|
+| tr | row |
+| td | cell |
+| @colspan | @cols |
+| @rowspan | @rows |
 
 ### Regex
 - AFR includes headings for multiple columns as: 
