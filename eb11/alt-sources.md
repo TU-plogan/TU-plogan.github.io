@@ -1,5 +1,7 @@
 # eb11: Alternate Full-Text Sources 
 
+[Return to menu](../README.md)
+
 ## Introduction
 
 eb11 is the most frequently transcribed edition and is available online in several places. These are notes on the different sources and the results of comparing them to our existing text file. The comparison is done using WinMerge 2.14. Prior to the comparison, I removed line-endings from my sample of entries, but kept paragraphs. Also changed all double- to single-spaces. 
