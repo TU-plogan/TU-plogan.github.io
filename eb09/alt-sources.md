@@ -1,5 +1,7 @@
 # EB09 Alternate Full-Text sources
 
+[Return to menu](../README.md)
+
 ## Wikisource
 [https://en.wikisource.org/wiki/Encyclop%C3%A6dia_Britannica,_Ninth_Edition](https://en.wikisource.org/wiki/Encyclop%C3%A6dia_Britannica,_Ninth_Edition)  
 
