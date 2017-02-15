@@ -1,4 +1,6 @@
-# Source Files for ebpilot_01
+# Source Files for Pilot Project
+
+[Return to menu](../README.md)
 
 ## eb03
 Getty Research Institute, in Internet Archive, TIFF format. 18 vols., + 2 suppl. vols. Edinburgh: A. Bell and C. MacFarquhar, 1788-1797.
