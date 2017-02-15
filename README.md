@@ -17,5 +17,9 @@ Information on procedures for editing the Encyclopedia Project files is gathered
 
 ### eb09
 [Alternate source files](eb09/alt-sources.md)
+
 ### eb11
+
 [Alternate source files](eb11/alt-sources.md)
+
+
