@@ -1,5 +1,7 @@
 #Long-s
 
+[Return to menu](../README.md)
+
 The long, medial, or descending `s` (`ſ`) is a form of the minuscule letter `s`, which was formerly used where `s` occurred in the middle or at the beginning of a word (e.g. `ſinfulneſs` "sinfulness"). The modern letterform was called the terminal, round, or short `s`.
 
 `ſ` 	insert symbol `017F` Unicode (hex)
