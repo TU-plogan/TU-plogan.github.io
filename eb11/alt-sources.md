@@ -1,4 +1,5 @@
 #eb11: Alternate Full-Text Sources 
+
 ##Introduction
 
 eb11 is the most frequently transcribed edition and is available online in several places. These are notes on the different sources and the results of comparing them to our existing text file. The comparison is done using WinMerge 2.14. Prior to the comparison, I removed line-endings from my sample of entries, but kept paragraphs. Also changed all double- to single-spaces. 
@@ -30,4 +31,4 @@ PG is transcribing all of eb11 but it is not done yet. They are moving sequentia
 
 Claims to have complete text of eb11. Each entry is on a separate page. They’re mixed in with other material. Could be useful for text of individual articles to compare, but it lets user “edit” the articles, so ....
 
-#### 9/12/16--pml
+
