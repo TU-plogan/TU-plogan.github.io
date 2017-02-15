@@ -1,5 +1,7 @@
 # Convert Tables: html to TEI
 
+[Return to menu](../README.md)
+
 ## TEI Table Elements
 ```html
 <table> contains text displayed in tabular form, in rows and columns.
