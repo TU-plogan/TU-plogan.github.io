@@ -1,5 +1,7 @@
 #Relative Frequencies of the First Letters of a Word in English
 
+[Return to menu](../README.md)
+
 | letter | percentage |
 |:-----:| ----------:| 
 | t | 16.671% |
