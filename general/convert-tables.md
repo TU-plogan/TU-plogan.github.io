@@ -41,6 +41,9 @@
 | @colspan | @cols |
 | @rowspan | @rows |
 
+
+- AFR inserts @style for tabular rules, and they all need to be stripped out.
+
 ### Regex
 - AFR includes headings for multiple columns as: 
 
@@ -64,7 +67,6 @@
 
 ```
 
-- AFR also inserts @span for tabular rules, and they all need to be stripped out.
 
 
 
