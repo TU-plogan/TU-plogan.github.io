@@ -42,7 +42,7 @@
 | @rowspan | @rows |
 
 
-- AFR inserts @style for tabular rules, and they all need to be stripped out.
+- AFR inserts @span for tabular rules and @style for alignment. They all need to be stripped out.
 
 ### Regex
 - AFR includes headings for multiple columns as: 
