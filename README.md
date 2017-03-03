@@ -7,7 +7,7 @@ Information on procedures for editing the Encyclopedia Project files is gathered
 - [First-letter frequencies](general/first-letter-freqs.md)
 - [Pilot1 sources](general/pilot-sources.md)
 
-## Editions:
+## Editions
 
 ### eb03
 
