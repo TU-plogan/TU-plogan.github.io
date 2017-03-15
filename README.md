@@ -1,6 +1,6 @@
 # Encyclopedia Project Guide
 
-Information on procedures for editing the Encyclopedia Project files is gathered listed here. This project creates accurate text for all entries in four historical editions of the *Encyclopedia Britannica* and is supervised by Dr. Peter Logan at the Digital Scholarship Center, Temple University.
+This Guide gathers together information on editing procedures for people working on the  Encyclopedia Project. The Project creates accurate text for all entries in four historical editions of the *Encyclopedia Britannica*. It is supervised by Dr. Peter Logan at the Digital Scholarship Center, Temple University.
 
 ## General
 - [Convert tables to TEI](general/convert-tables.md)
