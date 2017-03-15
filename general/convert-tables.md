@@ -24,6 +24,12 @@
 ```
 
 ### Well-formed requirements
+
+```
+@border is not allowed in TEI
+```
+
+
 ```html
 <table> can be contained by <body>, <div>, or <p>
 ```
@@ -31,6 +37,7 @@
 ```html
 <cell> can contain <pb>, <span>, but NOT <p> or <div>
 ```
+
 
 ## Conversion
 
