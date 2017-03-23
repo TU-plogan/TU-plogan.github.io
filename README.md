@@ -6,7 +6,7 @@ This Guide gathers together information on editing procedures for people working
 - [Convert tables to TEI](general/convert-tables.md)
 - [First-letter frequencies](general/first-letter-freqs.md)
 - [Pilot1 sources](general/pilot-sources.md)
-
+- [Note on 8-26-16 output] (general/output-notes_08-26-2016.md)
 ## Editions
 
 ### eb03
@@ -21,5 +21,3 @@ This Guide gathers together information on editing procedures for people working
 ### eb11
 
 [Alternate source files](eb11/alt-sources.md)
-
-
