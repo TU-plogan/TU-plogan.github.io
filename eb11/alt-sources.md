@@ -29,6 +29,8 @@ IA has djvu text, but it will display full volumes in a single plain-text format
 
 PG is transcribing all of eb11 but it is not done yet. They are moving sequentially through the volumes and are currently up to "M," so “R” is not yet available.
 
+### Online Encyclopedia
+
 [http://encyclopedia.jrank.org/](http://encyclopedia.jrank.org/)
 
 Claims to have complete text of eb11. Each entry is on a separate page. They’re mixed in with other material. Could be useful for text of individual articles to compare, but it lets user “edit” the articles, so ....
