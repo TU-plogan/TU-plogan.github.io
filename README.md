@@ -1,6 +1,6 @@
 # Encyclopedia Project Guide
 
-This Guide gathers together information on editing procedures for people working on the  Encyclopedia Project. The Project creates accurate text for all entries in four historical editions of the *Encyclopedia Britannica*. It is supervised by Dr. Peter Logan at the Digital Scholarship Center, Temple University.
+This Guide collects information on editing procedures for the  Encyclopedia Project. The Project creates accurate text for all entries in four historical editions of the *Encyclopedia Britannica* published between 1797 and 1911. It is supervised by Dr. Peter Logan at the Digital Scholarship Center, Temple University.
 
 ## General
 
