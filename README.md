@@ -4,6 +4,7 @@ This Guide collects information on editing procedures for the  Encyclopedia Proj
 
 ## General
 
+- [Filenaming conventions](general/filenaming.md)
 - [Convert tables to TEI](general/convert-tables.md)
 - [First-letter frequencies](general/first-letter-freqs.md)
 - [Pilot1 sources](general/pilot-sources.md)
