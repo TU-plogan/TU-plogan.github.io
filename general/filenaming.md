@@ -1,5 +1,7 @@
 # EB Filenaming Conventions
 
+[Return to menu](../README.md)
+
 All filenames for encyclopedia content use the following pattern:
 
 **eb*ee-vv-a-pppp\_ss*.xml**
