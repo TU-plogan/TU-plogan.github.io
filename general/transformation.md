@@ -1,25 +1,25 @@
-## Converting HTML to TEI-XML
+# Converting HTML to TEI-XML
 22 June 2017  
 
 **To convert Abbyy’s html files to TEI-xml, use the following procedure in Oxygen.**
 
 
-### 1. Create a New Project
+## 1. Create a New Project
 
 1.	Navigate to the directory for the output you are working on, such as `eb11-pilot/02-eb11-output/170620-eb11-output/`
 2.	Create a New Project for that directory
 3.	The directory should have the html files contained in a folder named `00-ebnn-html`. 
-4.	Iff they do not already exist, add two new folders to the directory:
+4.	If they do not already exist, add two new folders to the directory:
 `01-ebnn-tei` and `02-ebnn-entries`. 
 
 ![File folder organization](images/new-folder.JPG)
 
 
-### 2. Check the html files for well-formedness
+## 2. Check the html files for well-formedness
 
 Documents must be “well-formed” for Oxygen to transform them. Note that being well-formed is not the same thing as validating, and we do not need to validate these files—we only need them to pass the check for well-formedness. 
 
-Abbyy has a consistent problem with improperly nested `<sup>` and `<sub>` tags, and this violates the rules of well-formedness. They should be wholly contained within the `<font>` tags, like this: `<font><sup>xyz</sup></font>`, but Abby misorders them as follows: `<font><sup>xyz</font></sup>`.  To correct this error, we run a batch find-and-replace operation that reorders the tags.
+Abbyy has a consistent problem with improperly nested `<sup>` and `<sub>` tags, and this violates the rules of well-formedness. They should be wholly contained within the `<font>` tags, like this: `<font><sup>xyz**</sup></font>**`, but Abby incorrectly orders them as follows: `<font><sup>xyz**</font></sup>**`.  To correct this error, we run a batch find-and-replace operation that reorders the tags.
 
 1.	Select a batch of html files in the project window. (50 seems to work well.)
 2.	Right-click the selection and open the *Find/Replace in Files …* window.
@@ -32,7 +32,7 @@ Abbyy has a consistent problem with improperly nested `<sup>` and `<sub>` tags, 
 
 ![Find and replace dialogue](images/find-replace.JPG)
 
-### 3. Transform the html files
+## 3. Transform the html files
 
 Work in batches again, using the `html2tei2` script.
 
