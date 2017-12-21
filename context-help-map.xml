@@ -3,7 +3,7 @@
    <appContext helpID="introduction" path="source/introduction.html"/>
    <appContext helpID="naming_conventions" path="source/naming_conventions.html"/>
    <appContext helpID="data_organization" path="source/data_organization.html"/>
-   <appContext helpID="eb_pilot_folder" path="source/production_folder.html"/>
+   <appContext helpID="production_folder" path="source/production_folder.html"/>
    <appContext helpID="edition_folder" path="source/print_edition_folder.html"/>
    <appContext helpID="archival_folder" path="source/images_folder.html"/>
    <appContext helpID="python_folder" path="source/python_folder.html"/>
