@@ -1,0 +1,244 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="copyright" content="(C) Copyright 2017" /><meta name="DC.rights.owner" content="(C) Copyright 2017" /><meta name="DC.Type" content="topic" /><meta name="DC.Title" content="Data Organization" /><meta name="abstract" content="The Encyclopedia Project uses specific naming conventions for all files and folders, to manage tens of thousands of files. This information sheet outlines the organizational schema. It provides enough detail so that project partners can understand the logic behind the structure and the names being used." /><meta name="description" content="The Encyclopedia Project uses specific naming conventions for all files and folders, to manage tens of thousands of files. This information sheet outlines the organizational schema. It provides enough detail so that project partners can understand the logic behind the structure and the names being used." /><meta name="DC.Relation" scheme="URI" content="../source/production_folder.html" /><meta name="DC.Relation" scheme="URI" content="../source/digital_edition_folder.html" /><meta name="DC.Relation" scheme="URI" content="../source/archive_folder.html" /><meta name="DC.Relation" scheme="URI" content="../source/information_folder.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="data_organization" /><title>Data Organization</title><!--  Generated with Oxygen version 19.1, build number 2017102417.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="data_organization-d58e38" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script>
+          function debug(msg, object){
+              console.log(msg, object);
+          }
+          function executeQuery(){
+              $('#searchForm').submit();
+              return true;
+          }
+      </script>
+      
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2017102417" />
+          
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017102417" />
+          
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="../oxygen-webhelp/resources/js/jquery-ui.min.css" />
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/p-side-notes.css?buildId=2017102417" />
+
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/resources/css/wt_default.css?buildId=2017102417" />
+        
+        <!-- Expand-collapse support styles  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/resources/css/wt_expand.css?buildId=2017102417" />
+        
+
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/localization/strings.js?buildId=2017102417"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/localization.js?buildId=2017102417"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/parseuri.js?buildId=2017102417"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-ui.min.js"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script>
+        
+        <!-- Top Menu and Side TOC components resources -->
+        <link type="text/css" href="../oxygen-webhelp/nav-links/nav-links.css" rel="stylesheet" />
+        <link type="text/css" href="../oxygen-webhelp/nav-links/tooltip.css" rel="stylesheet" />
+        <script data-main="../oxygen-webhelp/nav-links/nav-links-init.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/variants/tiles/oxygen/skin.css?buildId=2017102417" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    </head>
+
+    <body onload="highlightSearchTerm()" class="wh_topic_page frmBody" id="data_organization">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../index.html" class=" wh_logo hidden-xs "></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Temple Encyclopedia Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul>
+   <li class="has-children"><span data-tocid="introduction-d58e17" data-state="not-ready" class=" topicref "><span class="title"><a href="../source/introduction.html" data-id="introduction">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="data_organization-d58e38" data-state="not-ready" class=" topicref "><span class="title"><a href="../source/data_organization.html" data-id="data_organization">Data Organization</a></span></span></li>
+   <li class="has-children"><span data-tocid="using_afr-d58e122" data-state="not-ready" class=" topicref "><span class="title"><a href="../source/using_afr.html" data-id="using_afr">Using AFR</a></span></span></li>
+   <li class="has-children"><span data-tocid="converting_html_to_tei_xml-d58e296" data-state="not-ready" class=" topicref "><span class="title"><a href="../source/converting_html_to_tei_xml.html" data-id="converting_html_to_tei_xml">Converting HTML to TEI-XML</a></span></span></li>
+   <li class="has-children"><span data-tocid="processing_entry_files-d58e337" data-state="not-ready" class=" topicref "><span class="title"><a href="../source/processing_entry_files.html" data-id="processing_entry_files">Processing Entry Files</a></span></span></li>
+</ul></div>
+                
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li>
+   <li class="active"><span class="topicref"><span class="title"><a href="../source/data_organization.html">Data Organization</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The Encyclopedia Project uses specific naming conventions for all files and      
+                  folders, to manage tens of thousands of files. This information sheet outlines the
+                  organizational schema. It provides enough detail so that project partners can understand
+                  the logic behind the structure and the names being used.
+               </p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print "><a href="javascript:window.print();" title="Print this page"></a></div>
+                        <button class="wh_hide_highlight" title="Show/Hide the search highlights"></button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Data Organization</h1>
+
+    
+    <div class="body"><div class="abstract">A publication as large as this one needs a clear means of organizing its data.
+             <span class="shortdesc">The Encyclopedia Project uses specific naming conventions for all files and
+            folders, to manage tens of thousands of files. This information sheet outlines the
+            organizational schema. It provides enough detail so that project partners can understand
+            the logic behind the structure and the names being used.</span>
+</div>
+
+        <p class="p">All files are saved in the <span class="ph filepath">eb-project</span> folder on the DSC server. </p>
+
+        <figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>eb-project folder</p>
+            
+            <br /><div class="imagecenter"><img class="image imagecenter" src="image/eb-project-folder.JPG" /></div><br />
+        </figure>
+
+        <p class="p">Each of the folders holds files for different aspects of the project and the process of
+            creating new digital editions of the historic encyclopedias. </p>
+
+        <dl class="dl" id="data_organization__dl_pyt_spt_bbb">
+            
+                <dt class="dt dlterm"><a class="xref" href="archive_folder.html"><span class="ph filepath">archive</span></a></dt>
+
+                <dd class="dd">This is our long-term storage for original image files of print editions of eb.
+                    We never modify these files. Instead, we copy them to the
+                        <span class="ph filepath">production/images</span> folder for active use.</dd>
+
+            
+            
+                <dt class="dt dlterm"><a class="xref" href="digital_edition_folder.html"><span class="ph filepath">digital-edition</span></a></dt>
+
+                <dd class="dd">The second stage in the project is creating editions that can analyzed or placed
+                    on the web. All files connected with either generating an edition or running an
+                    analysis of its data are contained here.</dd>
+
+            
+            
+                <dt class="dt dlterm"><a class="xref" href="information_folder.html"><span class="ph filepath">information</span></a></dt>
+
+                <dd class="dd">Useful information will be found here on TEI, OCR, project meta data, the
+                    history of eb, and more (including this manual).</dd>
+
+            
+            
+                <dt class="dt dlterm"><a class="xref" href="production_folder.html"><span class="ph filepath">production</span></a></dt>
+
+                <dd class="dd">The first stage of the project is creating the text dataset from page images of
+                    eb. All files in this initial process are contained here.</dd>
+
+            
+        </dl>
+
+    </div>
+
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    <nav role="navigation" class="col-lg-4 col-md-4 col-sm-4 col-xs-12 navbar hidden-print" id="wh_side_toc">
+                        <div class=" wh_side_toc " data-tooltip-position="left"><ul>
+   <li class="active"><span data-tocid="data_organization-d58e38" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../source/data_organization.html">Data Organization</a><span class="wh-tooltip">
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The Encyclopedia Project uses specific naming conventions for all files and      
+                  folders, to manage tens of thousands of files. This information sheet outlines the
+                  organizational schema. It provides enough detail so that project partners can understand
+                  the logic behind the structure and the names being used.
+               </p>
+               </span></span></span><ul class="nav nav-list">
+         <li><span data-tocid="eb_pilot_folder-d58e51" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../source/production_folder.html">Production Folder</a></span></span></li>
+         <li><span data-tocid="editions_folder-d58e91" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../source/digital_edition_folder.html">Digital Edition Folder</a></span></span></li>
+         <li><span data-tocid="archive_folder-d58e101" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../source/archive_folder.html">Archive Folder</a></span></span></li>
+         <li><span data-tocid="information_folder-d58e111" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../source/information_folder.html">Information Folder</a></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                    </nav>
+                </div>
+            </div>
+        </div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank"> &lt;oXygen/&gt; XML WebHelp </a>
+  </div>
+</nav>
+ <!-- Latest compiled and minified JavaScript -->
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <script src="../oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../oxygen-webhelp/template/resources/js/wt_default.js?buildId=2017102417" type="text/javascript"></script>
+        <!-- Expand/collapse support -->
+        <script src="../oxygen-webhelp/template/resources/js/wt_expand.js?buildId=2017102417" type="text/javascript"></script>
+        
+        
+        <!-- Search autocomplete -->
+        <script type="text/javascript" src="../oxygen-webhelp/search/keywords.js?uniqueId=20171220062756"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/search/searchAutocomplete.js?buildId=2017102417"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/search/searchHistoryItems.js?buildId=2017102417"><!----></script>
+        <script type="text/javascript" src="../oxygen-webhelp/search/searchOptions.js?uniqueId=20171220062756"><!----></script>
+    </body>
+</html>

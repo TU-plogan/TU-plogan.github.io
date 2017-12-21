@@ -1,0 +1,229 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" lang="en" dir="ltr">
+
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="wh-path2root" content="" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+        <script>
+            /**
+             * If an old URL is given, redirect to the corresponding topic from the WebHelp Responsive
+             */
+            var actualLocation = window.location.href;
+            var newLocation;
+            if (actualLocation.indexOf('/#')!=-1) {
+                newLocation = actualLocation.replace(/\/#/g, "/");
+                window.location.replace(newLocation);
+            }
+            if (actualLocation.match(/\/index\.(.*)#/gi)!=null) {
+                newLocation = actualLocation.replace(/\/index\.(.*)#/gi, "/");
+                window.location.replace(newLocation);
+            }
+            
+            function debug(msg, object){
+                console.log(msg, object);
+            }
+            function executeQuery(){
+                $('#searchForm').submit();
+                return true;
+            }
+        </script>
+        
+	    <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_responsive_topic.css?buildId=2017102417" />
+        
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap.min.css" />
+        
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/bootstrap/css/bootstrap-theme.min.css" />
+        
+        <link rel="stylesheet" href="oxygen-webhelp/resources/js/jquery-ui.min.css" />
+        
+        <!-- Changes and comments, as side-notes  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/p-side-notes.css?buildId=2017102417" />
+        
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/wt_default.css?buildId=2017102417" />
+
+        
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/localization/strings.js?buildId=2017102417"></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/localization.js?buildId=2017102417"></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/parseuri.js?buildId=2017102417"></script>
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.cookie.js"></script>
+        
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.min.js"><!----></script>
+        
+        <script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.highlight-3.js"></script>
+        
+        <!-- Top Menu and Side TOC components resources -->
+        <link type="text/css" href="oxygen-webhelp/nav-links/nav-links.css" rel="stylesheet" />
+        <script data-main="oxygen-webhelp/nav-links/nav-links-init.js" src="oxygen-webhelp/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/variants/tiles/oxygen/skin.css?buildId=2017102417" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        
+    <title>Temple Encyclopedia Project</title></head>
+    <body class="wh_main_page">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+<nav class="navbar navbar-default wh_header">
+    <div class="container">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span xmlns="" class="title">Temple Encyclopedia Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target=".wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse">
+                
+                <div class=" wh_top_menu "><ul>
+   <li class="has-children"><span data-tocid="introduction-d58e17" data-state="not-ready" class=" topicref "><span class="title"><a href="source/introduction.html" data-id="introduction">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="data_organization-d58e38" data-state="not-ready" class=" topicref "><span class="title"><a href="source/data_organization.html" data-id="data_organization">Data Organization</a></span></span></li>
+   <li class="has-children"><span data-tocid="using_afr-d58e122" data-state="not-ready" class=" topicref "><span class="title"><a href="source/using_afr.html" data-id="using_afr">Using AFR</a></span></span></li>
+   <li class="has-children"><span data-tocid="converting_html_to_tei_xml-d58e296" data-state="not-ready" class=" topicref "><span class="title"><a href="source/converting_html_to_tei_xml.html" data-id="converting_html_to_tei_xml">Converting HTML to TEI-XML</a></span></span></li>
+   <li class="has-children"><span data-tocid="processing_entry_files-d58e337" data-state="not-ready" class=" topicref "><span class="title"><a href="source/processing_entry_files.html" data-id="processing_entry_files">Processing Entry Files</a></span></span></li>
+</ul></div>
+                
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+        <!-- Search form -->
+        <div class=" wh_search_input navbar-form wh_main_page_search " role="form">
+          
+          <div class="wh_welcome"></div>          
+          <form id="searchForm" method="get" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form>
+          
+        </div>
+        <div class="wh_content_area ">
+            
+            <!-- This is the placeholder for the main page tiles. -->
+            <div class="container wh_content_flex_container">
+                <!-- This is the placeholder for the main page tiles. -->
+                <div class=" wh_tiles "><div class=" wh_tile  " data-id="introduction">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="source/introduction.html" data-id="introduction">Introduction</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  " data-id="data_organization">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="source/data_organization.html" data-id="data_organization">Data Organization</a></span></div>
+
+                                
+                                <div class=" wh_tile_shortdesc ">The Encyclopedia Project uses specific naming conventions for all files and             folders, to manage tens of thousands of files. This information sheet outlines the             organizational schema. It provides enough detail so that project partners can understand             the logic behind the structure and the names being used.
+</div>
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  " data-id="using_afr">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="source/using_afr.html" data-id="using_afr">Using AFR</a></span></div>
+
+                                
+                                <div class=" wh_tile_shortdesc ">This section provides basic instructions for using AFR to generate OCR of         Encyclopedia Britannica page images.
+</div>
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  " data-id="converting_html_to_tei_xml">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="source/converting_html_to_tei_xml.html" data-id="converting_html_to_tei_xml">Converting HTML to TEI-XML</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div><div class=" wh_tile  " data-id="processing_entry_files">
+                        <div>
+                            
+                            
+
+                            <div class="wh_tile_text">
+                                
+                                <div class=" wh_tile_title "><span class="topicref"><a href="source/processing_entry_files.html" data-id="processing_entry_files">Processing Entry Files</a></span></div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div></div>
+                <!--
+                    This is the placeholder for the main page entries
+                    presented in a tree-like fashion.
+                -->
+                
+                
+            </div>
+        </div>
+        <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank"> &lt;oXygen/&gt; XML WebHelp </a>
+  </div>
+</nav>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="oxygen-webhelp/resources/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="oxygen-webhelp/template/resources/js/wt_default.js?buildId=2017102417" type="text/javascript"></script>
+        
+        
+        
+        <!-- Search autocomplete -->
+        <script type="text/javascript" src="oxygen-webhelp/search/keywords.js?uniqueId=20171220062756"><!----></script>        
+        <script type="text/javascript" src="oxygen-webhelp/search/searchAutocomplete.js?buildId=2017102417"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/search/searchHistoryItems.js?buildId=2017102417"><!----></script>
+        <script type="text/javascript" src="oxygen-webhelp/search/searchOptions.js?uniqueId=20171220062756"><!----></script>
+    </body>
+</html>

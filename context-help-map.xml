@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="introduction" path="source/introduction.html"/>
+   <appContext helpID="naming_conventions" path="source/naming_conventions.html"/>
+   <appContext helpID="data_organization" path="source/data_organization.html"/>
+   <appContext helpID="eb_pilot_folder" path="source/production_folder.html"/>
+   <appContext helpID="edition_folder" path="source/print_edition_folder.html"/>
+   <appContext helpID="archival_folder" path="source/images_folder.html"/>
+   <appContext helpID="python_folder" path="source/python_folder.html"/>
+   <appContext helpID="editions_folder" path="source/digital_edition_folder.html"/>
+   <appContext helpID="archive_folder" path="source/archive_folder.html"/>
+   <appContext helpID="information_folder" path="source/information_folder.html"/>
+   <appContext helpID="using_afr" path="source/using_afr.html"/>
+   <appContext helpID="ocr-interface" path="source/ocr-interface.html"/>
+   <appContext helpID="create_an_ocr_project_folder"
+               path="source/create_an_ocr_project_folder.html"/>
+   <appContext helpID="document_everything" path="source/document_everything.html"/>
+   <appContext helpID="settings" path="source/settings.html"/>
+   <appContext helpID="ocr_for_eb03" path="source/ocr_for_eb03.html"/>
+   <appContext helpID="drawing_boxes" path="source/drawing_boxes.html"/>
+   <appContext helpID="page_recognition" path="source/page_recognition.html"/>
+   <appContext helpID="ocr-training" path="source/ocr-training.html"/>
+   <appContext helpID="proofreading" path="source/proofreading.html"/>
+   <appContext helpID="add_words_to_dictionary"
+               path="source/add_words_to_dictionary.html"/>
+   <appContext helpID="footnote_coding" path="source/footnote_coding.html"/>
+   <appContext helpID="author_initials" path="source/author_initials.html"/>
+   <appContext helpID="saving_as_output" path="source/saving_as_output.html"/>
+   <appContext helpID="converting_html_to_tei_xml"
+               path="source/converting_html_to_tei_xml.html"/>
+   <appContext helpID="create_a_new_oxygen_project"
+               path="source/create_a_new_xml_project.html"/>
+   <appContext helpID="make_the_html_files_well_formed"
+               path="source/make_the_html_files_well_formed.html"/>
+   <appContext helpID="transform_the_html_files"
+               path="source/transform_the_html_files.html"/>
+   <appContext helpID="processing_entry_files"
+               path="source/processing_entry_files.html"/>
+   <appContext helpID="validate_the_files_in_oxygen"
+               path="source/validating_entry_files.html"/>
+</map>
