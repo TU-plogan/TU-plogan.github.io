@@ -60,6 +60,12 @@
     100% { transform: rotate(360deg); }
 }
 
+/* WH-1565 Inherit the styles of the parent node */
+.wh_side_toc .topicref a * {
+    color: inherit !important;
+    background-color: transparent !important;
+}
+
 /* ------------------ Menu --------------------------- */
 
 @keyframes blink {

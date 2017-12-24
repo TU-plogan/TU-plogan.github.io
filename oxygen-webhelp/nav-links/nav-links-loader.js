@@ -86,19 +86,31 @@ define(function (require) {
                     if (data != null) {
                         var topics = data.topics;
                         var topicLi = topicRefSpan.closest('li');
+                        var topicsUl = createTopicsList(topics, forToc);
 
                         if (!forToc) {
                             var loadingDotsUl = topicLi.children("ul.loading");
                             // Remove the loading dots from the menu.
-                            loadingDotsUl.remove();
+                            loadingDotsUl.find('li').remove();
+                            loadingDotsUl.removeClass('loading');
+
+                            topicsUl.forEach(function(topic){
+                                loadingDotsUl.append(topic);
+                            });
+                        } else {
+                            var topicsUlParent = $('<ul/>');
+                            topicsUl.forEach(function(topic){
+                                topicsUlParent.append(topic);
+                            });
+                            topicLi.append(topicsUlParent);
                         }
-                        var topicsUl = createTopicsList(topics, forToc);
-                        topicLi.append(topicsUl);
+
                         topicRefSpan.attr(ATTRS.state, STATE.expanded);
                     } else {
                         topicRefSpan.attr(ATTRS.state, STATE.leaf);
                     }
-                });
+                }
+            );
         }
     }
 
@@ -109,17 +121,17 @@ define(function (require) {
      * @param forToc <p><code>true</code> if the element belongs to the TOC.</p>
      *               <p><code>false</code> if the element belongs to the Menu.</p>
      *
-     * @returns {*|jQuery|HTMLElement} the <code>ul</code> element containing the child topic nodes of the current topic.
+     * @returns {*|jQuery|HTMLElement} the <code>li</code> elements representing the child topic nodes of the current topic.
      */
     function createTopicsList(topics, forToc) {
-        var topicsUl = $("<ul>");
+        var topicsArray = [];
         topics.forEach(function(topic) {
             if (forToc || !topic.menu.isHidden) {
                 var topicLi = createTopicLi(topic, forToc);
-                topicsUl.append(topicLi);
+                topicsArray.push(topicLi);
             }
         });
-        return topicsUl;
+        return topicsArray;
     };
 
     /**
@@ -207,13 +219,25 @@ define(function (require) {
         topicRefSpan.attr(ATTRS.id, topic.id);
         topicRefSpan.attr(ATTRS.tocID, topic.tocID);
 
-        // Current node state
-        if (topic.topics != null) {
-            if (topic.topics.length == 0) {
-                topicRefSpan.attr(ATTRS.state, STATE.leaf);
-            }
+        // If the "topics" property is not specified then it means that children should be loaded from the
+        // module referenced in the "next" property
+        var children = topic.topics;
+
+        var hasChildren;
+        if (children != null && children.length == 0) {
+            hasChildren = false;
+        } else if (!forToc && topic.menu != null) {
+            hasChildren = topic.menu.hasChildren;
         } else {
+            hasChildren = true;
+        }
+
+        // Current node state
+        if (hasChildren) {
+            // This state means that the child topics should be retrieved later.
             topicRefSpan.attr(ATTRS.state, STATE.notReady);
+        } else {
+            topicRefSpan.attr(ATTRS.state, STATE.leaf);
         }
 
         if (forToc) {
@@ -299,9 +323,82 @@ define(function (require) {
                 });
 
             $(this).append(loadingMarker);
-            retrieveChildNodes(topicRefSpan, false);
-        } else if (state == STATE.expanded) {
 
+            handleMenuPosition($(this));
+            retrieveChildNodes(topicRefSpan, false);
+
+        } else if (state == STATE.expanded) {
+            handleMenuPosition($(this));
         }
     };
+
+    var dirAttr = $('html').attr('dir');
+    var rtlEnabled = false;
+    if (dirAttr=='rtl') {
+        rtlEnabled = true;
+    }
+
+    /**
+     * Display top menu so that it will not exit the viewport.
+     *
+     * @param $menuItem The top menu menu 'li' element of the current node from TOC / Menu.
+     */
+    function handleMenuPosition($menuItem) {
+        // Handle menu position
+        var parentDir = rtlEnabled ? 'left' : 'right';
+        var index = $('.wh_top_menu ul').index($menuItem.parent('ul'));
+
+        var currentElementOffsetLeft = parseInt($menuItem.offset().left);
+        var currentElementWidth = parseInt($menuItem.width());
+        var currentElementOffsetRight = currentElementOffsetLeft + currentElementWidth;
+        var nextElementWidth = parseInt($menuItem.children('ul').width());
+        var offsetLeft,
+            offsetRight = currentElementOffsetRight + nextElementWidth;
+
+        if (index == 0) {
+            if (parentDir=='left') {
+                $menuItem.attr('data-menuDirection', 'left');
+                offsetLeft = currentElementOffsetRight - nextElementWidth;
+                if (offsetLeft <= 0) {
+                    $menuItem.css('position', 'relative');
+                    $menuItem.children('ul').css('position','absolute');
+                    $menuItem.children('ul').css('right', 'auto');
+                    $menuItem.children('ul').css('left', '0');
+                }
+            } else {
+                $menuItem.attr('data-menuDirection', 'right');
+                offsetRight = currentElementOffsetLeft + nextElementWidth;
+                if (offsetRight >= $(window).width()) {
+                    $menuItem.css('position', 'relative');
+                    $menuItem.children('ul').css('position','absolute');
+                    $menuItem.children('ul').css('right', '0');
+                    $menuItem.children('ul').css('left', 'auto');
+            }
+            }
+        } else {
+            offsetLeft = currentElementOffsetLeft - nextElementWidth;
+
+            if (parentDir == 'left') {
+                if (offsetLeft >= 0) {
+                    $menuItem.attr('data-menuDirection', 'left');
+                    $menuItem.children('ul').css('right', '100%');
+                    $menuItem.children('ul').css('left', 'auto');
+                } else {
+                    $menuItem.attr('data-menuDirection', 'right');
+                    $menuItem.children('ul').css('right', 'auto');
+                    $menuItem.children('ul').css('left', '100%');
+                }
+            } else {
+                if (offsetRight <= $(window).width()) {
+                    $menuItem.attr('data-menuDirection', 'right');
+                    $menuItem.children('ul').css('right', 'auto');
+                    $menuItem.children('ul').css('left', '100%');
+                } else {
+                    $menuItem.attr('data-menuDirection', 'left');
+                    $menuItem.children('ul').css('right', '100%');
+                    $menuItem.children('ul').css('left', 'auto');
+                }
+            }
+        }
+    }
 });
