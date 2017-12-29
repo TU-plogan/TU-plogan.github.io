@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"OCR for eb03","shortdesc":"<p class=\"shortdesc\">Scanning eb03 requires special settings.</p>\n","id":"ocr_for_eb03","href":"source\/ocr_for_eb03.html","menu": {"hasChildren":false,},"tocID":"ocr_for_eb03-d58e190","topics":[]}]});

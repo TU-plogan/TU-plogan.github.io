@@ -331,7 +331,15 @@ function computeSearchItemHTML(searchItem, whDistribution, hasSimilarPages, simi
     var idLink = searchItem.linkID;
     var idResult = searchItem.resultID;
 
-    var link = 'return openAndHighlight(\'' + tempPath + '\', ' + arrayString + '\)';
+    var link = '';
+
+    if (wh_Classic) {
+        link = 'return openAndHighlight(\'' + tempPath + '\', Array(';
+        for (var i in arrayStringAux) {
+            link +='\'' + arrayStringAux[i] + '\', ';
+        }
+        link = link.substr(0, link.length-2) + '))';
+    }
 
     // Similar pages
     if (similarPageID == null) {

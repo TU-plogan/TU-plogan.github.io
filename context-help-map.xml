@@ -2,6 +2,7 @@
 <map>
    <appContext helpID="introduction" path="source/introduction.html"/>
    <appContext helpID="naming_conventions" path="source/naming_conventions.html"/>
+   <appContext helpID="untitled1" path="source/image_sources.html"/>
    <appContext helpID="data_organization" path="source/data_organization.html"/>
    <appContext helpID="production_folder" path="source/production_folder.html"/>
    <appContext helpID="edition_folder" path="source/print_edition_folder.html"/>

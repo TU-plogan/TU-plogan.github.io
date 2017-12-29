@@ -21,6 +21,9 @@
 
 .base { background-color: #ffffff; }
 
+/* div with class=p is used for paragraphs that contain blocks, to keep the XHTML valid */
+.p {margin-top: 1em}
+
 /* Default of italics to set apart figure captions */
 .figcap { font-style: italic }
 .figdesc { font-style: normal }

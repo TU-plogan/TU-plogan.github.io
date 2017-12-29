@@ -1,5 +1,13 @@
 // Install search autocomplete
 
+$(window).resize(function(){
+  if (webhelpEnableSearchAutocomplete) {
+    var autocompleteObj = $("#textToSearch").autocomplete("instance");
+
+    autocompleteObj.search();
+  }
+});
+
 $(document).ready(function () {
     if (webhelpEnableSearchAutocomplete) {
          var searchFunction = function (request, response) {
@@ -14,7 +22,6 @@ $(document).ready(function () {
         var phraseIds = [];
 
         var words = searchTerm.split(" ");
-        var sameHi;
         // Iterate over words
         for (var wi = 0; wi < words.length; wi++) {
             var cw = words[wi].trim();
@@ -64,12 +71,9 @@ $(document).ready(function () {
                 }
 
                 // Test if items is already in history proposals
-                for (var i=0; i<historyItems.length; i++) {
-                    if ( pStr.toLocaleLowerCase() == historyItems[i] ) {
-                        sameHi = true;
-                        break;
-                    }
-                }
+                var sameHi = historyItems.find(function(hi) {
+                    return hi.value == pStr.toLowerCase();
+                });
 
                 if (sameHi == null) {
                     var hp = {
@@ -89,12 +93,9 @@ $(document).ready(function () {
                     var proposal = beforeLastWord + keywords[i].w;
 
                     // Test if items is already in history proposals
-                    for (var j=0; j<historyItems.length; j++) {
-                        if ( proposal.toLocaleLowerCase() == historyItems[j] ) {
-                            sameHi = true;
-                            break;
-                        }
-                    }
+                    var sameHi = historyItems.find(function(hi) {
+                        return hi.value == proposal.toLowerCase();
+                    });
 
                     if (sameHi == null) {
                         var hp = {
@@ -136,7 +137,6 @@ $(document).ready(function () {
     $("#textToSearch").keydown(function (event) {
         if (event.which == 13) {
             $("#textToSearch").autocomplete("close");
-            $("#searchForm").submit();
         }
     });
 
@@ -176,17 +176,9 @@ $(document).ready(function () {
                     if (w.length > 0) {
                         // Iterate over keywords to find the ones
                         // Highlight the text to search
-
-                        try {
-                            w = w.replace("\\", "\\\\")
-                                .replace(")", "\\)")
-                                .replace("(", "\\(");
-                       		var cpwh = cpw.replace(
-                            	new RegExp("(" + w + ")", 'i'),
-	                            "<span class='search-autocomplete-proposal-hg'>$1</span>");
-                        } catch (e) {
-                            debug(e);
-                        }
+                        var cpwh = cpw.replace(
+                            new RegExp("(" + w + ")", 'i'),
+                            "<span class='search-autocomplete-proposal-hg'>$1</span>");
 
                         if (cpwh != cpw) {
                             newProposal += cpwh;
@@ -245,10 +237,10 @@ $(document).ready(function () {
 
         var li = $("<li>", {
             class: "ui-menu-item",
-            "data-value": item.value
+            "data-value": item.value,
         });
         var divWrapper = $("<div>", {
-            class: "ui-menu-item-wrapper"
+            class: "ui-menu-item-wrapper",
         });
         li.append(divWrapper);
         divWrapper.append(proposalIcon).append(proposalLabel);
@@ -257,20 +249,8 @@ $(document).ready(function () {
             divWrapper.append(removeButton);
         }
 
-        // If a search suggestion is chosen the form is submitted
-        li.find(".ui-menu-item-wrapper").on("click", function(event){
-            $("#textToSearch").val($(this).find(".search-autocomplete-proposal-label").attr('data-value'));
-            $("#searchForm").submit();
-        });
-
         return li.appendTo(ul);
     };
-
-    $(window).resize(function(){
-        var autocompleteObj = $("#textToSearch").autocomplete("instance");
-
-        autocompleteObj.search();
-    });
   }  
 });
 
