@@ -33,17 +33,17 @@
                 
                     <dt class="dt dlterm">Valid</dt>
 
-                    <dd class="dd">A Valid XML document is a Well-Formed XML document that also conforms to the
+                    <dd class="dd">A Valid XML document is a well-formed XML document that also conforms to the
                         rules of a schema that defines the legal elements of an XML document.</dd>
 
                 
             </dl>
 
-            <p class="p">At this stage, we only need to makes sure the files are well formed and to correct
-                any errors we find. AFR regularly violates the rules for well-formed html,
-                particularly with improperly nested <code class="keyword markupname">&lt;sup&gt;&gt;</code> and
-                    <code class="keyword markupname">&lt;sub&gt;&gt;</code> tags. These tags must open and close within any
-                containing tags and should not overlap them. </p>
+            <p class="p">At this stage, we only need to makes sure the files are well-formed and to correct
+                any errors we find. AFR regularly violates rules for well-formed html, particularly
+                with improperly nested <code class="keyword markupname">&lt;sup&gt;</code> and <code class="keyword markupname">&lt;sub&gt;</code>
+                tags. These tags must open and close within any containing tags and should not
+                overlap them. </p>
 
             <pre class="pre codeblock"><code>    <dfn class="term">  Correct:</dfn>     <code class="keyword markupname">&lt;font&gt;</code> <code class="keyword markupname">&lt;sup&gt;</code> xyz <code class="keyword markupname">&lt;/sup&gt;</code> <code class="keyword markupname">&lt;/font&gt;</code></code></pre>
             <pre class="pre codeblock"><code>    <dfn class="term">Incorrect:</dfn>     <code class="keyword markupname">&lt;font&gt;</code> <code class="keyword markupname">&lt;sup&gt;</code> xyz <code class="keyword markupname">&lt;/font&gt;</code> <code class="keyword markupname">&lt;/sup&gt;</code> </code></pre>
