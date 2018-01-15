@@ -41,12 +41,12 @@
 
             <p class="p">At this stage, we only need to makes sure the files are well formed and to correct
                 any errors we find. AFR regularly violates the rules for well-formed html,
-                particularly with improperly nested <code class="keyword markupname">&lt;&lt;sup&gt;&gt;</code> and
-                    <code class="keyword markupname">&lt;&lt;sub&gt;&gt;</code> tags. These tags must open and close within
-                any containing tags and should not overlap them. </p>
+                particularly with improperly nested <code class="keyword markupname">&lt;sup&gt;&gt;</code> and
+                    <code class="keyword markupname">&lt;sub&gt;&gt;</code> tags. These tags must open and close within any
+                containing tags and should not overlap them. </p>
 
-            <pre class="pre codeblock"><code>    <dfn class="term">  Correct:</dfn>     <code class="keyword markupname">&lt;&lt;font&gt;&lt;sup&gt;&gt;</code>xyz<code class="keyword markupname">&lt;&lt;/sup&gt;&lt;/font&gt;&gt;</code></code></pre>
-            <pre class="pre codeblock"><code>    <dfn class="term">Incorrect:</dfn>     <code class="keyword markupname">&lt;&lt;font&gt;&lt;sup&gt;&gt;</code>xyz<code class="keyword markupname">&lt;&lt;/font&gt;&lt;/sup&gt;&gt;</code></code></pre>
+            <pre class="pre codeblock"><code>    <dfn class="term">  Correct:</dfn>     <code class="keyword markupname">&lt;font&gt;</code> <code class="keyword markupname">&lt;sup&gt;</code> xyz <code class="keyword markupname">&lt;/sup&gt;</code> <code class="keyword markupname">&lt;/font&gt;</code></code></pre>
+            <pre class="pre codeblock"><code>    <dfn class="term">Incorrect:</dfn>     <code class="keyword markupname">&lt;font&gt;</code> <code class="keyword markupname">&lt;sup&gt;</code> xyz <code class="keyword markupname">&lt;/font&gt;</code> <code class="keyword markupname">&lt;/sup&gt;</code> </code></pre>
             <p class="p">To correct nesting errors, we run a batch find-and-replace operation that reorders
                 most improperly nested tags. </p>
 
@@ -66,13 +66,9 @@
 </div>
             </li>
 <li class="li step stepexpand">
-                <span class="ph cmd">Copy and paste the reg-ex in the next step as the <span class="ph uicontrol">Text to
-                        find</span>:</span>
-            </li>
-<li class="li step stepexpand">
-                <span class="ph cmd">
-                    <kbd class="ph userinput">(&lt;/\w{4}&gt;&lt;\w{4}\s*\w{5}=[\w|\s|:|\-|=|"|;|,]*&gt;{\w|\s]*)(&lt;/su[p|b]&gt;)</kbd>
-                </span>
+                <span class="ph cmd">Copy and paste the following reg-ex as the <span class="ph uicontrol">Text to
+                    find</span>:</span>
+                <div class="itemgroup stepxmp"><code class="ph codeph">(&lt;/\w{4}&gt;&lt;\w{4}\s*\w{5}=[\w|\s|:|\-|=|"|;|,]*&gt;{\w|\s]*)(&lt;/su[p|b]&gt;)</code></div>
             </li>
 <li class="li step stepexpand">
                 <span class="ph cmd">Replace with: <kbd class="ph userinput">\2\1</kbd> .</span>
