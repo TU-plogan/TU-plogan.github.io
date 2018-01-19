@@ -6,6 +6,7 @@
    <appContext helpID="data_organization" path="source/data_organization.html"/>
    <appContext helpID="production_folder" path="source/production_folder.html"/>
    <appContext helpID="edition_folder" path="source/print_edition_folder.html"/>
+   <appContext helpID="section_folder" path="source/section_folder.html"/>
    <appContext helpID="archival_folder" path="source/images_folder.html"/>
    <appContext helpID="python_folder" path="source/python_folder.html"/>
    <appContext helpID="editions_folder" path="source/digital_edition_folder.html"/>
@@ -39,4 +40,7 @@
                path="source/processing_entry_files.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/validating_entry_files.html"/>
+   <appContext helpID="style_manual" path="source/style_manual.html"/>
+   <appContext helpID="note" path="source/notes.html"/>
+   <appContext helpID="pagebreak" path="source/page_numbers.html"/>
 </map>

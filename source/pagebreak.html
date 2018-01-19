@@ -1,0 +1,65 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="description" content="All page numbers must be encoded, along with the edition and volume number of the print original. In addition, we want to include information about the image file that was used in the OCR process for ..." /><meta name="copyright" content="(C) Copyright 2018" /><meta name="DC.rights.owner" content="(C) Copyright 2018" /><meta name="DC.Type" content="topic" /><meta name="DC.Title" content="Page Numbers" /><meta name="DC.Relation" scheme="URI" content="../source/style_manual.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="pagebreak" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2017102417"><!----></link><title>Page Numbers</title><!--  Generated with Oxygen version 19.1, build number 2017102417.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2017102417"><!----></link><script type="text/javascript"><!--
+          
+          var prefix = "../index.html";
+          
+          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2017102417"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2017102417"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="pagebreak">
+<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/style_manual.html" title="Style Manual">Style Manual</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+<span class="navparent"><a class="link" href="../source/style_manual.html" title="Style Manual"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Style Manual</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Page Numbers</h1>
+
+    <div class="body">
+        <p class="p">All page numbers must be encoded, along with the edition and volume number of the print
+            original. In addition, we want to include information about the image file that was used
+            in the OCR process for the page. </p>
+
+        <div class="p">Page information is included in two different places: <ol class="ol">
+                <li class="li">The <code class="keyword markupname">&lt;div&gt;</code> element at the start of each entry.</li>
+
+                <li class="li">The <code class="keyword markupname">&lt;pb&gt;</code> element inserted by Python to indicate page
+                    breaks in the entry.</li>
+
+            </ol>
+</div>
+
+        <section class="section"><h2 class="title sectiontitle">The <code class="keyword markupname">&lt;div&gt;</code> element</h2>
+            
+            <pre class="pre codeblock"><code>&lt;div xmlns="http://www.tei-c.org/ns/1.0" xml:id="eb11-22-r01-0766-03" facs="encyclopaediabri23chisrich_0071.jp2" type="entry"&gt;</code></pre>
+            <ol class="ol">
+                <li class="li">In this example, we use our standard naming practice for the
+                        <code class="ph codeph">xml:id</code> value, including the final two-digit code for the
+                    entry position on the page. </li>
+
+                <li class="li">Use <code class="ph codeph">@facs</code> to identify the source information, in this case, the
+                    file name of the image used in the OCR process.</li>
+
+                <li class="li">Add <code class="ph codeph">@type</code> with the <code class="ph codeph">entry</code>value to indicate that
+                    the text is an encyclopedia entry.</li>
+
+            </ol>
+
+        </section>
+
+        <section class="section"><h2 class="title sectiontitle">The <code class="keyword markupname">&lt;pb&gt;</code> element</h2>
+            
+            <pre class="pre codeblock"><code>&lt;pb xml:id="eb11-22-r01-0767" facs="encyclopaediabri23chisrich_0072.jp2"&gt;</code></pre>
+            <p class="p">When encoding page breaks, do not use the two-digit code for the entry position; all
+                text following a page break is the first entry, by definition. Furthermore, since
+                the text is not the beginning of the entry, we eliminate the code. Instead, include
+                an <code class="keyword markupname">&lt;xml:id&gt;</code> for the new page number and indicate the correct
+                original image file. The coding for the page following the page in the first example
+                is shown here.</p>
+
+        </section>
+
+    </div>
+
+<nav role="navigation" class="related-links"></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../source/style_manual.html" title="Style Manual"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Style Manual</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+                            &lt;oXygen/&gt; XML WebHelp
+                        </a></div></footer></body>
+</html>
