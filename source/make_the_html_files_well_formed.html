@@ -9,19 +9,19 @@
           
           --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2017121318"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2017121318"><!----></script></head>
 <body onload="highlightSearchTerm()" class="frmBody" id="make_the_html_files_well_formed">
-<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/converting_html_to_tei_xml.html" title="The basics of the Oxygen XML Editor and the procedures used to convert and validate our XML files.">Converting HTML to TEI-XML</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
-<span class="navparent"><a class="link" href="../source/converting_html_to_tei_xml.html" title="The basics of the Oxygen XML Editor and the procedures used to convert and validate our XML files."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Converting HTML to TEI-XML</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/converting_html_to_tei_xml.html" title="The Oxygen XML Editor and file transformations.">Transforming HTML to TEI-XML</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+<span class="navparent"><a class="link" href="../source/converting_html_to_tei_xml.html" title="The Oxygen XML Editor and file transformations."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Transforming HTML to TEI-XML</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
     <h1 class="title topictitle1" id="ariaid-title1">Make the HTML Files Well-Formed</h1>
 
     
-    <div class="body taskbody"><p class="shortdesc">How to validate files in Oxygen.</p>
+    <div class="body taskbody"><div class="abstract"><span class="shortdesc">How to validate files in Oxygen.</span>
+ Documents must be
+        “well-formed” in order to transform them in Oxygen using XSLT. A document that is
+        well-formed has a correct structure of tags, but it does not check the legitimacy of the
+        tags themselves. A "valid" file is both well-formed and uses tags correctly, according to
+        the associated DTD. </div>
 
         <section class="section context">
-            <p class="p">Documents must be “well-formed” in order to transform them in Oxygen using XSLT. A
-                document that is well-formed has a correct structure of tags, but it does not check
-                the legitimacy of the tags themselves. A "valid" file is both well-formed and uses
-                tags correctly, according to the associated DTD. </p>
-
             <dl class="dl">
                 
                     <dt class="dt dlterm">Well-formed</dt>
@@ -39,16 +39,41 @@
                 
             </dl>
 
-            <p class="p">At this stage, we only need to makes sure the files are well-formed and to correct
-                any errors we find. AFR regularly violates rules for well-formed html, particularly
-                with improperly nested <code class="keyword markupname">&lt;sup&gt;</code> and <code class="keyword markupname">&lt;sub&gt;</code>
-                tags. These tags must open and close within any containing tags and should not
-                overlap them. </p>
+            <p class="p">At this stage, we only need to correct any errors we find to make all files
+                well-formed. AFR regularly violates rules for well-formed HTML. Most often, it
+                improperly nests <code class="keyword markupname">&lt;sup&gt;</code> and <code class="keyword markupname">&lt;sub&gt;</code> tags.
+                "Nesting" means that a tag within another tag must open and close within it and not
+                remain open when the containing tag closes. In the "Correct" example, the inner
+                    <code class="keyword markupname">&lt;sup&gt;</code> tag opens and closes within the outer
+                    <code class="keyword markupname">&lt;font&gt;</code> tag. In the "Incorrect" example, the tags overlap
+                one other.</p>
 
-            <pre class="pre codeblock"><code>    <dfn class="term">  Correct:</dfn>     <code class="keyword markupname">&lt;font&gt;</code> <code class="keyword markupname">&lt;sup&gt;</code> xyz <code class="keyword markupname">&lt;/sup&gt;</code> <code class="keyword markupname">&lt;/font&gt;</code></code></pre>
-            <pre class="pre codeblock"><code>    <dfn class="term">Incorrect:</dfn>     <code class="keyword markupname">&lt;font&gt;</code> <code class="keyword markupname">&lt;sup&gt;</code> xyz <code class="keyword markupname">&lt;/font&gt;</code> <code class="keyword markupname">&lt;/sup&gt;</code> </code></pre>
-            <p class="p">To correct nesting errors, we run a batch find-and-replace operation that reorders
-                most improperly nested tags. </p>
+            
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" frame="border" border="1" rules="all"><colgroup><col /><col /></colgroup><tbody class="tbody">
+                        <tr>
+                            <td class="entry cellrowborder">Correct:</td>
+
+                            <td class="entry cellrowborder"><code class="ph codeph"><code class="keyword markupname">&lt;font&gt;</code>
+                                    <code class="keyword markupname">&lt;sup&gt;</code> xyz <code class="keyword markupname">&lt;/sup&gt;</code>
+                                    <code class="keyword markupname">&lt;/font&gt;</code></code></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="entry cellrowborder">Incorrect:</td>
+
+                            <td class="entry cellrowborder"><code class="ph codeph"><code class="keyword markupname">&lt;font&gt;</code>
+                                    <code class="keyword markupname">&lt;sup&gt;</code> xyz <code class="keyword markupname">&lt;/font&gt;</code>
+                                    <code class="keyword markupname">&lt;/sup&gt;</code></code></td>
+
+                        </tr>
+
+                    </tbody>
+</table>
+</div>
+
+            <p class="p">To correct common nesting errors, we run a batch find-and-replace operation that
+                reorders the improperly nested tags. </p>
 
         </section>
 
@@ -61,7 +86,7 @@
                         …</span> window.</span>
                 <div class="itemgroup info"><figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>Find/Replace in Files Window</p>
                         
-                        <br /><div class="imagecenter"><img class="image imagecenter" src="image/clip_image002_145464760.jpg" /></div><br />
+                        <br /><div class="imagecenter"><img class="image imagecenter" src="image/find-replace.jpg" /></div><br />
                     </figure>
 </div>
             </li>
@@ -86,17 +111,18 @@
 <li class="li step stepexpand">
                 <span class="ph cmd">When the batch of files is done, select all files in the html folder,
                     right-click, and select <span class="ph menucascade"><span class="ph uicontrol">Validate</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Check well-formedness</span></span>. </span>
-                <div class="itemgroup info">All files should be well-formed. This procedure will correct
-                    most nesting errors, but it will not catch every variation. If any files are not
-                    well-formed, you must correct them manually before proceeding. Oxygen will not
-                    transform files that are not well-formed.</div>
+                <div class="itemgroup stepresult">All files should be well-formed.</div>
+                 This procedure will correct most nesting errors, but it will
+                    not catch every variation. If any files are not well-formed, you must correct
+                    them manually before proceeding. Oxygen will not transform files that are not
+                    well-formed.
             </li>
 </ol>
 
     </div>
 
 <nav role="navigation" class="related-links"></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
-<span class="navparent"><a class="link" href="../source/converting_html_to_tei_xml.html" title="The basics of the Oxygen XML Editor and the procedures used to convert and validate our XML files."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Converting HTML to TEI-XML</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+<span class="navparent"><a class="link" href="../source/converting_html_to_tei_xml.html" title="The Oxygen XML Editor and file transformations."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Transforming HTML to TEI-XML</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
                             &lt;oXygen/&gt; XML WebHelp
                         </a></div></footer></body>
 </html>
