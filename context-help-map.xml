@@ -4,14 +4,18 @@
    <appContext helpID="naming_conventions" path="source/naming_conventions.html"/>
    <appContext helpID="untitled1" path="source/image_sources.html"/>
    <appContext helpID="data_organization" path="source/data_organization.html"/>
+   <appContext helpID="archive_folder" path="source/archive_folder.html"/>
+   <appContext helpID="editions_folder" path="source/digital_edition_folder.html"/>
+   <appContext helpID="information_folder" path="source/information_folder.html"/>
    <appContext helpID="production_folder" path="source/production_folder.html"/>
    <appContext helpID="edition_folder" path="source/print_edition_folder.html"/>
    <appContext helpID="section_folder" path="source/section_folder.html"/>
+   <appContext helpID="s3z_5kh_pcb" path="source/1_afr_project_folder.html"/>
+   <appContext helpID="wr2_1lh_pcb" path="source/2_page_html_folder.html"/>
+   <appContext helpID="untitled2" path="source/untitled2.html"/>
+   <appContext helpID="ozj_glh_pcb" path="source/3_page_tei_folder.html"/>
    <appContext helpID="archival_folder" path="source/images_folder.html"/>
    <appContext helpID="python_folder" path="source/python_folder.html"/>
-   <appContext helpID="editions_folder" path="source/digital_edition_folder.html"/>
-   <appContext helpID="archive_folder" path="source/archive_folder.html"/>
-   <appContext helpID="information_folder" path="source/information_folder.html"/>
    <appContext helpID="using_afr" path="source/using_afr.html"/>
    <appContext helpID="ocr-interface" path="source/ocr-interface.html"/>
    <appContext helpID="create_an_ocr_project_folder"
@@ -29,7 +33,7 @@
    <appContext helpID="author_initials" path="source/author_initials.html"/>
    <appContext helpID="saving_as_output" path="source/saving_as_output.html"/>
    <appContext helpID="converting_html_to_tei_xml"
-               path="source/converting_html_to_tei_xml.html"/>
+               path="source/converting_html_to_tei.html"/>
    <appContext helpID="create_a_new_oxygen_project"
                path="source/create_a_new_xml_project.html"/>
    <appContext helpID="make_the_html_files_well_formed"
