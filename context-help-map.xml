@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
+   <appContext helpID="term.print_edition" path="glossary/print_edition.html"/>
+   <appContext helpID="term.section" path="glossary/section.html"/>
+   <appContext helpID="term.at_codes" path="glossary/codes.html"/>
+   <appContext helpID="term.digital_edition" path="glossary/digital_edition.html"/>
+   <appContext helpID="term.page_file" path="glossary/page_file.html"/>
+   <appContext helpID="term.entry_file" path="glossary/entry_file.html"/>
+   <appContext helpID="program.ocr_project" path="glossary/ocr_project.html"/>
+   <appContext helpID="program.oxygen" path="glossary/oxygen.html"/>
+   <appContext helpID="code.xml" path="glossary/xml.html"/>
+   <appContext helpID="program.xml_project" path="glossary/xml_project.html"/>
+   <appContext helpID="code.xslt" path="glossary/xslt.html"/>
+   <appContext helpID="code.html" path="glossary/html.html"/>
+   <appContext helpID="program.afr" path="glossary/afr.html"/>
+   <appContext helpID="code.css" path="glossary/css.html"/>
+   <appContext helpID="term.ocr" path="glossary/ocr.html"/>
+   <appContext helpID="code.tei" path="glossary/tei.html"/>
    <appContext helpID="introduction" path="source/introduction.html"/>
    <appContext helpID="naming_conventions" path="source/naming_conventions.html"/>
    <appContext helpID="untitled1" path="source/image_sources.html"/>
@@ -12,7 +28,6 @@
    <appContext helpID="section_folder" path="source/section_folder.html"/>
    <appContext helpID="s3z_5kh_pcb" path="source/1_afr_project_folder.html"/>
    <appContext helpID="wr2_1lh_pcb" path="source/2_page_html_folder.html"/>
-   <appContext helpID="untitled2" path="source/untitled2.html"/>
    <appContext helpID="ozj_glh_pcb" path="source/3_page_tei_folder.html"/>
    <appContext helpID="archival_folder" path="source/images_folder.html"/>
    <appContext helpID="python_folder" path="source/python_folder.html"/>

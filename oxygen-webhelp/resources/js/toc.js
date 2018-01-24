@@ -143,12 +143,6 @@ function openTopic(anchor) {
     } else {
         window.open($(anchor).attr('href'), $(anchor).attr('target'));
     }
-
-    try {
-        recomputeBreadcrumb(-1);
-    } catch (e) {
-        debug(e);
-    }
 }
 
 
@@ -968,11 +962,22 @@ function getUrlWithoutAnchor(url){
 function normalizeLink(originalHref) {
     var relLink = originalHref;
     var logStr = '';
+    if (! $.support.hrefNormalized) {
+        var relp = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+        //ie7
+        logStr = ' IE7 ';
+        var srv = window.location.protocol + '//' + window.location.hostname;
+        var localHref = parseUri(originalHref);
         
-    if (startsWith(relLink, whUrl)) {
-        relLink = relLink.substr(whUrl.length);
+        if (window.location.protocol.toLowerCase() != 'file:' && localHref.protocol.toLowerCase() != '') {
+            debug('ie7 file://');
+            relLink = originalHref.substring(whUrl.length);
+        }
+    } else {
+        if (startsWith(relLink, whUrl)) {
+            relLink = relLink.substr(whUrl.length);
+        }
     }
-
     var toReturn = stripUri(relLink);
     info(logStr + 'normalizeLink(' + originalHref + ')=' + toReturn);
     return toReturn;
