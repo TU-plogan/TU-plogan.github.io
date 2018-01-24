@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
+   <appContext helpID="code.xhtml" path="glossary/xhtml.html"/>
+   <appContext helpID="code.txt" path="glossary/txt.html"/>
+   <appContext helpID="code.pdf" path="glossary/pdf.html"/>
    <appContext helpID="term.print_edition" path="glossary/print_edition.html"/>
    <appContext helpID="term.section" path="glossary/section.html"/>
    <appContext helpID="term.at_codes" path="glossary/codes.html"/>
@@ -16,6 +19,7 @@
    <appContext helpID="code.css" path="glossary/css.html"/>
    <appContext helpID="term.ocr" path="glossary/ocr.html"/>
    <appContext helpID="code.tei" path="glossary/tei.html"/>
+   <appContext helpID="code.epub" path="glossary/epub.html"/>
    <appContext helpID="introduction" path="source/introduction.html"/>
    <appContext helpID="naming_conventions" path="source/naming_conventions.html"/>
    <appContext helpID="untitled1" path="source/image_sources.html"/>

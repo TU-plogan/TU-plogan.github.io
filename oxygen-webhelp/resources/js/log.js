@@ -30,6 +30,10 @@ function Log(level) {
   this.level = level;
 }
 
+Log.prototype.setLevel = function(level) {
+  this.level = level;
+};
+
 Log.prototype.debug = function(msg, obj) {
   if (this.level == Level.NONE || this.level > Level.DEBUG)
     return;
