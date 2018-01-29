@@ -15,20 +15,19 @@
     
     <div class="body conbody"><p class="shortdesc">Procedures for converting single pages into Encyclopedia entries.</p>
 
-        <section class="section">
-            <p class="p"><a href="../glossary/afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> generates separate files for each page of the Encyclopedia. After we convert them
-                to <a href="../glossary/tei.html" title="An XML-based markup language for encoding textual data"><dfn class="term abbreviated-form">Text Encoding Initiative</dfn></a> (saved in the <span class="ph filepath">3-tei</span> folder) they are still files of
-                individual pages. For the project, we need files for entire entries, not pages. </p>
+        <p class="p"><a href="../glossary/afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> generates separate files for each page of the
+            Encyclopedia. After we convert them to <a href="../glossary/tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> (saved in
+            the <span class="ph filepath">3-tei</span> folder) they are still files of individual pages. For the
+            project, we need files for entire entries, not pages. </p>
 
-            <p class="p">To solve this problem, we run a Python script that concatenates all of the individual
-                <a href="../glossary/page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a>s into a single file. It then segments it by entry and creates a new file
-                for each, saved in the <span class="ph filepath">digital-edition/xml</span> folder.</p>
+        <p class="p">To solve this problem, we run a Python script that concatenates all of the individual
+                <a href="../glossary/page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a>s into a single file. It then segments it by entry
+            and creates a new file for each, saved in the <span class="ph filepath">digital-edition/xml</span>
+            folder.</p>
 
-            <p class="p">These new <a href="../glossary/page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a>s need to be carefully checked and validated. To do this, we use
-                <a href="../glossary/oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term abbreviated-form">Oxygen XML Editor</dfn></a> and create an <a href="../glossary/xml_project.html" title="A collection of files used by Oxygen XML Editor and stored as a single group."><dfn class="term">XML-project</dfn></a> for each 250-page <a href="../glossary/section.html" title="A chunk of 250 pages from a single letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>. If you need to review
-                how to create an <a href="../glossary/xml_project.html" title="A collection of files used by Oxygen XML Editor and stored as a single group."><dfn class="term">XML-project</dfn></a>, see <a class="xref" href="create_a_new_xml_project.html" title="Using Oxygen XML Editor to organize files.">Converting <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">Hyper Text Markup Language</dfn></a> to <a href="../glossary/tei.html" title="An XML-based markup language for encoding textual data"><dfn class="term abbreviated-form">TEI</dfn></a></a>.</p>
-
-        </section>
+        <p class="p">These new <a href="../glossary/page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a>s need to be carefully checked and validated. To
+            do this, we use <a href="../glossary/oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term abbreviated-form">Oxygen XML Editor</dfn></a> and create an <a href="../glossary/xml_project.html" title="A collection of files used by Oxygen XML Editor and stored as a single group."><dfn class="term">XML-project</dfn></a> for each 250-page <a href="../glossary/section.html" title="A chunk of 250 pages from a single letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>. If
+            you need to review how to create an <a href="../glossary/xml_project.html" title="A collection of files used by Oxygen XML Editor and stored as a single group."><dfn class="term">XML-project</dfn></a>, see <a class="xref" href="create_a_new_xml_project.html" title="Using Oxygen XML Editor to organize files.">Create a New XML-Project</a>.</p>
 
     </div>
 

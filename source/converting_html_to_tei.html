@@ -16,26 +16,25 @@
     <div class="body conbody"><div class="abstract">
          <span class="shortdesc">Using Oxygen for file transformations.</span>
 
-        <a href="../glossary/afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> outputs <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">Hyper Text Markup Language</dfn></a>
-        files, but that is not the best storage medium for textual data. <a href="../glossary/xml.html" title="A flexible language for encoding data."><dfn class="term abbreviated-form">XML</dfn></a> is far more flexible
-        and makes it possible to output the data in many different files formats, including
-            <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a>, <a href="../glossary/pdf.html" title="A multi-platform file format that present documents, including text formatting and images, in a manner independent of hardware and the operating system."><dfn class="term">PDF</dfn></a>, <a href="../glossary/txt.html" title="A kind of computer file that is structured as a sequence of lines of electronic text and using the file extension .txt. Text files can contain plain text but are not limited to that."><dfn class="term">TXT</dfn></a>, and CSV.</div>
+        <a href="../glossary/afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> outputs <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a>
+        files, but that is not the best storage medium for textual data. <a href="../glossary/xml.html" title="eXtensible Markup Language is a flexible language for encoding many forms of data, including text."><dfn class="term abbreviated-form">XML</dfn></a> is far more flexible and makes it possible to output the data in
+        many different files formats, including <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a>, <a href="../glossary/pdf.html" title="Portable Document Format was invented by Adobe as a multi-platform file format that presents documents, with all text formatting and images, in a manner independent of hardware and operating systems."><dfn class="term">PDF</dfn></a>, <a href="../glossary/txt.html" title="A kind of computer file that is structured as a sequence of lines of electronic text and using the file extension .txt. Text files can contain plain text but are not limited to that."><dfn class="term">TXT</dfn></a>, and <a href="../glossary/csv.html" title="Comma-Separate Values is a file format for storing date separate by commas."><dfn class="term">CSV</dfn></a>.</div>
 
         <div class="bodydiv conbodydiv">
-            <section class="section"><h2 class="title sectiontitle">On <a href="../glossary/xml.html" title="A flexible language for encoding data."><dfn class="term abbreviated-form">XML</dfn></a></h2>
+            <section class="section"><h2 class="title sectiontitle">On <a href="../glossary/xml.html" title="eXtensible Markup Language is a flexible language for encoding many forms of data, including text."><dfn class="term abbreviated-form">XML</dfn></a></h2>
                 
-                <p class="p">While <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> has a set of specific rules for
-                    encoding text, <a href="../glossary/xml.html" title="A flexible language for encoding data."><dfn class="term abbreviated-form">XML</dfn></a> has no rules of its own. Instead, it allows users to select
-                    from anyone of a number of encoding schemes, or even create their own. These
-                    schemes have their own built-in sets of rules about what elements and attributes
-                    are legitimate, for example.</p>
+                <p class="p">While <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> has a set of specific rules for
+                    encoding text, <a href="../glossary/xml.html" title="eXtensible Markup Language is a flexible language for encoding many forms of data, including text."><dfn class="term abbreviated-form">XML</dfn></a> has no rules of its own.
+                    Instead, it allows users to select from anyone of a number of encoding schemes,
+                    or even create their own. These schemes have their own built-in sets of rules
+                    about what elements and attributes are legitimate, for example.</p>
 
             </section>
 
 
-            <section class="section"><h2 class="title sectiontitle">On <a href="../glossary/tei.html" title="An XML-based markup language for encoding textual data"><dfn class="term abbreviated-form">Text Encoding Initiative</dfn></a></h2>
+            <section class="section"><h2 class="title sectiontitle">On <a href="../glossary/tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a></h2>
                 
-                <p class="p">We use the <a href="../glossary/tei.html" title="An XML-based markup language for encoding textual data"><dfn class="term">TEI</dfn></a> scheme because of its widespread acceptance
+                <p class="p">We use the <a href="../glossary/tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> scheme because of its widespread acceptance
                     for archival storage of textual data. This is a complex scheme that encodes the
                     structure of a document, rather than its display characteristics. It allows us
                     to define what is a title, subtitle, and body text. It does not tell us which
@@ -45,13 +44,13 @@
             </section>
 
         </div>
-        <section class="section"><h2 class="title sectiontitle">Transformations</h2>
+        <section class="section"><h2 class="title sectiontitle">On Transformations</h2>
             
-            <p class="p">To convert our <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> files to <a href="../glossary/tei.html" title="An XML-based markup language for encoding textual data"><dfn class="term abbreviated-form">TEI</dfn></a>, we use a "transformation" script written in <a href="../glossary/xslt.html" title="A scripting language for transforming eXtensible Markup Language documents."><dfn class="term abbreviated-form">eXtensible Stylesheet Language Transformations</dfn></a>. The
-                script reads the <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> files, strips out coding we
-                do not want, renames the <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> tags we do want into
-                valid <a href="../glossary/tei.html" title="An XML-based markup language for encoding textual data"><dfn class="term abbreviated-form">TEI</dfn></a> tags, and generates a new
-                    <a href="../glossary/tei.html" title="An XML-based markup language for encoding textual data"><dfn class="term abbreviated-form">TEI</dfn></a> file for each of the <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> originals.</p>
+            <p class="p">To convert our <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> files to <a href="../glossary/tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a>, we use a "transformation" script written in
+                    <a href="../glossary/xslt.html" title="eXtensible Stylesheet Language Transformations is a scripting language for transforming eXtensible Markup Language documents into different output formats."><dfn class="term abbreviated-form">XSLT</dfn></a>. The script reads the <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> files, strips out coding we do not want, renames the
+                    <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> tags we do want into valid
+                    <a href="../glossary/tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> tags, and generates a new
+                    <a href="../glossary/tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> file for each of the <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> originals.</p>
 
         </section>
 

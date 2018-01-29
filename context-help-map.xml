@@ -20,27 +20,36 @@
    <appContext helpID="term.ocr" path="glossary/ocr.html"/>
    <appContext helpID="code.tei" path="glossary/tei.html"/>
    <appContext helpID="code.epub" path="glossary/epub.html"/>
-   <appContext helpID="introduction" path="source/introduction.html"/>
-   <appContext helpID="naming_conventions" path="source/naming_conventions.html"/>
-   <appContext helpID="untitled1" path="source/image_sources.html"/>
+   <appContext helpID="code.csv" path="glossary/csv.html"/>
+   <appContext helpID="introduction" path="source/c_introduction.html"/>
+   <appContext helpID="naming_conventions" path="source/r_naming_conventions.html"/>
+   <appContext helpID="untitled1" path="source/r_image_sources.html"/>
    <appContext helpID="data_organization" path="source/data_organization.html"/>
-   <appContext helpID="archive_folder" path="source/archive_folder.html"/>
-   <appContext helpID="editions_folder" path="source/digital_edition_folder.html"/>
-   <appContext helpID="information_folder" path="source/information_folder.html"/>
-   <appContext helpID="production_folder" path="source/production_folder.html"/>
-   <appContext helpID="edition_folder" path="source/print_edition_folder.html"/>
-   <appContext helpID="section_folder" path="source/section_folder.html"/>
-   <appContext helpID="s3z_5kh_pcb" path="source/1_afr_project_folder.html"/>
-   <appContext helpID="wr2_1lh_pcb" path="source/2_page_html_folder.html"/>
-   <appContext helpID="ozj_glh_pcb" path="source/3_page_tei_folder.html"/>
-   <appContext helpID="archival_folder" path="source/images_folder.html"/>
-   <appContext helpID="python_folder" path="source/python_folder.html"/>
-   <appContext helpID="using_afr" path="source/using_afr.html"/>
-   <appContext helpID="ocr-interface" path="source/ocr-interface.html"/>
+   <appContext helpID="archive_folder" path="source/c_archive_folder.html"/>
+   <appContext helpID="editions_folder" path="source/c_digital_edition_folder.html"/>
+   <appContext helpID="information_folder" path="source/c_information_folder.html"/>
+   <appContext helpID="production_folder" path="source/c_production_folder.html"/>
+   <appContext helpID="edition_folder" path="source/c_print_edition_folder.html"/>
+   <appContext helpID="section_folder" path="source/c_section_folder.html"/>
+   <appContext helpID="s3z_5kh_pcb" path="source/c_1_afr_project_folder.html"/>
+   <appContext helpID="wr2_1lh_pcb" path="source/c_2_page_html_folder.html"/>
+   <appContext helpID="ozj_glh_pcb" path="source/c_3_page_tei_folder.html"/>
+   <appContext helpID="archival_folder" path="source/c_images_folder.html"/>
+   <appContext helpID="python_folder" path="source/c_python_folder.html"/>
+   <appContext helpID="using_afr" path="source/c_using_afr.html"/>
+   <appContext helpID="ocr-interface" path="source/r_ocr-interface.html"/>
    <appContext helpID="create_an_ocr_project_folder"
-               path="source/create_an_ocr_project_folder.html"/>
-   <appContext helpID="document_everything" path="source/document_everything.html"/>
+               path="source/t_create_an_ocr_project_folder.html"/>
+   <appContext helpID="document_everything" path="source/t_document_everything.html"/>
    <appContext helpID="settings" path="source/settings.html"/>
+   <appContext helpID="t_general_tab" path="source/t_general_tab.html"/>
+   <appContext helpID="t_image_processing_tab"
+               path="source/t_image_processing_tab.html"/>
+   <appContext helpID="t_languages_tab" path="source/t_languages_tab.html"/>
+   <appContext helpID="t_ocr_tab" path="source/t_ocr_tab.html"/>
+   <appContext helpID="t_format_settings_tab" path="source/t_format_settings_tab.html"/>
+   <appContext helpID="t_arreas_and_text_tab" path="source/t_areas_and_text_tab.html"/>
+   <appContext helpID="t_other_tab" path="source/t_other_tab.html"/>
    <appContext helpID="ocr_for_eb03" path="source/ocr_for_eb03.html"/>
    <appContext helpID="drawing_boxes" path="source/drawing_boxes.html"/>
    <appContext helpID="page_recognition" path="source/page_recognition.html"/>

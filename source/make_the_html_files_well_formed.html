@@ -19,7 +19,7 @@
     <div class="body taskbody"><div class="abstract"><span class="shortdesc">How to validate files in Oxygen.</span>
  Documents must be
         “well-formed” in order to transform them in <a href="../glossary/oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term abbreviated-form">Oxygen XML Editor</dfn></a>
-        using <a href="../glossary/xslt.html" title="A scripting language for transforming eXtensible Markup Language documents."><dfn class="term abbreviated-form">eXtensible Stylesheet Language Transformations</dfn></a>. A document that is well-formed has a correct
+        using <a href="../glossary/xslt.html" title="eXtensible Stylesheet Language Transformations is a scripting language for transforming eXtensible Markup Language documents into different output formats."><dfn class="term abbreviated-form">XSLT</dfn></a>. A document that is well-formed has a correct
         structure of tags, but it does not check the legitimacy of the tags themselves. A "valid"
         file is both well-formed and uses tags correctly, according to the associated DTD. </div>
 
@@ -28,24 +28,24 @@
                 
                     <dt class="dt dlterm">Well-formed</dt>
 
-                    <dd class="dd">A Well-formed <a href="../glossary/xml.html" title="A flexible language for encoding data."><dfn class="term abbreviated-form">XML</dfn></a> document is a document
-                        that conforms to the <a href="../glossary/xml.html" title="A flexible language for encoding data."><dfn class="term abbreviated-form">XML</dfn></a> syntax rules.
+                    <dd class="dd">A Well-formed <a href="../glossary/xml.html" title="eXtensible Markup Language is a flexible language for encoding many forms of data, including text."><dfn class="term abbreviated-form">XML</dfn></a> document is a document
+                        that conforms to the <a href="../glossary/xml.html" title="eXtensible Markup Language is a flexible language for encoding many forms of data, including text."><dfn class="term abbreviated-form">XML</dfn></a> syntax rules.
                     </dd>
 
                 
                 
                     <dt class="dt dlterm">Valid</dt>
 
-                    <dd class="dd">A Valid <a href="../glossary/xml.html" title="A flexible language for encoding data."><dfn class="term abbreviated-form">XML</dfn></a> document is a well-formed
-                            <a href="../glossary/xml.html" title="A flexible language for encoding data."><dfn class="term abbreviated-form">XML</dfn></a> document that also conforms to the
-                        rules of a schema that defines the legal elements of an <a href="../glossary/xml.html" title="A flexible language for encoding data."><dfn class="term abbreviated-form">XML</dfn></a> document.</dd>
+                    <dd class="dd">A Valid <a href="../glossary/xml.html" title="eXtensible Markup Language is a flexible language for encoding many forms of data, including text."><dfn class="term abbreviated-form">XML</dfn></a> document is a well-formed
+                            <a href="../glossary/xml.html" title="eXtensible Markup Language is a flexible language for encoding many forms of data, including text."><dfn class="term abbreviated-form">XML</dfn></a> document that also conforms to the
+                        rules of a schema that defines the legal elements of an <a href="../glossary/xml.html" title="eXtensible Markup Language is a flexible language for encoding many forms of data, including text."><dfn class="term abbreviated-form">XML</dfn></a> document.</dd>
 
                 
             </dl>
 
             <p class="p">At this stage, we only need to correct any errors we find to make all files
                 well-formed. <a href="../glossary/afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> regularly violates rules for
-                well-formed <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">Hyper Text Markup Language</dfn></a>. Most often, it improperly nests
+                well-formed <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a>. Most often, it improperly nests
                     <code class="keyword markupname">&lt;sup&gt;</code> and <code class="keyword markupname">&lt;sub&gt;</code> tags. "Nesting"
                 means that a tag within another tag must open and close within it and not remain
                 open when the containing tag closes. In the "Correct" example, the inner
@@ -83,7 +83,7 @@
         </section>
 
         <ol class="ol steps"><li class="li step stepexpand">
-                <span class="ph cmd">Select the batch of 250 <a href="../glossary/html.html" title="The language used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> files in
+                <span class="ph cmd">Select the batch of 250 <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> files in
                         <a href="../glossary/oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term abbreviated-form">Oxygen</dfn></a>'s <span class="keyword wintitle">Project</span>
                     window.</span>
             </li>
