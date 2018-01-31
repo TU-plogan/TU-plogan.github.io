@@ -9,7 +9,7 @@
           
           --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2017102417"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2017102417"><!----></script></head>
 <body onload="highlightSearchTerm()" class="frmBody" id="python_folder">
-<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/data_organization.html" title="A publication as large as this one needs a clear means of organizing its data. The Encyclopedia Project uses specific naming conventions for all files and folders, to manage its tens of thousands of files.">Data Organization</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/c_production_folder.html" title="The first stage of the project is creating the textual data from page images of the Encyclopedia. All files in this initial process are contained here.">Production Folder</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_data_organization.html" title="A publication as large as this one needs a clear means of organizing its data. The Encyclopedia Project uses specific naming conventions for all files and folders, to manage its tens of thousands of files.">Data Organization</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/c_production_folder.html" title="The first stage of the project is creating the textual data from page images of the Encyclopedia. All files in this initial process are contained here.">Production Folder</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
 <span class="navparent"><a class="link" href="../source/c_production_folder.html" title="The first stage of the project is creating the textual data from page images of the Encyclopedia. All files in this initial process are contained here."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Production Folder</span></a></span>  
 <span class="navprev"><a class="link" href="../source/c_images_folder.html" title="Images Folder"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Images Folder</span></a></span>  
 <span class="navnext"><a class="link" href="../source/c_using_afr.html" title="Using ABBYY FineReader"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Using ABBYY FineReader</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
@@ -18,33 +18,33 @@
     
     <div class="body conbody"><p class="shortdesc">Python script files.</p>
 
-        <p class="p">After our <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term">HTML</dfn></a> files are transformed to <a href="../glossary/tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a>, we still have two critical changes to
-            make to them before they can be used as <a href="../glossary/digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a> masters. Both of these changes
-            are done using a Python script.</p>
+        <p class="p">After our <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term">HTML</dfn></a> files are transformed to <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a>, we still have two critical changes to make to them before they
+            can be used as <a href="../glossary/g_digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a> masters. Both of these changes are
+            done using a Python script.</p>
 
         <ol class="ol">
-            <li class="li">The footnotes in the <a href="../glossary/html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term">HTML</dfn></a> appear at the end or in the middle of the page, reflecting
-                their position at the bottom of a column in the <a href="../glossary/print_edition.html" title="The physical volumes of the original Encyclopedia."><dfn class="term">print edition</dfn></a>. <a href="../glossary/tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> is not
+            <li class="li">The footnotes in the <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term">HTML</dfn></a> appear at the end or in the middle
+                of the page, reflecting their position at the bottom of a column in the <a href="../glossary/g_print_edition.html" title="The physical volumes of the original Encyclopedia."><dfn class="term">print edition</dfn></a>. <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> is not
                 print-based, so this format does not make sense. Instead, we want to move the note
                 text into the body text at the point of attachment (i.e., where the original
                 footnote reference appeared). Note text is surrounded by the
                     <code class="keyword markupname">&lt;note&gt;</code> tag and can be displayed any way that we want in
-                the <a href="../glossary/digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a>.</li>
+                the <a href="../glossary/g_digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a>.</li>
 
-            <li class="li"><a href="../glossary/afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> outputs each individual page as a separate file. We need this format in order to
-                create the original page numbers in the <a href="../glossary/digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a>, but we do not want the
-                edition to consist of individual pages. For the Encyclopedia, the entry is the basic
-                unit of meaning, not page. We use Python to concatenate all of the <a href="../glossary/page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a>s into a
-                single file, with pages correctly numbered. Python then separates the files every
+            <li class="li"><a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> outputs each individual page as a separate
+                file. We need this format in order to create the original page numbers in the <a href="../glossary/g_digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a>, but we do not want the edition to consist of
+                individual pages. For the Encyclopedia, the entry is the basic unit of meaning, not
+                page. We use Python to concatenate all of the <a href="../glossary/g_page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a>s into
+                a single file, with pages correctly numbered. Python then separates the files every
                 time it encounters a new entry title. In the end, we have a single file for each
                 entry, with page breaks and original page number clearly marked.</li>
 
         </ol>
 
-        <p class="p">These new <a href="../glossary/page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a>s are then ready to become the master files for our digital editions,
-            after they have been further edited and have metadata added. But all of that happens in
-            the <span class="ph filepath">digital-edition</span> folder, so we move these entry files there, to
-            begin the next chapter in creating our <a href="../glossary/digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a>.</p>
+        <p class="p">These new <a href="../glossary/g_page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a>s are then ready to become the master files for
+            our digital editions, after they have been further edited and have metadata added. But
+            all of that happens in the <span class="ph filepath">digital-edition</span> folder, so we move these
+            entry files there, to begin the next chapter in creating our <a href="../glossary/g_digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a>.</p>
 
     </div>
 
