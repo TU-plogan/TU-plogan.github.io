@@ -57,6 +57,7 @@
    <appContext helpID="modifying_areas" path="source/t_modifying_areas.html"/>
    <appContext helpID="creating_table_areas" path="source/t_creating_table_areas.html"/>
    <appContext helpID="unnumbered_pages" path="source/unnumbered_pages.html"/>
+   <appContext helpID="illustrations" path="source/illustrations.html"/>
    <appContext helpID="page_recognition" path="source/c_page_recognition.html"/>
    <appContext helpID="ocr-training" path="source/t_ocr-training.html"/>
    <appContext helpID="proofreading" path="source/t_proofreading.html"/>
