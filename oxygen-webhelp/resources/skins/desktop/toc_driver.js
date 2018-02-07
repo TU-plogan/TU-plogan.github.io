@@ -96,11 +96,7 @@ $(document).ready(function () {
  */
 function loadSearchResources() {
     if (typeof window.indexerLanguage == 'undefined') {
-<<<<<<< HEAD
         var scripts = ["oxygen-webhelp/search/htmlFileInfoList.js?uniqueId=20180207013232", "oxygen-webhelp/search/index-1.js?uniqueId=20180207013232", "oxygen-webhelp/search/index-2.js?uniqueId=20180207013232", "oxygen-webhelp/search/index-3.js?uniqueId=20180207013232"];
-=======
-        var scripts = ["oxygen-webhelp/search/htmlFileInfoList.js?uniqueId=20180206102141", "oxygen-webhelp/search/index-1.js?uniqueId=20180206102141", "oxygen-webhelp/search/index-2.js?uniqueId=20180206102141", "oxygen-webhelp/search/index-3.js?uniqueId=20180206102141"];
->>>>>>> 356f54f6d0052619c1f6c0199c3c43d4630ca31c
         for (var entry in scripts) {
             var scriptTag = document.createElement("script");
             scriptTag.type = "text/javascript";
@@ -327,7 +323,14 @@ function loadIframe(dynamicURL) {
                 } else {
                     $('#frm').contents().find("table.nav").find("tr:first-child").hide();
                 }
-
+                /**
+                 * Nu mai ascundem toc-ul - ii scadem relevanta din indexer
+                 * EXM-25565
+                 */
+                //$('#frm').contents().find('.toc').hide();
+                if (navigator.appVersion.indexOf("MSIE 7.") == -1) {
+                 $('#breadcrumbLinks').html($('#frm').contents().find('span.topic_breadcrumb_links'));
+                }
                 // normalize links
                 $('#breadcrumbLinks a, #navigationLinks a').each(function () {
                     var oldLink = $(this).attr('href');
@@ -389,6 +392,7 @@ function loadIframe(dynamicURL) {
 	        $(this).find('a').trigger(ev);
 	    });
 
+
         scrollToVisibleItem();
     });
 }
@@ -402,23 +406,20 @@ function recomputeBreadcrumb(breadcrumbLevels) {
     if (breadcrumbLevels==undefined) {
         breadcrumbLevels = -1;
     }
-    var selectedTocItem = parseInt($.cookie("wh_pn"));
-    var $breadcrumbLinks = $('#breadcrumbLinks');
-
     /*Most of the times we'll try to compute the link starting from the TOC selection...*/
-    if (selectedTocItem != null && selectedTocItem != 'none') {
-        var selectedLi = $('#contentBlock li:eq(' + selectedTocItem + ')');
+    if (currentTOCSelection != null && currentTOCSelection != 'none') {
+        var selectedLi = $('#contentBlock li:eq(' + currentTOCSelection + ')');
         var parentLis = selectedLi.parents("#contentBlock li");
         if (parentLis.length > 0) {
             // Keep title attributes from old breadcrumbs
-            var oldBreadcrumbs = $breadcrumbLinks.clone();
+            var oldBreadcrumbs = $('#breadcrumbLinks').clone();
             var titles = [];
             $.each(oldBreadcrumbs.find('.topic_breadcrumb_link > .navheader_parent_path'), function(){
                 titles[$(this).attr('href')] = $(this).attr('title');
             });
 
             // Remove all children
-            $breadcrumbLinks.empty();
+            $('#breadcrumbLinks').empty();
 
             // Decide how many breadcrumbs to show
             var i = parentLis.length - 1;
@@ -448,12 +449,9 @@ function recomputeBreadcrumb(breadcrumbLevels) {
                             firstAHref.attr('title', titles[cleanHref]);
                         }
                     }
-                    $breadcrumbLinks.append(span);
+                    $('#breadcrumbLinks').append(span);
                 }
             }
-        } else {
-            // Remove all children
-            $breadcrumbLinks.empty();
         }
     }
 }
