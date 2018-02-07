@@ -92,14 +92,15 @@
                         …</span> window.</span>
                 <div class="itemgroup info"><figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>Find/Replace in Files Window</p>
                         
-                        <br /><div class="imagecenter"><img class="image imagecenter" src="image/find-replace.jpg" /></div><br />
+                        <br /><div class="imagecenter"><img class="image imagecenter" src="image/oxygen-find-replace.png" /></div><br />
                     </figure>
 </div>
             </li>
 <li class="li step stepexpand">
                 <span class="ph cmd">Copy and paste the following reg-ex as the <span class="ph uicontrol">Text to
                     find</span>:</span>
-                <div class="itemgroup stepxmp"><code class="ph codeph">(&lt;/\w{4}&gt;&lt;\w{4}\s*\w{5}=[\w|\s|:|\-|=|"|;|,]*&gt;{\w|\s]*)(&lt;/su[p|b]&gt;)</code></div>
+                <div class="itemgroup stepxmp"><code class="ph codeph">(&lt;\/\w{4}&gt;&lt;\w{4}\s*\w{5}=[\w|\s|:|\-|=|"|;|,]*&gt;)[\w |
+                        \s]*(&lt;\/\w{3}&gt;)</code></div>
             </li>
 <li class="li step stepexpand">
                 <span class="ph cmd">Replace with: <kbd class="ph userinput">\2\1</kbd> .</span>
