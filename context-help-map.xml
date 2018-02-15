@@ -37,8 +37,8 @@
    <appContext helpID="ozj_glh_pcb" path="source/c_3_page_tei_folder.html"/>
    <appContext helpID="archival_folder" path="source/c_images_folder.html"/>
    <appContext helpID="python_folder" path="source/c_python_folder.html"/>
-   <appContext helpID="using_afr" path="source/c_using_afr.html"/>
-   <appContext helpID="ocr-interface" path="source/r_ocr-interface.html"/>
+   <appContext helpID="intro_afr" path="source/c_intro_afr.html"/>
+   <appContext helpID="ocr-interface" path="source/r_afr-interface.html"/>
    <appContext helpID="create_an_ocr_project_folder"
                path="source/t_create_an_ocr_project_folder.html"/>
    <appContext helpID="settings" path="source/c_settings.html"/>
@@ -51,23 +51,25 @@
    <appContext helpID="t_arreas_and_text_tab" path="source/t_areas_and_text_tab.html"/>
    <appContext helpID="t_other_tab" path="source/t_other_tab.html"/>
    <appContext helpID="ocr_for_eb03" path="source/t_ocr_for_eb03.html"/>
-   <appContext helpID="drawing_boxes" path="source/c_drawing_boxes.html"/>
-   <appContext helpID="creating_text_areas" path="source/t_creating_text_areas.html"/>
-   <appContext helpID="ordering_areas" path="source/t_ordering_areas.html"/>
-   <appContext helpID="modifying_areas" path="source/t_modifying_areas.html"/>
-   <appContext helpID="creating_table_areas" path="source/t_creating_table_areas.html"/>
-   <appContext helpID="unnumbered_pages" path="source/unnumbered_pages.html"/>
-   <appContext helpID="illustrations" path="source/illustrations.html"/>
-   <appContext helpID="eb03_boxes" path="source/eb03_boxes.html"/>
+   <appContext helpID="drawing_boxes" path="source/c_draw_boxes.html"/>
+   <appContext helpID="creating_text_areas" path="source/t_text_areas.html"/>
+   <appContext helpID="ordering_areas" path="source/t_order_areas.html"/>
+   <appContext helpID="modifying_areas" path="source/t_modify_areas.html"/>
+   <appContext helpID="creating_table_areas" path="source/t_table_areas.html"/>
+   <appContext helpID="unnumbered_pages" path="source/t_unnumbered_pages.html"/>
+   <appContext helpID="illustrations" path="source/c_illustrations.html"/>
+   <appContext helpID="eb03_boxes" path="source/c_catchwords.html"/>
    <appContext helpID="page_recognition" path="source/c_page_recognition.html"/>
-   <appContext helpID="ocr-training" path="source/t_ocr-training.html"/>
-   <appContext helpID="proofreading" path="source/t_proofreading.html"/>
+   <appContext helpID="ocr-training" path="source/t_train_ocr.html"/>
+   <appContext helpID="proofreading" path="source/t_proofread.html"/>
    <appContext helpID="add_words_to_dictionary"
                path="source/t_add_words_to_dictionary.html"/>
-   <appContext helpID="footnote_coding" path="source/t_footnote_coding.html"/>
+   <appContext helpID="footnote_coding" path="source/t_code_footnotes.html"/>
    <appContext helpID="author_initials" path="source/c_author_initials.html"/>
-   <appContext helpID="saving_as_output" path="source/t_saving_as_output.html"/>
-   <appContext helpID="document_everything" path="source/t_document_everything.html"/>
+   <appContext helpID="saving_as_output" path="source/t_save_and_output.html"/>
+   <appContext helpID="document_everything" path="source/t_inventory_file.html"/>
+   <appContext helpID="untitled1" path="source/c_oxygen-xml-editor.html"/>
+   <appContext helpID="untitled2" path="source/r_oxygen-interface.html"/>
    <appContext helpID="converting_html_to_tei_xml"
                path="source/c_converting_html_to_tei.html"/>
    <appContext helpID="untitled1" path="source/c_finalize-files.html"/>
