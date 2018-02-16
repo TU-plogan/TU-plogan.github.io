@@ -54,18 +54,21 @@
    <appContext helpID="drawing_boxes" path="source/c_draw_boxes.html"/>
    <appContext helpID="creating_text_areas" path="source/t_text_areas.html"/>
    <appContext helpID="ordering_areas" path="source/t_order_areas.html"/>
+   <appContext helpID="order_footnote_areas" path="source/order_footnote_areas.html"/>
    <appContext helpID="modifying_areas" path="source/t_modify_areas.html"/>
    <appContext helpID="creating_table_areas" path="source/t_table_areas.html"/>
    <appContext helpID="unnumbered_pages" path="source/t_unnumbered_pages.html"/>
    <appContext helpID="illustrations" path="source/c_illustrations.html"/>
    <appContext helpID="eb03_boxes" path="source/c_catchwords.html"/>
+   <appContext helpID="author_initials" path="source/c_author_initials.html"/>
    <appContext helpID="page_recognition" path="source/c_page_recognition.html"/>
    <appContext helpID="ocr-training" path="source/t_train_ocr.html"/>
    <appContext helpID="proofreading" path="source/t_proofread.html"/>
    <appContext helpID="add_words_to_dictionary"
                path="source/t_add_words_to_dictionary.html"/>
    <appContext helpID="footnote_coding" path="source/t_code_footnotes.html"/>
-   <appContext helpID="author_initials" path="source/c_author_initials.html"/>
+   <appContext helpID="math_and_chemical_formulae"
+               path="source/math_and_chemical_formulas.html"/>
    <appContext helpID="saving_as_output" path="source/t_save_and_output.html"/>
    <appContext helpID="document_everything" path="source/t_inventory_file.html"/>
    <appContext helpID="untitled1" path="source/c_oxygen-xml-editor.html"/>
