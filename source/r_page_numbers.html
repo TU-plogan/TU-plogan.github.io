@@ -15,19 +15,22 @@
 
     
     <div class="body refbody"><p class="shortdesc">How to encode page numbers in TEI.</p>
-<section class="section"><p class="p">All page numbers must be encoded, along with the edition and volume number of the print
-            original. In addition, we want to include information about the image file that was used
-            in the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term abbreviated-form">OCR</dfn></a> process for the page. </p>
+
+        <section class="section"><p class="p">All page numbers must be encoded, along with the edition and volume number of
+                the print original. In addition, we want to include information about the image file
+                that was used in the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term abbreviated-form">OCR</dfn></a> process for the page.
+                </p>
 <div class="p">Page information is included in two different places: <ol class="ol">
-                <li class="li">The <code class="keyword markupname">&lt;div&gt;</code> element at the start of each entry.</li>
+                    <li class="li">The <code class="keyword markupname">&lt;div&gt;</code> element at the start of each entry.</li>
 
-                <li class="li">The <code class="keyword markupname">&lt;pb&gt;</code> element inserted by Python to indicate page
-                    breaks in the entry.</li>
+                    <li class="li">The <code class="keyword markupname">&lt;pb&gt;</code> element inserted by Python to indicate the
+                        beginning of a new page in the entry.</li>
 
-            </ol>
+                </ol>
 </div>
 </section>
-<section class="section"><h2 class="title sectiontitle">The <code class="keyword markupname">&lt;div&gt;</code> element</h2>
+
+        <section class="section"><h2 class="title sectiontitle">The <code class="keyword markupname">&lt;div&gt;</code> element</h2>
             
             <pre class="pre codeblock"><code>&lt;div xmlns="http://www.tei-c.org/ns/1.0" xml:id="eb11-22-r01-0766-03" facs="encyclopaediabri23chisrich_0071.jp2" type="entry"&gt;</code></pre>
             <ol class="ol">
@@ -36,7 +39,8 @@
                     entry position on the page. </li>
 
                 <li class="li">Use <code class="ph codeph">@facs</code> to identify the source information, in this case, the
-                    file name of the image used in the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term abbreviated-form">OCR</dfn></a> process.</li>
+                    file name of the image used in the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term abbreviated-form">OCR</dfn></a>
+                    process.</li>
 
                 <li class="li">Add <code class="ph codeph">@type</code> with the <code class="ph codeph">entry</code>value to indicate that
                     the text is an encyclopedia entry.</li>
@@ -44,18 +48,20 @@
             </ol>
 
         </section>
-<section class="section"><h2 class="title sectiontitle">The <code class="keyword markupname">&lt;pb&gt;</code> element</h2>
+
+        <section class="section"><h2 class="title sectiontitle">The <code class="keyword markupname">&lt;pb&gt;</code> element</h2>
             
             <pre class="pre codeblock"><code>&lt;pb xml:id="eb11-22-r01-0767" facs="encyclopaediabri23chisrich_0072.jp2"&gt;</code></pre>
-            <p class="p">When encoding page breaks, do not use the two-digit code for the entry position; all
-                text following a page break is the first entry, by definition. Furthermore, since
-                the text is not the beginning of the entry, we eliminate the code. Instead, include
-                an <code class="keyword markupname">&lt;xml:id&gt;</code> for the new page number and indicate the correct
-                original image file. The coding for the page following the page in the first example
-                is shown here.</p>
+            <p class="p">When encoding page beginnings, do not use the two-digit code for the entry position;
+                all text at the start of a new page is the first entry, by definition. Instead,
+                include an <code class="keyword markupname">&lt;xml:id&gt;</code> for the <em class="ph i">new</em> page number and
+                indicate the correct original image file for that page. We also no longer need
+                    <code class="ph codeph">@type</code>, since that was indicated earlier, in the
+                    <code class="ph codeph">div</code> tag.</p>
 
         </section>
-</div>
+
+    </div>
 
 <nav role="navigation" class="related-links"></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
 <span class="navparent"><a class="link" href="../source/c_style_manual.html" title="Encoding guidelines for the TEI digital edition files."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Style Manual</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">

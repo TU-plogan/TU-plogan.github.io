@@ -1642,6 +1642,6 @@ function startsWith(word1, word2) {
  * @returns {boolean} True if the search query seems to be an URL or file path.
  */
 function isURLorFilePath(toTest) {
-    var re = new RegExp('[\./\\\-:]');
+    var re = new RegExp('[\./\\\-:_]');
     return re.test(toTest);
 }
