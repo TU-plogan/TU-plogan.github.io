@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
-   <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
-   <appContext helpID="g.txt" path="glossary/g_txt.html"/>
-   <appContext helpID="g.pdf" path="glossary/g_pdf.html"/>
-   <appContext helpID="g.print_edition" path="glossary/g_print_edition.html"/>
-   <appContext helpID="g.section" path="glossary/g_section.html"/>
+   <appContext helpID="g.afr" path="glossary/g_afr.html"/>
    <appContext helpID="g.at_codes" path="glossary/g_at_codes.html"/>
+   <appContext helpID="g.css" path="glossary/g_css.html"/>
+   <appContext helpID="g.csv" path="glossary/g_csv.html"/>
    <appContext helpID="g.digital_edition" path="glossary/g_digital_edition.html"/>
-   <appContext helpID="g.page_file" path="glossary/g_page_file.html"/>
+   <appContext helpID="g_docx" path="glossary/g_docx.html"/>
+   <appContext helpID="untitled3" path="glossary/g_eb.html"/>
    <appContext helpID="g.entry_file" path="glossary/g_entry_file.html"/>
-   <appContext helpID="g.ocr_project" path="glossary/g_ocr_project.html"/>
-   <appContext helpID="g.oxygen" path="glossary/g_oxygen.html"/>
+   <appContext helpID="g.epub" path="glossary/g_epub.html"/>
+   <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
    <appContext helpID="g.xml" path="glossary/g_xml.html"/>
-   <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
    <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
    <appContext helpID="g.html" path="glossary/g_html.html"/>
-   <appContext helpID="g.afr" path="glossary/g_afr.html"/>
-   <appContext helpID="g.css" path="glossary/g_css.html"/>
-   <appContext helpID="g.ocr" path="glossary/g_ocr.html"/>
-   <appContext helpID="g.tei" path="glossary/g_tei.html"/>
-   <appContext helpID="g.epub" path="glossary/g_epub.html"/>
-   <appContext helpID="g.csv" path="glossary/g_csv.html"/>
    <appContext helpID="g.inventory" path="glossary/g_inventory.html"/>
-   <appContext helpID="spreadsheet_file" path="glossary/g_spreadsheet.html"/>
+   <appContext helpID="g.knowledge-project" path="glossary/g_c19_project.html"/>
+   <appContext helpID="g.ocr_project" path="glossary/g_ocr_project.html"/>
+   <appContext helpID="g.ocr" path="glossary/g_ocr.html"/>
+   <appContext helpID="g.oxygen" path="glossary/g_oxygen.html"/>
+   <appContext helpID="g.page_file" path="glossary/g_page_file.html"/>
+   <appContext helpID="g.pdf" path="glossary/g_pdf.html"/>
+   <appContext helpID="g.print_edition" path="glossary/g_print_edition.html"/>
+   <appContext helpID="g.python" path="glossary/g_python.html"/>
+   <appContext helpID="g.section" path="glossary/g_section.html"/>
+   <appContext helpID="g.spreadsheet" path="glossary/g_spreadsheet.html"/>
+   <appContext helpID="g.tei" path="glossary/g_tei.html"/>
+   <appContext helpID="g.txt" path="glossary/g_txt.html"/>
+   <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="naming_conventions" path="source/r_naming_conventions.html"/>
-   <appContext helpID="untitled1" path="source/r_image_sources.html"/>
+   <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_folder.html"/>
    <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
@@ -73,7 +77,7 @@
    <appContext helpID="t.math-formulas"
                path="source/t_math_and_chemical_formulas.html"/>
    <appContext helpID="t.save-and-output" path="source/t_save_and_output.html"/>
-   <appContext helpID="untitled1" path="source/c_oxygen-xml-editor.html"/>
+   <appContext helpID="c.oxygen" path="source/c_oxygen-xml-editor.html"/>
    <appContext helpID="untitled2" path="source/r_oxygen-interface.html"/>
    <appContext helpID="create_a_new_oxygen_project"
                path="source/t_create_a_new_xml_project.html"/>
