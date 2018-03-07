@@ -28,7 +28,6 @@
    <appContext helpID="g.txt" path="glossary/g_txt.html"/>
    <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
-   <appContext helpID="naming_conventions" path="source/r_naming_conventions.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_folder.html"/>
@@ -95,8 +94,12 @@
                path="source/c_processing_entry_files.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
-   <appContext helpID="style_manual" path="source/c_style_manual.html"/>
-   <appContext helpID="file_names" path="source/r_file_names.html"/>
+   <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
+   <appContext helpID="naming_conventions" path="source/file_and_folder_names.html"/>
+   <appContext helpID="editions_sections" path="source/r_editions_sections.html"/>
+   <appContext helpID="file_fdr_names" path="source/r_file_names.html"/>
+   <appContext helpID="tei_style_manual" path="source/tei_style_manual.html"/>
    <appContext helpID="note" path="source/r_notes.html"/>
    <appContext helpID="pagebreak" path="source/r_page_numbers.html"/>
+   <appContext helpID="type_attributes" path="source/type_attributes.html"/>
 </map>
