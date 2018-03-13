@@ -95,11 +95,11 @@
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
-   <appContext helpID="naming_conventions" path="source/file_and_folder_names.html"/>
+   <appContext helpID="naming_conventions" path="source/r_file_and_folder_names.html"/>
    <appContext helpID="editions_sections" path="source/r_editions_sections.html"/>
    <appContext helpID="file_fdr_names" path="source/r_file_names.html"/>
-   <appContext helpID="tei_style_manual" path="source/tei_style_manual.html"/>
+   <appContext helpID="tei_style_manual" path="source/r_tei_style_manual.html"/>
    <appContext helpID="note" path="source/r_notes.html"/>
    <appContext helpID="pagebreak" path="source/r_page_numbers.html"/>
-   <appContext helpID="type_attributes" path="source/type_attributes.html"/>
+   <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
 </map>
