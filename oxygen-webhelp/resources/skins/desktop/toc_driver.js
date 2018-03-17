@@ -1,7 +1,7 @@
 /*
 
 Oxygen WebHelp Plugin
-Copyright (c) 1998-2017 Syncro Soft SRL, Romania.  All rights reserved.
+Copyright (c) 1998-2018 Syncro Soft SRL, Romania.  All rights reserved.
 
 */
 /**
@@ -96,7 +96,7 @@ $(document).ready(function () {
  */
 function loadSearchResources() {
     if (typeof window.indexerLanguage == 'undefined') {
-        var scripts = ["oxygen-webhelp/search/htmlFileInfoList.js?uniqueId=20180313041334", "oxygen-webhelp/search/index-1.js?uniqueId=20180313041334", "oxygen-webhelp/search/index-2.js?uniqueId=20180313041334", "oxygen-webhelp/search/index-3.js?uniqueId=20180313041334"];
+        var scripts = ["oxygen-webhelp/search/htmlFileInfoList.js?uniqueId=20180316095221", "oxygen-webhelp/search/index-1.js?uniqueId=20180316095221", "oxygen-webhelp/search/index-2.js?uniqueId=20180316095221", "oxygen-webhelp/search/index-3.js?uniqueId=20180316095221"];
         for (var entry in scripts) {
             var scriptTag = document.createElement("script");
             scriptTag.type = "text/javascript";
@@ -128,8 +128,7 @@ if (location.search.indexOf("q=") != -1) {
         pos = location.search.lastIndexOf(wh.directory.substring(1));
         newLink = newLink + "#" + location.search.substring(pos + wh.directory.length -1);
     } else {
-        pos = location.search.lastIndexOf(wh.directory);
-        newLink = newLink + "#" + location.search.substring(pos + wh.directory.length);
+    	newLink = newLink + "#" + location.search.replace("?q=" + wh.directory, "");
     }
     debug('redirect to ' + newLink);
     redirect(newLink);
@@ -428,16 +427,14 @@ function recomputeBreadcrumb(breadcrumbLevels) {
                 if (currentSpan.length != 0) {
                     /*We need to translate the TOC span to a breadcrumb span...*/
                     var span = currentSpan.clone();
-                    span.removeAttr('class');
-                    span.addClass('topic_breadcrumb_link');
+                    span.removeAttr('class').addClass('topic_breadcrumb_link');
 
                     var aHref = span.children("a");
                     if (aHref.length > 0) {
                         /*We need to translate the TOC a href to a breadcrumb a href...*/
                         var firstAHref = $(aHref[0]);
-                        firstAHref.removeAttr("data-id");
-                        firstAHref.removeAttr('class');
-                        firstAHref.addClass('navheader_parent_path');
+                        firstAHref.removeAttr("data-id").removeAttr('class').addClass('navheader_parent_path');
+                        
                         // Add title attribute if we found an equivalent one from old breadrumbs
                         var cleanHref = firstAHref.attr('href').substr(1);
                         if (titles[cleanHref]!==undefined) {
@@ -621,11 +618,11 @@ function load(link) {
 
         // Scroll to make selectedItem visible
         if($(".menuItemSelected").length>0) {
-            if(parseInt($(".menuItemSelected").offset().top+$(".menuItemSelected").height()) > eval($("#leftPane").offset().top+$("#leftPane").height())) {
-                var sTo = $(".menuItemSelected").offset().top - eval($("#leftPane").offset().top+$("#leftPane").height()) + $("#leftPane").scrollTop();
-                $("#leftPane").scrollTop(eval(sTo + 2*$(".menuItemSelected").height()));
+            if(parseInt($(".menuItemSelected").offset().top+$(".menuItemSelected").height()) > parseInt($("#leftPane").offset().top + $("#leftPane").height())) {
+                var sTo = $(".menuItemSelected").offset().top - parseInt($("#leftPane").offset().top+$("#leftPane").height()) + $("#leftPane").scrollTop();
+                $("#leftPane").scrollTop(parseInt(sTo + 2*$(".menuItemSelected").height()));
             } else if( $(".menuItemSelected").offset().top < $("#leftPane").offset().top ){
-                var sTo = $(".menuItemSelected").offset().top<0?eval($("#leftPane").scrollTop() - Math.abs($(".menuItemSelected").offset().top) - $("#leftPane").offset().top):eval($("#leftPane").scrollTop() - ($("#leftPane").offset().top - $(".menuItemSelected").offset().top));
+                var sTo = $(".menuItemSelected").offset().top<0?parseInt($("#leftPane").scrollTop() - Math.abs($(".menuItemSelected").offset().top) - $("#leftPane").offset().top):parseInt($("#leftPane").scrollTop() - ($("#leftPane").offset().top - $(".menuItemSelected").offset().top));
                 $("#leftPane").scrollTop(sTo);
             }
         }

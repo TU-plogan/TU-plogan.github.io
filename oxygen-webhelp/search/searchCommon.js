@@ -64,7 +64,7 @@ function preprocessSearchResult(searchResult, whDistribution) {
             ttScore_first = allPages[0].scoring;
         }
 
-        var currentSimilarPage;
+        var currentSimilarPage={};
         for (var page = 0; page < allPages.length; page++) {
             /*debug("Page number: " + page);*/
 
@@ -306,22 +306,13 @@ function computeSearchItemHTML(searchItem, whDistribution, hasSimilarPages, simi
     var finalArray = searchItem.words;
     var arrayStringAux = [];
     var arrayString = '';
-    if (wh_Classic || wh_mobile) {
-        for (var x in finalArray) {
-            if (finalArray[x].length >= 2 || useCJKTokenizing || (indexerLanguage == "ja" && finalArray[x].length >= 1)) {
-                arrayStringAux.push(finalArray[x]);
-            }
-        }
-        arrayString = arrayStringAux.toString();
 
-    } else {
-        for (var x in finalArray) {
-            if (finalArray[x].length >= 2 || useCJKTokenizing || (indexerLanguage == "ja" && finalArray[x].length >= 1)) {
-                arrayStringAux.push(finalArray[x]);
-            }
+    for (var x in finalArray) {
+        if (finalArray[x].length >= 2 || useCJKTokenizing || (indexerLanguage == "ja" && finalArray[x].length >= 1)) {
+            arrayStringAux.push(finalArray[x]);
         }
-        arrayString = arrayStringAux.toString();
     }
+    arrayString = arrayStringAux.toString();
 
     // Add highlight param
     if (!wh_Classic && !wh_mobile) {
