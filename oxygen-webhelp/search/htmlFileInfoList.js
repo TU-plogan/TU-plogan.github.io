@@ -88,4 +88,9 @@ fil["85"]= "source/t_train_ocr.html@@@Train OCR@@@Improve recognition with user 
 fil["86"]= "source/t_transform_html_tei.html@@@Transform the HTML Files to TEI@@@How to convert HTML files to TEI in Oxygen...";
 fil["87"]= "source/t_unnumbered_pages.html@@@Unnumbered Pages@@@Blank pages and pages with only illustrations require special treatment...";
 fil["88"]= "source/t_validating_entry_files.html@@@Validate Entry Files@@@Use Oxygen to validate the entry files...";
+fil["89"]= "xhtml/appendix_a.html@@@Appendix A@@@...";
+fil["90"]= "xhtml/appendix_b.html@@@Appendix B@@@...";
+fil["91"]= "xhtml/appendix_c.html@@@Appendix C@@@...";
+fil["92"]= "xhtml/appendix_d.html@@@Appendix D@@@...";
+fil["93"]= "xhtml/index.html@@@ACLS Digital Extension Grant@@@...";
 var doStem = false;searchLoaded = true;
