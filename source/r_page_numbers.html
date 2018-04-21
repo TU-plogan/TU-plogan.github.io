@@ -9,7 +9,7 @@
           
           --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018031511"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018031511"><!----></script></head>
 <body onload="highlightSearchTerm()" class="frmBody" id="pagebreak">
-<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_reference_manual.html" title="Quick reference information on file/folder names and TEI encoding standards">Reference Manual</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/r_tei_style_manual.html" title="All TEI encoding must follow these guidelines.">TEI Style Manual</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_reference_manual.html" title="Reference information on file/folder names, TEI-encoding standards, and more!">Reference Manual</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/r_tei_style_manual.html" title="All TEI encoding must follow these guidelines.">TEI Style Manual</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
 <span class="navparent"><a class="link" href="../source/r_tei_style_manual.html" title="All TEI encoding must follow these guidelines."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">TEI Style Manual</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
     <h1 class="title topictitle1" id="ariaid-title1">Page Numbers</h1>
 
@@ -34,15 +34,15 @@
             <pre class="pre codeblock"><code>&lt;div xmlns="http://www.tei-c.org/ns/1.0" xml:id="eb11-22-r01-0766-03" facs="encyclopaediabri23chisrich_0071.jp2" type="entry"&gt;</code></pre>
             <ol class="ol">
                 <li class="li">In this example, we use our standard naming practice for the
-                        <code class="ph codeph">xml:id</code> value, including the final two-digit code for the
+                        <code class="ph codeph">@xml:id</code> value, including the final two-digit code for the
                     entry position on the page. </li>
 
                 <li class="li">Use <code class="ph codeph">@facs</code> to identify the source information, in this case, the
                     file name of the image used in the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term abbreviated-form">OCR</dfn></a> process.
                     That data is included in the <a class="xref" href="t_inventory_file.html" title="Document the file names on each section in the inventory file.">Inventory File</a>.</li>
 
-                <li class="li">Add <code class="ph codeph">@type</code> with the <code class="ph codeph">entry</code>value to indicate that
-                    the text is an encyclopedia entry.</li>
+                <li class="li">Add <code class="ph codeph">@type</code> with the <code class="ph codeph">entry</code> value to indicate
+                    that the text is an encyclopedia entry.</li>
 
             </ol>
 
@@ -51,10 +51,10 @@
         <section class="section"><h2 class="title sectiontitle">The <code class="keyword markupname">&lt;pb&gt;</code> element</h2>
             
             <pre class="pre codeblock"><code>&lt;pb xml:id="eb11-22-r01-0767" facs="encyclopaediabri23chisrich_0072.jp2"&gt;</code></pre>
-            <p class="p">When encoding page beginnings, do not use the two-digit code for the entry position;
-                all text at the start of a new page is the first entry, by definition. Instead,
-                include an <code class="keyword markupname">&lt;xml:id&gt;</code> for the <em class="ph i">new</em> page number and
-                indicate the correct original image file for that page. We also no longer need
+            <p class="p">When encoding page beginnings, do not use the two-digit code for the entry position,
+                since that only indicates the starting position of the entry. Instead, include an
+                    <code class="keyword markupname">&lt;@xml:id&gt;</code> for the <em class="ph i">new</em> page number and indicate the
+                correct original image file for that page. We also no longer need
                     <code class="ph codeph">@type</code>, since that was indicated earlier, in the
                     <code class="ph codeph">div</code> tag.</p>
 
