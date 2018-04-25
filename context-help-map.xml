@@ -57,8 +57,8 @@
    <appContext helpID="c.draw-boxes" path="source/c_draw_boxes.html"/>
    <appContext helpID="t.text-areas" path="source/t_text_areas.html"/>
    <appContext helpID="t.order-footnote-areas" path="source/t_order_areas.html"/>
-   <appContext helpID="c.order-footnote-areas" path="source/c_order_footnote_areas.html"/>
    <appContext helpID="t.modify-areas" path="source/t_modify_areas.html"/>
+   <appContext helpID="c.footnote-areas" path="source/c_footnote_areas.html"/>
    <appContext helpID="t.table-areas" path="source/t_table_areas.html"/>
    <appContext helpID="t.unnumbered-pages" path="source/t_unnumbered_pages.html"/>
    <appContext helpID="c.illustrations" path="source/c_illustrations.html"/>
