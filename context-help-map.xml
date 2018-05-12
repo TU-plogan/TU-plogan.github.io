@@ -29,6 +29,7 @@
    <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
+   <appContext helpID="editorial_standards" path="source/editorial_standards.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_folder.html"/>
    <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
@@ -61,16 +62,17 @@
    <appContext helpID="t.modify-areas" path="source/t_modify_areas.html"/>
    <appContext helpID="c.footnote-areas" path="source/c_footnote_areas.html"/>
    <appContext helpID="t.table-areas" path="source/t_table_areas.html"/>
-   <appContext helpID="t.unnumbered-pages" path="source/t_unnumbered_pages.html"/>
+   <appContext helpID="untitled3" path="source/t_edit_tables.html"/>
    <appContext helpID="c.illustrations" path="source/c_illustrations.html"/>
    <appContext helpID="c.catchwords" path="source/c_catchwords.html"/>
    <appContext helpID="c.author-initials" path="source/c_author_initials.html"/>
    <appContext helpID="c.page-recognition" path="source/c_page_recognition.html"/>
-   <appContext helpID="t.train-ocr" path="source/t_train_ocr.html"/>
+   <appContext helpID="untitled4" path="source/t_verification.html"/>
    <appContext helpID="t.proofread" path="source/t_proofread.html"/>
    <appContext helpID="t.add-dictionary-words" path="source/t_add_words_to_dictionary.html"/>
    <appContext helpID="t.code-footnotes" path="source/t_code_footnotes.html"/>
-   <appContext helpID="t.math-formulas" path="source/t_math_and_chemical_formulas.html"/>
+   <appContext helpID="formulas" path="source/c_formulas.html"/>
+   <appContext helpID="t.train-ocr" path="source/t_train_ocr.html"/>
    <appContext helpID="t.save-and-output" path="source/t_save_and_output.html"/>
    <appContext helpID="c.oxygen" path="source/c_oxygen-xml-editor.html"/>
    <appContext helpID="untitled2" path="source/r_oxygen-interface.html"/>

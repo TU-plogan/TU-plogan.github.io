@@ -37,29 +37,27 @@
         </section>
 
         <div class="tasklabel"><h2 class="sectiontitle tasklabel">Procedure</h2></div><ol class="ol steps"><li class="li step stepexpand">
-                <span class="ph cmd">Open an existing <a href="../glossary/g_spreadsheet.html" title="A file containing rows and columns of data that is opened by a spreadsheet program, such as Excel."><dfn class="term">spreadsheet</dfn></a> and save it as
-                        <span class="ph filepath">ebnn-rnn-inventory</span> in the home directory for the new
-                        <a href="../glossary/g_section.html" title="A chunk of 250 pages from a specified letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of 250-page sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>. Delete all data, leaving only the column
-                    labels.</span>
+                <span class="ph cmd">Open an existing <a href="../glossary/g_spreadsheet.html" title="A file containing rows and columns of data that is opened by a spreadsheet program, such as Excel."><dfn class="term">spreadsheet</dfn></a> and save it as edition-section
+                        (<span class="ph filepath">ebnn-snn</span>) in the home directory for the new <a href="../glossary/g_section.html" title="A chunk of 250 pages from a specified letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of 250-page sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>. Delete all data, leaving only the column labels.</span>
                 <div class="itemgroup stepxmp">
                     <figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>Inventory spreadsheet file</p>
                         
-                        <br /><div class="imagecenter"><img class="image imagecenter" src="image/inventory.JPG" /></div><br />
+                        <br /><div class="imagecenter"><img class="image imagecenter" src="image/inventory-file.png" /></div><br />
                     </figure>
 
                 </div>
             </li>
 <li class="li step stepexpand">
-                <span class="ph cmd">Open the <span class="ph filepath">ebnn-rnn-inventory</span> in the home directory for the
-                    new <a href="../glossary/g_section.html" title="A chunk of 250 pages from a specified letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of 250-page sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a> folder in <span class="ph filepath">production/images</span>
-                    containing the original images used for the OCR scan. Double-check to make sure
-                    all files have the same name a number at the end, incrementing by one number.
-                    Make a note of the total number of files in the <a href="../glossary/g_section.html" title="A chunk of 250 pages from a specified letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of 250-page sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>.</span>
+                <span class="ph cmd">Open the new <span class="ph filepath">ebnn-snn</span> file. Open the home directory for
+                    the <a href="../glossary/g_section.html" title="A chunk of 250 pages from a specified letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of 250-page sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a> folder in <span class="ph filepath">production/images</span>,
+                    containing the original images used for the OCR scan. All files in the directory
+                    should have the same name and number at the end, incrementing by one number.
+                    Make a note of the total number of image files</span>
             </li>
 <li class="li step stepexpand">
                 <span class="ph cmd">Copy the name of the first image into the <span class="ph uicontrol">image-fn</span>
-                    column, without the extension. Append the file extension (.tiff, .jp2) to the
-                    column label, instead.</span>
+                    column, <em class="ph i">without the extension</em>. Append the file extension (.tiff, .jp2) to
+                    the column label, instead.</span>
                 <div class="itemgroup stepxmp">
                     <figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>Columns for inventory spreadsheet</p>
                         
@@ -69,22 +67,23 @@
                 </div>
             </li>
 <li class="li step stepexpand">
-                <span class="ph cmd">Copy the same file name into the second row and increment it by one. Excel will
-                    populate the rest of the <span class="ph uicontrol">image-fn</span> column for you. Select
-                    the two filenames. Position your cursor over the bottom-right corner of the
+                <span class="ph cmd">Copy the same file name into the second row and increment it by one. Select the
+                    two filenames. Position your cursor over the bottom-right corner of the
                     selection. When the cursor changes to a <span class="ph uicontrol">+</span> sign,
-                    left-click and drag down the column to populate it.</span>
+                    left-click and drag down the column. Excel will populate the rest
+                    of the <span class="ph uicontrol">image-fn</span> column for you. </span>
                 <div class="itemgroup stepresult">You should now have a column with the same number of filenames that you
                     noted in the <span class="ph filepath">production/images</span>
-                    <span class="ph filepath">ebnn-rnn-inventory</span> in the home directory for the new <a href="../glossary/g_section.html" title="A chunk of 250 pages from a specified letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of 250-page sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a> folder. Make sure the name of the last file matches
-                    that of the image folder.</div>
+                    <a href="../glossary/g_section.html" title="A chunk of 250 pages from a specified letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of 250-page sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a> folder. Make sure the name of the last file in the
+                        <span class="ph uicontrol">image-fn</span> column matches that of the image
+                    folder.</div>
             </li>
 <li class="li step stepexpand">
                 <span class="ph cmd">Enter the print volume number in the <span class="ph uicontrol">p-vol</span> column.</span>
             </li>
 <li class="li step stepexpand">
                 <span class="ph cmd">Enter the print page number for each image in the <span class="ph uicontrol">p-pg</span>
-                    column.</span>
+                    column, using the same technique as above to auto-populate the column.</span>
                 <div class="itemgroup tutorialinfo">Be sure to account for unnumbered pages, such as plates, even if they
                     were not scanned and output. This gives us a guide to every image file in the
                     section.</div>
@@ -122,8 +121,8 @@
                 <span class="ph cmd">The final column, <span class="ph uicontrol">comments</span>, is for recording page
                     anomalies. Use this column to note any pages with Hebrew-language text, footnote
                     text that runs over from one page to another, notes in the page margin, or any
-                    other information we will need to know for later in the production process.
-                </span>
+                    other information we will need to know for later in the production
+                    process.</span>
             </li>
 </ol>
 

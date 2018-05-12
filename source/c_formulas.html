@@ -1,0 +1,73 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Formulas" /><meta name="abstract" content="Scanning simple and complex math and chemical formulas." /><meta name="description" content="Scanning simple and complex math and chemical formulas." /><meta name="DC.Relation" scheme="URI" content="../source/c_page_recognition.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_code_footnotes.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_train_ocr.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="copyright" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Rights.Owner" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="formulas" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2018031511"><!----></link><title>Formulas</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018031511.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2018031511"><!----></link><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/skins/skin.css?buildId=2018031511" /><script type="text/javascript"><!--
+          
+          var prefix = "../index.html";
+          
+          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018031511"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018031511"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="formulas">
+<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_intro_afr.html" title="An introduction to AFR that explains the specific procedures we use to get the best quality text recognition of Encyclopedia page images.">Scanning Procedures</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/c_page_recognition.html" title="Excellent page recognition depends on preparing the page properly.">Page Recognition</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+<span class="navparent"><a class="link" href="../source/c_page_recognition.html" title="Excellent page recognition depends on preparing the page properly."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Page Recognition</span></a></span>  
+<span class="navprev"><a class="link" href="../source/t_code_footnotes.html" title="Code Footnotes"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Code Footnotes</span></a></span>  
+<span class="navnext"><a class="link" href="../source/t_train_ocr.html" title="Train OCR"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Train OCR</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Formulas</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">Scanning simple and complex math and chemical formulas.</p>
+
+        <section class="section">
+            <p class="p">Formulas show up in most technical articles. Sometimes the formula is on a separate
+                line, but often it is run-in with the texts. <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a> does well with
+                simple formulas, but it cannot manage complex ones. We want to retain accuracy for
+                simple formulas, but complex ones must be left until later, and a note should be
+                placed in the inventory file for the page.</p>
+
+        </section>
+
+        <section class="section"><h2 class="title sectiontitle">Simple</h2>
+            <div class="p">A simple formula is one that is limited to a single line, and any fractions can be
+                expressed using the existing character set.<figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>Simple formula</p>
+                    
+                    <br /><div class="imagecenter"><img class="image imagecenter" src="image/afr-guide/formulas-simple.png" /></div><br />
+                </figure>
+ Recognition accuracy may be lower for a formula than for text, for several
+                reasons. <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">AFR</dfn></a> does not have a dictionary for checking them against
+                known words. The subscript and superscript numerals and letters pose problems
+                because of their small size. And they use large numbers of special characters. <ul class="ul">
+                    <li class="li">Greek characters (normally italicized) are in the "Basic Greek" symbols
+                        subset. </li>
+
+                    <li class="li">Special math symbols, like ≤ and ≈, are in the "Mathematical Operators"
+                        subset, though you will likely need to change your font from Times New Roman
+                        to Arial Unicode MS to find most of them.</li>
+
+                </ul>
+</div>
+</section>
+
+        <section class="section"><h2 class="title sectiontitle">Complex</h2>
+            
+            <div class="p">Complex formulas are two or more lines, which <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">AFR</dfn></a> cannot read. <figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>Complex formula</p>
+                    
+                    <br /><div class="imagecenter"><img class="image imagecenter" src="image/afr-guide/formulas-complex.png" /></div><br />
+                </figure>
+ If the formula occurs on a separate line, as in the illustration, then treat
+                it like an illustration. If it occurs on a line of text, do not worry about
+                correcting it. <div class="note note"><span class="notetitle">Note:</span> Add a comment in the inventory file for
+                    the page, so we can go back and correct it later.</div>
+</div>
+
+        </section>
+
+    </div>
+
+<nav role="navigation" class="related-links"></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../source/c_page_recognition.html" title="Excellent page recognition depends on preparing the page properly."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Page Recognition</span></a></span>  
+<span class="navprev"><a class="link" href="../source/t_code_footnotes.html" title="Code Footnotes"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Code Footnotes</span></a></span>  
+<span class="navnext"><a class="link" href="../source/t_train_ocr.html" title="Train OCR"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Train OCR</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+                            &lt;oXygen/&gt; XML WebHelp
+                        </a></div></footer></body>
+</html>
