@@ -55,7 +55,7 @@
    <appContext helpID="t.format-tab" path="source/t_format_settings_tab.html"/>
    <appContext helpID="t.areas-tab" path="source/t_areas_and_text_tab.html"/>
    <appContext helpID="t.other-tab" path="source/t_other_tab.html"/>
-   <appContext helpID="t.ocr-eb03" path="source/t_ocr_for_eb03.html"/>
+   <appContext helpID="t.ocr-eb03" path="source/c_ocr_for_eb03.html"/>
    <appContext helpID="c.draw-boxes" path="source/c_draw_boxes.html"/>
    <appContext helpID="t.text-areas" path="source/t_text_areas.html"/>
    <appContext helpID="t.order-footnote-areas" path="source/t_order_areas.html"/>

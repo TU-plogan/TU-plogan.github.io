@@ -21,10 +21,10 @@
 
         <section class="section context">
             <p class="p">The <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term">OCR</dfn></a> process works best when the image files being scanned have
-                of resolution of 300-600 dpi (dots-per-inch). Our source files have higher
-                resolutions, and <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a> will not automatically adjust them for us.
-                So each time you create a new <a href="../glossary/g_ocr_project.html" title="A collection of files used by ABBYY FineReader and stored as a single group."><dfn class="term">OCR-Project</dfn></a>, follow this simple
-                procedure to correct them.</p>
+                of resolution of 300-600 dpi (dots-per-inch). Some of our source files have very
+                high resolutions, and <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a> will intterpret them as needing &gt; 600
+                dpi resolutions, which causes problems for the scanner. So each time you create a
+                new <a href="../glossary/g_ocr_project.html" title="A collection of files used by ABBYY FineReader and stored as a single group."><dfn class="term">OCR-Project</dfn></a>, follow this simple procedure.</p>
 
             <div class="dangertitle">DANGER</div><div class="note danger">This process will erase any boxes, if you have already created
                 them.</div>
@@ -45,11 +45,11 @@
 </div>
             </li>
 <li class="li step stepexpand">
-                <span class="ph cmd">Set <span class="ph uicontrol">Other</span> to <kbd class="ph userinput">600</kbd> dpi.</span>
+                <span class="ph cmd">If the resolution shown in <span class="ph uicontrol">Other</span> is &gt; 600 dpi, change it
+                    to <kbd class="ph userinput">600</kbd> dpi.</span>
             </li>
 <li class="li step stepexpand">
-                <span class="ph cmd">Change <span class="ph uicontrol">Selection</span> to <kbd class="ph userinput">All
-                    Pages</kbd>.</span>
+                <span class="ph cmd">Set <span class="ph uicontrol">Selection</span> to <kbd class="ph userinput">All Pages</kbd>.</span>
             </li>
 <li class="li step stepexpand">
                 <span class="ph cmd"><span class="ph uicontrol">Apply</span>.</span>

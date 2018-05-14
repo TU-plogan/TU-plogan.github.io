@@ -1,0 +1,89 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="DC.Type" content="concept" /><meta name="DC.Title" content="OCR for eb03" /><meta name="abstract" content="Scanning eb03 requires special settings." /><meta name="description" content="Scanning eb03 requires special settings." /><meta name="DC.Relation" scheme="URI" content="../source/c_settings.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_other_tab.html" /><meta name="DC.Relation" scheme="URI" content="../source/c_draw_boxes.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="copyright" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Rights.Owner" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="t.ocr-eb03" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2018042310"><!----></link><title>OCR for eb03</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018042310.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2018042310"><!----></link><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/skins/skin.css?buildId=2018042310" /><script type="text/javascript"><!--
+          
+          var prefix = "../index.html";
+          
+          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018042310"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018042310"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="t.ocr-eb03">
+<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_intro_afr.html" title="An introduction to AFR that explains the specific procedures we use to get the best quality text recognition of Encyclopedia page images.">Scanning Procedures</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/c_settings.html" title="When adjusting ABBYY FineReader's many options, use these settings.">Settings</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+<span class="navparent"><a class="link" href="../source/c_settings.html" title="When adjusting ABBYY FineReader's many options, use these settings."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Settings</span></a></span>  
+<span class="navprev"><a class="link" href="../source/t_other_tab.html" title="Other Tab"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Other Tab</span></a></span>  
+<span class="navnext"><a class="link" href="../source/c_draw_boxes.html" title="Draw Boxes"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Draw Boxes</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">OCR for eb03</h1>
+
+    
+    <div class="body conbody"><p class="shortdesc">Scanning eb03 requires special settings.</p>
+
+        <div class="p">All the editions of eb have slightly different layouts, but additional considerations
+            come into play when scanning eb03. <figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>Typical page from eb03</p>
+                
+                <br /><div class="imagecenter"><img class="image imagecenter" src="image/eb03-sample.jpg" height="277" width="612" /></div><br />
+            </figure>
+</div>
+
+        <section class="section"><h2 class="title sectiontitle">Long-s</h2>
+            
+            <p class="p">Most printed books from before 1820 use <code class="ph codeph">ſ</code> instead of
+                    <code class="ph codeph">s</code>. This is the "long-s," and eb03 is no exception. <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a> is good at recognizing it, but far from perfect. We replace
+                    <code class="ph codeph">ſ</code> with <code class="ph codeph">s</code> in the TEI editions, so for
+                corrections, you can use the <code class="ph codeph">s</code> on the keyboard. There are specific
+                rules for when typographers used <code class="ph codeph">ſ</code>: at the beginning and middle of
+                words, but never at the end. Bear this in mind when trying to determine the intended
+                word.</p>
+
+        </section>
+
+        <section class="section"><h2 class="title sectiontitle">Ligatures</h2>
+            
+            <p class="p">Combinations of letters into a single letter-form, such as the "st" in "first" and
+                "Palestine" on lines 2 and 3 above, are called "ligatures," and they were widespread
+                in pre-1850s printed matter. <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">AFR</dfn></a> will often misrecognize
+                ligatures, unless it is trained to identify them when recognizing the page. For
+                instructions, see <a class="xref" href="t_train_ocr.html" title="Advanced users can improve recognition with user patterns.">Train OCR</a>.</p>
+</section>
+
+        <section class="section"><h2 class="title sectiontitle">Marginal notes</h2>
+            
+            <div class="p">The third edition includes footnotes as well as occasional marginal notes. These are
+                indicated in the text with an *, †, or ‡. The note text is in the left or right
+                margin of the page. We want to capture this text, so treat is in similarly to
+                footnotes, using @@ and @@@ symbols. There are two main differences from footnotes: <ol class="ol">
+                    <li class="li">Add <code class="ph codeph">[m]</code> at the start of the note text itself. We'll remove
+                        it later and add TEI encoding to indicate the position of the note in the
+                        margin.</li>
+
+                    <li class="li">Marginal notes are usually short, often no more than one or two words.
+                        Instead of drawing a separate box around it with the "footnote" function,
+                        entering it by hand may be quicker. For the example, the note text reads
+                            <code class="ph codeph"> @@@* [m]L.1:5:0.</code></li>
+
+                </ol>
+</div>
+
+            <figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>Marginal note.</p>
+                
+                <br /><div class="imagecenter"><img class="image imagecenter" src="image/afr-guide/eb03-marginal-note.png" /></div><br />
+            </figure>
+
+        </section>
+
+        <section class="section"><h2 class="title sectiontitle">Money</h2><p class="p">Instead of <code class="ph codeph">£</code>, the pound sign for British
+                currency, eb03 typically uses <code class="ph codeph">L.</code>, as in the example above. They
+                used a sequence of three numbers divided by a colon to list amounts in pounds,
+                shillings, and pence. Thus, the note text means one-pound, five shillings, zero
+                pence.</p>
+</section>
+
+    </div>
+
+<nav role="navigation" class="related-links"></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../source/c_settings.html" title="When adjusting ABBYY FineReader's many options, use these settings."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Settings</span></a></span>  
+<span class="navprev"><a class="link" href="../source/t_other_tab.html" title="Other Tab"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Other Tab</span></a></span>  
+<span class="navnext"><a class="link" href="../source/c_draw_boxes.html" title="Draw Boxes"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Draw Boxes</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+                            &lt;oXygen/&gt; XML WebHelp
+                        </a></div></footer></body>
+</html>
