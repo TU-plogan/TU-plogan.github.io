@@ -28,8 +28,8 @@
    <appContext helpID="g.txt" path="glossary/g_txt.html"/>
    <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
-   <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
+   <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_folder.html"/>
    <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
