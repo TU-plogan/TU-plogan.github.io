@@ -2,22 +2,24 @@
 <map>
    <appContext helpID="g.afr" path="glossary/g_afr.html"/>
    <appContext helpID="g.at_codes" path="glossary/g_at_codes.html"/>
+   <appContext helpID="bru" path="glossary/g_bru.html"/>
    <appContext helpID="g.css" path="glossary/g_css.html"/>
    <appContext helpID="g.csv" path="glossary/g_csv.html"/>
    <appContext helpID="g.digital_edition" path="glossary/g_digital_edition.html"/>
    <appContext helpID="g_docx" path="glossary/g_docx.html"/>
    <appContext helpID="untitled3" path="glossary/g_eb.html"/>
    <appContext helpID="g.entry_file" path="glossary/g_entry_file.html"/>
+   <appContext helpID="g.entry-inventory" path="g_e_inventory.html"/>
    <appContext helpID="g.epub" path="glossary/g_epub.html"/>
    <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
    <appContext helpID="g.xml" path="glossary/g_xml.html"/>
    <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
    <appContext helpID="g.html" path="glossary/g_html.html"/>
-   <appContext helpID="g.inventory" path="glossary/g_inventory.html"/>
    <appContext helpID="g.knowledge-project" path="glossary/g_c19_project.html"/>
    <appContext helpID="g.ocr_project" path="glossary/g_ocr_project.html"/>
    <appContext helpID="g.ocr" path="glossary/g_ocr.html"/>
    <appContext helpID="g.oxygen" path="glossary/g_oxygen.html"/>
+   <appContext helpID="g.inventory" path="glossary/g_p_inventory.html"/>
    <appContext helpID="g.page_file" path="glossary/g_page_file.html"/>
    <appContext helpID="g.pdf" path="glossary/g_pdf.html"/>
    <appContext helpID="g.print_edition" path="glossary/g_print_edition.html"/>
@@ -40,7 +42,7 @@
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
    <appContext helpID="c.page-html-fdr" path="source/c_2_page_html_folder.html"/>
    <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
-   <appContext helpID="t.inventory" path="source/t_inventory_file.html"/>
+   <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
    <appContext helpID="c.images-fdr" path="source/c_images_folder.html"/>
    <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
    <appContext helpID="c.intro-afr" path="source/c_intro_afr.html"/>
@@ -75,6 +77,7 @@
    <appContext helpID="formulas" path="source/c_formulas.html"/>
    <appContext helpID="t.train-ocr" path="source/t_train_ocr.html"/>
    <appContext helpID="t.save-and-output" path="source/t_save_and_output.html"/>
+   <appContext helpID="cleanup_html_output" path="source/t_cleanup_html_output.html"/>
    <appContext helpID="c.oxygen" path="source/c_oxygen-xml-editor.html"/>
    <appContext helpID="untitled2" path="source/r_oxygen-interface.html"/>
    <appContext helpID="create_a_new_oxygen_project"
@@ -89,6 +92,8 @@
    <appContext helpID="processing_entry_files" path="source/c_processing_entry_files.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
+   <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
+   <appContext helpID="c.proof-entry-terms" path="source/c_proof-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
    <appContext helpID="naming_conventions" path="source/r_file_and_folder_names.html"/>
