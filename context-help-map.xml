@@ -9,7 +9,7 @@
    <appContext helpID="g_docx" path="glossary/g_docx.html"/>
    <appContext helpID="untitled3" path="glossary/g_eb.html"/>
    <appContext helpID="g.entry_file" path="glossary/g_entry_file.html"/>
-   <appContext helpID="g.entry-inventory" path="g_e_inventory.html"/>
+   <appContext helpID="g.entry-inventory" path="glossary/g_e_inventory.html"/>
    <appContext helpID="g.epub" path="glossary/g_epub.html"/>
    <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
    <appContext helpID="g.xml" path="glossary/g_xml.html"/>
