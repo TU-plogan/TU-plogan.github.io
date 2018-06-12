@@ -70,6 +70,7 @@
    <appContext helpID="c.catchwords" path="source/c_catchwords.html"/>
    <appContext helpID="c.author-initials" path="source/c_author_initials.html"/>
    <appContext helpID="t.unnumbered-pages" path="source/t_pages_withou-text.html"/>
+   <appContext helpID="headers" path="source/headers.html"/>
    <appContext helpID="c.page-recognition" path="source/c_page_recognition.html"/>
    <appContext helpID="untitled4" path="source/t_verification.html"/>
    <appContext helpID="t.proofread" path="source/t_proofread.html"/>
@@ -83,11 +84,12 @@
    <appContext helpID="untitled2" path="source/r_oxygen-interface.html"/>
    <appContext helpID="create_a_new_oxygen_project"
                path="source/t_create_a_new_xml_project.html"/>
+   <appContext helpID="untitled2" path="source/t_check_code.html"/>
    <appContext helpID="check_footnote_coding" path="source/t_check_footnote_coding_1.html"/>
    <appContext helpID="check_footnote_coding_2" path="source/t_check_footnote_coding_2.html"/>
-   <appContext helpID="converting_html_to_tei_xml" path="source/c_converting_html_to_tei.html"/>
    <appContext helpID="make_the_html_files_well_formed"
                path="source/t_make_html_files_well_formed.html"/>
+   <appContext helpID="converting_html_to_tei_xml" path="source/c_converting_html_to_tei.html"/>
    <appContext helpID="transform_the_html_files" path="source/t_transform_html_tei.html"/>
    <appContext helpID="create_a_transformation_scenario"
                path="source/t_create_transformation_scenario.html"/>
