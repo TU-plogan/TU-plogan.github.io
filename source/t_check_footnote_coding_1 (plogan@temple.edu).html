@@ -1,0 +1,137 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta name="DC.Type" content="task" /><meta name="DC.Title" content="Check footnote coding 1" /><meta name="abstract" content="Use a simple search to check if you have the right number of note codes on all pages." /><meta name="description" content="Use a simple search to check if you have the right number of note codes on all pages." /><meta name="DC.Relation" scheme="URI" content="../source/t_check_code.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="copyright" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Rights.Owner" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="check_footnote_coding" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2018042310"><!----></link><title>Check footnote coding 1</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018042310.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2018042310"><!----></link><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/skins/skin.css?buildId=2018042310" /><script type="text/javascript"><!--
+          
+          var prefix = "../index.html";
+          
+          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018042310"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018042310"><!----></script></head>
+<body onload="highlightSearchTerm()" class="frmBody" id="check_footnote_coding">
+<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_oxygen-xml-editor.html" title="This introduction to Oxygen XML Editor shows you how to navigate the interface and perform standard procedures on the Encyclopedia files.">Working with XML</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/t_check_code.html" title="How to check and correct coding problems in the page files.">Check the Code</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+<span class="navparent"><a class="link" href="../source/t_check_code.html" title="How to check and correct coding problems in the page files."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Check the Code</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Check footnote coding 1</h1>
+
+    
+    <div class="body taskbody"><p class="shortdesc">Use a simple search to check if you have the right number of note codes on all pages. </p>
+
+        <section class="section context">
+            <div class="p">Footnotes have two elements: <ol class="ol">
+                    <li class="li">the footnote "anchor" in the main body of the text, which is usually a
+                        superscript number, such as <sup class="ph sup">1</sup>. </li>
+
+                    <li class="li">the footnote "text block," which on a printed page would appear at the
+                        bottom, preceded by the superscripted number corresponding to the
+                        anchor.</li>
+
+                </ol>
+On any single page, there must be exactly the same number of footnote anchors
+                and footnote text blocks. If there are <em class="ph i">three</em> footnote anchors, there should
+                be <em class="ph i">three</em> footnotes at the end of the file.</div>
+
+            <div class="p">We check for two common problems with footnote formatting in the html <a href="../glossary/g_page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page files</dfn></a> before converting them into <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a>.<ul class="ul">
+                    <li class="li">are there the same number of anchors and text blocks on every page?</li>
+
+                    <li class="li">are all footnote text blocks at the end of the page?</li>
+
+                </ul>
+Both checks are done using <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a> to search all 250 files in
+                a section at the same time.</div>
+
+        </section>
+
+        <ol><li class="li step stepexpand">
+                <span class="ph cmd">Open the <a href="../glossary/g_xml_project.html" title="A collection of files used by Oxygen XML Editor and stored as a single group."><dfn class="term">XML-project</dfn></a>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">In the <span class="keyword wintitle">Project</span> window, right-click the
+                        <span class="keyword wintitle">2-pages-html</span>folder containing your files, and select
+                        <span class="ph uicontrol">Find/Replace in Files</span>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">The <span class="keyword wintitle">Find/Replace in Files</span> window opens. Enter
+                        <kbd class="ph userinput">@@</kbd> in the <span class="ph uicontrol">Text to find</span> field
+                    and click <span class="ph uicontrol">Find all</span> at the bottom of the window. </span>
+                <div class="itemgroup stepresult"><figure class="fig fignone"><p class="figcap"><span class="figtitleprefix">Figure: </span>The <span class="keyword wintitle">Find/Replace in Files</span> window</p>
+                        
+                        <br /><div class="imageleft"><img class="image imageleft" src="image/oxygen/find-ats.png" /></div><br />
+                    </figure>
+</div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Matches appear in the <span class="keyword wintitle">Results View</span>, with the search term
+                    highlighted. </span>
+                <div class="itemgroup stepresult"><figure class="fig fignone"><p class="figcap"><span class="figtitleprefix">Figure: </span>The <span class="keyword wintitle">Find in Files</span> window showing search
+                            results</p>
+                        
+                        <img class="image" src="image/oxygen/oxygen-find-results2.png" />
+                    </figure>
+</div>
+            </li>
+</ol><p class="li stepsection"><p class="p"><strong class="ph b">Test 1: </strong>Check for the correct number of footnote anchors and text
+                    blocks:</p>
+</p><ol start="5"><li class="li step stepexpand">
+                <span class="ph cmd">Look at the example above of a page with a single footnote anchor and the
+                    corresponding footnote text block. This is typical for every page with one
+                    footnote. Why does the same footnote text, with three "@" symbols, appear twice?
+                    Because we are searching for two "@" symbols, rather than three, the search
+                    counts both the first two and the second two as valid results. </span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Now look at the line with the file information. It lists the results as "(3
+                    items)" in that file. Every file with one footnote will produce three items.
+                    Files with two notes produce six items. If the notes are coded correctly, <em class="ph i">the
+                        number of items in the file should be a multiple of three</em>.</span>
+            </li>
+</ol><p class="li stepsection"><p class="p"><strong class="ph b">Test 2:</strong> Check for the correct placement of footnote text
+                    blocks:</p>
+</p><ol start="7"><li class="li step stepexpand">
+                <span class="ph cmd">The note anchors (<code class="keyword markupname">&lt;@@&gt;</code>) should all occur first, followed
+                    by the note text blocks (<code class="keyword markupname">&lt;@@@&gt;</code>). </span>
+                <div class="itemgroup info">Click the <span class="keyword wintitle">Location</span> header on the far
+                    right of the <span class="keyword wintitle">Find in Files</span> window to sort results by their
+                    location in the file.</div>
+                <div class="itemgroup stepresult"><figure class="fig fignone"><p class="figcap"><span class="figtitleprefix">Figure: </span>Search results showing footnotes correctly sequenced</p>
+                        
+                    </figure>
+
+                    <img class="image" src="image/oxygen/notes-checking-correct.png" /></div>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd"> If notes were not output at the end of the page, you will see
+                        <code class="keyword markupname">&lt;@@@&gt;</code> in the middle of the sequence of
+                        <code class="keyword markupname">&lt;@@&gt;</code> codes. In the following example, the first
+                    footnote text block is followed by the second footnote anchor and its text
+                    block. It should follow the second anchor, as in the example above.</span>
+                <div class="itemgroup stepresult">
+                    <figure class="fig fignone"><p class="figcap"><span class="figtitleprefix">Figure: </span>Search results showing footnote errors</p>
+                        
+                        <img class="image" src="image/oxygen/notes-checking-error.png" />
+                    </figure>
+
+                </div>
+            </li>
+</ol><p class="li stepsection"><strong class="ph b">Testing Procedure:</strong></p><ol start="9"><li class="li step stepexpand">
+                <span class="ph cmd">Go through the search results carefully, checking that (a) the number of items
+                    in each file is a multiple of 3; and (b) that all footnote text blocks occur at
+                    the end of the list. </span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Make corrections directly in the <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term">HTML</dfn></a> file. Resolve extra or
+                    missing <code class="keyword markupname">&lt;@&gt;</code> codes, and move footnote text blocks to the
+                    end of the page, in the correct sequence.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Make a note in the <span class="ph filepath">inventory</span> file for the section
+                    indicating the problem with footnote coding on the page, stating it was fixed in
+                    the <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term">HTML</dfn></a>. </span>
+            </li>
+</ol>
+    </div>
+
+<nav role="navigation" class="related-links"></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
+<span class="navparent"><a class="link" href="../source/t_check_code.html" title="How to check and correct coding problems in the page files."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Check the Code</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+                            &lt;oXygen/&gt; XML WebHelp
+                        </a></div></footer></body>
+</html>
