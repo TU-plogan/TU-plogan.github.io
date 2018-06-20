@@ -93,7 +93,7 @@
    <appContext helpID="transform_the_html_files" path="source/t_transform_html_tei.html"/>
    <appContext helpID="create_a_transformation_scenario"
                path="source/t_create_transformation_scenario.html"/>
-   <appContext helpID="untitled1" path="source/untitled1.html"/>
+   <appContext helpID="t.partial-entries" path="source/partial-entries.html"/>
    <appContext helpID="processing_entry_files" path="source/c_processing_entry_files.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
