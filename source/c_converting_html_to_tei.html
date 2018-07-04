@@ -1,28 +1,22 @@
 
 <!DOCTYPE html
   PUBLIC "" "about:legacy-compat">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
-      <meta name="DC.Type" content="concept" /><meta name="DC.Title" content="Convert HTML to TEI" /><meta name="abstract" content="Using Oxygen and XSLT to convert HTML files to TEI." /><meta name="description" content="Using Oxygen and XSLT to convert HTML files to TEI." /><meta name="DC.Relation" scheme="URI" content="../source/c_oxygen-xml-editor.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_make_html_files_well_formed.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_html_tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_html_tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/partial-entries.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="copyright" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Rights.Owner" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="converting_html_to_tei_xml" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2018042310"><!----></link><title>Convert HTML to TEI</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018042310.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2018042310"><!----></link><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/skins/skin.css?buildId=2018042310" /><script type="text/javascript"><!--
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta charset="UTF-8" /><meta name="DC.Type" content="concept" /><meta name="description" content="Using Oxygen and XSLT to convert HTML files to TEI." /><meta name="DC.Relation" scheme="URI" content="../source/c_oxygen-xml-editor.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_make_html_files_well_formed.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_html_tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_html_tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_partial_entries.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="rights" content="© 2018 Peter M. Logan" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="converting_html_to_tei_xml" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2018061311"><!----></link><title>Convert HTML to TEI</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018061311.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2018061311"><!----></link><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/skins/skin.css?buildId=2018061311" /><script type="text/javascript"><!--
           
           var prefix = "../index.html";
           
-          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018042310"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018042310"><!----></script></head>
-<body onload="highlightSearchTerm()" class="frmBody" id="converting_html_to_tei_xml">
-<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/c_oxygen-xml-editor.html" title="This introduction to Oxygen XML Editor shows you how to navigate the interface and perform standard procedures on the Encyclopedia files.">Working with XML</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018061311"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018061311"><!----></script></head><body onload="highlightSearchTerm()" class="frmBody" id="converting_html_to_tei_xml"><header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/c_oxygen-xml-editor.html" title="This introduction to Oxygen XML Editor shows you how to navigate the interface and perform standard procedures on the Encyclopedia files.">Working with XML</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
 <span class="navparent"><a class="link" href="../source/c_oxygen-xml-editor.html" title="This introduction to Oxygen XML Editor shows you how to navigate the interface and perform standard procedures on the Encyclopedia files."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Working with XML</span></a></span>  
 <span class="navprev"><a class="link" href="../source/t_make_html_files_well_formed.html" title="Make the HTML Files Well-Formed"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Make the HTML Files Well-Formed</span></a></span>  
 <span class="navnext"><a class="link" href="../source/t_transform_html_tei.html" title="Transform the HTML Files to TEI"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Transform the HTML Files to TEI</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
     <h1 class="title topictitle1" id="ariaid-title1">Convert HTML to TEI</h1>
-
     
     <div class="body conbody"><p class="shortdesc">Using Oxygen and XSLT to convert HTML files to TEI.</p>
-
         <p class="p">
             <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> outputs <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a>
             files, but that is not the best storage medium for textual data. <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="term abbreviated-form">XML</dfn></a> is far more flexible and makes it possible to output the data in
             many different files formats, including <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a>, <a href="../glossary/g_pdf.html" title="Portable Document Format was invented by Adobe as a multi-platform file format that presents documents, with all text formatting and images, in a manner independent of hardware and operating systems."><dfn class="term">PDF</dfn></a>, <a href="../glossary/g_txt.html" title="A kind of computer file that is structured as a sequence of lines of electronic text and using the file extension .txt. Text files can contain plain text but are not limited to that."><dfn class="term">TXT</dfn></a>, and <a href="../glossary/g_csv.html" title="Comma-Separate Values is a file format for storing date separate by commas."><dfn class="term">CSV</dfn></a>.</p>
-
         <section class="section"><h2 class="title sectiontitle">XML</h2>
             
             <p class="p">While <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> has a set of specific rules for encoding
@@ -30,9 +24,7 @@
                 allows users to select from anyone of a number of encoding schemes, or even create
                 their own. These schemes have their own built-in sets of rules about what elements
                 and attributes are legitimate, for example.</p>
-
         </section>
-
         <section class="section"><h2 class="title sectiontitle">TEI</h2>
             
             <p class="p">We use the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> scheme because of its widespread acceptance for
@@ -41,9 +33,7 @@
                 define what is a title, subtitle, and body text. It does not tell us which typeface
                 or font size to use. Later, users can display those elements in the way that best
                 suits their purposes. </p>
-
         </section>
-
         <section class="section"><h2 class="title sectiontitle">XSLT</h2>
             
             <p class="p">To convert our <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> files to <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a>, we use a "transformation" script written in
@@ -51,29 +41,16 @@
                     <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> tags we do want into valid
                     <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> tags, and generates a new
                     <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> file for each of the <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> originals.</p>
-
         </section>
-
         <section class="section"><h2 class="title sectiontitle">More information</h2>
             
             <p class="p">These instructions contain enough information to guide you in these specific tasks.
                 For more information about <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a>, see the <a class="xref" href="https://www.oxygenxml.com/doc/versions/19.1/ug-editor/" target="_blank">User Guide</a>.</p>
-
         </section>
-
     </div>
-
-<nav role="navigation" class="related-links">
-<ol class="olchildlinks">
-<li class="link olchildlink"><a href="../source/t_transform_html_tei.html">Transform the HTML Files to TEI</a>
-<div>How to convert HTML files to TEI in Oxygen.</div></li>
-<li class="link olchildlink"><a href="../source/partial-entries.html">Add Titles to Partial Entries</a>
-<div>Prepare the first entry in the section for inclusion.</div></li>
-</ol>
-</nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
+<nav role="navigation" class="related-links"><ol class="olchildlinks"><li class="link olchildlink"><a href="../source/t_transform_html_tei.html">Transform the HTML Files to TEI</a><div>How to convert HTML files to TEI in Oxygen.</div></li><li class="link olchildlink"><a href="../source/t_partial_entries.html">Add Titles to Partial Entries</a><div>Prepare the first entry in the section for inclusion.</div></li></ol></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
 <span class="navparent"><a class="link" href="../source/c_oxygen-xml-editor.html" title="This introduction to Oxygen XML Editor shows you how to navigate the interface and perform standard procedures on the Encyclopedia files."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Working with XML</span></a></span>  
 <span class="navprev"><a class="link" href="../source/t_make_html_files_well_formed.html" title="Make the HTML Files Well-Formed"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Make the HTML Files Well-Formed</span></a></span>  
 <span class="navnext"><a class="link" href="../source/t_transform_html_tei.html" title="Transform the HTML Files to TEI"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Transform the HTML Files to TEI</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
                             &lt;oXygen/&gt; XML WebHelp
-                        </a></div></footer></body>
-</html>
+                        </a></div></footer></body></html>

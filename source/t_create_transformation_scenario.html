@@ -1,60 +1,45 @@
 
 <!DOCTYPE html
   PUBLIC "" "about:legacy-compat">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
-      <meta name="DC.Type" content="task" /><meta name="DC.Title" content="Create a Transformation Scenario" /><meta name="abstract" content="How to locate the appropriate XSLT file and create a new transformation scenario." /><meta name="description" content="How to locate the appropriate XSLT file and create a new transformation scenario." /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_html_tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_html_tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/partial-entries.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="copyright" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Rights.Owner" content="Peter M. Logan 2018" type="primary" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="create_a_transformation_scenario" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2018042310"><!----></link><title>Create a Transformation Scenario</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018042310.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2018042310"><!----></link><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/skins/skin.css?buildId=2018042310" /><script type="text/javascript"><!--
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+      <meta charset="UTF-8" /><meta name="DC.Type" content="task" /><meta name="description" content="How to locate the appropriate XSLT file and create a new transformation scenario." /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_html_tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_html_tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_partial_entries.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="rights" content="© 2018 Peter M. Logan" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="create_a_transformation_scenario" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2018061311"><!----></link><title>Create a Transformation Scenario</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018061311.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2018061311"><!----></link><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/skins/skin.css?buildId=2018061311" /><script type="text/javascript"><!--
           
           var prefix = "../index.html";
           
-          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018042310"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018042310"><!----></script></head>
-<body onload="highlightSearchTerm()" class="frmBody" id="create_a_transformation_scenario">
-<header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_converting_html_to_tei.html" title="Using Oxygen and XSLT to convert HTML files to TEI.">Convert HTML to TEI</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/t_transform_html_tei.html" title="How to convert HTML files to TEI in Oxygen.">Transform the HTML Files to TEI</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
+          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018061311"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018061311"><!----></script></head><body onload="highlightSearchTerm()" class="frmBody" id="create_a_transformation_scenario"><header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_converting_html_to_tei.html" title="Using Oxygen and XSLT to convert HTML files to TEI.">Convert HTML to TEI</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/t_transform_html_tei.html" title="How to convert HTML files to TEI in Oxygen.">Transform the HTML Files to TEI</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
 <span class="navparent"><a class="link" href="../source/t_transform_html_tei.html" title="How to convert HTML files to TEI in Oxygen."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Transform the HTML Files to TEI</span></a></span>  
 <span class="navprev"><a class="link" href="../source/t_transform_html_tei.html" title="Transform the HTML Files to TEI"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Transform the HTML Files to TEI</span></a></span>  
-<span class="navnext"><a class="link" href="../source/partial-entries.html" title="Add Titles to Partial Entries"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Add Titles to Partial Entries</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<span class="navnext"><a class="link" href="../source/t_partial_entries.html" title="Add Titles to Partial Entries"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Add Titles to Partial Entries</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
     <h1 class="title topictitle1" id="ariaid-title1">Create a Transformation Scenario</h1>
-
     
     <div class="body taskbody"><p class="shortdesc">How to locate the appropriate XSLT file and create a new transformation scenario.</p>
-
         <section class="section context">
             <p class="p">If you do not see <span class="ph uicontrol">eb-html2tei</span>, you will have to locate it. </p>
-
         </section>
-
         <ol class="ol steps"><li class="li step stepexpand">
                 <span class="ph cmd">Select <span class="ph menucascade"><span class="ph uicontrol">New</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">XML Transformation with XSLT</span></span>. This opens the <span class="keyword wintitle">New scenario</span> window.
                         <span class="keyword wintitle">New scenario</span> is the same as <span class="keyword wintitle">Edit
                         scenario</span> but with less pre-populated information. </span>
                 <div class="itemgroup stepresult">
-                    <figure class="fig fignone"><p class="figcapcenter"><span class="figtitleprefix">Figure: </span>The New scenario window.</p>
+                    <figure class="fig fignone"><figcaption class="figcapcenter"><span class="figtitleprefix">Figure: </span>The New scenario window.</figcaption>
                         
                         <br /><div class="imagecenter"><img class="image imagecenter" id="create_a_transformation_scenario__image_dtg_dyp_gcb" src="image/oxygen/new_scenario.png" /></div><br />
                     </figure>
-
                 </div>
-            </li>
-<li class="li step stepexpand">
+            </li><li class="li step stepexpand">
                 <span class="ph cmd">Name the new scenario <span class="ph uicontrol">eb-html2tei</span>.</span>
-            </li>
-<li class="li step stepexpand">
+            </li><li class="li step stepexpand">
                 <span class="ph cmd">On the <span class="keyword wintitle">XSLT</span> tab, click the folder icon for the
                         <span class="ph uicontrol">XSL URL</span> field and navigate to
                         <span class="ph filepath">eb-corpus/production/xslt/</span>. Select
                         <span class="ph filepath">eb-html2tei.xsl</span>.</span>
-            </li>
-<li class="li step stepexpand">
+            </li><li class="li step stepexpand">
                 <span class="ph cmd">Continue with the Step 3 in <a class="xref" href="t_transform_html_tei.html" title="How to convert HTML files to TEI in Oxygen.">Transform the HTML Files to TEI</a>.</span>
-            </li>
-</ol>
-
+            </li></ol>
     </div>
-
 <nav role="navigation" class="related-links"></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
 <span class="navparent"><a class="link" href="../source/t_transform_html_tei.html" title="How to convert HTML files to TEI in Oxygen."><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Transform the HTML Files to TEI</span></a></span>  
 <span class="navprev"><a class="link" href="../source/t_transform_html_tei.html" title="Transform the HTML Files to TEI"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Transform the HTML Files to TEI</span></a></span>  
-<span class="navnext"><a class="link" href="../source/partial-entries.html" title="Add Titles to Partial Entries"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Add Titles to Partial Entries</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+<span class="navnext"><a class="link" href="../source/t_partial_entries.html" title="Add Titles to Partial Entries"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Add Titles to Partial Entries</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
                             &lt;oXygen/&gt; XML WebHelp
-                        </a></div></footer></body>
-</html>
+                        </a></div></footer></body></html>
