@@ -67,10 +67,10 @@
    <appContext helpID="t.table-areas" path="source/t_table_areas.html"/>
    <appContext helpID="untitled3" path="source/t_edit_tables.html"/>
    <appContext helpID="c.illustrations" path="source/c_illustrations.html"/>
-   <appContext helpID="c_headers" path="source/c_headers.html"/>
    <appContext helpID="c.catchwords" path="source/c_catchwords.html"/>
    <appContext helpID="c.author-initials" path="source/c_author_initials.html"/>
    <appContext helpID="t.unnumbered-pages" path="source/t_pages_withou-text.html"/>
+   <appContext helpID="c_headers" path="source/c_headers.html"/>
    <appContext helpID="c.page-recognition" path="source/c_page_recognition.html"/>
    <appContext helpID="untitled4" path="source/t_verification.html"/>
    <appContext helpID="t.proofread" path="source/t_proofread.html"/>
@@ -98,7 +98,6 @@
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
-   <appContext helpID="join_partial_entries" path="source/t_join_partial_entries.html"/>
    <appContext helpID="c.proof-entry-terms" path="source/c_proof-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
