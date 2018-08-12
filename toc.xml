@@ -1,554 +1,1752 @@
-<?xml version="1.0" encoding="UTF-8"?><toc xmlns="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="UTF-8"?><toc xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns="http://www.oxygenxml.com/ns/webhelp/toc">
    <title><span xmlns="http://www.w3.org/1999/xhtml" class="title">Nineteenth-Century Knowledge Project</span></title>
-   <topic href="source/c_introduction.html" collection-type="choice" data-id="c.introduction">
+   <topicmeta>
+      
+      <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+         Logan
+      </author>
+      
+      <copyright class="- topic/copyright ">
+         
+         <copyryear class="- topic/copyryear " year="2018"></copyryear>
+         
+         <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+         
+      </copyright>
+      
+   </topicmeta>
+   <topic href="source/c_introduction.html" collection-type="choice" format="dita" data-id="c.introduction" wh-toc-id="c.introduction-d66e540">
       <title>Introduction</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">What is the Knowledge Project?</p>
       </shortdesc>
-      <topicmeta></topicmeta>
-      <topic href="source/c_editorial_standards.html" data-id="editorial_standards">
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.introduction"></resourceid>
+         <navtitle class="- topic/navtitle ">Introduction</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Introduction</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">What is the Knowledge Project?</shortdesc>
+         <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+            Logan
+         </author>
+         <copyright class="- topic/copyright ">
+            
+            <copyryear class="- topic/copyryear " year="2018"></copyryear>
+            
+            <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+            
+         </copyright>
+      </topicmeta>
+      <topic href="source/c_editorial_standards.html" format="dita" data-id="editorial_standards" wh-toc-id="editorial_standards-d66e560">
          <title>Editorial standards</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The following editorial principles are employed in creating this digital         edition.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="editorial_standards"></resourceid>
+            <navtitle class="- topic/navtitle ">Editorial standards</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Editorial standards</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">The following editorial principles are employed in creating this digital         edition.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/r_about.html" data-id="untitled1">
+      <topic href="source/r_about.html" format="dita" data-id="untitled1" wh-toc-id="untitled1-d66e580">
          <title>About</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Staff and contributors</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="untitled1"></resourceid>
+            <navtitle class="- topic/navtitle ">About</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">About</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Staff and contributors</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
    </topic>
-   <topic href="source/c_data_organization.html" collection-type="sequence" data-id="c.data_organization">
+   <topic href="source/c_data_organization.html" collection-type="sequence" data-id="c.data_organization" wh-toc-id="c.data_organization-d66e601">
       <title>Data Organization</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">With over 100,000 files, the Knowledge Project needs a clear means         of organizing its data. We use specific naming
             conventions for all files and folders, to         order the large quantity of material.
          </p>
       </shortdesc>
-      <topicmeta></topicmeta>
-      <topic href="source/c_archive_folder.html" data-id="c.archive_folder">
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.data_organization"></resourceid>
+         <navtitle class="- topic/navtitle ">Data Organization</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Data Organization</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">With over 100,000 files, the Knowledge Project needs a clear means         of organizing its data. We use specific naming
+            conventions for all files and folders, to         order the large quantity of material.
+         </shortdesc>
+         <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+            Logan
+         </author>
+         <copyright class="- topic/copyright ">
+            
+            <copyryear class="- topic/copyryear " year="2018"></copyryear>
+            
+            <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+            
+         </copyright>
+      </topicmeta>
+      <topic href="source/c_archive_folder.html" format="dita" data-id="c.archive_folder" wh-toc-id="c.archive_folder-d66e621">
          <title>Archive Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This is our long-term storage for original image files of print editions of the         Encyclopedia. We never modify these
                files. Instead, we copy them to the             <span class="ph filepath">production/images</span> folder for active use.
             </p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.archive_folder"></resourceid>
+            <navtitle class="- topic/navtitle ">Archive Folder</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Archive Folder</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">This is our long-term storage for original image files of print editions of the         Encyclopedia. We never modify these
+               files. Instead, we copy them to the             
+               <filepath class="+ topic/ph sw-d/filepath ">production/images</filepath> folder for active use.
+            </shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/c_digital_edition_folder.html" data-id="c.digital-ed-fdr">
+      <topic href="source/c_digital_edition_folder.html" format="dita" data-id="c.digital-ed-fdr" wh-toc-id="c.digital-ed-fdr-d66e644">
          <title>Digital Edition Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The second stage in the project is creating editions that we can analyze or place on         the web. All files connected
                with either generating an edition or running an analysis of its         data are contained here.
             </p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.digital-ed-fdr"></resourceid>
+            <navtitle class="- topic/navtitle ">Digital Edition Folder</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Digital Edition Folder</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">The second stage in the project is creating editions that we can analyze or place on         the web. All files connected
+               with either generating an edition or running an analysis of its         data are contained here.
+            </shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/c_information_folder.html" data-id="c.information-fdr">
+      <topic href="source/c_information_folder.html" format="dita" data-id="c.information-fdr" wh-toc-id="c.information-fdr-d66e664">
          <title>Information Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">We use this folder to organize useful information on TEI, OCR, metadata, the history         of <em class="ph i">Encyclopedia Britannica</em>, and more, including this manual.
             </p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.information-fdr"></resourceid>
+            <navtitle class="- topic/navtitle ">Information Folder</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Information Folder</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">We use this folder to organize useful information on TEI, OCR, metadata, the history         of 
+               <i class="+ topic/ph hi-d/i ">Encyclopedia Britannica</i>, and more, including this manual.
+            </shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/c_production_folder.html" collection-type="sequence" data-id="c.production_fdr">
+      <topic href="source/c_production_folder.html" collection-type="sequence" format="dita" data-id="c.production_fdr" wh-toc-id="c.production_fdr-d66e687">
          <title>Production Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The first stage of the <a href="glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Nineteenth-Century Knowledge Project</dfn></a> is creating the textual         data from page images of the <a href="glossary/g_eb.html" title="A multi-volume general reference source still publishing today."><dfn class="term">Encyclopedia Britannica</dfn></a>. All files in this initial process are         contained here.
             </p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/c_print_edition_folder.html" collection-type="sequence" data-id="c.print-ed-fdr">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.production_fdr"></resourceid>
+            <navtitle class="- topic/navtitle ">Production Folder</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Production Folder</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">The first stage of the 
+               <term class="- topic/term " href="glossary/g_c19_project.dita" keyref="g.knowledge-project" linking="none"></term> is creating the textual         data from page images of the 
+               <term class="- topic/term " href="glossary/g_eb.dita" keyref="g.eb" linking="none"></term>. All files in this initial process are         contained here.
+            </shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/c_print_edition_folder.html" collection-type="sequence" format="dita" data-id="c.print-ed-fdr" wh-toc-id="c.print-ed-fdr-d66e711">
             <title>Print Edition Folder</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Subdivisions of the print editions for digitization.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
-            <topic href="source/c_section_folder.html" collection-type="sequence" data-id="c.section-fdr">
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.print-ed-fdr"></resourceid>
+               <navtitle class="- topic/navtitle ">Print Edition Folder</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Print Edition Folder</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Subdivisions of the print editions for digitization.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
+            <topic href="source/c_section_folder.html" collection-type="sequence" format="dita" data-id="c.section-fdr" wh-toc-id="c.section-fdr-d66e731">
                <title>Section Folders</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The three types of data stored in the <a href="glossary/g_section.html" title="A chunk of 250 pages from a specified letter in the Encyclopedia. Sections are named with their entry letter and a two-digit number indicating their position in the sequence of 250-page sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a> folders.
                   </p>
                </shortdesc>
-               <topicmeta></topicmeta>
-               <topic href="source/c_1_afr_project_folder.html" data-id="c.afr-project-fdr">
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.section-fdr"></resourceid>
+                  <navtitle class="- topic/navtitle ">Section Folders</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">Section Folders</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">The three types of data stored in the 
+                     <term class="- topic/term " href="glossary/g_section.dita" keyref="g.section" linking="none"></term> folders.
+                  </shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
+               <topic href="source/c_1_afr_project_folder.html" format="dita" data-id="c.afr-project-fdr" wh-toc-id="c.afr-project-fdr-d66e753">
                   <title>1-afr-project Folder</title>
                   <shortdesc>
                      <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Container for OCR Project files for ABBYY FineReader.</p>
                   </shortdesc>
-                  <topicmeta></topicmeta>
+                  <topicmeta>
+                     <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.afr-project-fdr"></resourceid>
+                     <navtitle class="- topic/navtitle ">1-afr-project Folder</navtitle><?ditaot gentext?>
+                     <linktext class="- map/linktext ">1-afr-project Folder</linktext><?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Container for OCR Project files for ABBYY FineReader.</shortdesc>
+                     <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                        Logan
+                     </author>
+                     <copyright class="- topic/copyright ">
+                        
+                        <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                        
+                        <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                        
+                     </copyright>
+                  </topicmeta>
                </topic>
-               <topic href="source/c_2_page_html_folder.html" data-id="c.page-html-fdr">
+               <topic href="source/c_2_page_html_folder.html" format="dita" data-id="c.page-html-fdr" wh-toc-id="c.page-html-fdr-d66e773">
                   <title>2-page-html Folder</title>
                   <shortdesc>
                      <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Container for HTML page files created by ABBYY FineReader.</p>
                   </shortdesc>
-                  <topicmeta></topicmeta>
+                  <topicmeta>
+                     <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.page-html-fdr"></resourceid>
+                     <navtitle class="- topic/navtitle ">2-page-html Folder</navtitle><?ditaot gentext?>
+                     <linktext class="- map/linktext ">2-page-html Folder</linktext><?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Container for HTML page files created by ABBYY FineReader.</shortdesc>
+                     <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                        Logan
+                     </author>
+                     <copyright class="- topic/copyright ">
+                        
+                        <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                        
+                        <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                        
+                     </copyright>
+                  </topicmeta>
                </topic>
-               <topic href="source/c_3_page_tei_folder.html" data-id="c.page-tei-fdr">
+               <topic href="source/c_3_page_tei_folder.html" format="dita" data-id="c.page-tei-fdr" wh-toc-id="c.page-tei-fdr-d66e793">
                   <title>3-page-tei Folder</title>
                   <shortdesc>
                      <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Container for TEI Page Files, before conversion into entries.</p>
                   </shortdesc>
-                  <topicmeta></topicmeta>
+                  <topicmeta>
+                     <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.page-tei-fdr"></resourceid>
+                     <navtitle class="- topic/navtitle ">3-page-tei Folder</navtitle><?ditaot gentext?>
+                     <linktext class="- map/linktext ">3-page-tei Folder</linktext><?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Container for TEI Page Files, before conversion into entries.</shortdesc>
+                     <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                        Logan
+                     </author>
+                     <copyright class="- topic/copyright ">
+                        
+                        <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                        
+                        <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                        
+                     </copyright>
+                  </topicmeta>
                </topic>
-               <topic href="source/t_page_inventory.html" data-id="t.pg-inventory">
+               <topic href="source/t_page_inventory.html" format="dita" data-id="t.pg-inventory" wh-toc-id="t.pg-inventory-d66e813">
                   <title>Page-Inventory File</title>
                   <shortdesc>
                      <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Document the file names of every page in a section using the page-inventory         file.</p>
                   </shortdesc>
-                  <topicmeta></topicmeta>
+                  <topicmeta>
+                     <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.pg-inventory"></resourceid>
+                     <navtitle class="- topic/navtitle ">Page-Inventory File</navtitle><?ditaot gentext?>
+                     <linktext class="- map/linktext ">Page-Inventory File</linktext><?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Document the file names of every page in a section using the page-inventory         file.</shortdesc>
+                     <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                        Logan
+                     </author>
+                     <copyright class="- topic/copyright ">
+                        
+                        <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                        
+                        <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                        
+                     </copyright>
+                  </topicmeta>
                </topic>
             </topic>
          </topic>
-         <topic href="source/c_images_folder.html" data-id="c.images-fdr">
+         <topic href="source/c_images_folder.html" format="dita" data-id="c.images-fdr" wh-toc-id="c.images-fdr-d66e833">
             <title>Images Folder</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The images folder contains the basic copy of page images from the Archive folder         organized for scanning.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.images-fdr"></resourceid>
+               <navtitle class="- topic/navtitle ">Images Folder</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Images Folder</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">The images folder contains the basic copy of page images from the Archive folder         organized for scanning.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/c_python_folder.html" data-id="c.python-fdr">
+         <topic href="source/c_python_folder.html" format="dita" data-id="c.python-fdr" wh-toc-id="c.python-fdr-d66e853">
             <title>Python Folder</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Python script files.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.python-fdr"></resourceid>
+               <navtitle class="- topic/navtitle ">Python Folder</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Python Folder</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Python script files.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
       </topic>
    </topic>
-   <topic href="source/c_scanning_procedures.html" collection-type="sequence" data-id="c.intro-afr">
+   <topic href="source/c_scanning_procedures.html" collection-type="sequence" data-id="c.intro-afr" wh-toc-id="c.intro-afr-d66e874">
       <title>Scanning Procedures</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">An introduction to AFR that explains the specific procedures we use to get the best         quality text recognition of Encyclopedia
             page images.
          </p>
       </shortdesc>
-      <topicmeta></topicmeta>
-      <topic href="source/r_afr-interface.html" collection-type="sequence" data-id="r.afr-interface">
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.intro-afr"></resourceid>
+         <navtitle class="- topic/navtitle ">Scanning Procedures</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Scanning Procedures</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">An introduction to AFR that explains the specific procedures we use to get the best         quality text recognition of Encyclopedia
+            page images.
+         </shortdesc>
+         <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+            Logan
+         </author>
+         <copyright class="- topic/copyright ">
+            
+            <copyryear class="- topic/copyryear " year="2018"></copyryear>
+            
+            <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+            
+         </copyright>
+      </topicmeta>
+      <topic href="source/r_afr-interface.html" collection-type="sequence" format="dita" data-id="r.afr-interface" wh-toc-id="r.afr-interface-d66e894">
          <title>AFR Interface</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes the main elements of the OCR interface.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="r.afr-interface"></resourceid>
+            <navtitle class="- topic/navtitle ">AFR Interface</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">AFR Interface</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">This section describes the main elements of the OCR interface.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/t_create_an_ocr_project_folder.html" data-id="t.create-ocr-project">
+      <topic href="source/t_create_an_ocr_project_folder.html" format="dita" data-id="t.create-ocr-project" wh-toc-id="t.create-ocr-project-d66e914">
          <title>Create an OCR-Project Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to create and manage the OCR-Project folder.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/t_image_resolution.html" data-id="adjust_image_resolution">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.create-ocr-project"></resourceid>
+            <navtitle class="- topic/navtitle ">Create an OCR-Project Folder</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Create an OCR-Project Folder</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">How to create and manage the OCR-Project folder.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/t_image_resolution.html" format="dita" data-id="adjust_image_resolution" wh-toc-id="adjust_image_resolution-d66e934">
             <title>Set Image Resolution</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Correct the image resolution on all pages of the OCR Project before drawing         boxes.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="adjust_image_resolution"></resourceid>
+               <navtitle class="- topic/navtitle ">Set Image Resolution</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Set Image Resolution</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Correct the image resolution on all pages of the OCR Project before drawing         boxes.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/c_settings.html" collection-type="sequence" data-id="c.afr-settings">
+         <topic href="source/c_settings.html" collection-type="sequence" format="dita" data-id="c.afr-settings" wh-toc-id="c.afr-settings-d66e954">
             <title>Settings</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">When adjusting ABBYY FineReader's many options, use these settings.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
-            <topic href="source/t_general_tab.html" data-id="t.general-tab">
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.afr-settings"></resourceid>
+               <navtitle class="- topic/navtitle ">Settings</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Settings</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">When adjusting ABBYY FineReader's many options, use these settings.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
+            <topic href="source/t_general_tab.html" format="dita" data-id="t.general-tab" wh-toc-id="t.general-tab-d66e974">
                <title>General Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">General</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
                   </p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.general-tab"></resourceid>
+                  <navtitle class="- topic/navtitle ">General Tab</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">General Tab</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Settings for the 
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">General</wintitle> tab in the ABBYY FineReader             
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Options</wintitle> window.
+                  </shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
-            <topic href="source/t_image_processing_tab.html" data-id="t.image-processing-tab">
+            <topic href="source/t_image_processing_tab.html" format="dita" data-id="t.image-processing-tab" wh-toc-id="t.image-processing-tab-d66e1000">
                <title>Image Processing Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Image Processing</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
                   </p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.image-processing-tab"></resourceid>
+                  <navtitle class="- topic/navtitle ">Image Processing Tab</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">Image Processing Tab</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Settings for the 
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Image Processing</wintitle> tab in the ABBYY FineReader             
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Options</wintitle> window.
+                  </shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
-            <topic href="source/t_languages_tab.html" data-id="t.languages-tab">
+            <topic href="source/t_languages_tab.html" format="dita" data-id="t.languages-tab" wh-toc-id="t.languages-tab-d66e1026">
                <title>Languages Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Languages</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
                   </p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.languages-tab"></resourceid>
+                  <navtitle class="- topic/navtitle ">Languages Tab</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">Languages Tab</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Settings for the 
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Languages</wintitle> tab in the ABBYY FineReader             
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Options</wintitle> window.
+                  </shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
-            <topic href="source/t_ocr_tab.html" data-id="t.ocr-tab">
+            <topic href="source/t_ocr_tab.html" format="dita" data-id="t.ocr-tab" wh-toc-id="t.ocr-tab-d66e1052">
                <title>OCR Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">OCR</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
                   </p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.ocr-tab"></resourceid>
+                  <navtitle class="- topic/navtitle ">OCR Tab</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">OCR Tab</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Settings for the 
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">OCR</wintitle> tab in the ABBYY FineReader             
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Options</wintitle> window.
+                  </shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
-            <topic href="source/t_format_settings_tab.html" data-id="t.format-tab">
+            <topic href="source/t_format_settings_tab.html" format="dita" data-id="t.format-tab" wh-toc-id="t.format-tab-d66e1078">
                <title>Format Settings Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Format Settings</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
                   </p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.format-tab"></resourceid>
+                  <navtitle class="- topic/navtitle ">Format Settings Tab</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">Format Settings Tab</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Settings for the 
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Format Settings</wintitle> tab in the ABBYY FineReader             
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Options</wintitle> window.
+                  </shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
-            <topic href="source/t_areas_and_text_tab.html" data-id="t.areas-tab">
+            <topic href="source/t_areas_and_text_tab.html" format="dita" data-id="t.areas-tab" wh-toc-id="t.areas-tab-d66e1104">
                <title>Areas and Text Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Areas and Text</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
                   </p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.areas-tab"></resourceid>
+                  <navtitle class="- topic/navtitle ">Areas and Text Tab</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">Areas and Text Tab</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Settings for the 
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Areas and Text</wintitle> tab in the ABBYY FineReader             
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Options</wintitle> window.
+                  </shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
-            <topic href="source/t_other_tab.html" data-id="t.other-tab">
+            <topic href="source/t_other_tab.html" format="dita" data-id="t.other-tab" wh-toc-id="t.other-tab-d66e1130">
                <title>Other Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Other </span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
                   </p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.other-tab"></resourceid>
+                  <navtitle class="- topic/navtitle ">Other Tab</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">Other Tab</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Settings for the 
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Other </wintitle> tab in the ABBYY FineReader             
+                     <wintitle class="+ topic/keyword ui-d/wintitle ">Options</wintitle> window.
+                  </shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
-            <topic href="source/c_ocr_for_eb03.html" data-id="t.ocr-eb03">
+            <topic href="source/c_ocr_for_eb03.html" format="dita" data-id="t.ocr-eb03" wh-toc-id="t.ocr-eb03-d66e1156">
                <title>OCR for eb03</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning eb03 requires special settings.</p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.ocr-eb03"></resourceid>
+                  <navtitle class="- topic/navtitle ">OCR for eb03</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">OCR for eb03</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Scanning eb03 requires special settings.</shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
          </topic>
       </topic>
-      <topic href="source/c_draw_boxes.html" collection-type="sequence" data-id="c.draw-boxes">
+      <topic href="source/c_draw_boxes.html" collection-type="sequence" format="dita" data-id="c.draw-boxes" wh-toc-id="c.draw-boxes-d66e1176">
          <title>Draw Boxes</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Manually creating text recognition boxes improves accuracy</p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/t_text_areas.html" data-id="t.text-areas">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.draw-boxes"></resourceid>
+            <navtitle class="- topic/navtitle ">Draw Boxes</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Draw Boxes</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Manually creating text recognition boxes improves accuracy</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/t_text_areas.html" format="dita" data-id="t.text-areas" wh-toc-id="t.text-areas-d66e1196">
             <title>Text Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to draw text areas in <a href="glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">.</dfn></a></p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.text-areas"></resourceid>
+               <navtitle class="- topic/navtitle ">Text Areas</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Text Areas</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">How to draw text areas in 
+                  <term class="- topic/term " href="glossary/g_afr.dita" keyref="g.afr" linking="none">.</term>
+               </shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_order_areas.html" data-id="t.order-footnote-areas">
+         <topic href="source/t_order_areas.html" format="dita" data-id="t.order-footnote-areas" wh-toc-id="t.order-footnote-areas-d66e1218">
             <title>Order Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to order areas correctly for text output.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.order-footnote-areas"></resourceid>
+               <navtitle class="- topic/navtitle ">Order Areas</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Order Areas</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">How to order areas correctly for text output.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_modify_areas.html" data-id="t.modify-areas">
+         <topic href="source/t_modify_areas.html" format="dita" data-id="t.modify-areas" wh-toc-id="t.modify-areas-d66e1238">
             <title>Modify Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Areas must be drawn in a basic box shape, but they can be altered to subtract or add         to part of the box. </p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.modify-areas"></resourceid>
+               <navtitle class="- topic/navtitle ">Modify Areas</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Modify Areas</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Areas must be drawn in a basic box shape, but they can be altered to subtract or add         to part of the box. </shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/c_footnote_areas.html" data-id="c.footnote-areas">
+         <topic href="source/c_footnote_areas.html" format="dita" data-id="c.footnote-areas" wh-toc-id="c.footnote-areas-d66e1258">
             <title>Footnote Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Footnotes always output as the last areas on the page.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.footnote-areas"></resourceid>
+               <navtitle class="- topic/navtitle ">Footnote Areas</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Footnote Areas</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Footnotes always output as the last areas on the page.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_table_areas.html" data-id="t.table-areas">
+         <topic href="source/t_table_areas.html" format="dita" data-id="t.table-areas" wh-toc-id="t.table-areas-d66e1278">
             <title>Table Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to draw table areas in <a href="glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a></p>
             </shortdesc>
-            <topicmeta></topicmeta>
-            <topic href="source/t_edit_tables.html" data-id="untitled3">
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.table-areas"></resourceid>
+               <navtitle class="- topic/navtitle ">Table Areas</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Table Areas</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">How to draw table areas in 
+                  <term class="- topic/term " href="glossary/g_afr.dita" keyref="g.afr" linking="none"></term>
+               </shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
+            <topic href="source/t_edit_tables.html" format="dita" data-id="untitled3" wh-toc-id="untitled3-d66e1299">
                <title>Editing tables</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Table columns and rows can be adjusted before recognition.</p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="untitled3"></resourceid>
+                  <navtitle class="- topic/navtitle ">Editing tables</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">Editing tables</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">Table columns and rows can be adjusted before recognition.</shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
          </topic>
-         <topic href="source/c_illustrations.html" data-id="c.illustrations">
+         <topic href="source/c_illustrations.html" format="dita" data-id="c.illustrations" wh-toc-id="c.illustrations-d66e1319">
             <title>Illustrations</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">When drawing boxes, leave out illustrations and their captions.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.illustrations"></resourceid>
+               <navtitle class="- topic/navtitle ">Illustrations</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Illustrations</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">When drawing boxes, leave out illustrations and their captions.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/c_catchwords.html" data-id="c.catchwords">
+         <topic href="source/c_catchwords.html" format="dita" data-id="c.catchwords" wh-toc-id="c.catchwords-d66e1339">
             <title>Catchwords</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">eb03 puts an extra word at the bottom of the page that should not be included in text         boxes.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.catchwords"></resourceid>
+               <navtitle class="- topic/navtitle ">Catchwords</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Catchwords</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">eb03 puts an extra word at the bottom of the page that should not be included in text         boxes.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/c_author_initials.html" data-id="c.author-initials">
+         <topic href="source/c_author_initials.html" format="dita" data-id="c.author-initials" wh-toc-id="c.author-initials-d66e1359">
             <title>Author Initials</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Who wrote it?</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.author-initials"></resourceid>
+               <navtitle class="- topic/navtitle ">Author Initials</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Author Initials</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Who wrote it?</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_pages_withou-text.html" data-id="t.unnumbered-pages">
+         <topic href="source/t_pages_withou-text.html" format="dita" data-id="t.unnumbered-pages" wh-toc-id="t.unnumbered-pages-d66e1379">
             <title>Pages without Text</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Numbered pages with only illustrations or drawings require minimal         treatment.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.unnumbered-pages"></resourceid>
+               <navtitle class="- topic/navtitle ">Pages without Text</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Pages without Text</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Numbered pages with only illustrations or drawings require minimal         treatment.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/c_headers.html" data-id="c_headers">
+         <topic href="source/c_headers.html" format="dita" data-id="c_headers" wh-toc-id="c_headers-d66e1399">
             <title>Headers</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Include two-column titles as an entry term.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c_headers"></resourceid>
+               <navtitle class="- topic/navtitle ">Headers</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Headers</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Include two-column titles as an entry term.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
       </topic>
-      <topic href="source/c_page_recognition.html" collection-type="sequence" data-id="c.page-recognition">
+      <topic href="source/c_page_recognition.html" collection-type="sequence" format="dita" data-id="c.page-recognition" wh-toc-id="c.page-recognition-d66e1419">
          <title>Page Recognition</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Excellent page recognition depends on preparing the page properly.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/t_verification.html" data-id="untitled4">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.page-recognition"></resourceid>
+            <navtitle class="- topic/navtitle ">Page Recognition</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Page Recognition</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Excellent page recognition depends on preparing the page properly.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/t_verification.html" format="dita" data-id="untitled4" wh-toc-id="untitled4-d66e1439">
             <title>Verification</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use AFR's built-in program to verify recognition accuracy on each page.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="untitled4"></resourceid>
+               <navtitle class="- topic/navtitle ">Verification</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Verification</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Use AFR's built-in program to verify recognition accuracy on each page.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_proofread.html" data-id="t.proofread">
+         <topic href="source/t_proofread.html" format="dita" data-id="t.proofread" wh-toc-id="t.proofread-d66e1459">
             <title>Proofread</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How much proofreading is appropriate?</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.proofread"></resourceid>
+               <navtitle class="- topic/navtitle ">Proofread</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Proofread</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">How much proofreading is appropriate?</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_add_words_to_dictionary.html" data-id="t.add-dictionary-words">
+         <topic href="source/t_add_words_to_dictionary.html" format="dita" data-id="t.add-dictionary-words" wh-toc-id="t.add-dictionary-words-d66e1479">
             <title>Add Dictionary Words</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Teach AFR how to spell.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.add-dictionary-words"></resourceid>
+               <navtitle class="- topic/navtitle ">Add Dictionary Words</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Add Dictionary Words</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Teach AFR how to spell.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_code_footnotes.html" data-id="t.code-footnotes">
+         <topic href="source/t_code_footnotes.html" format="dita" data-id="t.code-footnotes" wh-toc-id="t.code-footnotes-d66e1499">
             <title>Code Footnotes </title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to using @ codes for footnotes.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.code-footnotes"></resourceid>
+               <navtitle class="- topic/navtitle ">Code Footnotes </navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Code Footnotes</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">How to using @ codes for footnotes.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/c_formulas.html" data-id="formulas">
+         <topic href="source/c_formulas.html" format="dita" data-id="formulas" wh-toc-id="formulas-d66e1519">
             <title>Formulas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning simple and complex math and chemical formulas.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="formulas"></resourceid>
+               <navtitle class="- topic/navtitle ">Formulas</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Formulas</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Scanning simple and complex math and chemical formulas.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_train_ocr.html" data-id="t.train-ocr">
+         <topic href="source/t_train_ocr.html" format="dita" data-id="t.train-ocr" wh-toc-id="t.train-ocr-d66e1539">
             <title>Train OCR </title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Advanced users can improve recognition with user patterns.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.train-ocr"></resourceid>
+               <navtitle class="- topic/navtitle ">Train OCR </navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Train OCR</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Advanced users can improve recognition with user patterns.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
       </topic>
-      <topic href="source/t_save_and_output.html" data-id="t.save-and-output">
+      <topic href="source/t_save_and_output.html" format="dita" data-id="t.save-and-output" wh-toc-id="t.save-and-output-d66e1559">
          <title>Save and Output</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to output your OCR results.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/t_cleanup_html_output.html" data-id="cleanup_html_output">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.save-and-output"></resourceid>
+            <navtitle class="- topic/navtitle ">Save and Output</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Save and Output</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">How to output your OCR results.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/t_cleanup_html_output.html" format="dita" data-id="cleanup_html_output" wh-toc-id="cleanup_html_output-d66e1579">
             <title>Cleanup HTML Output</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Explains how to change auto-generated filenames and delete special folders created by         AFR. </p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="cleanup_html_output"></resourceid>
+               <navtitle class="- topic/navtitle ">Cleanup HTML Output</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Cleanup HTML Output</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Explains how to change auto-generated filenames and delete special folders created by         AFR. </shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
       </topic>
    </topic>
-   <topic href="source/c_oxygen-xml-editor.html" collection-type="sequence" data-id="c.oxygen">
+   <topic href="source/c_oxygen-xml-editor.html" collection-type="sequence" data-id="c.oxygen" wh-toc-id="c.oxygen-d66e1600">
       <title>Working with XML</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This introduction to <a href="glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a> shows you how to navigate the         interface and perform standard procedures on the Encyclopedia files.
          </p>
       </shortdesc>
-      <topicmeta></topicmeta>
-      <topic href="source/r_oxygen-interface.html" data-id="untitled2">
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.oxygen"></resourceid>
+         <navtitle class="- topic/navtitle ">Working with XML</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Working with XML</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">This introduction to 
+            <term class="- topic/term " href="glossary/g_oxygen.dita" keyref="g.oxygen" linking="none"></term> shows you how to navigate the         interface and perform standard procedures on the Encyclopedia files.
+         </shortdesc>
+         <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+            Logan
+         </author>
+         <copyright class="- topic/copyright ">
+            
+            <copyryear class="- topic/copyryear " year="2018"></copyryear>
+            
+            <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+            
+         </copyright>
+      </topicmeta>
+      <topic href="source/r_oxygen-interface.html" data-id="untitled2" wh-toc-id="untitled2-d66e1622">
          <title>Oxygen Interface</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">An introduction to the main components of the Oxygen interface.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="untitled2"></resourceid>
+            <navtitle class="- topic/navtitle ">Oxygen Interface</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Oxygen Interface</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">An introduction to the main components of the Oxygen interface.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/t_create_a_new_xml_project.html" data-id="create_a_new_oxygen_project">
+      <topic href="source/t_create_a_new_xml_project.html" format="dita" data-id="create_a_new_oxygen_project" wh-toc-id="create_a_new_oxygen_project-d66e1642">
          <title>Create an XML-Project</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Using Oxygen XML Editor to organize files.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_a_new_oxygen_project"></resourceid>
+            <navtitle class="- topic/navtitle ">Create an XML-Project</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Create an XML-Project</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Using Oxygen XML Editor to organize files.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/t_check_code.html" data-id="untitled2">
+      <topic href="source/t_check_code.html" data-id="untitled2" wh-toc-id="untitled2-d66e1662">
          <title>Check the HTML Code</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to check and correct coding problems in the page files.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/t_make_html_files_well_formed.html" data-id="make_the_html_files_well_formed">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="untitled2"></resourceid>
+            <navtitle class="- topic/navtitle ">Check the HTML Code</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Check the HTML Code</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">How to check and correct coding problems in the page files.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/t_make_html_files_well_formed.html" format="dita" data-id="make_the_html_files_well_formed" wh-toc-id="make_the_html_files_well_formed-d66e1682">
             <title>Make the HTML Files Well-Formed</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to validate HTML files in Oxygen.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="make_the_html_files_well_formed"></resourceid>
+               <navtitle class="- topic/navtitle ">Make the HTML Files Well-Formed</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Make the HTML Files Well-Formed</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">How to validate HTML files in Oxygen.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_check_footnote_coding_1.html" data-id="check_footnote_coding">
+         <topic href="source/t_check_footnote_coding_1.html" data-id="check_footnote_coding" wh-toc-id="check_footnote_coding-d66e1702">
             <title>Check HTML Footnote Coding 1</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use a simple search to check if you have the right number of note codes on all pages. </p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="check_footnote_coding"></resourceid>
+               <navtitle class="- topic/navtitle ">Check HTML Footnote Coding 1</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Check HTML Footnote Coding 1</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Use a simple search to check if you have the right number of note codes on all pages. </shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_check_footnote_coding_2.html" data-id="check_footnote_coding_2">
+         <topic href="source/t_check_footnote_coding_2.html" data-id="check_footnote_coding_2" wh-toc-id="check_footnote_coding_2-d66e1722">
             <title>Check HTML Footnote Coding 2</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Footnotes have to be in their own paragraph.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="check_footnote_coding_2"></resourceid>
+               <navtitle class="- topic/navtitle ">Check HTML Footnote Coding 2</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Check HTML Footnote Coding 2</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Footnotes have to be in their own paragraph.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/t_review_inventory_notes.html" data-id="untitled1">
+         <topic href="source/t_review_inventory_notes.html" data-id="untitled1" wh-toc-id="untitled1-d66e1742">
             <title>Review Inventory Comments</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Correct resolvable issues noted in the comments</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="untitled1"></resourceid>
+               <navtitle class="- topic/navtitle ">Review Inventory Comments</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Review Inventory Comments</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Correct resolvable issues noted in the comments</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
       </topic>
-      <topic href="source/c_converting_html_to_tei.html" collection-type="sequence" data-id="converting_html_to_tei_xml">
+      <topic href="source/c_converting_html_to_tei.html" collection-type="sequence" format="dita" data-id="converting_html_to_tei_xml" wh-toc-id="converting_html_to_tei_xml-d66e1762">
          <title>Convert HTML to TEI</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Using Oxygen and XSLT to convert HTML files to TEI.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/t_transform_html_tei.html" collection-type="sequence" data-id="transform_the_html_files">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="converting_html_to_tei_xml"></resourceid>
+            <navtitle class="- topic/navtitle ">Convert HTML to TEI</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Convert HTML to TEI</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Using Oxygen and XSLT to convert HTML files to TEI.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/t_transform_html_tei.html" collection-type="sequence" format="dita" data-id="transform_the_html_files" wh-toc-id="transform_the_html_files-d66e1782">
             <title>Transform the HTML Files to TEI</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to convert HTML files to TEI in Oxygen.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
-            <topic href="source/t_create_transformation_scenario.html" data-id="create_a_transformation_scenario">
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="transform_the_html_files"></resourceid>
+               <navtitle class="- topic/navtitle ">Transform the HTML Files to TEI</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Transform the HTML Files to TEI</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">How to convert HTML files to TEI in Oxygen.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
+            <topic href="source/t_create_transformation_scenario.html" format="dita" data-id="create_a_transformation_scenario" wh-toc-id="create_a_transformation_scenario-d66e1802">
                <title>Create a Transformation Scenario</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to locate the appropriate XSLT file and create a new transformation scenario.</p>
                </shortdesc>
-               <topicmeta></topicmeta>
+               <topicmeta>
+                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_a_transformation_scenario"></resourceid>
+                  <navtitle class="- topic/navtitle ">Create a Transformation Scenario</navtitle><?ditaot gentext?>
+                  <linktext class="- map/linktext ">Create a Transformation Scenario</linktext><?ditaot genshortdesc?>
+                  <shortdesc class="- map/shortdesc ">How to locate the appropriate XSLT file and create a new transformation scenario.</shortdesc>
+                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                     Logan
+                  </author>
+                  <copyright class="- topic/copyright ">
+                     
+                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                     
+                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                     
+                  </copyright>
+               </topicmeta>
             </topic>
          </topic>
-         <topic href="source/t_partial_entries.html" data-id="t.partial-entries">
+         <topic href="source/t_partial_entries.html" format="dita" data-id="t.partial-entries" wh-toc-id="t.partial-entries-d66e1822">
             <title>Add Titles to Partial Entries</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Prepare the first entry in the section for inclusion.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.partial-entries"></resourceid>
+               <navtitle class="- topic/navtitle ">Add Titles to Partial Entries</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Add Titles to Partial Entries</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Prepare the first entry in the section for inclusion.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
       </topic>
    </topic>
-   <topic href="source/c_processing_entry_files.html" collection-type="sequence" data-id="processing_entry_files">
+   <topic href="source/c_processing_entry_files.html" collection-type="sequence" format="dita" data-id="processing_entry_files" wh-toc-id="processing_entry_files-d66e1844">
       <title>Processing Entry Files</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Procedures for converting single pages into Encyclopedia entries.</p>
       </shortdesc>
-      <topicmeta></topicmeta>
-      <topic href="source/t_validating_entry_files.html" data-id="validate_the_files_in_oxygen">
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="processing_entry_files"></resourceid>
+         <navtitle class="- topic/navtitle ">Processing Entry Files</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Processing Entry Files</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">Procedures for converting single pages into Encyclopedia entries.</shortdesc>
+         <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+            Logan
+         </author>
+         <copyright class="- topic/copyright ">
+            
+            <copyryear class="- topic/copyryear " year="2018"></copyryear>
+            
+            <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+            
+         </copyright>
+      </topicmeta>
+      <topic href="source/t_validating_entry_files.html" format="dita" data-id="validate_the_files_in_oxygen" wh-toc-id="validate_the_files_in_oxygen-d66e1864">
          <title>Validate Entry Files</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use Oxygen to validate the entry files.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="validate_the_files_in_oxygen"></resourceid>
+            <navtitle class="- topic/navtitle ">Validate Entry Files</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Validate Entry Files</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Use Oxygen to validate the entry files.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/t_entry_inventory.html" data-id="t.ent-inventory">
+      <topic href="source/t_entry_inventory.html" format="dita" data-id="t.ent-inventory" wh-toc-id="t.ent-inventory-d66e1884">
          <title>Entry-Inventory File</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Document the file names of every entry in a section using the entry-inventory         file.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.ent-inventory"></resourceid>
+            <navtitle class="- topic/navtitle ">Entry-Inventory File</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Entry-Inventory File</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Document the file names of every entry in a section using the entry-inventory         file.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/c_proof-entry-terms.html" data-id="c.proof-entry-terms">
+      <topic href="source/c_proof-entry-terms.html" format="dita" data-id="c.proof-entry-terms" wh-toc-id="c.proof-entry-terms-d66e1904">
          <title>Proof the Entry Terms List</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Compare our list of recognized entry terms with the print pages.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.proof-entry-terms"></resourceid>
+            <navtitle class="- topic/navtitle ">Proof the Entry Terms List</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Proof the Entry Terms List</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Compare our list of recognized entry terms with the print pages.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
    </topic>
-   <topic href="source/c_reference_manual.html" collection-type="choice" data-id="reference_manual">
+   <topic href="source/c_reference_manual.html" collection-type="choice" data-id="reference_manual" wh-toc-id="reference_manual-d66e1925">
       <title>Reference Manual</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Reference information on file/folder names, TEI-encoding standards, and         more!</p>
       </shortdesc>
-      <topicmeta></topicmeta>
-      <topic href="source/r_image_sources.html" data-id="r.image-sources">
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="reference_manual"></resourceid>
+         <navtitle class="- topic/navtitle ">Reference Manual</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Reference Manual</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">Reference information on file/folder names, TEI-encoding standards, and         more!</shortdesc>
+         <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+            Logan
+         </author>
+         <copyright class="- topic/copyright ">
+            
+            <copyryear class="- topic/copyryear " year="2018"></copyryear>
+            
+            <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+            
+         </copyright>
+      </topicmeta>
+      <topic href="source/r_image_sources.html" data-id="r.image-sources" wh-toc-id="r.image-sources-d66e1945">
          <title>Image Sources</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Bibliographic information on print editions and image repositories.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="r.image-sources"></resourceid>
+            <navtitle class="- topic/navtitle ">Image Sources</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Image Sources</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Bibliographic information on print editions and image repositories.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
-      <topic href="source/r_file_and_folder_names.html" data-id="naming_conventions">
+      <topic href="source/r_file_and_folder_names.html" data-id="naming_conventions" wh-toc-id="naming_conventions-d66e1965">
          <title>Naming Conventions</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lists the naming conventions we use for editions, sections, folders, and files.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/r_editions_sections.html" data-id="editions_sections">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="naming_conventions"></resourceid>
+            <navtitle class="- topic/navtitle ">Naming Conventions</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Naming Conventions</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Lists the naming conventions we use for editions, sections, folders, and files.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/r_editions_sections.html" format="dita" data-id="editions_sections" wh-toc-id="editions_sections-d66e1985">
             <title>Editions and Sections</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Explains which print editions we use and how to refer to them and their         subsections.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="editions_sections"></resourceid>
+               <navtitle class="- topic/navtitle ">Editions and Sections</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Editions and Sections</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Explains which print editions we use and how to refer to them and their         subsections.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/r_file_names.html" data-id="file_fdr_names">
+         <topic href="source/r_file_names.html" data-id="file_fdr_names" wh-toc-id="file_fdr_names-d66e2005">
             <title>File and Folder Names</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">A comprehensive guide to file and folder naming for every stage of the Encyclopedia         project. </p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="file_fdr_names"></resourceid>
+               <navtitle class="- topic/navtitle ">File and Folder Names</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">File and Folder Names</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">A comprehensive guide to file and folder naming for every stage of the Encyclopedia         project. </shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
       </topic>
-      <topic href="source/r_tei_style_manual.html" data-id="tei_style_manual">
+      <topic href="source/r_tei_style_manual.html" data-id="tei_style_manual" wh-toc-id="tei_style_manual-d66e2025">
          <title>TEI Style Manual</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">All TEI encoding must follow these guidelines.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
-         <topic href="source/r_notes.html" data-id="note">
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="tei_style_manual"></resourceid>
+            <navtitle class="- topic/navtitle ">TEI Style Manual</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">TEI Style Manual</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">All TEI encoding must follow these guidelines.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/r_notes.html" data-id="note" wh-toc-id="note-d66e2045">
             <title>Notes</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Details method we use to code footnote text in TEI.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="note"></resourceid>
+               <navtitle class="- topic/navtitle ">Notes</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Notes</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Details method we use to code footnote text in TEI.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/r_page_numbers.html" data-id="pagebreak">
+         <topic href="source/r_page_numbers.html" data-id="pagebreak" wh-toc-id="pagebreak-d66e2065">
             <title>Page Numbers</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Specifies encoding method for page numbers in TEI.</p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="pagebreak"></resourceid>
+               <navtitle class="- topic/navtitle ">Page Numbers</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Page Numbers</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Specifies encoding method for page numbers in TEI.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
-         <topic href="source/r_type_attributes.html" data-id="type_attributes">
+         <topic href="source/r_type_attributes.html" data-id="type_attributes" wh-toc-id="type_attributes-d66e2085">
             <title>Typographical Attributes</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lists TEI encoding we use for typographical features, with their CSS equivalents. </p>
             </shortdesc>
-            <topicmeta></topicmeta>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="type_attributes"></resourceid>
+               <navtitle class="- topic/navtitle ">Typographical Attributes</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Typographical Attributes</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Lists TEI encoding we use for typographical features, with their CSS equivalents. </shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
          </topic>
       </topic>
-      <topic href="source/r_unicode_characters.html" data-id="unicode_characters">
+      <topic href="source/r_unicode_characters.html" data-id="unicode_characters" wh-toc-id="unicode_characters-d66e2105">
          <title>Unicode Characters</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">List of unicode characters and entities used frequently in the Encyclopedia and not         on the standard US keyboard.</p>
          </shortdesc>
-         <topicmeta></topicmeta>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="unicode_characters"></resourceid>
+            <navtitle class="- topic/navtitle ">Unicode Characters</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Unicode Characters</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">List of unicode characters and entities used frequently in the Encyclopedia and not         on the standard US keyboard.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
    </topic>
 </toc>

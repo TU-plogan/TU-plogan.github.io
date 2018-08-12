@@ -1,15 +1,180 @@
 
 <!DOCTYPE html
   PUBLIC "" "about:legacy-compat">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
-      <meta charset="UTF-8" /><meta name="DC.Type" content="task" /><meta name="description" content="How to draw text areas in ." /><meta name="DC.Relation" scheme="URI" content="../source/c_draw_boxes.html" /><meta name="DC.Relation" scheme="URI" content="../source/c_draw_boxes.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_order_areas.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="rights" content="© 2018 Peter M. Logan" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="t.text-areas" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/commonltr.css?buildId=2018061311"><!----></link><title>Text Areas</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018061311.  --><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/css/webhelp_topic.css?buildId=2018061311"><!----></link><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/resources/skins/skin.css?buildId=2018061311" /><script type="text/javascript"><!--
-          
-          var prefix = "../index.html";
-          
-          --></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery-3.1.1.min.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.cookie.js"><!----></script><script type="text/javascript" src="../oxygen-webhelp/resources/js/jquery.highlight-3.js"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/log.js?buildId=2018061311"><!----></script><script type="text/javascript" charset="utf-8" src="../oxygen-webhelp/resources/js/webhelp_topic.js?buildId=2018061311"><!----></script></head><body onload="highlightSearchTerm()" class="frmBody" id="t.text-areas"><header role="banner"><table class="nav"><tbody><tr><td colspan="2"><div id="printlink"><a href="javascript:window.print();" title="Print this page"></a></div><div id="permalink"><a href="#" title="Link to this page"></a></div></td></tr><tr><td style="width:75%;"><span class="topic_breadcrumb_links"><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/../source/c_scanning_procedures.html" title="An introduction to AFR that explains the specific procedures we use to get the best quality text recognition of Encyclopedia page images.">Scanning Procedures</a></span><span class="topic_breadcrumb_link"><a class="navheader_parent_path" href="../source/c_draw_boxes.html" title="Manually creating text recognition boxes improves accuracy">Draw Boxes</a></span></span></td><td><span id="topic_navigation_links" class="navheader">
-<span class="navparent"><a class="link" href="../source/c_draw_boxes.html" title="Manually creating text recognition boxes improves accuracy"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Draw Boxes</span></a></span>  
-<span class="navprev"><a class="link" href="../source/c_draw_boxes.html" title="Draw Boxes"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Draw Boxes</span></a></span>  
-<span class="navnext"><a class="link" href="../source/t_order_areas.html" title="Order Areas"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Order Areas</span></a></span>  </span></td></tr></tbody></table></header><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="DC.Type" content="task" /><meta name="description" content="How to draw text areas in ." /><meta name="DC.Relation" scheme="URI" content="../source/c_draw_boxes.html" /><meta name="DC.Relation" scheme="URI" content="../source/c_draw_boxes.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_order_areas.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="rights" content="© 2018 Peter M. Logan" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="t.text-areas" />        
+      <title>Text Areas</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018061311.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="t.text-areas-d66e1196" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2018061311" /><script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen-gray.css?buildId=2018061311" /></head>
+
+    <body id="t.text-areas" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Nineteenth-Century Knowledge Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li class="has-children"><span data-tocid="c.introduction-d66e540" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.data_organization-d66e601" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Data Organization</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.intro-afr-d66e874" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning Procedures</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.oxygen-d66e1600" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">Working with XML</a></span></span></li>
+   <li class="has-children"><span data-tocid="processing_entry_files-d66e1844" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Processing Entry Files</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_manual-d66e1925" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference Manual</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning Procedures</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">An introduction to AFR that explains the specific procedures we use to get the best         quality text recognition of Encyclopedia
+                  page images.
+                  
+               </p>
+               </span></span></span></li>
+   <li><span class="topicref" data-id="c.draw-boxes"><span class="title"><a href="../source/c_draw_boxes.html">Draw Boxes</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Manually creating text recognition boxes improves accuracy</p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="t.text-areas"><span class="title"><a href="../source/t_text_areas.html">Text Areas</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How to draw text areas in <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">.</dfn></a></p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="../source/c_draw_boxes.html" title="Draw Boxes" aria-label="Previous topic: Draw Boxes" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="../source/t_order_areas.html" title="Order Areas" aria-label="Next topic: Order Areas" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="c.intro-afr-d66e874" class="topicref" data-id="c.intro-afr" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c.intro-afr-d66e874-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_scanning_procedures.html" id="c.intro-afr-d66e874-link">Scanning Procedures</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">An introduction to AFR that explains the specific procedures we use to get the best         quality text recognition of Encyclopedia
+                  page images.
+                  
+               </p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="r.afr-interface-d66e894" class="topicref" data-id="r.afr-interface" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/r_afr-interface.html" id="r.afr-interface-d66e894-link">AFR Interface</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This section describes the main elements of the OCR interface.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="t.create-ocr-project-d66e914" class="topicref" data-id="t.create-ocr-project" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action t.create-ocr-project-d66e914-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_create_an_ocr_project_folder.html" id="t.create-ocr-project-d66e914-link">Create an OCR-Project Folder</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How to create and manage the OCR-Project folder.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true"><span data-tocid="c.draw-boxes-d66e1176" class="topicref" data-id="c.draw-boxes" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c.draw-boxes-d66e1176-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_draw_boxes.html" id="c.draw-boxes-d66e1176-link">Draw Boxes</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Manually creating text recognition boxes improves accuracy</p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="t.text-areas-d66e1196" class="topicref" data-id="t.text-areas" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_text_areas.html" id="t.text-areas-d66e1196-link">Text Areas</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How to draw text areas in <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">.</dfn></a></p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="t.order-footnote-areas-d66e1218" class="topicref" data-id="t.order-footnote-areas" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_order_areas.html" id="t.order-footnote-areas-d66e1218-link">Order Areas</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How to order areas correctly for text output.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="t.modify-areas-d66e1238" class="topicref" data-id="t.modify-areas" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_modify_areas.html" id="t.modify-areas-d66e1238-link">Modify Areas</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Areas must be drawn in a basic box shape, but they can be altered to subtract or add         to part of the box. </p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="c.footnote-areas-d66e1258" class="topicref" data-id="c.footnote-areas" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/c_footnote_areas.html" id="c.footnote-areas-d66e1258-link">Footnote Areas</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Footnotes always output as the last areas on the page.</p>
+                           </span></span></span></li>
+               <li role="treeitem" aria-expanded="false"><span data-tocid="t.table-areas-d66e1278" class="topicref" data-id="t.table-areas" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action t.table-areas-d66e1278-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_table_areas.html" id="t.table-areas-d66e1278-link">Table Areas</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How to draw table areas in <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a></p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="c.illustrations-d66e1319" class="topicref" data-id="c.illustrations" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/c_illustrations.html" id="c.illustrations-d66e1319-link">Illustrations</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">When drawing boxes, leave out illustrations and their captions.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="c.catchwords-d66e1339" class="topicref" data-id="c.catchwords" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/c_catchwords.html" id="c.catchwords-d66e1339-link">Catchwords</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">eb03 puts an extra word at the bottom of the page that should not be included in text         boxes.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="c.author-initials-d66e1359" class="topicref" data-id="c.author-initials" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/c_author_initials.html" id="c.author-initials-d66e1359-link">Author Initials</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Who wrote it?</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="t.unnumbered-pages-d66e1379" class="topicref" data-id="t.unnumbered-pages" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_pages_withou-text.html" id="t.unnumbered-pages-d66e1379-link">Pages without Text</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Numbered pages with only illustrations or drawings require minimal         treatment.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="c_headers-d66e1399" class="topicref" data-id="c_headers" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/c_headers.html" id="c_headers-d66e1399-link">Headers</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Include two-column titles as an entry term.</p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="c.page-recognition-d66e1419" class="topicref" data-id="c.page-recognition" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c.page-recognition-d66e1419-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_page_recognition.html" id="c.page-recognition-d66e1419-link">Page Recognition</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Excellent page recognition depends on preparing the page properly.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="false"><span data-tocid="t.save-and-output-d66e1559" class="topicref" data-id="t.save-and-output" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action t.save-and-output-d66e1559-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_save_and_output.html" id="t.save-and-output-d66e1559-link">Save and Output</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How to output your OCR results.</p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
     <h1 class="title topictitle1" id="ariaid-title1">Text Areas</h1>
     
     <div class="body taskbody"><p class="shortdesc">How to draw text areas in <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">.</dfn></a></p>
@@ -33,9 +198,39 @@
                 </div>
             </li></ol>
     </div>
-<nav role="navigation" class="related-links"></nav></article></main><footer role="contentinfo"><div class="navfooter"><!---->
-<span class="navparent"><a class="link" href="../source/c_draw_boxes.html" title="Manually creating text recognition boxes improves accuracy"><span class="navheader_label">Parent topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Draw Boxes</span></a></span>  
-<span class="navprev"><a class="link" href="../source/c_draw_boxes.html" title="Draw Boxes"><span class="navheader_label">Previous topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Draw Boxes</span></a></span>  
-<span class="navnext"><a class="link" href="../source/t_order_areas.html" title="Order Areas"><span class="navheader_label">Next topic</span><span class="navheader_separator">: </span><span class="navheader_linktext">Order Areas</span></a></span>  </div><div class="footer" id="webhelp_copyright_information">Generated by<a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
-                            &lt;oXygen/&gt; XML WebHelp
-                        </a></div></footer></body></html>
+</article></main></div>
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>
