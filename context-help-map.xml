@@ -85,10 +85,11 @@
    <appContext helpID="create_a_new_oxygen_project"
                path="source/t_create_a_new_xml_project.html"/>
    <appContext helpID="untitled2" path="source/t_check_code.html"/>
-   <appContext helpID="check_footnote_coding" path="source/t_check_footnote_coding_1.html"/>
-   <appContext helpID="check_footnote_coding_2" path="source/t_check_footnote_coding_2.html"/>
    <appContext helpID="make_the_html_files_well_formed"
                path="source/t_make_html_files_well_formed.html"/>
+   <appContext helpID="check_footnote_coding" path="source/t_check_footnote_coding_1.html"/>
+   <appContext helpID="check_footnote_coding_2" path="source/t_check_footnote_coding_2.html"/>
+   <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="converting_html_to_tei_xml" path="source/c_converting_html_to_tei.html"/>
    <appContext helpID="transform_the_html_files" path="source/t_transform_html_tei.html"/>
    <appContext helpID="create_a_transformation_scenario"

@@ -390,29 +390,36 @@
          <topicmeta></topicmeta>
       </topic>
       <topic href="source/t_check_code.html" data-id="untitled2">
-         <title>Check the Code</title>
+         <title>Check the HTML Code</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to check and correct coding problems in the page files.</p>
          </shortdesc>
          <topicmeta></topicmeta>
+         <topic href="source/t_make_html_files_well_formed.html" data-id="make_the_html_files_well_formed">
+            <title>Make the HTML Files Well-Formed</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to validate HTML files in Oxygen.</p>
+            </shortdesc>
+            <topicmeta></topicmeta>
+         </topic>
          <topic href="source/t_check_footnote_coding_1.html" data-id="check_footnote_coding">
-            <title>Check footnote coding 1</title>
+            <title>Check HTML Footnote Coding 1</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use a simple search to check if you have the right number of note codes on all pages. </p>
             </shortdesc>
             <topicmeta></topicmeta>
          </topic>
          <topic href="source/t_check_footnote_coding_2.html" data-id="check_footnote_coding_2">
-            <title>Check footnote coding 2</title>
+            <title>Check HTML Footnote Coding 2</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Footnotes have to be in their own paragraph.</p>
             </shortdesc>
             <topicmeta></topicmeta>
          </topic>
-         <topic href="source/t_make_html_files_well_formed.html" data-id="make_the_html_files_well_formed">
-            <title>Make the HTML Files Well-Formed</title>
+         <topic href="source/t_review_inventory_notes.html" data-id="untitled1">
+            <title>Review Inventory Comments</title>
             <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to validate HTML files in Oxygen.</p>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Correct resolvable issues noted in the comments</p>
             </shortdesc>
             <topicmeta></topicmeta>
          </topic>
