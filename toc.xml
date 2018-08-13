@@ -683,31 +683,9 @@
                   </copyright>
                </topicmeta>
             </topic>
-            <topic href="source/c_ocr_for_eb03.html" format="dita" data-id="t.ocr-eb03" wh-toc-id="t.ocr-eb03-d66e1156">
-               <title>OCR for eb03</title>
-               <shortdesc>
-                  <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning eb03 requires special settings.</p>
-               </shortdesc>
-               <topicmeta>
-                  <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.ocr-eb03"></resourceid>
-                  <navtitle class="- topic/navtitle ">OCR for eb03</navtitle><?ditaot gentext?>
-                  <linktext class="- map/linktext ">OCR for eb03</linktext><?ditaot genshortdesc?>
-                  <shortdesc class="- map/shortdesc ">Scanning eb03 requires special settings.</shortdesc>
-                  <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
-                     Logan
-                  </author>
-                  <copyright class="- topic/copyright ">
-                     
-                     <copyryear class="- topic/copyryear " year="2018"></copyryear>
-                     
-                     <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
-                     
-                  </copyright>
-               </topicmeta>
-            </topic>
          </topic>
       </topic>
-      <topic href="source/c_draw_boxes.html" collection-type="sequence" format="dita" data-id="c.draw-boxes" wh-toc-id="c.draw-boxes-d66e1176">
+      <topic href="source/c_draw_boxes.html" collection-type="sequence" format="dita" data-id="c.draw-boxes" wh-toc-id="c.draw-boxes-d66e1156">
          <title>Draw Boxes</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Manually creating text recognition boxes improves accuracy</p>
@@ -728,7 +706,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_text_areas.html" format="dita" data-id="t.text-areas" wh-toc-id="t.text-areas-d66e1196">
+         <topic href="source/t_text_areas.html" format="dita" data-id="t.text-areas" wh-toc-id="t.text-areas-d66e1176">
             <title>Text Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to draw text areas in <a href="glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">.</dfn></a></p>
@@ -752,7 +730,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_order_areas.html" format="dita" data-id="t.order-footnote-areas" wh-toc-id="t.order-footnote-areas-d66e1218">
+         <topic href="source/t_order_areas.html" format="dita" data-id="t.order-footnote-areas" wh-toc-id="t.order-footnote-areas-d66e1198">
             <title>Order Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to order areas correctly for text output.</p>
@@ -774,7 +752,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_modify_areas.html" format="dita" data-id="t.modify-areas" wh-toc-id="t.modify-areas-d66e1238">
+         <topic href="source/t_modify_areas.html" format="dita" data-id="t.modify-areas" wh-toc-id="t.modify-areas-d66e1218">
             <title>Modify Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Areas must be drawn in a basic box shape, but they can be altered to subtract or add         to part of the box. </p>
@@ -796,7 +774,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_footnote_areas.html" format="dita" data-id="c.footnote-areas" wh-toc-id="c.footnote-areas-d66e1258">
+         <topic href="source/c_footnote_areas.html" format="dita" data-id="c.footnote-areas" wh-toc-id="c.footnote-areas-d66e1238">
             <title>Footnote Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Footnotes always output as the last areas on the page.</p>
@@ -818,7 +796,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_table_areas.html" format="dita" data-id="t.table-areas" wh-toc-id="t.table-areas-d66e1278">
+         <topic href="source/t_table_areas.html" format="dita" data-id="t.table-areas" wh-toc-id="t.table-areas-d66e1258">
             <title>Table Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to draw table areas in <a href="glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a></p>
@@ -841,7 +819,7 @@
                   
                </copyright>
             </topicmeta>
-            <topic href="source/t_edit_tables.html" format="dita" data-id="untitled3" wh-toc-id="untitled3-d66e1299">
+            <topic href="source/t_edit_tables.html" format="dita" data-id="untitled3" wh-toc-id="untitled3-d66e1279">
                <title>Editing tables</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Table columns and rows can be adjusted before recognition.</p>
@@ -864,7 +842,7 @@
                </topicmeta>
             </topic>
          </topic>
-         <topic href="source/c_illustrations.html" format="dita" data-id="c.illustrations" wh-toc-id="c.illustrations-d66e1319">
+         <topic href="source/c_illustrations.html" format="dita" data-id="c.illustrations" wh-toc-id="c.illustrations-d66e1299">
             <title>Illustrations</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">When drawing boxes, leave out illustrations and their captions.</p>
@@ -886,7 +864,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_catchwords.html" format="dita" data-id="c.catchwords" wh-toc-id="c.catchwords-d66e1339">
+         <topic href="source/c_catchwords.html" format="dita" data-id="c.catchwords" wh-toc-id="c.catchwords-d66e1319">
             <title>Catchwords</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">eb03 puts an extra word at the bottom of the page that should not be included in text         boxes.</p>
@@ -908,7 +886,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_author_initials.html" format="dita" data-id="c.author-initials" wh-toc-id="c.author-initials-d66e1359">
+         <topic href="source/c_author_initials.html" format="dita" data-id="c.author-initials" wh-toc-id="c.author-initials-d66e1339">
             <title>Author Initials</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Who wrote it?</p>
@@ -930,7 +908,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_pages_withou-text.html" format="dita" data-id="t.unnumbered-pages" wh-toc-id="t.unnumbered-pages-d66e1379">
+         <topic href="source/t_pages_withou-text.html" format="dita" data-id="t.unnumbered-pages" wh-toc-id="t.unnumbered-pages-d66e1359">
             <title>Pages without Text</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Numbered pages with only illustrations or drawings require minimal         treatment.</p>
@@ -952,7 +930,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_headers.html" format="dita" data-id="c_headers" wh-toc-id="c_headers-d66e1399">
+         <topic href="source/c_headers.html" format="dita" data-id="c_headers" wh-toc-id="c_headers-d66e1379">
             <title>Headers</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Include two-column titles as an entry term.</p>
@@ -975,7 +953,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/c_page_recognition.html" collection-type="sequence" format="dita" data-id="c.page-recognition" wh-toc-id="c.page-recognition-d66e1419">
+      <topic href="source/c_page_recognition.html" collection-type="sequence" format="dita" data-id="c.page-recognition" wh-toc-id="c.page-recognition-d66e1399">
          <title>Page Recognition</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Excellent page recognition depends on preparing the page properly.</p>
@@ -996,7 +974,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_verification.html" format="dita" data-id="untitled4" wh-toc-id="untitled4-d66e1439">
+         <topic href="source/t_verification.html" format="dita" data-id="untitled4" wh-toc-id="untitled4-d66e1419">
             <title>Verification</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use AFR's built-in program to verify recognition accuracy on each page.</p>
@@ -1006,6 +984,28 @@
                <navtitle class="- topic/navtitle ">Verification</navtitle><?ditaot gentext?>
                <linktext class="- map/linktext ">Verification</linktext><?ditaot genshortdesc?>
                <shortdesc class="- map/shortdesc ">Use AFR's built-in program to verify recognition accuracy on each page.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
+         </topic>
+         <topic href="source/c_ocr_for_eb03.html" format="dita" data-id="t.ocr-eb03" wh-toc-id="t.ocr-eb03-d66e1439">
+            <title>OCR for eb03</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning eb03 requires special settings.</p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.ocr-eb03"></resourceid>
+               <navtitle class="- topic/navtitle ">OCR for eb03</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">OCR for eb03</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Scanning eb03 requires special settings.</shortdesc>
                <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
                   Logan
                </author>
@@ -1084,7 +1084,29 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_formulas.html" format="dita" data-id="formulas" wh-toc-id="formulas-d66e1519">
+         <topic href="source/c_marginal_notes__eb03.html" format="dita" data-id="marginal_notes__eb03" wh-toc-id="marginal_notes__eb03-d66e1519">
+            <title>Marginal Notes (eb03)</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Marginal notes occur in eb03 as well as footnotes.</p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="marginal_notes__eb03"></resourceid>
+               <navtitle class="- topic/navtitle ">Marginal Notes (eb03)</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Marginal Notes (eb03)</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Marginal notes occur in eb03 as well as footnotes.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
+         </topic>
+         <topic href="source/c_formulas.html" format="dita" data-id="formulas" wh-toc-id="formulas-d66e1539">
             <title>Formulas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning simple and complex math and chemical formulas.</p>
@@ -1106,7 +1128,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_train_ocr.html" format="dita" data-id="t.train-ocr" wh-toc-id="t.train-ocr-d66e1539">
+         <topic href="source/t_train_ocr.html" format="dita" data-id="t.train-ocr" wh-toc-id="t.train-ocr-d66e1559">
             <title>Train OCR </title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Advanced users can improve recognition with user patterns.</p>
@@ -1129,7 +1151,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/t_save_and_output.html" format="dita" data-id="t.save-and-output" wh-toc-id="t.save-and-output-d66e1559">
+      <topic href="source/t_save_and_output.html" format="dita" data-id="t.save-and-output" wh-toc-id="t.save-and-output-d66e1579">
          <title>Save and Output</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to output your OCR results.</p>
@@ -1150,7 +1172,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_cleanup_html_output.html" format="dita" data-id="cleanup_html_output" wh-toc-id="cleanup_html_output-d66e1579">
+         <topic href="source/t_cleanup_html_output.html" format="dita" data-id="cleanup_html_output" wh-toc-id="cleanup_html_output-d66e1599">
             <title>Cleanup HTML Output</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Explains how to change auto-generated filenames and delete special folders created by         AFR. </p>
@@ -1174,7 +1196,7 @@
          </topic>
       </topic>
    </topic>
-   <topic href="source/c_oxygen-xml-editor.html" collection-type="sequence" data-id="c.oxygen" wh-toc-id="c.oxygen-d66e1600">
+   <topic href="source/c_oxygen-xml-editor.html" collection-type="sequence" data-id="c.oxygen" wh-toc-id="c.oxygen-d66e1620">
       <title>Working with XML</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This introduction to <a href="glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a> shows you how to navigate the         interface and perform standard procedures on the Encyclopedia files.
@@ -1198,7 +1220,7 @@
             
          </copyright>
       </topicmeta>
-      <topic href="source/r_oxygen-interface.html" data-id="untitled2" wh-toc-id="untitled2-d66e1622">
+      <topic href="source/r_oxygen-interface.html" data-id="untitled2" wh-toc-id="untitled2-d66e1642">
          <title>Oxygen Interface</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">An introduction to the main components of the Oxygen interface.</p>
@@ -1220,7 +1242,7 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/t_create_a_new_xml_project.html" format="dita" data-id="create_a_new_oxygen_project" wh-toc-id="create_a_new_oxygen_project-d66e1642">
+      <topic href="source/t_create_a_new_xml_project.html" format="dita" data-id="create_a_new_oxygen_project" wh-toc-id="create_a_new_oxygen_project-d66e1662">
          <title>Create an XML-Project</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Using Oxygen XML Editor to organize files.</p>
@@ -1242,7 +1264,7 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/t_check_code.html" data-id="untitled2" wh-toc-id="untitled2-d66e1662">
+      <topic href="source/t_check_code.html" data-id="untitled2" wh-toc-id="untitled2-d66e1682">
          <title>Check the HTML Code</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to check and correct coding problems in the page files.</p>
@@ -1263,7 +1285,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_make_html_files_well_formed.html" format="dita" data-id="make_the_html_files_well_formed" wh-toc-id="make_the_html_files_well_formed-d66e1682">
+         <topic href="source/t_make_html_files_well_formed.html" format="dita" data-id="make_the_html_files_well_formed" wh-toc-id="make_the_html_files_well_formed-d66e1702">
             <title>Make the HTML Files Well-Formed</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to validate HTML files in Oxygen.</p>
@@ -1285,7 +1307,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_check_footnote_coding_1.html" data-id="check_footnote_coding" wh-toc-id="check_footnote_coding-d66e1702">
+         <topic href="source/t_check_footnote_coding_1.html" data-id="check_footnote_coding" wh-toc-id="check_footnote_coding-d66e1722">
             <title>Check HTML Footnote Coding 1</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use a simple search to check if you have the right number of note codes on all pages. </p>
@@ -1307,7 +1329,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_check_footnote_coding_2.html" data-id="check_footnote_coding_2" wh-toc-id="check_footnote_coding_2-d66e1722">
+         <topic href="source/t_check_footnote_coding_2.html" data-id="check_footnote_coding_2" wh-toc-id="check_footnote_coding_2-d66e1742">
             <title>Check HTML Footnote Coding 2</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Footnotes have to be in their own paragraph.</p>
@@ -1329,7 +1351,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_review_inventory_notes.html" data-id="untitled1" wh-toc-id="untitled1-d66e1742">
+         <topic href="source/t_review_inventory_notes.html" data-id="untitled1" wh-toc-id="untitled1-d66e1762">
             <title>Review Inventory Comments</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Correct resolvable issues noted in the comments</p>
@@ -1352,7 +1374,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/c_converting_html_to_tei.html" collection-type="sequence" format="dita" data-id="converting_html_to_tei_xml" wh-toc-id="converting_html_to_tei_xml-d66e1762">
+      <topic href="source/c_converting_html_to_tei.html" collection-type="sequence" format="dita" data-id="converting_html_to_tei_xml" wh-toc-id="converting_html_to_tei_xml-d66e1782">
          <title>Convert HTML to TEI</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Using Oxygen and XSLT to convert HTML files to TEI.</p>
@@ -1373,7 +1395,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_transform_html_tei.html" collection-type="sequence" format="dita" data-id="transform_the_html_files" wh-toc-id="transform_the_html_files-d66e1782">
+         <topic href="source/t_transform_html_tei.html" collection-type="sequence" format="dita" data-id="transform_the_html_files" wh-toc-id="transform_the_html_files-d66e1802">
             <title>Transform the HTML Files to TEI</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to convert HTML files to TEI in Oxygen.</p>
@@ -1394,7 +1416,7 @@
                   
                </copyright>
             </topicmeta>
-            <topic href="source/t_create_transformation_scenario.html" format="dita" data-id="create_a_transformation_scenario" wh-toc-id="create_a_transformation_scenario-d66e1802">
+            <topic href="source/t_create_transformation_scenario.html" format="dita" data-id="create_a_transformation_scenario" wh-toc-id="create_a_transformation_scenario-d66e1822">
                <title>Create a Transformation Scenario</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to locate the appropriate XSLT file and create a new transformation scenario.</p>
@@ -1417,7 +1439,7 @@
                </topicmeta>
             </topic>
          </topic>
-         <topic href="source/t_partial_entries.html" format="dita" data-id="t.partial-entries" wh-toc-id="t.partial-entries-d66e1822">
+         <topic href="source/t_partial_entries.html" format="dita" data-id="t.partial-entries" wh-toc-id="t.partial-entries-d66e1842">
             <title>Add Titles to Partial Entries</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Prepare the first entry in the section for inclusion.</p>
@@ -1441,7 +1463,7 @@
          </topic>
       </topic>
    </topic>
-   <topic href="source/c_processing_entry_files.html" collection-type="sequence" format="dita" data-id="processing_entry_files" wh-toc-id="processing_entry_files-d66e1844">
+   <topic href="source/c_processing_entry_files.html" collection-type="sequence" format="dita" data-id="processing_entry_files" wh-toc-id="processing_entry_files-d66e1864">
       <title>Processing Entry Files</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Procedures for converting single pages into Encyclopedia entries.</p>
@@ -1462,7 +1484,7 @@
             
          </copyright>
       </topicmeta>
-      <topic href="source/t_validating_entry_files.html" format="dita" data-id="validate_the_files_in_oxygen" wh-toc-id="validate_the_files_in_oxygen-d66e1864">
+      <topic href="source/t_validating_entry_files.html" format="dita" data-id="validate_the_files_in_oxygen" wh-toc-id="validate_the_files_in_oxygen-d66e1884">
          <title>Validate Entry Files</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use Oxygen to validate the entry files.</p>
@@ -1484,7 +1506,7 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/t_entry_inventory.html" format="dita" data-id="t.ent-inventory" wh-toc-id="t.ent-inventory-d66e1884">
+      <topic href="source/t_entry_inventory.html" format="dita" data-id="t.ent-inventory" wh-toc-id="t.ent-inventory-d66e1904">
          <title>Entry-Inventory File</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Document the file names of every entry in a section using the entry-inventory         file.</p>
@@ -1506,7 +1528,7 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/c_proof-entry-terms.html" format="dita" data-id="c.proof-entry-terms" wh-toc-id="c.proof-entry-terms-d66e1904">
+      <topic href="source/c_proof-entry-terms.html" format="dita" data-id="c.proof-entry-terms" wh-toc-id="c.proof-entry-terms-d66e1924">
          <title>Proof the Entry Terms List</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Compare our list of recognized entry terms with the print pages.</p>
@@ -1529,7 +1551,7 @@
          </topicmeta>
       </topic>
    </topic>
-   <topic href="source/c_reference_manual.html" collection-type="choice" data-id="reference_manual" wh-toc-id="reference_manual-d66e1925">
+   <topic href="source/c_reference_manual.html" collection-type="choice" data-id="reference_manual" wh-toc-id="reference_manual-d66e1945">
       <title>Reference Manual</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Reference information on file/folder names, TEI-encoding standards, and         more!</p>
@@ -1550,7 +1572,7 @@
             
          </copyright>
       </topicmeta>
-      <topic href="source/r_image_sources.html" data-id="r.image-sources" wh-toc-id="r.image-sources-d66e1945">
+      <topic href="source/r_image_sources.html" data-id="r.image-sources" wh-toc-id="r.image-sources-d66e1965">
          <title>Image Sources</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Bibliographic information on print editions and image repositories.</p>
@@ -1572,7 +1594,7 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/r_file_and_folder_names.html" data-id="naming_conventions" wh-toc-id="naming_conventions-d66e1965">
+      <topic href="source/r_file_and_folder_names.html" data-id="naming_conventions" wh-toc-id="naming_conventions-d66e1985">
          <title>Naming Conventions</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lists the naming conventions we use for editions, sections, folders, and files.</p>
@@ -1593,7 +1615,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/r_editions_sections.html" format="dita" data-id="editions_sections" wh-toc-id="editions_sections-d66e1985">
+         <topic href="source/r_editions_sections.html" format="dita" data-id="editions_sections" wh-toc-id="editions_sections-d66e2005">
             <title>Editions and Sections</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Explains which print editions we use and how to refer to them and their         subsections.</p>
@@ -1615,7 +1637,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/r_file_names.html" data-id="file_fdr_names" wh-toc-id="file_fdr_names-d66e2005">
+         <topic href="source/r_file_names.html" data-id="file_fdr_names" wh-toc-id="file_fdr_names-d66e2025">
             <title>File and Folder Names</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">A comprehensive guide to file and folder naming for every stage of the Encyclopedia         project. </p>
@@ -1638,7 +1660,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/r_tei_style_manual.html" data-id="tei_style_manual" wh-toc-id="tei_style_manual-d66e2025">
+      <topic href="source/r_tei_style_manual.html" data-id="tei_style_manual" wh-toc-id="tei_style_manual-d66e2045">
          <title>TEI Style Manual</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">All TEI encoding must follow these guidelines.</p>
@@ -1659,7 +1681,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/r_notes.html" data-id="note" wh-toc-id="note-d66e2045">
+         <topic href="source/r_notes.html" data-id="note" wh-toc-id="note-d66e2065">
             <title>Notes</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Details method we use to code footnote text in TEI.</p>
@@ -1681,7 +1703,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/r_page_numbers.html" data-id="pagebreak" wh-toc-id="pagebreak-d66e2065">
+         <topic href="source/r_page_numbers.html" data-id="pagebreak" wh-toc-id="pagebreak-d66e2085">
             <title>Page Numbers</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Specifies encoding method for page numbers in TEI.</p>
@@ -1703,7 +1725,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/r_type_attributes.html" data-id="type_attributes" wh-toc-id="type_attributes-d66e2085">
+         <topic href="source/r_type_attributes.html" data-id="type_attributes" wh-toc-id="type_attributes-d66e2105">
             <title>Typographical Attributes</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lists TEI encoding we use for typographical features, with their CSS equivalents. </p>
@@ -1726,7 +1748,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/r_unicode_characters.html" data-id="unicode_characters" wh-toc-id="unicode_characters-d66e2105">
+      <topic href="source/r_unicode_characters.html" data-id="unicode_characters" wh-toc-id="unicode_characters-d66e2125">
          <title>Unicode Characters</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">List of unicode characters and entities used frequently in the Encyclopedia and not         on the standard US keyboard.</p>

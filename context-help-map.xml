@@ -58,7 +58,6 @@
    <appContext helpID="t.format-tab" path="source/t_format_settings_tab.html"/>
    <appContext helpID="t.areas-tab" path="source/t_areas_and_text_tab.html"/>
    <appContext helpID="t.other-tab" path="source/t_other_tab.html"/>
-   <appContext helpID="t.ocr-eb03" path="source/c_ocr_for_eb03.html"/>
    <appContext helpID="c.draw-boxes" path="source/c_draw_boxes.html"/>
    <appContext helpID="t.text-areas" path="source/t_text_areas.html"/>
    <appContext helpID="t.order-footnote-areas" path="source/t_order_areas.html"/>
@@ -73,9 +72,11 @@
    <appContext helpID="c_headers" path="source/c_headers.html"/>
    <appContext helpID="c.page-recognition" path="source/c_page_recognition.html"/>
    <appContext helpID="untitled4" path="source/t_verification.html"/>
+   <appContext helpID="t.ocr-eb03" path="source/c_ocr_for_eb03.html"/>
    <appContext helpID="t.proofread" path="source/t_proofread.html"/>
    <appContext helpID="t.add-dictionary-words" path="source/t_add_words_to_dictionary.html"/>
    <appContext helpID="t.code-footnotes" path="source/t_code_footnotes.html"/>
+   <appContext helpID="marginal_notes__eb03" path="source/c_marginal_notes__eb03.html"/>
    <appContext helpID="formulas" path="source/c_formulas.html"/>
    <appContext helpID="t.train-ocr" path="source/t_train_ocr.html"/>
    <appContext helpID="t.save-and-output" path="source/t_save_and_output.html"/>
