@@ -1021,13 +1021,13 @@
          <topic href="source/t_proofread.html" format="dita" data-id="t.proofread" wh-toc-id="t.proofread-d66e1459">
             <title>Proofread</title>
             <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How much proofreading is appropriate?</p>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How much additional proofreading is appropriate?</p>
             </shortdesc>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.proofread"></resourceid>
                <navtitle class="- topic/navtitle ">Proofread</navtitle><?ditaot gentext?>
                <linktext class="- map/linktext ">Proofread</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">How much proofreading is appropriate?</shortdesc>
+               <shortdesc class="- map/shortdesc ">How much additional proofreading is appropriate?</shortdesc>
                <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
                   Logan
                </author>
@@ -1065,13 +1065,13 @@
          <topic href="source/t_code_footnotes.html" format="dita" data-id="t.code-footnotes" wh-toc-id="t.code-footnotes-d66e1499">
             <title>Code Footnotes </title>
             <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to using @ codes for footnotes.</p>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Using @ codes for footnotes.</p>
             </shortdesc>
             <topicmeta>
                <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.code-footnotes"></resourceid>
                <navtitle class="- topic/navtitle ">Code Footnotes </navtitle><?ditaot gentext?>
                <linktext class="- map/linktext ">Code Footnotes</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">How to using @ codes for footnotes.</shortdesc>
+               <shortdesc class="- map/shortdesc ">Using @ codes for footnotes.</shortdesc>
                <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
                   Logan
                </author>

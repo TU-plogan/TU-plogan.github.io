@@ -20,7 +20,7 @@ define(['util', 'jquery', 'jquery.highlight'], function(util, $) {
         // Show/hide the button which expands/collapse the subtopics
         // if there are at least two subtopics in a topic
         var countSubtopics = $('.topic.nested1').length;
-        var countSections = $('section.section').length;
+        var countSections = $('section.section .title').length;
         if(countSubtopics > 1 || countSections >1){
             $('.webhelp_expand_collapse_sections').show();
         }
@@ -38,7 +38,12 @@ define(['util', 'jquery', 'jquery.highlight'], function(util, $) {
         });
 
         // Get the image and insert it inside the modal - use its "alt" text as a caption
-        $('img.image:not([usemap])').click(function(){
+        $.each( $('img.image:not([usemap])'), function (e) {
+             if(this.naturalWidth > this.width){
+                 $(this).addClass('zoom');
+             }
+         });
+        $('.zoom').click(function(){
             $('#modal_img_large').css("display","block");
             $("#modal-img").attr('src',$(this).attr('src') );
             $("#caption").html( $(this).attr('alt') );
@@ -48,6 +53,11 @@ define(['util', 'jquery', 'jquery.highlight'], function(util, $) {
         $(".modal .close").click(function(){
             $(".modal").css("display","none");
         });
+        $(document).keyup(function(e) {
+            if (e.keyCode == 27 && $('#modal_img_large').is(":visible")) { // escape key maps to keycode `27`
+               $(".modal").css("display","none");
+           }
+       });
 
         // Navigational links and print
         $('#topic_navigation_links .navprev>a').addClass("glyphicon glyphicon-arrow-left");
@@ -258,7 +268,7 @@ function handleSideTocPosition(scrollPosition) {
             var cHeight = parseInt($('.wh_content_area').height());
             if (parseInt(minVisibleOffset - topOffset) <=  $(window).scrollTop()) {
                 $('.wh_content_area').css('min-height', cHeight+'px');
-                $sideToc.css("top", topOffset + "px").css("width", tocWidth + "px").css("position", "fixed");
+                $sideToc.css("top", topOffset + "px").css("width", tocWidth + "px").css("position", "fixed").css("z-index", "999");
             } else {
                 $sideToc.removeAttr('style');
             }
