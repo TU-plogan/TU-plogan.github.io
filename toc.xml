@@ -1600,13 +1600,13 @@
       <topic href="source/r_file_and_folder_names.html" data-id="naming_conventions" wh-toc-id="naming_conventions-d66e1988">
          <title>Naming Conventions</title>
          <shortdesc>
-            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lists the naming conventions we use for editions, sections, folders, and files.</p>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lists the naming conventions we use for editions, sections, folders, and         files.</p>
          </shortdesc>
          <topicmeta>
             <resourceid class="- topic/resourceid " oxy-source="topic" appid="naming_conventions"></resourceid>
             <navtitle class="- topic/navtitle ">Naming Conventions</navtitle><?ditaot gentext?>
             <linktext class="- map/linktext ">Naming Conventions</linktext><?ditaot genshortdesc?>
-            <shortdesc class="- map/shortdesc ">Lists the naming conventions we use for editions, sections, folders, and files.</shortdesc>
+            <shortdesc class="- map/shortdesc ">Lists the naming conventions we use for editions, sections, folders, and         files.</shortdesc>
             <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
                Logan
             </author>
@@ -1618,52 +1618,8 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/r_editions_sections.html" format="dita" data-id="editions_sections" wh-toc-id="editions_sections-d66e2008">
-            <title>Editions and Sections</title>
-            <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Explains which print editions we use and how to refer to them and their         subsections.</p>
-            </shortdesc>
-            <topicmeta>
-               <resourceid class="- topic/resourceid " oxy-source="topic" appid="editions_sections"></resourceid>
-               <navtitle class="- topic/navtitle ">Editions and Sections</navtitle><?ditaot gentext?>
-               <linktext class="- map/linktext ">Editions and Sections</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">Explains which print editions we use and how to refer to them and their         subsections.</shortdesc>
-               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
-                  Logan
-               </author>
-               <copyright class="- topic/copyright ">
-                  
-                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
-                  
-                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
-                  
-               </copyright>
-            </topicmeta>
-         </topic>
-         <topic href="source/r_file_names.html" data-id="file_fdr_names" wh-toc-id="file_fdr_names-d66e2028">
-            <title>File and Folder Names</title>
-            <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">A comprehensive guide to file and folder naming for every stage of the Encyclopedia         project. </p>
-            </shortdesc>
-            <topicmeta>
-               <resourceid class="- topic/resourceid " oxy-source="topic" appid="file_fdr_names"></resourceid>
-               <navtitle class="- topic/navtitle ">File and Folder Names</navtitle><?ditaot gentext?>
-               <linktext class="- map/linktext ">File and Folder Names</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">A comprehensive guide to file and folder naming for every stage of the Encyclopedia         project. </shortdesc>
-               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
-                  Logan
-               </author>
-               <copyright class="- topic/copyright ">
-                  
-                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
-                  
-                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
-                  
-               </copyright>
-            </topicmeta>
-         </topic>
       </topic>
-      <topic href="source/r_tei_style_manual.html" data-id="tei_style_manual" wh-toc-id="tei_style_manual-d66e2048">
+      <topic href="source/r_tei_style_manual.html" data-id="tei_style_manual" wh-toc-id="tei_style_manual-d66e2008">
          <title>TEI Style Manual</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">All TEI encoding must follow these guidelines.</p>
@@ -1684,7 +1640,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/r_notes.html" data-id="note" wh-toc-id="note-d66e2068">
+         <topic href="source/r_notes.html" data-id="note" wh-toc-id="note-d66e2028">
             <title>Notes</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Details method we use to code footnote text in TEI.</p>
@@ -1706,7 +1662,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/r_page_numbers.html" data-id="pagebreak" wh-toc-id="pagebreak-d66e2088">
+         <topic href="source/r_page_numbers.html" data-id="pagebreak" wh-toc-id="pagebreak-d66e2048">
             <title>Page Numbers</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Specifies encoding method for page numbers in TEI.</p>
@@ -1728,7 +1684,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/r_type_attributes.html" data-id="type_attributes" wh-toc-id="type_attributes-d66e2108">
+         <topic href="source/r_type_attributes.html" data-id="type_attributes" wh-toc-id="type_attributes-d66e2068">
             <title>Typographical Attributes</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Lists TEI encoding we use for typographical features, with their CSS equivalents. </p>
@@ -1751,7 +1707,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/r_unicode_characters.html" data-id="unicode_characters" wh-toc-id="unicode_characters-d66e2128">
+      <topic href="source/r_unicode_characters.html" data-id="unicode_characters" wh-toc-id="unicode_characters-d66e2088">
          <title>Unicode Characters</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">List of unicode characters and entities used frequently in the Encyclopedia and not         on the standard US keyboard.</p>
