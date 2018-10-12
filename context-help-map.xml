@@ -31,7 +31,6 @@
    <appContext helpID="g.txt" path="glossary/g_txt.html"/>
    <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
-   <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_folder.html"/>
@@ -102,6 +101,7 @@
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
    <appContext helpID="c.proof-entry-terms" path="source/c_proof-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
+   <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
    <appContext helpID="naming_conventions" path="source/r_file_and_folder_names.html"/>
    <appContext helpID="tei_style_manual" path="source/r_tei_style_manual.html"/>
