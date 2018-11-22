@@ -40,10 +40,10 @@
                 <nav class=" wh_top_menu "><ul>
    <li class="has-children"><span data-tocid="c.introduction-d66e540" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li>
    <li class="has-children"><span data-tocid="c.data_organization-d66e581" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Data Organization</a></span></span></li>
-   <li class="has-children"><span data-tocid="c.intro-afr-d66e845" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning Procedures</a></span></span></li>
-   <li class="has-children"><span data-tocid="c.oxygen-d66e1592" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">Working with XML</a></span></span></li>
-   <li class="has-children"><span data-tocid="processing_entry_files-d66e1836" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Processing Entry Files</a></span></span></li>
-   <li class="has-children"><span data-tocid="reference_manual-d66e1917" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference Manual</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.intro-afr-d66e843" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning Procedures</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.oxygen-d66e1669" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">Working with XML</a></span></span></li>
+   <li class="has-children"><span data-tocid="processing_entry_files-d66e1913" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Processing Entry Files</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_manual-d66e1994" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference Manual</a></span></span></li>
 </ul></nav>
                 
                 
@@ -129,22 +129,85 @@
     <h1 class="title topictitle1" id="ariaid-title1">Archive Folder</h1>
     
     <div class="body conbody"><p class="shortdesc">Used for long-term storage of image files</p>
-        <p class="p">This is our long-term storage for original image files of print editions of the
-            Encyclopedia. We never modify these files. Instead, we copy them to the
+        <p class="p">This folder is long-term storage for original image files of print editions of the
+            Encyclopedia. We never modify these files. Instead, we copy select images to the
                 <span class="ph filepath">production/images</span> folder for active use.</p>
-        <div class="p">The original image files for the project are stored in the primary archive at
-                <span class="ph filepath">eb-corpus/archive</span>. These include scans of additional eb
-            editions as well as alternate scans of several production editions. We copy files from
+        <p class="p">The folder also includes scans of additional <a href="../glossary/g_eb.html" title="A multi-volume general reference source still publishing today."><dfn class="term">Encyclopedia Britannica</dfn></a> editions, as well as
+            alternate scans of production editions.</p>
+        <div class="p">Once you have selected the images we need for current production, copy the files from
                 <span class="ph filepath">eb-corpus/archive</span> to the
-                <span class="ph filepath">eb-corpus/production/images</span> folder, once we have selected the
-            images we need for current production. <div class="note note note_note"><span class="note__title">Note:</span> Think of the
-                    <span class="ph filepath">eb-corpus/archive</span> folder as a book store, while
+                <span class="ph filepath">eb-corpus/production/images</span> folder. <div class="note note note_note"><span class="note__title">Note:</span> Think of the
+                    <span class="ph filepath">eb-corpus/archive</span> folder as a library, while
                     <span class="ph filepath">eb-corpus/production/images</span> is a bookcase with just the
                 books we want to read.</div></div>
-        <figure class="fig fignone"><figcaption class="figcapcenter"><span class="figtitleprefix">Figure: </span>archive folder</figcaption>
+        <figure class="fig fignone"><figcaption class="figcapcenter"><span class="figtitleprefix">Figure: </span>The archive folder</figcaption>
             
-            <br /><div class="imagecenter"><img class="image imagecenter" src="image/archive-folder.JPG" /></div><br />
+            <br /><div class="imagecenter"><img class="image imagecenter" src="image/archive_folder.png" /></div><br />
         </figure>
+        <dl class="dl">
+            
+                <dt class="dt dlterm">eb03, eb07, eb09, eb11</dt>
+                <dd class="dd">These are the <a href="../glossary/g_print_edition.html" title="The physical volumes of the original Encyclopedia Britannica, or their volume and page numbers."><dfn class="term">print edition</dfn></a> folders. Each one contains all
+                    image files related to that edition. Each <a href="../glossary/g_print_edition.html" title="The physical volumes of the original Encyclopedia Britannica, or their volume and page numbers."><dfn class="term">print edition</dfn></a>
+                    folder includes two subfolders. <dl class="dl">
+                        
+                            <dt class="dt dlterm">alternate</dt>
+                            <dd class="dd">If there are multiple image sources for the edition, they are stored
+                                here.</dd>
+                        
+                        
+                            <dt class="dt dlterm">ia-gri (name varies)</dt>
+                            <dd class="dd">We keep our source images for production in a folder named with the
+                                online source that hosts it, using the following abbreviations. <table class="table"><caption></caption><colgroup><col /><col /></colgroup><tbody class="tbody">
+                                            <tr>
+                                                <td class="entry">bell</td>
+                                                <td class="entry">bell reference</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="entry">cdl </td>
+                                                <td class="entry">california digital library</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="entry">culc</td>
+                                                <td class="entry">cornell university library collection</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="entry">gb</td>
+                                                <td class="entry">google books</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="entry">gri</td>
+                                                <td class="entry">getty research institute</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="entry">ht</td>
+                                                <td class="entry">hathi trust</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="entry">ia</td>
+                                                <td class="entry">internet archive</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="entry">pg</td>
+                                                <td class="entry">project gutenberg</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="entry">uch</td>
+                                                <td class="entry">university of chicago</td>
+                                            </tr>
+                                        </tbody></table>
+                                <figure class="fig fignone">
+                                    <br /><div class="imageleft"><img class="image imageleft" src="image/archive-folder-eb09.png" /></div><br />
+                                </figure></dd>
+                        
+                    </dl>
+                </dd>
+            
+            
+                <dt class="dt dlterm">other-editions</dt>
+                <dd class="dd">We store images from other editions of the <a href="../glossary/g_eb.html" title="A multi-volume general reference source still publishing today."><dfn class="term">EB</dfn></a> here.</dd>
+            
+        </dl>
     </div>
 </article></main></div>
                         
