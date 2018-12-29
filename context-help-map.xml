@@ -34,17 +34,18 @@
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_folder.html"/>
+   <appContext helpID="c.code_folder" path="source/code_folder.html"/>
+   <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
    <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
    <appContext helpID="c.production_fdr" path="source/c_production_folder.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
-   <appContext helpID="c.page-html-fdr" path="source/c_2_page_html_folder.html"/>
+   <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
    <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
    <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
    <appContext helpID="c.images-fdr" path="source/c_images_folder.html"/>
-   <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
    <appContext helpID="c.intro-afr" path="source/c_scanning_procedures.html"/>
    <appContext helpID="create_an_image_collection"
                path="source/c_create_an_image_collection.html"/>
@@ -85,7 +86,6 @@
    <appContext helpID="formulas" path="source/c_formulas.html"/>
    <appContext helpID="t.train-ocr" path="source/t_train_ocr.html"/>
    <appContext helpID="t.save-and-output" path="source/t_save_and_output.html"/>
-   <appContext helpID="cleanup_html_output" path="source/t_cleanup_html_output.html"/>
    <appContext helpID="c.oxygen" path="source/c_oxygen-xml-editor.html"/>
    <appContext helpID="untitled2" path="source/r_oxygen-interface.html"/>
    <appContext helpID="create_a_new_oxygen_project"

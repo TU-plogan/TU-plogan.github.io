@@ -40,7 +40,7 @@
                 <nav class=" wh_top_menu "><ul>
    <li class="has-children"><span data-tocid="c.introduction-d66e540" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li>
    <li class="has-children"><span data-tocid="c.data_organization-d66e581" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Data Organization</a></span></span></li>
-   <li class="has-children"><span data-tocid="c.intro-afr-d66e843" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning Procedures</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.intro-afr-d66e863" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning Procedures</a></span></span></li>
    <li class="has-children"><span data-tocid="c.oxygen-d66e1669" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">Working with XML</a></span></span></li>
    <li class="has-children"><span data-tocid="processing_entry_files-d66e1913" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Processing Entry Files</a></span></span></li>
    <li class="has-children"><span data-tocid="reference_manual-d66e1994" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference Manual</a></span></span></li>
@@ -107,15 +107,19 @@
     <div class="body conbody"><p class="shortdesc">What is the Knowledge Project?</p>
         <section class="section"><h2 class="title sectiontitle">Objective</h2>
             
-            <p class="p">The <a href="../glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Nineteenth-Century Knowledge Project</dfn></a> uses historic editions of the
-                    <em class="ph i">Encyclopedia Britannica</em> to build one of the most extensive, open, digital
-                collections available today for studying the structure of nineteenth-century
-                knowledge and its transformation. These reference works were the most comprehensive
-                representation extant of what constituted “official” knowledge at the time, but they
-                also demonstrate changes in the nature of knowledge in the English-speaking world.
-                While these works are available on the web, the existing textual data is too
-                inaccurate to be used for text mining. This project creates the first accurate,
-                standards-compliant textual dataset for this corpus.</p>
+            <p class="p">The <a href="../glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Nineteenth-Century Knowledge Project</dfn></a> uses historic editions of the <a href="../glossary/g_eb.html" title="A multi-volume general reference source still publishing today."><dfn class="term">Encyclopedia Britannica</dfn></a> to build one of the most extensive, open, digital collections
+                available today for studying the structure of nineteenth-century knowledge and its
+                transformation. The effort is headed by Professor Peter M. Logan, Temple University,
+                and supported by the <a class="xref" href="https://sites.temple.edu/tudsc/" target="_blank">Digital Scholarship Center</a> of Temple Univesity Libraries. We
+                work closely with the <a class="xref" href="https://cci.drexel.edu/mrc/" target="_blank">Metadata Research Center</a> at Drexel University to develop a
+                comprehensive metadata scheme for all entries.</p>
+            <p class="p">The different editions of the <a href="../glossary/g_eb.html" title="A multi-volume general reference source still publishing today."><dfn class="term">EB</dfn></a> were the most comprehensive
+                representation extant of what constituted “official” knowledge throughout the
+                nineteenth century. Those editions also demonstrate changes iver time in the nature
+                of knowledge in the English-speaking world. These works are already available on the
+                web, but the existing textual data derived from the image files is too inaccurate to
+                be used for text mining. The <a href="../glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Knowledge Project</dfn></a> is creating the
+                first accurate, standards-compliant textual dataset for this corpus.</p>
             <p class="p">We extend the collection's usability by applying innovative methods to automatically
                 generate metadata for each of the 100,000 entries, which will be tagged with both
                 current and historical subject categories. At the end of the project, all of the
@@ -125,12 +129,12 @@
         </section>
         <section class="section"><h2 class="title sectiontitle">Production Method</h2>
             
-            <p class="p">The project begins with running <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term">OCR</dfn></a> on page images of the
-                Encyclopedia. The text is first output as single pages in <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term">HTML</dfn></a>
-                format, before being converted into <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="term">XML</dfn></a>. The data is encoding
-                with the standards developed by the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a>. <a href="../glossary/g_python.html" title="An object-oriented programming language."><dfn class="term">Python</dfn></a> is used to combine the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> pages into a single file and
-                segmented into a separate file for each entry in the <a href="../glossary/g_eb.html" title="A multi-volume general reference source still publishing today."><dfn class="term">Encyclopedia Britannica</dfn></a>. Finally,
-                we add topical metadata to each entry.</p>
+            <p class="p">The project begins with running <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term">OCR</dfn></a> on existing image files of
+                Encyclopedia pages. The text is first output as single pages in <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term">HTML</dfn></a> or <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents."><dfn class="term">DOCX</dfn></a> format, before being converted into
+                    <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="term">XML</dfn></a>. The data is encoding with the standards developed by the
+                    <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a>. <a href="../glossary/g_python.html" title="An object-oriented programming language."><dfn class="term">Python</dfn></a> is used to combine the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> pages into a single file and segment it into separate files for
+                each entry in the <a href="../glossary/g_eb.html" title="A multi-volume general reference source still publishing today."><dfn class="term">EB</dfn></a>. Finally, we add topical metadata to each
+                entry.</p>
             <p class="p"> These master files for the new <a href="../glossary/g_digital_edition.html" title="The complete textual matter derived from the print editions and converted into digital form."><dfn class="term">digital edition</dfn></a> can then be used
                 to generate editions in a variety of formats, from <a href="../glossary/g_xhtml.html" title="A form of Hyper Text Markup Language that conforms to the eXtensible Markup Language standard."><dfn class="term">XHTML</dfn></a> to <a href="../glossary/g_epub.html" title="An e-book file format with the extension .epub. The term is short for electronic publication.&#34;"><dfn class="term">EPUB</dfn></a> to <a href="../glossary/g_txt.html" title="A kind of computer file that is structured as a sequence of lines of electronic text and using the file extension .txt. Text files can contain plain text but are not limited to that."><dfn class="term">TXT</dfn></a>. Finally, we run textual analysis
                 routines on the data.</p>
@@ -138,9 +142,13 @@
         <section class="section"><h2 class="title sectiontitle">Accessibility</h2>
             
             <p class="p">When complete, the data set will include all text for approximately 100,000 entries.
-                All of this material will be made freely available online through two public
-                repositories, both in a user-friendly individual entry form, and in bulk download
-                form for researchers.</p>
+                This material will be made freely available online through two public repositories,
+                both in a user-friendly individual entry form, and in a bulk download form for
+                researchers. </p>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">Contact Information</h2>
+            
+            <p class="p">If you want to learn more about the <a href="../glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Knowledge Project</dfn></a>, are interested in contributing to it, or would like to ask about utilizing the data set, please contact the project lead, Prof. Peter M. Logan at <a class="xref" href="mailto:peter.logan@temple.edu" target="_blank">peter.logan@temple.edu</a>.</p>
         </section>
         <section class="section"><h2 class="title sectiontitle">Acknowledgments</h2>
             

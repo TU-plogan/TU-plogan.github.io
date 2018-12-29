@@ -62,16 +62,16 @@
    <topic href="source/c_data_organization.html" collection-type="sequence" data-id="c.data_organization" wh-toc-id="c.data_organization-d66e581">
       <title>Data Organization</title>
       <shortdesc>
-         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">With over 100,000 files, the Knowledge Project needs a clear means         of organizing its data. We use specific naming
-            conventions for all files and folders, to         order the large quantity of material.
+         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">With hundreds of thousands of files, the Knowledge Project needs a clear means of         organizing its data. We use specific
+            naming conventions for all files and folders to order         the large quantity of material.
          </p>
       </shortdesc>
       <topicmeta>
          <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.data_organization"></resourceid>
          <navtitle class="- topic/navtitle ">Data Organization</navtitle><?ditaot gentext?>
          <linktext class="- map/linktext ">Data Organization</linktext><?ditaot genshortdesc?>
-         <shortdesc class="- map/shortdesc ">With over 100,000 files, the Knowledge Project needs a clear means         of organizing its data. We use specific naming
-            conventions for all files and folders, to         order the large quantity of material.
+         <shortdesc class="- map/shortdesc ">With hundreds of thousands of files, the Knowledge Project needs a clear means of         organizing its data. We use specific
+            naming conventions for all files and folders to order         the large quantity of material.
          </shortdesc>
          <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
             Logan
@@ -106,7 +106,51 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/c_digital_edition_folder.html" format="dita" data-id="c.digital-ed-fdr" wh-toc-id="c.digital-ed-fdr-d66e621">
+      <topic href="source/code_folder.html" data-id="c.code_folder" wh-toc-id="c.code_folder-d66e621">
+         <title>Code Folder</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The central repository for our programming routines and transformation         scripts.</p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.code_folder"></resourceid>
+            <navtitle class="- topic/navtitle ">Code Folder</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Code Folder</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">The central repository for our programming routines and transformation         scripts.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+         <topic href="source/c_python_folder.html" format="dita" data-id="c.python-fdr" wh-toc-id="c.python-fdr-d66e641">
+            <title>Python Folder</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Python script files.</p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.python-fdr"></resourceid>
+               <navtitle class="- topic/navtitle ">Python Folder</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Python Folder</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Python script files.</shortdesc>
+               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+                  Logan
+               </author>
+               <copyright class="- topic/copyright ">
+                  
+                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
+                  
+                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+                  
+               </copyright>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="source/c_digital_edition_folder.html" format="dita" data-id="c.digital-ed-fdr" wh-toc-id="c.digital-ed-fdr-d66e661">
          <title>Digital Edition Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Contains files connected with generating an edition or running analyses</p>
@@ -128,7 +172,7 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/c_information_folder.html" format="dita" data-id="c.information-fdr" wh-toc-id="c.information-fdr-d66e641">
+      <topic href="source/c_information_folder.html" format="dita" data-id="c.information-fdr" wh-toc-id="c.information-fdr-d66e681">
          <title>Information Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Contains information related to the project</p>
@@ -150,7 +194,7 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/c_production_folder.html" collection-type="sequence" format="dita" data-id="c.production_fdr" wh-toc-id="c.production_fdr-d66e661">
+      <topic href="source/c_production_folder.html" collection-type="sequence" format="dita" data-id="c.production_fdr" wh-toc-id="c.production_fdr-d66e701">
          <title>Production Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Contains all files involed in creating the textual data from page images of the <a href="glossary/g_eb.html" title="A multi-volume general reference source still publishing today."><dfn class="term">Encyclopedia Britannica</dfn></a></p>
@@ -173,7 +217,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/c_print_edition_folder.html" collection-type="sequence" format="dita" data-id="c.print-ed-fdr" wh-toc-id="c.print-ed-fdr-d66e682">
+         <topic href="source/c_print_edition_folder.html" collection-type="sequence" format="dita" data-id="c.print-ed-fdr" wh-toc-id="c.print-ed-fdr-d66e722">
             <title>Print Edition Folder</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Subdivisions of the print editions for digitization.</p>
@@ -194,7 +238,7 @@
                   
                </copyright>
             </topicmeta>
-            <topic href="source/c_section_folder.html" collection-type="sequence" format="dita" data-id="c.section-fdr" wh-toc-id="c.section-fdr-d66e702">
+            <topic href="source/c_section_folder.html" collection-type="sequence" format="dita" data-id="c.section-fdr" wh-toc-id="c.section-fdr-d66e742">
                <title>Section Folders</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The three types of data stored in the section folders.</p>
@@ -215,7 +259,7 @@
                      
                   </copyright>
                </topicmeta>
-               <topic href="source/c_1_afr_project_folder.html" format="dita" data-id="c.afr-project-fdr" wh-toc-id="c.afr-project-fdr-d66e722">
+               <topic href="source/c_1_afr_project_folder.html" format="dita" data-id="c.afr-project-fdr" wh-toc-id="c.afr-project-fdr-d66e762">
                   <title>1-afr-project Folder</title>
                   <shortdesc>
                      <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Container for OCR Project files for ABBYY FineReader.</p>
@@ -237,16 +281,16 @@
                      </copyright>
                   </topicmeta>
                </topic>
-               <topic href="source/c_2_page_html_folder.html" format="dita" data-id="c.page-html-fdr" wh-toc-id="c.page-html-fdr-d66e742">
-                  <title>2-page-html Folder</title>
+               <topic href="source/c_2_page_docx_folder.html" format="dita" data-id="c.page-docx-fdr" wh-toc-id="c.page-docx-fdr-d66e782">
+                  <title>2-page-docx Folder</title>
                   <shortdesc>
-                     <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Container for HTML page files created by ABBYY FineReader.</p>
+                     <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Container for Word .docx page files created by ABBYY FineReader.</p>
                   </shortdesc>
                   <topicmeta>
-                     <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.page-html-fdr"></resourceid>
-                     <navtitle class="- topic/navtitle ">2-page-html Folder</navtitle><?ditaot gentext?>
-                     <linktext class="- map/linktext ">2-page-html Folder</linktext><?ditaot genshortdesc?>
-                     <shortdesc class="- map/shortdesc ">Container for HTML page files created by ABBYY FineReader.</shortdesc>
+                     <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.page-docx-fdr"></resourceid>
+                     <navtitle class="- topic/navtitle ">2-page-docx Folder</navtitle><?ditaot gentext?>
+                     <linktext class="- map/linktext ">2-page-docx Folder</linktext><?ditaot genshortdesc?>
+                     <shortdesc class="- map/shortdesc ">Container for Word .docx page files created by ABBYY FineReader.</shortdesc>
                      <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
                         Logan
                      </author>
@@ -259,7 +303,7 @@
                      </copyright>
                   </topicmeta>
                </topic>
-               <topic href="source/c_3_page_tei_folder.html" format="dita" data-id="c.page-tei-fdr" wh-toc-id="c.page-tei-fdr-d66e762">
+               <topic href="source/c_3_page_tei_folder.html" format="dita" data-id="c.page-tei-fdr" wh-toc-id="c.page-tei-fdr-d66e802">
                   <title>3-page-tei Folder</title>
                   <shortdesc>
                      <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Container for TEI Page Files, before conversion into entries.</p>
@@ -281,7 +325,7 @@
                      </copyright>
                   </topicmeta>
                </topic>
-               <topic href="source/t_page_inventory.html" format="dita" data-id="t.pg-inventory" wh-toc-id="t.pg-inventory-d66e782">
+               <topic href="source/t_page_inventory.html" format="dita" data-id="t.pg-inventory" wh-toc-id="t.pg-inventory-d66e822">
                   <title>Page-Inventory File</title>
                   <shortdesc>
                      <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Document the file names of every page in a section using the page-inventory         file.</p>
@@ -305,7 +349,7 @@
                </topic>
             </topic>
          </topic>
-         <topic href="source/c_images_folder.html" format="dita" data-id="c.images-fdr" wh-toc-id="c.images-fdr-d66e802">
+         <topic href="source/c_images_folder.html" format="dita" data-id="c.images-fdr" wh-toc-id="c.images-fdr-d66e842">
             <title>Images Folder</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The images folder contains page images from the Archive folder organized for         scanning.</p>
@@ -327,31 +371,9 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_python_folder.html" format="dita" data-id="c.python-fdr" wh-toc-id="c.python-fdr-d66e822">
-            <title>Python Folder</title>
-            <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Python script files.</p>
-            </shortdesc>
-            <topicmeta>
-               <resourceid class="- topic/resourceid " oxy-source="topic" appid="c.python-fdr"></resourceid>
-               <navtitle class="- topic/navtitle ">Python Folder</navtitle><?ditaot gentext?>
-               <linktext class="- map/linktext ">Python Folder</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">Python script files.</shortdesc>
-               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
-                  Logan
-               </author>
-               <copyright class="- topic/copyright ">
-                  
-                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
-                  
-                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
-                  
-               </copyright>
-            </topicmeta>
-         </topic>
       </topic>
    </topic>
-   <topic href="source/c_scanning_procedures.html" collection-type="sequence" data-id="c.intro-afr" wh-toc-id="c.intro-afr-d66e843">
+   <topic href="source/c_scanning_procedures.html" collection-type="sequence" data-id="c.intro-afr" wh-toc-id="c.intro-afr-d66e863">
       <title>Scanning Procedures</title>
       <shortdesc>
          <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">An introduction to AFR that explains the specific procedures we use to get the best         quality text recognition of Encyclopedia
@@ -376,7 +398,7 @@
             
          </copyright>
       </topicmeta>
-      <topic href="source/c_create_an_image_collection.html" data-id="create_an_image_collection" wh-toc-id="create_an_image_collection-d66e863">
+      <topic href="source/c_create_an_image_collection.html" data-id="create_an_image_collection" wh-toc-id="create_an_image_collection-d66e883">
          <title>Create an Image Collection</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to organize images files for scanning.</p>
@@ -397,7 +419,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_identify_the_print_pages.html" data-id="t_identify_the_print_pages" wh-toc-id="t_identify_the_print_pages-d66e883">
+         <topic href="source/t_identify_the_print_pages.html" data-id="t_identify_the_print_pages" wh-toc-id="t_identify_the_print_pages-d66e903">
             <title>Identify the Print Pages</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use the print-pagination file to look up page numbers</p>
@@ -419,7 +441,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_copy_image_files.html" data-id="t_locate_the_image_files" wh-toc-id="t_locate_the_image_files-d66e903">
+         <topic href="source/t_copy_image_files.html" data-id="t_locate_the_image_files" wh-toc-id="t_locate_the_image_files-d66e923">
             <title>Copy and Paste the Image Files</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Locate image files in the archive and move them to the production folder.</p>
@@ -441,7 +463,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_inventory_images.html" data-id="t_organize_the_images" wh-toc-id="t_organize_the_images-d66e923">
+         <topic href="source/t_inventory_images.html" data-id="t_organize_the_images" wh-toc-id="t_organize_the_images-d66e943">
             <title>Inventory the Images</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Finalize image selections and add filenames to the inventory</p>
@@ -464,7 +486,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/r_afr-interface.html" collection-type="sequence" format="dita" data-id="r.afr-interface" wh-toc-id="r.afr-interface-d66e943">
+      <topic href="source/r_afr-interface.html" collection-type="sequence" format="dita" data-id="r.afr-interface" wh-toc-id="r.afr-interface-d66e963">
          <title>AFR Interface</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Learn about the main elements of the program interface</p>
@@ -486,7 +508,7 @@
             </copyright>
          </topicmeta>
       </topic>
-      <topic href="source/t_create_an_ocr_project_folder.html" format="dita" data-id="t.create-ocr-project" wh-toc-id="t.create-ocr-project-d66e963">
+      <topic href="source/t_create_an_ocr_project_folder.html" format="dita" data-id="t.create-ocr-project" wh-toc-id="t.create-ocr-project-d66e983">
          <title>Create an OCR-Project Folder</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to create and manage the OCR-Project folder.</p>
@@ -507,7 +529,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_image_resolution.html" format="dita" data-id="adjust_image_resolution" wh-toc-id="adjust_image_resolution-d66e983">
+         <topic href="source/t_image_resolution.html" format="dita" data-id="adjust_image_resolution" wh-toc-id="adjust_image_resolution-d66e1003">
             <title>Set Image Resolution</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Correct the image resolution on all pages of the OCR Project before drawing         boxes.</p>
@@ -529,7 +551,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_settings.html" collection-type="sequence" format="dita" data-id="c.afr-settings" wh-toc-id="c.afr-settings-d66e1003">
+         <topic href="source/c_settings.html" collection-type="sequence" format="dita" data-id="c.afr-settings" wh-toc-id="c.afr-settings-d66e1023">
             <title>Settings</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Recommended settings for all options in ABBYY FineReader</p>
@@ -550,7 +572,7 @@
                   
                </copyright>
             </topicmeta>
-            <topic href="source/t_general_tab.html" format="dita" data-id="t.general-tab" wh-toc-id="t.general-tab-d66e1023">
+            <topic href="source/t_general_tab.html" format="dita" data-id="t.general-tab" wh-toc-id="t.general-tab-d66e1043">
                <title>General Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">General</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
@@ -576,7 +598,7 @@
                   </copyright>
                </topicmeta>
             </topic>
-            <topic href="source/t_image_processing_tab.html" format="dita" data-id="t.image-processing-tab" wh-toc-id="t.image-processing-tab-d66e1049">
+            <topic href="source/t_image_processing_tab.html" format="dita" data-id="t.image-processing-tab" wh-toc-id="t.image-processing-tab-d66e1069">
                <title>Image Processing Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Image Processing</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
@@ -602,7 +624,7 @@
                   </copyright>
                </topicmeta>
             </topic>
-            <topic href="source/t_languages_tab.html" format="dita" data-id="t.languages-tab" wh-toc-id="t.languages-tab-d66e1075">
+            <topic href="source/t_languages_tab.html" format="dita" data-id="t.languages-tab" wh-toc-id="t.languages-tab-d66e1095">
                <title>Languages Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Languages</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
@@ -628,7 +650,7 @@
                   </copyright>
                </topicmeta>
             </topic>
-            <topic href="source/t_ocr_tab.html" format="dita" data-id="t.ocr-tab" wh-toc-id="t.ocr-tab-d66e1101">
+            <topic href="source/t_ocr_tab.html" format="dita" data-id="t.ocr-tab" wh-toc-id="t.ocr-tab-d66e1121">
                <title>OCR Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">OCR</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
@@ -654,7 +676,7 @@
                   </copyright>
                </topicmeta>
             </topic>
-            <topic href="source/t_format_settings_tab.html" format="dita" data-id="t.format-tab" wh-toc-id="t.format-tab-d66e1127">
+            <topic href="source/t_format_settings_tab.html" format="dita" data-id="t.format-tab" wh-toc-id="t.format-tab-d66e1147">
                <title>Format Settings Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Format Settings</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
@@ -680,7 +702,7 @@
                   </copyright>
                </topicmeta>
             </topic>
-            <topic href="source/t_areas_and_text_tab.html" format="dita" data-id="t.areas-tab" wh-toc-id="t.areas-tab-d66e1153">
+            <topic href="source/t_areas_and_text_tab.html" format="dita" data-id="t.areas-tab" wh-toc-id="t.areas-tab-d66e1173">
                <title>Areas and Text Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Areas and Text</span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
@@ -706,7 +728,7 @@
                   </copyright>
                </topicmeta>
             </topic>
-            <topic href="source/t_other_tab.html" format="dita" data-id="t.other-tab" wh-toc-id="t.other-tab-d66e1179">
+            <topic href="source/t_other_tab.html" format="dita" data-id="t.other-tab" wh-toc-id="t.other-tab-d66e1199">
                <title>Other Tab</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Settings for the <span class="keyword wintitle">Other </span> tab in the ABBYY FineReader             <span class="keyword wintitle">Options</span> window.
@@ -734,7 +756,7 @@
             </topic>
          </topic>
       </topic>
-      <topic href="source/c_draw_boxes.html" collection-type="sequence" format="dita" data-id="c.draw-boxes" wh-toc-id="c.draw-boxes-d66e1205">
+      <topic href="source/c_draw_boxes.html" collection-type="sequence" format="dita" data-id="c.draw-boxes" wh-toc-id="c.draw-boxes-d66e1225">
          <title>Draw Boxes</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Manually creating text recognition boxes improves accuracy</p>
@@ -755,7 +777,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_text_areas.html" format="dita" data-id="t.text-areas" wh-toc-id="t.text-areas-d66e1225">
+         <topic href="source/t_text_areas.html" format="dita" data-id="t.text-areas" wh-toc-id="t.text-areas-d66e1245">
             <title>Text Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to draw text areas</p>
@@ -777,7 +799,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_order_areas.html" format="dita" data-id="t.order-footnote-areas" wh-toc-id="t.order-footnote-areas-d66e1245">
+         <topic href="source/t_order_areas.html" format="dita" data-id="t.order-footnote-areas" wh-toc-id="t.order-footnote-areas-d66e1265">
             <title>Order Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to order areas correctly for text output.</p>
@@ -799,7 +821,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_modify_areas.html" format="dita" data-id="t.modify-areas" wh-toc-id="t.modify-areas-d66e1265">
+         <topic href="source/t_modify_areas.html" format="dita" data-id="t.modify-areas" wh-toc-id="t.modify-areas-d66e1285">
             <title>Modify Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Areas must be drawn in a basic box shape, but they can be altered to subtract or add         to part of the box. </p>
@@ -821,7 +843,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_footnote_areas.html" format="dita" data-id="c.footnote-areas" wh-toc-id="c.footnote-areas-d66e1285">
+         <topic href="source/c_footnote_areas.html" format="dita" data-id="c.footnote-areas" wh-toc-id="c.footnote-areas-d66e1305">
             <title>Footnote Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Footnotes always output as the last areas on the page.</p>
@@ -843,7 +865,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_table_areas.html" format="dita" data-id="t.table-areas" wh-toc-id="t.table-areas-d66e1305">
+         <topic href="source/t_table_areas.html" format="dita" data-id="t.table-areas" wh-toc-id="t.table-areas-d66e1325">
             <title>Table Areas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Creating table areas improves recognition</p>
@@ -864,7 +886,7 @@
                   
                </copyright>
             </topicmeta>
-            <topic href="source/t_edit_tables.html" format="dita" data-id="untitled3" wh-toc-id="untitled3-d66e1325">
+            <topic href="source/t_edit_tables.html" format="dita" data-id="untitled3" wh-toc-id="untitled3-d66e1345">
                <title>Editing tables</title>
                <shortdesc>
                   <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Table columns and rows can be adjusted before recognition.</p>
@@ -887,7 +909,7 @@
                </topicmeta>
             </topic>
          </topic>
-         <topic href="source/c_illustrations.html" format="dita" data-id="c.illustrations" wh-toc-id="c.illustrations-d66e1345">
+         <topic href="source/c_illustrations.html" format="dita" data-id="c.illustrations" wh-toc-id="c.illustrations-d66e1365">
             <title>Illustrations</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">When drawing boxes, leave out illustrations and their captions.</p>
@@ -909,7 +931,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_catchwords.html" format="dita" data-id="c.catchwords" wh-toc-id="c.catchwords-d66e1365">
+         <topic href="source/c_catchwords.html" format="dita" data-id="c.catchwords" wh-toc-id="c.catchwords-d66e1385">
             <title>Catchwords</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Leave out the extra word at the bottom of the page in eb03</p>
@@ -931,7 +953,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_author_initials.html" format="dita" data-id="c.author-initials" wh-toc-id="c.author-initials-d66e1385">
+         <topic href="source/c_author_initials.html" format="dita" data-id="c.author-initials" wh-toc-id="c.author-initials-d66e1405">
             <title>Author Initials</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Always include author indicators at the end of articles</p>
@@ -953,7 +975,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_pages_withou-text.html" format="dita" data-id="t.unnumbered-pages" wh-toc-id="t.unnumbered-pages-d66e1405">
+         <topic href="source/t_pages_withou-text.html" format="dita" data-id="t.unnumbered-pages" wh-toc-id="t.unnumbered-pages-d66e1425">
             <title>Pages without Text</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">When to include pages without text in the output</p>
@@ -975,7 +997,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_headers.html" format="dita" data-id="c_headers" wh-toc-id="c_headers-d66e1425">
+         <topic href="source/c_headers.html" format="dita" data-id="c_headers" wh-toc-id="c_headers-d66e1445">
             <title>Headers</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to treat two-column entry titles</p>
@@ -998,7 +1020,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/c_page_recognition.html" collection-type="sequence" format="dita" data-id="c.page-recognition" wh-toc-id="c.page-recognition-d66e1445">
+      <topic href="source/c_page_recognition.html" collection-type="sequence" format="dita" data-id="c.page-recognition" wh-toc-id="c.page-recognition-d66e1465">
          <title>Page Recognition</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Excellent page recognition depends on preparing the page properly.</p>
@@ -1019,7 +1041,7 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_verification.html" format="dita" data-id="untitled4" wh-toc-id="untitled4-d66e1465">
+         <topic href="source/t_verification.html" format="dita" data-id="untitled4" wh-toc-id="untitled4-d66e1485">
             <title>Verification</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use AFR's built-in program to verify recognition accuracy on each page.</p>
@@ -1041,7 +1063,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_ocr_for_eb03.html" format="dita" data-id="t.ocr-eb03" wh-toc-id="t.ocr-eb03-d66e1485">
+         <topic href="source/c_ocr_for_eb03.html" format="dita" data-id="t.ocr-eb03" wh-toc-id="t.ocr-eb03-d66e1505">
             <title>OCR for eb03</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning eb03 requires special settings.</p>
@@ -1063,7 +1085,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_proofread.html" format="dita" data-id="t.proofread" wh-toc-id="t.proofread-d66e1505">
+         <topic href="source/t_proofread.html" format="dita" data-id="t.proofread" wh-toc-id="t.proofread-d66e1525">
             <title>Proofread</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How much additional proofreading is appropriate?</p>
@@ -1085,7 +1107,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_add_words_to_dictionary.html" format="dita" data-id="t.add-dictionary-words" wh-toc-id="t.add-dictionary-words-d66e1525">
+         <topic href="source/t_add_words_to_dictionary.html" format="dita" data-id="t.add-dictionary-words" wh-toc-id="t.add-dictionary-words-d66e1545">
             <title>Add Dictionary Words</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Teach AFR how to spell.</p>
@@ -1107,7 +1129,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_code_footnotes.html" format="dita" data-id="t.code-footnotes" wh-toc-id="t.code-footnotes-d66e1545">
+         <topic href="source/t_code_footnotes.html" format="dita" data-id="t.code-footnotes" wh-toc-id="t.code-footnotes-d66e1565">
             <title>Code Footnotes </title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Using <code class="ph codeph">@</code> codes for footnotes.
@@ -1132,7 +1154,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_marginal_notes__eb03.html" format="dita" data-id="marginal_notes__eb03" wh-toc-id="marginal_notes__eb03-d66e1568">
+         <topic href="source/c_marginal_notes__eb03.html" format="dita" data-id="marginal_notes__eb03" wh-toc-id="marginal_notes__eb03-d66e1588">
             <title>Marginal Notes (eb03)</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Marginal notes occur in eb03 as well as footnotes.</p>
@@ -1154,7 +1176,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/c_formulas.html" format="dita" data-id="formulas" wh-toc-id="formulas-d66e1588">
+         <topic href="source/c_formulas.html" format="dita" data-id="formulas" wh-toc-id="formulas-d66e1608">
             <title>Formulas</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning simple and complex math and chemical formulas.</p>
@@ -1176,7 +1198,7 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_train_ocr.html" format="dita" data-id="t.train-ocr" wh-toc-id="t.train-ocr-d66e1608">
+         <topic href="source/t_train_ocr.html" format="dita" data-id="t.train-ocr" wh-toc-id="t.train-ocr-d66e1628">
             <title>Train OCR </title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Advanced users can improve recognition with user patterns.</p>
@@ -1199,7 +1221,7 @@
             </topicmeta>
          </topic>
       </topic>
-      <topic href="source/t_save_and_output.html" format="dita" data-id="t.save-and-output" wh-toc-id="t.save-and-output-d66e1628">
+      <topic href="source/t_save_and_output.html" format="dita" data-id="t.save-and-output" wh-toc-id="t.save-and-output-d66e1648">
          <title>Save and Output</title>
          <shortdesc>
             <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">How to output your OCR results.</p>
@@ -1220,28 +1242,6 @@
                
             </copyright>
          </topicmeta>
-         <topic href="source/t_cleanup_html_output.html" format="dita" data-id="cleanup_html_output" wh-toc-id="cleanup_html_output-d66e1648">
-            <title>Cleanup HTML Output</title>
-            <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Explains how to change auto-generated filenames and delete special folders created by         AFR. </p>
-            </shortdesc>
-            <topicmeta>
-               <resourceid class="- topic/resourceid " oxy-source="topic" appid="cleanup_html_output"></resourceid>
-               <navtitle class="- topic/navtitle ">Cleanup HTML Output</navtitle><?ditaot gentext?>
-               <linktext class="- map/linktext ">Cleanup HTML Output</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">Explains how to change auto-generated filenames and delete special folders created by         AFR. </shortdesc>
-               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
-                  Logan
-               </author>
-               <copyright class="- topic/copyright ">
-                  
-                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
-                  
-                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
-                  
-               </copyright>
-            </topicmeta>
-         </topic>
       </topic>
    </topic>
    <topic href="source/c_oxygen-xml-editor.html" collection-type="sequence" data-id="c.oxygen" wh-toc-id="c.oxygen-d66e1669">
