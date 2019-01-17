@@ -1,0 +1,217 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="DC.Type" content="concept" /><meta name="description" content="Use Oxygen and XSLT to convert DOCX files to TEI." /><meta name="DC.Relation" scheme="URI" content="../source/c_oxygen-xml-editor.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_create_a_new_xml_project.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_docx2tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_transform_docx2tei.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_check_footnote_coding_1.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_check_footnote_coding_2.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_review_inventory_notes.html" /><meta name="DC.Relation" scheme="URI" content="../source/t_partial_entries.html" /><meta name="DC.Creator" content="Peter M. Logan" /><meta name="rights" content="© 2018 Peter M. Logan" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="convert-docx2tei" />        
+      <title>Convert DOCX to TEI</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2018101515.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="convert-docx2tei-d66e1751" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2018101515" /><script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2018101515" /></head>
+
+    <body id="convert-docx2tei" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Nineteenth-Century Knowledge Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li class="has-children"><span data-tocid="c.introduction-d66e540" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.data_organization-d66e581" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Data Organization</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.intro-afr-d66e863" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning Procedures</a></span></span></li>
+   <li class="has-children"><span data-tocid="c.oxygen-d66e1689" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">Working with XML</a></span></span></li>
+   <li class="has-children"><span data-tocid="processing_entry_files-d66e1893" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Processing Entry Files</a></span></span></li>
+   <li class="has-children"><span data-tocid="reference_manual-d66e1974" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference Manual</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref" data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">Working with XML</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This introduction to <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a> shows you how to navigate the         interface and perform standard procedures on the Encyclopedia files.
+                  
+               </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref" data-id="convert-docx2tei"><span class="title"><a href="../source/c_convert_docx2tei.html">Convert DOCX to TEI</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use Oxygen and XSLT to convert DOCX files to TEI.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="link" href="../source/t_create_a_new_xml_project.html" title="Create an XML-Project" aria-label="Previous topic: Create an XML-Project" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="../source/t_transform_docx2tei.html" title="Transform the DOCX Files to TEI" aria-label="Next topic: Transform the DOCX Files to TEI" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="c.oxygen-d66e1689" class="topicref" data-id="c.oxygen" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c.oxygen-d66e1689-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_oxygen-xml-editor.html" id="c.oxygen-d66e1689-link">Working with XML</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">This introduction to <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a> shows you how to navigate the         interface and perform standard procedures on the Encyclopedia files.
+                  
+               </p>
+               </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="untitled2-d66e1711" class="topicref" data-id="untitled2" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/r_oxygen-interface.html" id="untitled2-d66e1711-link">Oxygen Interface</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">An introduction to the main components of the Oxygen interface.</p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="create_a_new_oxygen_project-d66e1731" class="topicref" data-id="create_a_new_oxygen_project" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_create_a_new_xml_project.html" id="create_a_new_oxygen_project-d66e1731-link">Create an XML-Project</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Using Oxygen XML Editor to organize files.</p>
+                     </span></span></span></li>
+         <li role="treeitem" aria-expanded="true" class="active"><span data-tocid="convert-docx2tei-d66e1751" class="topicref" data-id="convert-docx2tei" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action convert-docx2tei-d66e1751-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_convert_docx2tei.html" id="convert-docx2tei-d66e1751-link">Convert DOCX to TEI</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use Oxygen and XSLT to convert DOCX files to TEI.</p>
+                     </span></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="transform_docx_files-d66e1771" class="topicref" data-id="transform_docx_files" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action transform_docx_files-d66e1771-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_transform_docx2tei.html" id="transform_docx_files-d66e1771-link">Transform the DOCX Files to TEI</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How to convert DOCX files to TEI in Oxygen.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="check_footnote_coding-d66e1811" class="topicref" data-id="check_footnote_coding" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_check_footnote_coding_1.html" id="check_footnote_coding-d66e1811-link">Check HTML Footnote Coding 1</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Use a simple search to check if you have the right number of note codes on all pages. </p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="check_footnote_coding_2-d66e1831" class="topicref" data-id="check_footnote_coding_2" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_check_footnote_coding_2.html" id="check_footnote_coding_2-d66e1831-link">Check HTML Footnote Coding 2</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Footnotes have to be in their own paragraph.</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="untitled1-d66e1851" class="topicref" data-id="untitled1" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_review_inventory_notes.html" id="untitled1-d66e1851-link">Review Inventory Comments</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Correct resolvable issues noted in the comments</p>
+                           </span></span></span></li>
+               <li role="treeitem"><span data-tocid="t.partial-entries-d66e1871" class="topicref" data-id="t.partial-entries" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_partial_entries.html" id="t.partial-entries-d66e1871-link">Add Titles to Partial Entries</a><span class="wh-tooltip">
+                           
+                           <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Prepare the first entry in the section for inclusion.</p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Convert DOCX to TEI</h1>
+    
+    <div class="body conbody"><p class="shortdesc">Use Oxygen and XSLT to convert DOCX files to TEI.</p>
+        <p class="p">
+            <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term abbreviated-form">ABBYY FineReader</dfn></a> outputs <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents."><dfn class="term abbreviated-form">DOCX</dfn></a> files,
+            but that is not a good storage medium for textual data. <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="term abbreviated-form">XML</dfn></a> is far more flexible and makes it possible to output the data in many different files
+            formats, including <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a>, <a href="../glossary/g_pdf.html" title="Portable Document Format was invented by Adobe as a multi-platform file format that presents documents, with all text formatting and images, in a manner independent of hardware and operating systems."><dfn class="term">PDF</dfn></a>, <a href="../glossary/g_txt.html" title="A kind of computer file that is structured as a sequence of lines of electronic text and using the file extension .txt. Text files can contain plain text but are not limited to that."><dfn class="term">TXT</dfn></a>, and <a href="../glossary/g_csv.html" title="Comma-Separate Values is a file format for storing date separate by commas."><dfn class="term">CSV</dfn></a>.</p>
+        <section class="section"><h2 class="title sectiontitle">XML</h2>
+            
+            <p class="p"><a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="term abbreviated-form">XML</dfn></a> has definite rules for how to structure data. It
+                uses different schema that are tailored to different types of data. This allows
+                users to select from any number of encoding schemes, or even create their own. These
+                schemes have their own built-in sets of rules about what elements and attributes are
+                legitimate.</p>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">TEI</h2>
+            
+            <p class="p">We use the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a>
+                <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="term">XML</dfn></a> schema because of its widespread acceptance for archival
+                storage of textual data. This is a complex markup language that encodes the
+                semanatic structure of a document, rather than its appearance. It allows us to
+                define what is a title, subtitle, and body text. It does not tell us which typeface
+                or font size to use. Later, users can display those elements in the way that best
+                suits their purposes. </p>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">XSLT</h2>
+            
+            <p class="p">To convert our <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> files to <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a>, we use a "transformation" script written in <a href="../glossary/g_xslt.html" title="eXtensible Stylesheet Language Transformation: a scripting language for converting XML documents into other formats."><dfn class="term abbreviated-form">XSLT</dfn></a>. The script reads the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents."><dfn class="term abbreviated-form">DOCX</dfn></a>
+                files, strips out coding we do not want, renames the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents."><dfn class="term abbreviated-form">DOCX</dfn></a> tags we do want into valid <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a>
+                tags, and generates a new <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> file for each of the
+                    <a href="../glossary/g_html.html" title="Hyper Text Markup Language is used for coding web pages."><dfn class="term abbreviated-form">HTML</dfn></a> originals.</p>
+        </section>
+        <section class="section"><h2 class="title sectiontitle">More information</h2>
+            
+            <p class="p">These instructions contain enough information to guide you in these specific tasks.
+                For more information about <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a>, see the <a class="xref" href="https://www.oxygenxml.com/doc/versions/19.1/ug-editor/" target="_blank">User Guide</a>.</p>
+        </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

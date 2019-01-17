@@ -39,11 +39,10 @@ define(['util', 'jquery', 'jquery.highlight'], function(util, $) {
 
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         $.each( $('img.image:not([usemap])'), function (e) {
-             var parentElement = $(this).parent().get(0).tagName;
-             if(this.naturalWidth > this.width && parentElement.toLowerCase() != 'a'){
+             if(this.naturalWidth > this.width){
                  $(this).addClass('zoom');
-             }         
-        });
+             }
+         });
         $('.zoom').click(function(){
             $('#modal_img_large').css("display","block");
             $("#modal-img").attr('src',$(this).attr('src') );
