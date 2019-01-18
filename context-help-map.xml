@@ -94,9 +94,9 @@
    <appContext helpID="convert-docx2tei" path="source/c_convert_docx2tei.html"/>
    <appContext helpID="transform_docx_files" path="source/t_transform_docx2tei.html"/>
    <appContext helpID="import_a_scenario" path="source/import_a_scenario.html"/>
+   <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="check_footnote_coding" path="source/t_check_footnote_coding_1.html"/>
    <appContext helpID="check_footnote_coding_2" path="source/t_check_footnote_coding_2.html"/>
-   <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="t.partial-entries" path="source/t_partial_entries.html"/>
    <appContext helpID="processing_entry_files" path="source/c_processing_entry_files.html"/>
    <appContext helpID="validate_the_files_in_oxygen"

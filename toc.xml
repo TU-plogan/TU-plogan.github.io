@@ -328,13 +328,13 @@
                <topic href="source/t_page_inventory.html" format="dita" data-id="t.pg-inventory" wh-toc-id="t.pg-inventory-d66e822">
                   <title>Page-Inventory File</title>
                   <shortdesc>
-                     <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Document the file names of every page in a section using the page-inventory         file.</p>
+                     <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">We document the file names of every page in a section using the page-inventory         file.</p>
                   </shortdesc>
                   <topicmeta>
                      <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.pg-inventory"></resourceid>
                      <navtitle class="- topic/navtitle ">Page-Inventory File</navtitle><?ditaot gentext?>
                      <linktext class="- map/linktext ">Page-Inventory File</linktext><?ditaot genshortdesc?>
-                     <shortdesc class="- map/shortdesc ">Document the file names of every page in a section using the page-inventory         file.</shortdesc>
+                     <shortdesc class="- map/shortdesc ">We document the file names of every page in a section using the page-inventory         file.</shortdesc>
                      <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
                         Logan
                      </author>
@@ -1399,51 +1399,7 @@
                </topicmeta>
             </topic>
          </topic>
-         <topic href="source/t_check_footnote_coding_1.html" format="dita" data-id="check_footnote_coding" wh-toc-id="check_footnote_coding-d66e1811">
-            <title>Check HTML Footnote Coding 1</title>
-            <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use a simple search to check if you have the right number of note codes on all pages. </p>
-            </shortdesc>
-            <topicmeta>
-               <resourceid class="- topic/resourceid " oxy-source="topic" appid="check_footnote_coding"></resourceid>
-               <navtitle class="- topic/navtitle ">Check HTML Footnote Coding 1</navtitle><?ditaot gentext?>
-               <linktext class="- map/linktext ">Check HTML Footnote Coding 1</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">Use a simple search to check if you have the right number of note codes on all pages. </shortdesc>
-               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
-                  Logan
-               </author>
-               <copyright class="- topic/copyright ">
-                  
-                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
-                  
-                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
-                  
-               </copyright>
-            </topicmeta>
-         </topic>
-         <topic href="source/t_check_footnote_coding_2.html" format="dita" data-id="check_footnote_coding_2" wh-toc-id="check_footnote_coding_2-d66e1831">
-            <title>Check HTML Footnote Coding 2</title>
-            <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Footnotes have to be in their own paragraph.</p>
-            </shortdesc>
-            <topicmeta>
-               <resourceid class="- topic/resourceid " oxy-source="topic" appid="check_footnote_coding_2"></resourceid>
-               <navtitle class="- topic/navtitle ">Check HTML Footnote Coding 2</navtitle><?ditaot gentext?>
-               <linktext class="- map/linktext ">Check HTML Footnote Coding 2</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">Footnotes have to be in their own paragraph.</shortdesc>
-               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
-                  Logan
-               </author>
-               <copyright class="- topic/copyright ">
-                  
-                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
-                  
-                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
-                  
-               </copyright>
-            </topicmeta>
-         </topic>
-         <topic href="source/t_review_inventory_notes.html" format="dita" data-id="untitled1" wh-toc-id="untitled1-d66e1851">
+         <topic href="source/t_review_inventory_notes.html" format="dita" data-id="untitled1" wh-toc-id="untitled1-d66e1811">
             <title>Review Inventory Comments</title>
             <shortdesc>
                <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Correct resolvable issues noted in the comments</p>
@@ -1465,28 +1421,72 @@
                </copyright>
             </topicmeta>
          </topic>
-         <topic href="source/t_partial_entries.html" format="dita" data-id="t.partial-entries" wh-toc-id="t.partial-entries-d66e1871">
-            <title>Add Titles to Partial Entries</title>
-            <shortdesc>
-               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Prepare the first entry in the section for inclusion.</p>
-            </shortdesc>
-            <topicmeta>
-               <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.partial-entries"></resourceid>
-               <navtitle class="- topic/navtitle ">Add Titles to Partial Entries</navtitle><?ditaot gentext?>
-               <linktext class="- map/linktext ">Add Titles to Partial Entries</linktext><?ditaot genshortdesc?>
-               <shortdesc class="- map/shortdesc ">Prepare the first entry in the section for inclusion.</shortdesc>
-               <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
-                  Logan
-               </author>
-               <copyright class="- topic/copyright ">
-                  
-                  <copyryear class="- topic/copyryear " year="2018"></copyryear>
-                  
-                  <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
-                  
-               </copyright>
-            </topicmeta>
-         </topic>
+      </topic>
+      <topic href="source/t_check_footnote_coding_1.html" data-id="check_footnote_coding" wh-toc-id="check_footnote_coding-d66e1831">
+         <title>Check Footnote Coding 1</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Use a simple search to check if you have the right number of note codes on all         pages.</p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="check_footnote_coding"></resourceid>
+            <navtitle class="- topic/navtitle ">Check Footnote Coding 1</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Check Footnote Coding 1</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Use a simple search to check if you have the right number of note codes on all         pages.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+      </topic>
+      <topic href="source/t_check_footnote_coding_2.html" data-id="check_footnote_coding_2" wh-toc-id="check_footnote_coding_2-d66e1851">
+         <title>Check Footnote Coding 2</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Search for multiple footnotes in the same paragraph and separate them.</p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="check_footnote_coding_2"></resourceid>
+            <navtitle class="- topic/navtitle ">Check Footnote Coding 2</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Check Footnote Coding 2</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Search for multiple footnotes in the same paragraph and separate them.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
+      </topic>
+      <topic href="source/t_partial_entries.html" data-id="t.partial-entries" wh-toc-id="t.partial-entries-d66e1871">
+         <title>Add Titles to Partial Entries</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Prepare the first entry in the section for inclusion.</p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="t.partial-entries"></resourceid>
+            <navtitle class="- topic/navtitle ">Add Titles to Partial Entries</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Add Titles to Partial Entries</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">Prepare the first entry in the section for inclusion.</shortdesc>
+            <author class="- topic/author " format="html" href="mailto:peter.logan@temple.edu" scope="external">Peter M.
+               Logan
+            </author>
+            <copyright class="- topic/copyright ">
+               
+               <copyryear class="- topic/copyryear " year="2018"></copyryear>
+               
+               <copyrholder class="- topic/copyrholder ">Peter M. Logan</copyrholder>
+               
+            </copyright>
+         </topicmeta>
       </topic>
    </topic>
    <topic href="source/c_processing_entry_files.html" collection-type="sequence" format="dita" data-id="processing_entry_files" wh-toc-id="processing_entry_files-d66e1893">
