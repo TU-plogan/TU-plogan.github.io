@@ -155,17 +155,16 @@
             </li><li class="li step stepexpand">
                 <span class="ph cmd">Enter the following <a href="../glossary/g_regex.html" title="A simple, widely-used language for find and replace searches that identifies patterns in textual data using Regular Expressions; a regex might say, for example, &#34;find every word that starts with a' and ends with 'y' and italicize them."><dfn class="term">regex</dfn></a> in
                     <span class="ph uicontrol">Find</span>:</span>
-                <div class="itemgroup stepxmp"><code class="ph codeph">(\.|”|"|[i]\&gt;)[\s|\h]*@@@</code></div>
+                <div class="itemgroup stepxmp"><code class="ph codeph">(\.|\"|\?|\:)\s*(&lt;(?:\w|"|=|\(|\)|\s)+&gt;)?\@{3}</code></div>
             </li><li class="li step stepexpand">
                 <span class="ph cmd">Use the following for <span class="ph uicontrol">Replace</span>:</span>
-                <div class="itemgroup stepxmp"><code class="ph codeph">\1&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;@@@</code></div>
+                <div class="itemgroup stepxmp"><code class="ph codeph">\1&lt;/p&gt;&lt;p&gt;\2@@@</code></div>
             </li><li class="li step stepexpand">
                 <span class="ph cmd">Make sure the <span class="ph uicontrol">Regular expression</span> and <span class="ph uicontrol">Dot
                         matches all</span> options are selected and click <span class="ph uicontrol">Find
                         All</span>.</span>
                 <div class="itemgroup stepxmp">
                     <figure class="fig fignone"><figcaption class="figcapcenter"><span class="figtitleprefix">Figure: </span>Find/Replace in Files window.</figcaption>
-                        
                         
                         <br /><div class="imagecenter"><img class="image imagecenter" src="image/oxygen/Find_Replace%20in%20Files.png" /></div><br />
                     </figure>
