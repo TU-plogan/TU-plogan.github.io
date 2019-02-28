@@ -55,7 +55,6 @@
    <appContext helpID="t_organize_the_images" path="source/t_inventory_images.html"/>
    <appContext helpID="r.afr-interface" path="source/r_afr-interface.html"/>
    <appContext helpID="t.create-ocr-project" path="source/t_create_an_ocr_project_folder.html"/>
-   <appContext helpID="adjust_image_resolution" path="source/t_image_resolution.html"/>
    <appContext helpID="c.afr-settings" path="source/c_settings.html"/>
    <appContext helpID="t.general-tab" path="source/t_general_tab.html"/>
    <appContext helpID="t.image-processing-tab" path="source/t_image_processing_tab.html"/>
