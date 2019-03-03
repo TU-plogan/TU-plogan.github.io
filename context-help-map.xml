@@ -54,10 +54,12 @@
    <appContext helpID="t_locate_the_image_files" path="source/t_copy_image_files.html"/>
    <appContext helpID="t_organize_the_images" path="source/t_inventory_images.html"/>
    <appContext helpID="r.afr-interface" path="source/r_afr-interface.html"/>
-   <appContext helpID="t.create-ocr-project" path="source/t_create_an_ocr_project_folder.html"/>
+   <appContext helpID="t.create-ocr-project"
+               path="source/t_create_an_ocr_project_folder.html"/>
    <appContext helpID="c.afr-settings" path="source/c_settings.html"/>
    <appContext helpID="t.general-tab" path="source/t_general_tab.html"/>
-   <appContext helpID="t.image-processing-tab" path="source/t_image_processing_tab.html"/>
+   <appContext helpID="t.image-processing-tab"
+               path="source/t_image_processing_tab.html"/>
    <appContext helpID="t.languages-tab" path="source/t_languages_tab.html"/>
    <appContext helpID="t.ocr-tab" path="source/t_ocr_tab.html"/>
    <appContext helpID="t.format-tab" path="source/t_format_settings_tab.html"/>
@@ -79,7 +81,8 @@
    <appContext helpID="untitled4" path="source/t_verification.html"/>
    <appContext helpID="t.ocr-eb03" path="source/c_ocr_for_eb03.html"/>
    <appContext helpID="t.proofread" path="source/t_proofread.html"/>
-   <appContext helpID="t.add-dictionary-words" path="source/t_add_words_to_dictionary.html"/>
+   <appContext helpID="t.add-dictionary-words"
+               path="source/t_add_words_to_dictionary.html"/>
    <appContext helpID="t.code-footnotes" path="source/t_code_footnotes.html"/>
    <appContext helpID="marginal_notes__eb03" path="source/c_marginal_notes__eb03.html"/>
    <appContext helpID="formulas" path="source/c_formulas.html"/>
@@ -94,10 +97,13 @@
    <appContext helpID="transform_docx_files" path="source/t_transform_docx2tei.html"/>
    <appContext helpID="import_a_scenario" path="source/import_a_scenario.html"/>
    <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
-   <appContext helpID="check_footnote_coding" path="source/t_check_footnote_coding_1.html"/>
-   <appContext helpID="check_footnote_coding_2" path="source/t_check_footnote_coding_2.html"/>
+   <appContext helpID="check_footnote_coding"
+               path="source/t_check_footnote_coding_1.html"/>
+   <appContext helpID="check_footnote_coding_2"
+               path="source/t_check_footnote_coding_2.html"/>
    <appContext helpID="t.partial-entries" path="source/t_partial_entries.html"/>
-   <appContext helpID="processing_entry_files" path="source/c_processing_entry_files.html"/>
+   <appContext helpID="processing_entry_files"
+               path="source/c_processing_entry_files.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
