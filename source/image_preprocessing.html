@@ -1,0 +1,150 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="DC.type" content="task" /><meta name="description" content="Preprocess all images in a new OCR Project before drawing boxes." /><meta name="DC.relation" scheme="URI" content="../source/t_create_an_ocr_project.html" /><meta name="DC.creator" content="Peter M. Logan" /><meta name="rights" content="© 2018 Peter M. Logan" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="image_preprocessing" />        
+      <title>Image Preprocessing</title><!--  Generated with Oxygen version 21.0, build number 2019022122.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="image_preprocessing-d62e1003" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2019022122" /><script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2019022122" /><link rel="stylesheet" type="text/css" href="../wh-responsive2.css" /></head>
+
+    <body id="image_preprocessing" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Nineteenth-Century Knowledge Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul xmlns:xhtml="http://www.w3.org/1999/xhtml" role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.introduction-d62e540-mi" data-tocid="c.introduction-d62e540" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.data_organization-d62e581-mi" data-tocid="c.data_organization-d62e581" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Organization</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.intro-afr-d62e863-mi" data-tocid="c.intro-afr-d62e863" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.oxygen-d62e1689-mi" data-tocid="c.oxygen-d62e1689" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">XML</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="processing_entry_files-d62e1939-mi" data-tocid="processing_entry_files-d62e1939" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Entry Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="reference_manual-d62e2020-mi" data-tocid="reference_manual-d62e2020" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="c.intro-afr"><span class="title"><a href="../source/c_scanning_procedures.html">Scanning</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">An introduction to AFR that explains the specific procedures we use to get the best         quality text recognition of Encyclopedia page images.</p></span></span></span></li><li><span class="topicref" data-id="t.create-ocr-project"><span class="title"><a href="../source/t_create_an_ocr_project.html">Create an OCR-Project</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">How to create and manage an OCR-Project.</p></span></span></span></li><li class="active"><span class="topicref" data-id="image_preprocessing"><span class="title"><a href="../source/image_preprocessing.html">Image Preprocessing</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Preprocess all images in a new OCR Project before drawing boxes.</p></span></span></span></li></ol></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 d-none d-md-block d-print-none">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="c.intro-afr-d62e863" class="topicref" data-id="c.intro-afr" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c.intro-afr-d62e863-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_scanning_procedures.html" id="c.intro-afr-d62e863-link">Scanning</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">An introduction to AFR that explains the specific procedures we use to get the best         quality text recognition of Encyclopedia page images.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="r.afr-interface-d62e883" class="topicref" data-id="r.afr-interface" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/r_afr-interface.html" id="r.afr-interface-d62e883-link">AFR Interface</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Learn about the main elements of the program interface</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="create_an_image_collection-d62e903" class="topicref" data-id="create_an_image_collection" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action create_an_image_collection-d62e903-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_create_an_image_collection.html" id="create_an_image_collection-d62e903-link">Create an Image Collection</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">How to organize images files for scanning.</p></span></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="t.create-ocr-project-d62e983" class="topicref" data-id="t.create-ocr-project" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action t.create-ocr-project-d62e983-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_create_an_ocr_project.html" id="t.create-ocr-project-d62e983-link">Create an OCR-Project</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">How to create and manage an OCR-Project.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="image_preprocessing-d62e1003" class="topicref" data-id="image_preprocessing" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/image_preprocessing.html" id="image_preprocessing-d62e1003-link">Image Preprocessing</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Preprocess all images in a new OCR Project before drawing boxes.</p></span></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="c.afr-settings-d62e1023" class="topicref" data-id="c.afr-settings" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c.afr-settings-d62e1023-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_settings.html" id="c.afr-settings-d62e1023-link">Settings</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Recommended settings for all options in ABBYY FineReader</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="c.draw-boxes-d62e1225" class="topicref" data-id="c.draw-boxes" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c.draw-boxes-d62e1225-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_draw_boxes.html" id="c.draw-boxes-d62e1225-link">Draw Boxes</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Manually creating text recognition boxes improves accuracy</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="c.page-recognition-d62e1465" class="topicref" data-id="c.page-recognition" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c.page-recognition-d62e1465-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_page_recognition.html" id="c.page-recognition-d62e1465-link">Page Recognition</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Excellent page recognition depends on preparing the page properly.</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="t.save-and-output-d62e1648" class="topicref" data-id="t.save-and-output" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action t.save-and-output-d62e1648-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_save_and_output.html" id="t.save-and-output-d62e1648-link">Save and Output</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">How to output your OCR results.</p></span></span></span></li></ul></li></ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Image Preprocessing</h1>
+    
+    <div class="body taskbody"><p class="shortdesc">Preprocess all images in a new OCR Project before drawing boxes.</p>
+        <section class="section context">
+            <p class="p">The first task with any new <a href="../glossary/g_ocr_project.html" title="A collection of files used by ABBYY FineReader and stored as a single group."><dfn class="term">OCR-Project</dfn></a> is to optimize the page
+                images before beginning the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term">OCR</dfn></a> process.</p>
+            <div class="note danger note_danger"><span class="note__title">DANGER:</span> This must be done before you begin drawing boxes. It will remove
+                them if they already exist.</div>
+        </section>
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Open a new <a href="../glossary/g_ocr_project.html" title="A collection of files used by ABBYY FineReader and stored as a single group."><dfn class="term">OCR-Project</dfn></a> in <a href="../glossary/g_afr.html" title="A software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a>. For any
+                    page, select the <span class="ph uicontrol">Edit Image</span> icon on the Image Pane
+                    toolbar. <br /><img class="image" src="image/afr-guide/image-pane-toolbar.png" /><br /></span>
+                <div class="itemgroup stepresult">The <span class="keyword wintitle">Image Editor window opens.</span></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">In the right-hand panel, open the <span class="ph uicontrol">Resolution</span>
+                    dialogue.</span>
+                <div class="itemgroup stepresult"><figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span>: </span>The Resolution dialogue</figcaption>
+                        
+                        <br /><div class="imageleft"><img class="image imageleft" src="image/afr-guide/image-resolution.png" /></div><br />
+                    </figure></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Set the <span class="ph uicontrol">Selection:</span> dropdown menu to <span class="ph uicontrol">All
+                        Pages</span>. Cick <span class="ph uicontrol">Detect Optimal Resolution</span>.
+                    Click <span class="ph uicontrol">Apply</span>.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Open the <span class="ph uicontrol">Recommend Preprocessing</span> dialogue at the top of
+                    the panel. Set <span class="ph uicontrol">Selection:</span> to <span class="ph uicontrol">All
+                        Pages</span>. Click <span class="ph uicontrol">Preprocess</span>.</span>
+                <div class="itemgroup stepresult"><figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 2</span>: </span>The Recommended Preprocessing dialogue.</figcaption>
+                        
+                        <br /><div class="imageleft"><img class="image imageleft" src="image/afr-guide/imge-preprocessing.png" /></div><br />
+                    </figure></div>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Wait for preprocessing to complete, and then close the image editor with the
+                        <span class="ph uicontrol">Exit Image Editor</span> option at the top of the image
+                    page.</span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">Save the <a href="../glossary/g_ocr_project.html" title="A collection of files used by ABBYY FineReader and stored as a single group."><dfn class="term">OCR-Project</dfn></a> to preserve your changes.</span>
+            </li></ol>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

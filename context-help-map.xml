@@ -47,15 +47,16 @@
    <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
    <appContext helpID="c.images-fdr" path="source/c_images_folder.html"/>
    <appContext helpID="c.intro-afr" path="source/c_scanning_procedures.html"/>
+   <appContext helpID="r.afr-interface" path="source/r_afr-interface.html"/>
    <appContext helpID="create_an_image_collection"
                path="source/c_create_an_image_collection.html"/>
    <appContext helpID="t_identify_the_print_pages"
                path="source/t_identify_the_print_pages.html"/>
    <appContext helpID="t_locate_the_image_files" path="source/t_copy_image_files.html"/>
    <appContext helpID="t_organize_the_images" path="source/t_inventory_images.html"/>
-   <appContext helpID="r.afr-interface" path="source/r_afr-interface.html"/>
    <appContext helpID="t.create-ocr-project"
-               path="source/t_create_an_ocr_project_folder.html"/>
+               path="source/t_create_an_ocr_project.html"/>
+   <appContext helpID="image_preprocessing" path="source/image_preprocessing.html"/>
    <appContext helpID="c.afr-settings" path="source/c_settings.html"/>
    <appContext helpID="t.general-tab" path="source/t_general_tab.html"/>
    <appContext helpID="t.image-processing-tab"
