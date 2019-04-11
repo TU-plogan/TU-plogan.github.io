@@ -120,5 +120,6 @@
    <appContext helpID="note" path="source/r_notes.html"/>
    <appContext helpID="pagebreak" path="source/r_page_numbers.html"/>
    <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
+   <appContext helpID="untitled1" path="source/r.verse-drama.html"/>
    <appContext helpID="unicode_characters" path="source/r_unicode_characters.html"/>
 </map>
