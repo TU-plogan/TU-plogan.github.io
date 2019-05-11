@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"Transform the DOCX Files to TEI","shortdesc":"<p class=\"shortdesc\">How to convert DOCX files to TEI in Oxygen.</p>","href":"source\/t_transform_docx2tei.html","attributes": {"data-id":"transform_docx_files",},"menu": {"hasChildren":false,},"tocID":"transform_docx_files-d62e1821","next":"transform_docx_files-d62e1821",}]});
