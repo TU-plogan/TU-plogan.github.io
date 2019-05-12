@@ -113,7 +113,7 @@
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
-   <appContext helpID="c.proof-entry-terms" path="source/c_proof-entry-terms.html"/>
+   <appContext helpID="c.proof-entry-terms" path="source/c_check-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
