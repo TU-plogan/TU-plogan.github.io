@@ -14,7 +14,11 @@
    <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
    <appContext helpID="g.xml" path="glossary/g_xml.html"/>
    <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
+   <appContext helpID="g_hive" path="glossary/g_hive.html"/>
    <appContext helpID="g.html" path="glossary/g_html.html"/>
+   <appContext helpID="g.kp1" path="glossary/g_kp1.html"/>
+   <appContext helpID="g_kp2" path="glossary/g_kp2.html"/>
+   <appContext helpID="g_master_files" path="glossary/g_master_files.html"/>
    <appContext helpID="g.knowledge-project" path="glossary/g_c19_project.html"/>
    <appContext helpID="g.ocr_project" path="glossary/g_ocr_project.html"/>
    <appContext helpID="g.ocr" path="glossary/g_ocr.html"/>
@@ -33,20 +37,27 @@
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
-   <appContext helpID="c.archive_folder" path="source/c_archive_folder.html"/>
-   <appContext helpID="c.code_folder" path="source/code_folder.html"/>
-   <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
-   <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
+   <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
+   <appContext helpID="c_kp_corpus1_repository" path="source/c_kp1_repository.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
-   <appContext helpID="c.production_fdr" path="source/c_production_folder.html"/>
+   <appContext helpID="ocr_folder" path="source/c_ocr_folder.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
-   <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
-   <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
    <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
    <appContext helpID="c.images-fdr" path="source/c_images_folder.html"/>
    <appContext helpID="c_records_folder" path="source/c_records_folder.html"/>
+   <appContext helpID="c_kp_corpus2_repository" path="source/c_kp2_repository.html"/>
+   <appContext helpID="c.code_folder" path="source/c_code_folder.html"/>
+   <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
+   <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
+   <appContext helpID="untitled1" path="source/c_entry_fdr.html"/>
+   <appContext helpID="c_4_entry_tei_folder" path="source/c_4_entry_tei_folder.html"/>
+   <appContext helpID="c_5_entry_md_folder" path="source/c_5_entry_md_folder.html"/>
+   <appContext helpID="c.6_master_tei_folder" path="source/c_6_master_tei_folder.html"/>
+   <appContext helpID="c.production_fdr" path="source/c_page_folder.html"/>
+   <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
+   <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
    <appContext helpID="c.intro-afr" path="source/c_ocr.html"/>
    <appContext helpID="r.afr-interface" path="source/r_afr-interface.html"/>
    <appContext helpID="create_an_image_collection"
@@ -57,7 +68,7 @@
    <appContext helpID="t_organize_the_images" path="source/t_inventory_images.html"/>
    <appContext helpID="t.create-ocr-project"
                path="source/t_create_an_ocr_project.html"/>
-   <appContext helpID="image_preprocessing" path="source/image_preprocessing.html"/>
+   <appContext helpID="image_preprocessing" path="source/t_image_preprocessing.html"/>
    <appContext helpID="c.afr-settings" path="source/c_settings.html"/>
    <appContext helpID="t.general-tab" path="source/t_general_tab.html"/>
    <appContext helpID="t.image-processing-tab"
@@ -98,7 +109,7 @@
                path="source/t_create_a_new_xml_project.html"/>
    <appContext helpID="convert-docx2tei" path="source/c_convert_docx2tei.html"/>
    <appContext helpID="transform_docx_files" path="source/t_transform_docx2tei.html"/>
-   <appContext helpID="import_a_scenario" path="source/import_a_scenario.html"/>
+   <appContext helpID="import_a_scenario" path="source/t_import_a_scenario.html"/>
    <appContext helpID="processing_entry_files"
                path="source/c_processing_entry_files.html"/>
    <appContext helpID="untitled1" path="source/c_convert_page_to_entry.html"/>
@@ -109,7 +120,7 @@
                path="source/t_check_footnote_coding_2.html"/>
    <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="convert_pages_to_entries"
-               path="source/convert_pages_to_entries.html"/>
+               path="source/c_convert_pages_to_entries.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
@@ -123,6 +134,6 @@
    <appContext helpID="pagebreak" path="source/r_page_numbers.html"/>
    <appContext helpID="r_missing_text" path="source/r_text_problems.html"/>
    <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
-   <appContext helpID="untitled1" path="source/r.verse-drama.html"/>
+   <appContext helpID="untitled1" path="source/r_verse-drama.html"/>
    <appContext helpID="unicode_characters" path="source/r_unicode_characters.html"/>
 </map>
