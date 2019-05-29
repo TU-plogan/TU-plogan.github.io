@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map>
+<map productID="oxy-webhelp" productVersion="1.0">
    <appContext helpID="g.afr" path="glossary/g_afr.html"/>
    <appContext helpID="g.at_codes" path="glossary/g_at_codes.html"/>
    <appContext helpID="bru" path="glossary/g_bru.html"/>

@@ -3,8 +3,7 @@ define(function() {
     var modulePaths = {
         // core
         "webhelp" : "core/webhelp",
-        "expand": "core/expand",
-        "polyfill": "core/polyfill",
+        "expand" : "core/expand",
         // context sensitive help
         "context-help" : "context-help/context-help",
         "context-help-map" : "context-help/context-help-map",
@@ -73,7 +72,18 @@ define(function() {
         // Popper
         "bootstrap" : "../lib/bootstrap/js/bootstrap.bundle.min",
 
-        "kuromoji" : "../lib/kuromoji/kuromoji"
+
+        // Feedback system
+        "whf_config" : "../feedback/config/config",
+        "init" : "../feedback/resources/js/init",
+        "base64" : "../feedback/resources/js/base64",
+        "comments" : "../feedback/resources/js/comments",
+        "comments-functions" : "../feedback/resources/js/comments-functions",
+        // TODO: Remove this
+        "debug" : "../feedback/resources/js/debug",
+        // JQuery CLEditor
+        "jquery.cleditor.amd" : "../feedback/resources/js/jquery.cleditor.amd",
+        "jquery.cleditor" : "../feedback/resources/js/jquery.cleditor.min"
     };
 
     var shimConfig = {
@@ -92,6 +102,11 @@ define(function() {
             deps: ["jquery"],
             exports : "jQuery.fn.bootpag"
         },
+        // JQuery CLEditor
+        "jquery.cleditor" : {
+            deps: ["jquery"],
+            exports : "jQuery.fn.cleditor"
+        }
     };
 
     requirejs.config({
@@ -103,10 +118,11 @@ define(function() {
             // '*' means all modules will get 'jquery-private'
             // for their 'jquery' dependency.
             "*": {
-                     "jquery": "jquery-private",
-                     "jquery.rwdImageMaps" : "jquery.rwdImageMaps.amd",
-                     "jquery.highlight" : "jquery.highlight.amd",
-                     "jquery.bootpag" : "jquery.bootpag.amd"
+                 "jquery": "jquery-private",
+                 "jquery.rwdImageMaps" : "jquery.rwdImageMaps.amd",
+                 "jquery.highlight" : "jquery.highlight.amd",
+                 "jquery.bootpag" : "jquery.bootpag.amd",
+                 "jquery.cleditor" : "jquery.cleditor.amd"
             },
 
             // 'jquery-private' wants the real jQuery module
@@ -115,8 +131,8 @@ define(function() {
             "jquery-private": { "jquery": "jquery" },
             "jquery.rwdImageMaps.amd" : {"jquery.rwdImageMaps" : "jquery.rwdImageMaps"},
             "jquery.highlight.amd" : {"jquery.highlight" : "jquery.highlight"},
-            "jquery.bootpag.amd" : {"jquery.bootpag" : "jquery.bootpag"}
-
+            "jquery.bootpag.amd" : {"jquery.bootpag" : "jquery.bootpag"},
+            "jquery.cleditor.amd" : {"jquery.cleditor" : "jquery.cleditor"}
         }
     });
 });

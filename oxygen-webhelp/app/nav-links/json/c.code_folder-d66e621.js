@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"Python Folder","shortdesc":"\n               <p class=\"shortdesc\">Python script files.</p>\n            ","href":"source\/c_python_folder.html","attributes": {"data-id":"c.python-fdr",},"menu": {"hasChildren":false,},"tocID":"c.python-fdr-d66e641","topics":[]}]});

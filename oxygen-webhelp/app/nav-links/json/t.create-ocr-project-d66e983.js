@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"Settings","shortdesc":"\n               <p class=\"shortdesc\">Recommended settings for all options in ABBYY FineReader</p>\n            ","href":"source\/c_settings.html","attributes": {"data-id":"c.afr-settings",},"menu": {"hasChildren":false,},"tocID":"c.afr-settings-d66e1003","next":"c.afr-settings-d66e1003",}]});

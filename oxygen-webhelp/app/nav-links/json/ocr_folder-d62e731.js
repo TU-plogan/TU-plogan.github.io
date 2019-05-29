@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"Print Edition Folder","shortdesc":"<p class=\"shortdesc\">Subdivisions of the print editions for digitization.</p>","href":"source\/c_print_edition_folder.html","attributes": {"data-id":"c.print-ed-fdr",},"menu": {"hasChildren":false,},"tocID":"c.print-ed-fdr-d62e755","next":"c.print-ed-fdr-d62e755",}]});
