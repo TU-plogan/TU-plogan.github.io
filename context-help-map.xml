@@ -38,7 +38,7 @@
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
-   <appContext helpID="c_folder_types" path="source/c_folder_types.html"/>
+   <appContext helpID="c_folder_types" path="source/c_edition_section_system.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
    <appContext helpID="c_repositories" path="source/c_repositories.html"/>
