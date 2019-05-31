@@ -41,9 +41,10 @@
    <appContext helpID="c_folder_types" path="source/c_edition_section_system.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
-   <appContext helpID="c_repositories" path="source/c_repositories.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
-   <appContext helpID="c_kp_corpus1_repository" path="source/c_kp1_repository.html"/>
+   <appContext helpID="c_kp1_repository" path="source/c_kp1_repository.html"/>
+   <appContext helpID="install_drive_file_stream"
+               path="source/install_drive_file_stream.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
    <appContext helpID="ocr_folder" path="source/c_ocr_folder.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
