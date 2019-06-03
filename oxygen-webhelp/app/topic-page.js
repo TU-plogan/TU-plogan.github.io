@@ -3,6 +3,7 @@
  */
 define(["require", "config"], function() {
     require([
+        'polyfill',
         'menu',
         'toc',
         'searchAutocomplete',
@@ -11,13 +12,6 @@ define(["require", "config"], function() {
         'expand',
         'image-map',
         'template-module-loader',
-        'bootstrap',
-        'whf_config',
-        'debug',
-        'parseuri',
-        'strings',
-        'init',
-        'comments-functions',
-        'comments'
+        'bootstrap'
     ]);
 });

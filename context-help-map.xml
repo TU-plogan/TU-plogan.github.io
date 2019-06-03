@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map productID="oxy-webhelp" productVersion="1.0">
+<map>
    <appContext helpID="g.afr" path="glossary/g_afr.html"/>
    <appContext helpID="g.at_codes" path="glossary/g_at_codes.html"/>
    <appContext helpID="bru" path="glossary/g_bru.html"/>
@@ -11,6 +11,7 @@
    <appContext helpID="g.entry_file" path="glossary/g_entry_file.html"/>
    <appContext helpID="g.entry-inventory" path="glossary/g_e_inventory.html"/>
    <appContext helpID="g.epub" path="glossary/g_epub.html"/>
+   <appContext helpID="g_github" path="glossary/g_github.html"/>
    <appContext helpID="g_hive" path="glossary/g_hive.html"/>
    <appContext helpID="g.html" path="glossary/g_html.html"/>
    <appContext helpID="g.knowledge-project" path="glossary/g_c19_project.html"/>
@@ -41,10 +42,15 @@
    <appContext helpID="c_folder_types" path="source/c_edition_section_system.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
-   <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
-   <appContext helpID="c_kp1_repository" path="source/c_kp1_repository.html"/>
+   <appContext helpID="t_setting_up_the_repositories"
+               path="source/t_setting_up_the_repositories.html"/>
    <appContext helpID="install_drive_file_stream"
                path="source/install_drive_file_stream.html"/>
+   <appContext helpID="install_github_desktop"
+               path="source/install_githubdesktop.html"/>
+   <appContext helpID="t_using_github" path="source/t_using_github.html"/>
+   <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
+   <appContext helpID="c_kp1_repository" path="source/c_kp1_repository.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
    <appContext helpID="ocr_folder" path="source/c_ocr_folder.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
