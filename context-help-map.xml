@@ -11,46 +11,39 @@
    <appContext helpID="g.entry_file" path="glossary/g_entry_file.html"/>
    <appContext helpID="g.entry-inventory" path="glossary/g_e_inventory.html"/>
    <appContext helpID="g.epub" path="glossary/g_epub.html"/>
-   <appContext helpID="g_github" path="glossary/g_github.html"/>
+   <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
+   <appContext helpID="g.xml" path="glossary/g_xml.html"/>
+   <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
    <appContext helpID="g_hive" path="glossary/g_hive.html"/>
    <appContext helpID="g.html" path="glossary/g_html.html"/>
-   <appContext helpID="g.knowledge-project" path="glossary/g_c19_project.html"/>
    <appContext helpID="g.kp1" path="glossary/g_kp1.html"/>
    <appContext helpID="g_kp2" path="glossary/g_kp2.html"/>
    <appContext helpID="g_master_files" path="glossary/g_master_files.html"/>
-   <appContext helpID="g.ocr" path="glossary/g_ocr.html"/>
+   <appContext helpID="g.knowledge-project" path="glossary/g_c19_project.html"/>
    <appContext helpID="g.ocr_project" path="glossary/g_ocr_project.html"/>
+   <appContext helpID="g.ocr" path="glossary/g_ocr.html"/>
    <appContext helpID="g.oxygen" path="glossary/g_oxygen.html"/>
    <appContext helpID="g.inventory" path="glossary/g_p_inventory.html"/>
    <appContext helpID="g.page_file" path="glossary/g_page_file.html"/>
    <appContext helpID="g.pdf" path="glossary/g_pdf.html"/>
    <appContext helpID="g.print_edition" path="glossary/g_print_edition.html"/>
    <appContext helpID="g.python" path="glossary/g_python.html"/>
+   <appContext helpID="repository" path="glossary/g_repository.html"/>
    <appContext helpID="g.regex" path="glossary/g_regex.html"/>
-   <appContext helpID="g_repository" path="glossary/g_repository.html"/>
    <appContext helpID="g.section" path="glossary/g_section.html"/>
    <appContext helpID="g.spreadsheet" path="glossary/g_spreadsheet.html"/>
    <appContext helpID="g.tei" path="glossary/g_tei.html"/>
    <appContext helpID="g.txt" path="glossary/g_txt.html"/>
-   <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
-   <appContext helpID="g.xml" path="glossary/g_xml.html"/>
    <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
-   <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
-   <appContext helpID="c_folder_types" path="source/c_edition_section_system.html"/>
+   <appContext helpID="c_folder_types" path="source/c_folder_types.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
-   <appContext helpID="t_setting_up_the_repositories"
-               path="source/t_setting_up_the_repositories.html"/>
-   <appContext helpID="install_drive_file_stream"
-               path="source/install_drive_file_stream.html"/>
-   <appContext helpID="install_github_desktop"
-               path="source/install_githubdesktop.html"/>
-   <appContext helpID="t_using_github" path="source/t_using_github.html"/>
+   <appContext helpID="c_repositories" path="source/c_repositories.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
-   <appContext helpID="c_kp1_repository" path="source/c_kp1_repository.html"/>
+   <appContext helpID="c_kp_corpus1_repository" path="source/c_kp1_repository.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
    <appContext helpID="ocr_folder" path="source/c_ocr_folder.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
@@ -65,7 +58,7 @@
    <appContext helpID="c_4_entry_tei_folder" path="source/c_4_entry_tei_folder.html"/>
    <appContext helpID="c_5_entry_md_folder" path="source/c_5_entry_md_folder.html"/>
    <appContext helpID="c.6_master_tei_folder" path="source/c_6_master_tei_folder.html"/>
-   <appContext helpID="c.production_fdr" path="source/c_page_folder.html"/>
+   <appContext helpID="c.page_fdr" path="source/c_page_folder.html"/>
    <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
    <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
    <appContext helpID="c.intro-afr" path="source/c_ocr.html"/>
