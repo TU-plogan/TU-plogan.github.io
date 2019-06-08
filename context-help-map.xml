@@ -38,10 +38,17 @@
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
-   <appContext helpID="c_folder_types" path="source/c_folder_types.html"/>
+   <appContext helpID="t_edition_section_system"
+               path="source/t_edition_section_system.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
-   <appContext helpID="c_repositories" path="source/c_repositories.html"/>
+   <appContext helpID="t_setting_up_the_repositories"
+               path="source/t_setting_up_the_repositories.html"/>
+   <appContext helpID="t_install_drive_file_stream"
+               path="source/t_install_drive_file_stream.html"/>
+   <appContext helpID="t_install_github_desktop"
+               path="source/t_install_github_desktop.html"/>
+   <appContext helpID="t_using_github" path="source/t_using_github.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
    <appContext helpID="c_kp_corpus1_repository" path="source/c_kp1_repository.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
