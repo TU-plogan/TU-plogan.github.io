@@ -90,7 +90,7 @@
    <appContext helpID="t.other-tab" path="source/t_other_tab.html"/>
    <appContext helpID="c.draw-boxes" path="source/c_draw_boxes.html"/>
    <appContext helpID="t.text-areas" path="source/t_text_areas.html"/>
-   <appContext helpID="t.order-footnote-areas" path="source/t_order_areas.html"/>
+   <appContext helpID="t.order-footnote-areas" path="source/t_reorder_areas.html"/>
    <appContext helpID="t.modify-areas" path="source/t_modify_areas.html"/>
    <appContext helpID="c.footnote-areas" path="source/c_footnote_areas.html"/>
    <appContext helpID="c_headers" path="source/c_headers.html"/>
@@ -102,7 +102,7 @@
    <appContext helpID="t.unnumbered-pages" path="source/t_pages_withou-text.html"/>
    <appContext helpID="c.special-cases" path="source/t_special_cases.html"/>
    <appContext helpID="c.page-recognition" path="source/c_page_recognition.html"/>
-   <appContext helpID="untitled4" path="source/t_verification.html"/>
+   <appContext helpID="verification" path="source/t_verification.html"/>
    <appContext helpID="t.ocr-eb03" path="source/c_ocr_for_eb03.html"/>
    <appContext helpID="t.proofread" path="source/t_proofread.html"/>
    <appContext helpID="t.add-dictionary-words"
