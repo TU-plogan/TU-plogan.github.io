@@ -2,7 +2,7 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="21.1">
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="DC.type" content="task" /><meta name="description" content="Create a page-inventory file." /><meta name="indexterms" content="file, page-inventory, inventory-blank.xslx, file names, page-inventory" /><meta name="DC.subject" content="file, page-inventory, inventory-blank.xslx, file names" /><meta name="keywords" content="file, page-inventory, inventory-blank.xslx, file names" /><meta name="DC.relation" scheme="URI" content="../source/c_ocr_folder.html" /><meta name="DC.relation" scheme="URI" content="t_entry_inventory.html" /><meta name="DC.creator" content="Peter M. Logan" /><meta name="rights" content="© 2019 Peter M. Logan" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="t.pg-inventory" />        
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="DC.type" content="task" /><meta name="description" content="Create a page-inventory file." /><meta name="indexterms" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, page-inventory file, filename" /><meta name="DC.subject" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, filename" /><meta name="keywords" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, filename" /><meta name="DC.relation" scheme="URI" content="../source/c_ocr_folder.html" /><meta name="DC.relation" scheme="URI" content="t_entry_inventory.html" /><meta name="DC.creator" content="Peter M. Logan" /><meta name="rights" content="© 2019 Peter M. Logan" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="t.pg-inventory" />        
       <title>Page-Inventory File</title><!--  Generated with Oxygen version 21.1, build number 2019052017.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="t.pg-inventory-d62e953" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2019052017" /><script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen-red.css?buildId=2019052017" /><link rel="stylesheet" type="text/css" href="../wh-responsive2.css" /></head>
 
     <body id="t.pg-inventory" class="wh_topic_page frmBody">
@@ -98,7 +98,7 @@
                 repository. The page-inventory file is named <code class="ph codeph">kp1+edition+section</code> or
                     <code class="ph codeph">kp2+edition+section</code>, depending on which repository it belongs
                 to.</p>
-            <div class="note note note_note"><span class="note__title">Note:</span> Accuracy in matching filenames is critical. We use file names
+            <div class="note note note_note"><span class="note__title">Note:</span> Accuracy in matching filenames is critical. We use filenames
                 recorded in the <a href="../glossary/g_p_inventory.html" title="A spreadsheet used to record each step in the production sequence of page files for a specific Encyclopedia section."><dfn class="term">page-inventory</dfn></a> to generate metadata in the <a href="../glossary/g_master_files.html" title="Edited TEI files containing all the information needed to generate editions in any format we want. These are the most critical files in the Knowledge Project and should never be changed without authorization."><dfn class="term">master files</dfn></a> .</div>
         </section>
         <section><ol class="ol steps"><li class="li step stepexpand">
@@ -107,9 +107,9 @@
                         <span class="ph filepath">kp1/ocr</span> directory for the new <a href="../glossary/g_section.html" title="A chunk of up to 250 pages from a specified letter in the Encyclopedia. Sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>. Rename the file beginning with the word "kp1-" followed by
                         <em class="ph i">edition</em>-<em class="ph i">section</em> (<span class="ph filepath">kp1-ebnn-snn</span>).</span>
                 <div class="itemgroup stepxmp">
-                    <figure class="fig fignone"><figcaption class="figcapcenter"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span>: </span>Blank Inventory file</figcaption>
+                    <figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span>: </span>Blank Inventory file</figcaption>
                         
-                        <br /><div class="imagecenter"><img class="image imagecenter" src="image/inventory-blank.png" /></div><br />
+                        <br /><div class="imageleft"><img class="image imageleft" src="image/inventory-blank.png" /></div><br />
                     </figure>
                 </div>
             </li><li class="li step stepexpand">
@@ -168,7 +168,7 @@
                 <span class="ph cmd">Add the date the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">DOCX</dfn></a> files were created in the
                         <span class="ph uicontrol">output-dt</span> column.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">The <span class="ph uicontrol">tei-fn.xml</span> column lists the file names for the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> files, after the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">DOCX</dfn></a> files are
+                <span class="ph cmd">The <span class="ph uicontrol">tei-fn.xml</span> column lists the filenames for the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> files, after the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">DOCX</dfn></a> files are
                     transformed.</span>
             </li><li class="li step stepexpand">
                 <span class="ph cmd">The <span class="ph uicontrol">valid-dt</span> column indicates when the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> files were validated by the supervisor, as part of the
@@ -189,7 +189,7 @@
     
 </article></main></div>
                         
-                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><ul class="linklist related_link"><li class="linklist"><a class="navheader_parent_path" href="t_entry_inventory.html" title="Document the file names of every entry in a section using the entry-inventory file.">Entry-Inventory File</a></li></ul></div></nav></div>
+                        <div class=" wh_related_links "><nav role="navigation" class="related-links"><div class="linklist relinfo reltasks"><strong>Related tasks</strong><br /><ul class="linklist related_link"><li class="linklist"><a class="navheader_parent_path" href="t_entry_inventory.html" title="Document the filenames of every entry in a section using the entry-inventory file.">Entry-Inventory File</a></li></ul></div></nav></div>
                         
                         
                     </div>
