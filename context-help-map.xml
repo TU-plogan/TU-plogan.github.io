@@ -42,13 +42,6 @@
                path="source/t_edition_section_system.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
-   <appContext helpID="t_setting_up_the_repositories"
-               path="source/t_setting_up_the_repositories.html"/>
-   <appContext helpID="t_install_drive_file_stream"
-               path="source/t_install_drive_file_stream.html"/>
-   <appContext helpID="t_install_github_desktop"
-               path="source/t_install_github_desktop.html"/>
-   <appContext helpID="t_using_github" path="source/t_using_github.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
    <appContext helpID="c_kp_corpus1_repository" path="source/c_kp1_repository.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
@@ -68,6 +61,13 @@
    <appContext helpID="c.page_fdr" path="source/c_page_folder.html"/>
    <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
    <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
+   <appContext helpID="t_setting_up_the_repositories"
+               path="source/t_setting_up_the_repositories.html"/>
+   <appContext helpID="t_install_drive_file_stream"
+               path="source/t_install_drive_file_stream.html"/>
+   <appContext helpID="t_install_github_desktop"
+               path="source/t_install_github_desktop.html"/>
+   <appContext helpID="t_using_github" path="source/t_using_github.html"/>
    <appContext helpID="c.intro-afr" path="source/c_ocr.html"/>
    <appContext helpID="r.afr-interface" path="source/r_afr-interface.html"/>
    <appContext helpID="create_an_image_collection"
