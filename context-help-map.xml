@@ -93,9 +93,9 @@
    <appContext helpID="t.order-footnote-areas" path="source/t_reorder_areas.html"/>
    <appContext helpID="t.modify-areas" path="source/t_modify_areas.html"/>
    <appContext helpID="c.footnote-areas" path="source/c_footnote_areas.html"/>
-   <appContext helpID="c_headers" path="source/c_headers.html"/>
    <appContext helpID="t.table-areas" path="source/t_table_areas.html"/>
    <appContext helpID="edit_tables" path="source/t_edit_tables.html"/>
+   <appContext helpID="c_headers" path="source/c_headers.html"/>
    <appContext helpID="c.illustrations" path="source/c_illustrations.html"/>
    <appContext helpID="c.catchwords" path="source/c_catchwords.html"/>
    <appContext helpID="c.author-initials" path="source/c_author_initials.html"/>
