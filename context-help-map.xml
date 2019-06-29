@@ -11,9 +11,6 @@
    <appContext helpID="g.entry_file" path="glossary/g_entry_file.html"/>
    <appContext helpID="g.entry-inventory" path="glossary/g_e_inventory.html"/>
    <appContext helpID="g.epub" path="glossary/g_epub.html"/>
-   <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
-   <appContext helpID="g.xml" path="glossary/g_xml.html"/>
-   <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
    <appContext helpID="g_hive" path="glossary/g_hive.html"/>
    <appContext helpID="g.html" path="glossary/g_html.html"/>
    <appContext helpID="g.kp1" path="glossary/g_kp1.html"/>
@@ -34,7 +31,10 @@
    <appContext helpID="g.spreadsheet" path="glossary/g_spreadsheet.html"/>
    <appContext helpID="g.tei" path="glossary/g_tei.html"/>
    <appContext helpID="g.txt" path="glossary/g_txt.html"/>
+   <appContext helpID="g.xhtml" path="glossary/g_xhtml.html"/>
+   <appContext helpID="g.xml" path="glossary/g_xml.html"/>
    <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
+   <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
