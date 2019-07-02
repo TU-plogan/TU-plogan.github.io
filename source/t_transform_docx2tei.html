@@ -86,23 +86,20 @@
         <p class="p">Work in batches again, using the <span class="ph filepath">eb-docx2tei.xsl</span> script.</p>
     </div>
         <section><ol class="ol steps"><li class="li step stepexpand">
-                <span class="ph cmd">Select the appropriate <span class="ph filepath">2-page-docx</span> folder in the
-                        <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term abbreviated-form">Oxygen XML Editor</dfn></a>
+                <span class="ph cmd">Select the appropriate <span class="ph filepath">2-page-docx</span> folder in the <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term abbreviated-form">Oxygen XML Editor</dfn></a>
                     <span class="keyword wintitle">Project</span> window. Right-click the folder and select <span class="ph menucascade"><span class="ph uicontrol">Transform </span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Configure transformation scenarios…</span></span></span>
                 <ul class="ul choices">
-                    <li class="li choice">If the <span class="ph filepath">eb-docx2tei</span> ANT scenario does not appear in
-                        the <span class="keyword wintitle">Project</span> section of the main window, you will need
-                        to <a class="xref" href="t_import_a_scenario.html" title="Learn how to import an existing xsl transformation scenario into an OCR Project.">import it</a> before proceeding.</li>
-                    <li class="li choice">If the <span class="ph filepath">eb-docx2tei</span> ANT scenario does appear,
-                        proceed as follows.</li>
+                    <li class="li choice">If the <span class="ph filepath">eb-docx2tei</span> ANT scenario does not appear in the
+                            <span class="keyword wintitle">Project</span> section of the main window, you will need to <a class="xref" href="t_import_a_scenario.html" title="Learn how to import an existing xsl transformation scenario into an OCR Project.">import it</a> before proceeding.</li>
+                    <li class="li choice">If the <span class="ph filepath">eb-docx2tei</span> ANT scenario does appear, proceed as
+                        follows.</li>
                 </ul>
             </li><li class="li step stepexpand">
                 <span class="ph cmd">Confirm the settings for <span class="ph filepath">eb-docx2tei.xsl</span> as follows.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">In the <span class="keyword wintitle">Project</span> section, select the
-                        <span class="ph filepath">eb-docx2tei</span> ANT scenario.</span>
-                <div class="itemgroup stepresult"><figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span>: </span>The <span class="ph uicontrol">Configure Transformation Scenario(s)</span>
-                            window.</figcaption>
+                <span class="ph cmd">In the <span class="keyword wintitle">Project</span> section, select the <span class="ph filepath">eb-docx2tei</span> ANT
+                    scenario.</span>
+                <div class="itemgroup stepresult"><figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span>: </span>The <span class="ph uicontrol">Configure Transformation Scenario(s)</span> window.</figcaption>
                         
                         <br /><div class="imageleft"><img class="image imageleft" src="image/oxygen/configure-transformation-scenario.png" /></div><br />
                     </figure></div>
@@ -115,50 +112,45 @@
             </li><li class="li step stepexpand">
                 <span class="ph cmd">Make sure the <span class="keyword wintitle">Project Options</span> button is checked.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">On the <span class="keyword wintitle">Options</span> tab, set the working director to
-                        <span class="ph filepath">${afd}</span>. The build file is located in
-                        <span class="ph filepath">Z:\eb-corpus\code\xslt\oxygenframeworks\tei\xml\tei\stylesheet\docx\build-from.xml</span>.
+                <span class="ph cmd">On the <span class="keyword wintitle">Options</span> tab, set the working director to <span class="ph filepath">${afd}</span>.
+                </span>
+            </li><li class="li step stepexpand">
+                <span class="ph cmd">The build file is located in
+                        <span class="ph filepath">D:\knowledge-project\kp2\code\xslt\oxygenframeworks\tei\xml\tei\stylesheet\docx\build-from.xml</span>.
                     Check that the rest of the settings are identical to those shown above.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">Open the <span class="keyword wintitle">Parameters</span> tab. The five parameters should appear
-                    as in the following image. </span>
+                <span class="ph cmd">Open the <span class="keyword wintitle">Parameters</span> tab. The five parameters should appear as in the following
+                    image. </span>
                 <div class="itemgroup stepresult"><figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 3</span>: </span>The <span class="ph uicontrol">Parameters</span> tab.</figcaption>
                         
                         <br /><div class="imageleft"><img class="image imageleft" src="image/oxygen/edit-ant-scenario2.png" /></div><br />
-                    </figure> Pay attention to the <span class="ph uicontrol">outputFile</span> parameter. This
-                    sets the path for the output files, and it should read:
-                        <span class="ph filepath">${cfd}/../3-page-tei/${afn}.xml</span>.</div>
+                    </figure> Pay attention to the <span class="ph uicontrol">outputFile</span> parameter. This sets the path for the
+                    output files, and it should read: <span class="ph filepath">${cfd}/../3-page-tei/${afn}.xml</span>.</div>
             </li><li class="li step stepexpand">
                 <span class="ph cmd">Open the <span class="keyword wintitle">Output</span> tab.</span>
                 <div class="itemgroup stepresult"><figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 4</span>: </span>The <span class="ph uicontrol">Output</span> tab.</figcaption>
                         
                         <br /><div class="imageleft"><img class="image imageleft" src="image/oxygen/edit-ant-scenario3.png" /></div><br />
-                    </figure>This tab tells <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen</dfn></a> whether or not to open the output
-                    file for you. If you are transforming multiple files, you will not want them
-                    opened, so leave these boxes unchecked. However, if you are running a single
-                    file and want to check the results immediately, check <span class="ph uicontrol">In System
-                        Application</span>. The <span class="ph uicontrol">Open:</span> field should read
+                    </figure>This tab tells <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen</dfn></a> whether or not to open the output file for you. If
+                    you are transforming multiple files, you will not want them opened, so leave these boxes unchecked.
+                    However, if you are running a single file and want to check the results immediately, check
+                        <span class="ph uicontrol">In System Application</span>. The <span class="ph uicontrol">Open:</span> field should read
                         <span class="ph filepath">${cfd}/../3-page-tei/${afn}.xml</span>. </div>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">Click <span class="ph uicontrol">OK</span> to close the <span class="keyword wintitle">Edit Ant
-                        Scenario</span> window and return to the <span class="ph uicontrol">Configure
-                        Transformation Scenario(s)</span> dialogue.</span>
+                <span class="ph cmd">Click <span class="ph uicontrol">OK</span> to close the <span class="keyword wintitle">Edit Ant Scenario</span> window and
+                    return to the <span class="ph uicontrol">Configure Transformation Scenario(s)</span> dialogue.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">Click <span class="ph uicontrol">Apply associated</span> to run the scenario on the
-                    selected files and save the results in the <span class="ph filepath">3-page-tei</span>
-                    folder.</span>
+                <span class="ph cmd">Click <span class="ph uicontrol">Apply associated</span> to run the scenario on the selected files and save
+                    the results in the <span class="ph filepath">3-page-tei</span> folder.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">Validate all of the new <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="term">XML</dfn></a> files in the
-                        <span class="ph filepath">3-page-tei</span> folder. To do this, select all of the new
-                    files in the <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term abbreviated-form">Oxygen</dfn></a>
+                <span class="ph cmd">Validate all of the new <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="term">XML</dfn></a> files in the <span class="ph filepath">3-page-tei</span> folder.
+                    To do this, select all of the new files in the <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term abbreviated-form">Oxygen</dfn></a>
                     <span class="keyword wintitle">Project</span> window. Right-click, <span class="ph menucascade"><span class="ph uicontrol">Validate</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Validate</span></span>.</span>
-                <div class="itemgroup stepresult">If there are no errors, the transformation is complete.</div>
-                 Sometimes you will encounter errors at this stage. This should
-                    be rare and the errors should be relatively simple. A basic knowledge of
-                        <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> is all that is needed to correct them
-                    manually. If you are not sure, please ask. If no one can help you, make a note
-                    of the pages with errors and leave it for the person in
-                    charge.
+                <div class="itemgroup stepresult">The transformation is complete.</div>
+                 You may encounter errors at this stage. This should be rare, and the
+                    errors should be relatively simple. A basic knowledge of <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term abbreviated-form">TEI</dfn></a> is all
+                    that is needed to correct them manually. If you are not sure, please ask. If no one can help you,
+                    make a note of the pages with errors and leave it for the person in charge.
             </li></ol></section>
     </div>
 </article></main></div>

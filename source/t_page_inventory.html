@@ -2,7 +2,7 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="21.1">
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="DC.type" content="task" /><meta name="description" content="Create a page-inventory file." /><meta name="indexterms" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, page-inventory file, filename" /><meta name="DC.subject" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, filename" /><meta name="keywords" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, filename" /><meta name="DC.relation" scheme="URI" content="../source/c_ocr_folder.html" /><meta name="DC.relation" scheme="URI" content="t_entry_inventory.html" /><meta name="DC.creator" content="Peter M. Logan" /><meta name="rights" content="© 2019 Peter M. Logan" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="t.pg-inventory" />        
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="DC.type" content="task" /><meta name="description" content="Create a page-inventory file." /><meta name="indexterms" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, page-inventory file, filename, inventory file (page)" /><meta name="DC.subject" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, filename, inventory file (page)" /><meta name="keywords" content="page-inventory file, inventory-blank.xslx file, filenames, page-inventory, filename, inventory file (page)" /><meta name="DC.relation" scheme="URI" content="../source/c_ocr_folder.html" /><meta name="DC.relation" scheme="URI" content="t_entry_inventory.html" /><meta name="DC.creator" content="Peter M. Logan" /><meta name="rights" content="© 2019 Peter M. Logan" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="t.pg-inventory" />        
       <title>Page-Inventory File</title><!--  Generated with Oxygen version 21.1, build number 2019052017.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="t.pg-inventory-d62e864" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2019052017" /><script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen-red.css?buildId=2019052017" /><link rel="stylesheet" type="text/css" href="../wh-responsive2.css" /></head>
 
     <body id="t.pg-inventory" class="wh_topic_page frmBody">
@@ -83,29 +83,25 @@
     
     <div class="body taskbody"><p class="shortdesc">Create a page-inventory file.</p>
         <section class="section context">
-            <p class="p">The <a href="../glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Nineteenth-Century Knowledge Project</dfn></a> contains tens of thousands of individual
-                files. The primary record of file contents at the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term">OCR</dfn></a> stage is
-                the <a href="../glossary/g_p_inventory.html" title="A spreadsheet used to record each step in the production sequence of page files for a specific Encyclopedia section."><dfn class="term">page-inventory</dfn></a>, a <a href="../glossary/g_spreadsheet.html" title="A file containing rows and columns of data that is opened by a spreadsheet program, such as Excel."><dfn class="term">spreadsheet</dfn></a> that we
-                create for every <a href="../glossary/g_section.html" title="A chunk of up to 250 pages from a specified letter in the Encyclopedia. Sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>.</p>
+            <p class="p">The <a href="../glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Nineteenth-Century Knowledge Project</dfn></a> contains tens of thousands of individual files. The primary
+                record of file contents at the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="term">OCR</dfn></a> stage is the <a href="../glossary/g_p_inventory.html" title="A spreadsheet used to record each step in the production sequence of page files for a specific Encyclopedia section."><dfn class="term">page-inventory</dfn></a>, a
+                    <a href="../glossary/g_spreadsheet.html" title="A file containing rows and columns of data that is opened by a spreadsheet program, such as Excel."><dfn class="term">spreadsheet</dfn></a> that we create for every <a href="../glossary/g_section.html" title="A chunk of up to 250 pages from a specified letter in the Encyclopedia. Sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>.</p>
             <div class="p">Most importantly, the <a href="../glossary/g_p_inventory.html" title="A spreadsheet used to record each step in the production sequence of page files for a specific Encyclopedia section."><dfn class="term">page-inventory</dfn></a> file documents: <ol class="ol">
                     <li class="li">the source images,</li>
                     <li class="li">the original page and volume numbers for each image,</li>
                     <li class="li">the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> filename, and</li>
                     <li class="li"><a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> filename.</li>
                 </ol></div>
-            <p class="p">There are two page-inventory files: an original in the <span class="ph filepath">kp1</span>
-                repository, and a copy with additional information in the <span class="ph filepath">kp2</span>
-                repository. The page-inventory file is named <code class="ph codeph">kp1+edition+section</code> or
-                    <code class="ph codeph">kp2+edition+section</code>, depending on which repository it belongs
-                to.</p>
-            <div class="note note note_note"><span class="note__title">Note:</span> Accuracy in matching filenames is critical. We use filenames
-                recorded in the <a href="../glossary/g_p_inventory.html" title="A spreadsheet used to record each step in the production sequence of page files for a specific Encyclopedia section."><dfn class="term">page-inventory</dfn></a> to generate metadata in the <a href="../glossary/g_master_files.html" title="Edited TEI files containing all the information needed to generate editions in any format we want. These are the most critical files in the Knowledge Project and should never be changed without authorization."><dfn class="term">master files</dfn></a> .</div>
+            <p class="p">The page-inventory file is named <code class="ph codeph">edition+section</code> and is saved in the
+                    <span class="ph filepath">kp1/OCR</span> folder for the relevant section. Later, when the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> files are transformed to <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a>, the page-inventory file is moved to the
+                    <span class="ph filepath">kp2/page</span> folder.</p>
+            <div class="note note note_note"><span class="note__title">Note:</span> Accuracy in matching filenames is critical. We use filenames recorded in the <a href="../glossary/g_p_inventory.html" title="A spreadsheet used to record each step in the production sequence of page files for a specific Encyclopedia section."><dfn class="term">page-inventory</dfn></a> to generate metadata in the <a href="../glossary/g_master_files.html" title="Edited TEI files containing all the information needed to generate editions in any format we want. These are the most critical files in the Knowledge Project and should never be changed without authorization."><dfn class="term">master files</dfn></a> .</div>
         </section>
         <section><ol class="ol steps"><li class="li step stepexpand">
-                <span class="ph cmd">Open the blank inventory file,
-                        <span class="ph filepath">records/inventory-blank.xslx</span>, and copy it to the
-                        <span class="ph filepath">kp1/ocr</span> directory for the new <a href="../glossary/g_section.html" title="A chunk of up to 250 pages from a specified letter in the Encyclopedia. Sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>. Rename the file beginning with the word "kp1-" followed by
-                        <em class="ph i">edition</em>-<em class="ph i">section</em> (<span class="ph filepath">kp1-ebnn-snn</span>).</span>
+                <span class="ph cmd">Open the blank inventory file, <span class="ph filepath">records/inventory-blank.xslx</span>, and copy it to
+                    the <span class="ph filepath">kp1/ocr</span> directory for the new <a href="../glossary/g_section.html" title="A chunk of up to 250 pages from a specified letter in the Encyclopedia. Sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a>. Rename the file
+                    with the <em class="ph i">edition</em>-<em class="ph i">section</em> convention
+                        (<span class="ph filepath">ebnn-snn</span>).</span>
                 <div class="itemgroup stepxmp">
                     <figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span>: </span>Blank Inventory file</figcaption>
                         
@@ -113,20 +109,17 @@
                     </figure>
                 </div>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">In the new inventory file, update cell <span class="ph uicontrol">A1</span> with the
-                    correct edition and section information; also update the section label on the
-                    tab at the bottom of the window (labeled <span class="ph uicontrol">ebnn-snn</span>) by
-                    double-clicking it.</span>
+                <span class="ph cmd">In the new inventory file, update cell <span class="ph uicontrol">A1</span> with the correct edition and
+                    section information. Update the section label on the tab at the bottom of the window (labeled
+                        <span class="ph uicontrol">ebnn-snn</span>) by double-clicking it.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">In Windows File Explorer, open the home directory for the <a href="../glossary/g_section.html" title="A chunk of up to 250 pages from a specified letter in the Encyclopedia. Sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a> folder in <span class="ph filepath">kp1/ocr/images</span>,
-                    containing the original images used for the <a href="../glossary/g_ocr_project.html" title="A collection of files used by ABBYY FineReader and stored as a single group."><dfn class="term">ocr-project</dfn></a>. Make
-                    a note of the total number of image files.</span>
-                <div class="itemgroup info">All files in the directory will have the same name and number format,
-                    incrementing by one number.</div>
+                <span class="ph cmd">In Windows File Explorer, open the home directory for the <a href="../glossary/g_section.html" title="A chunk of up to 250 pages from a specified letter in the Encyclopedia. Sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a> folder in
+                        <span class="ph filepath">kp1/ocr/images</span>, containing the original images used for the <a href="../glossary/g_ocr_project.html" title="A collection of files used by ABBYY FineReader and stored as a single group."><dfn class="term">ocr-project</dfn></a>. Make a note of the total number of image files.</span>
+                <div class="itemgroup info">All files in the directory will have the same name and number format, incrementing by one
+                    number.</div>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">Copy the name of the first image into the <span class="ph uicontrol">image-fn</span>
-                    column, <em class="ph i">without the extension</em>. Append the file extension (.tiff, .jp2,
-                    etc.) to the column label, instead.</span>
+                <span class="ph cmd">Copy the name of the first image into the <span class="ph uicontrol">image-fn</span> column, <em class="ph i">without the
+                        extension</em>. Append the file extension (.tiff, .jp2, etc.) to the column label, instead.</span>
                 <div class="itemgroup stepxmp">
                     <figure class="fig fignone"><figcaption class="figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 2</span>: </span>Columns for inventory spreadsheet</figcaption>
                         
@@ -134,56 +127,50 @@
                     </figure>
                 </div>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">Select the filename you added to the <span class="ph uicontrol">image-fn</span> column.
-                    Position your cursor over small square at the bottom-right corner of the
-                    selection. When the cursor changes to a <span class="ph uicontrol">+</span> sign,
-                    left-click and drag down the column. Excel will populate the rest of the
-                        <span class="ph uicontrol">image-fn</span> column for you.</span>
-                <div class="itemgroup stepresult">You should now have a column with the same number of filenames that you
-                    noted in the <span class="ph filepath">kp1/ocr/images</span>
+                <span class="ph cmd">Select the filename you added to the <span class="ph uicontrol">image-fn</span> column. Position your cursor
+                    over small square at the bottom-right corner of the selection. When the cursor changes to a
+                        <span class="ph uicontrol">+</span> sign, left-click and drag down the column. Excel will populate the rest
+                    of the <span class="ph uicontrol">image-fn</span> column for you.</span>
+                <div class="itemgroup stepresult">You should now have a column with the same number of filenames that you noted in the
+                        <span class="ph filepath">kp1/ocr/images</span>
                     <a href="../glossary/g_section.html" title="A chunk of up to 250 pages from a specified letter in the Encyclopedia. Sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="term">section</dfn></a> folder. Make sure the name of the last file in the
-                        <span class="ph uicontrol">image-fn</span> column matches that of the image
-                    folder.</div>
+                        <span class="ph uicontrol">image-fn</span> column matches that of the image folder.</div>
             </li><li class="li step stepexpand">
                 <span class="ph cmd">Enter the print volume number in the <span class="ph uicontrol">p-vol</span> column.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">Enter the print page number for each image in the <span class="ph uicontrol">p-pg</span>
-                    column, using the same technique as above to auto-populate the column.</span>
-                <div class="itemgroup tutorialinfo">Be sure to account for unnumbered pages, such as plates, even if they
-                    were not scanned and output. This gives us a guide to every image file in the
-                    section.</div>
+                <span class="ph cmd">Enter the print page number for each image in the <span class="ph uicontrol">p-pg</span> column, using the
+                    same technique as above to auto-populate the column.</span>
+                <div class="itemgroup tutorialinfo">Be sure to account for unnumbered pages, such as plates, even if they were not scanned and
+                    output. This gives us a guide to every image file in the section.</div>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">In the <span class="ph uicontrol">output-fn.docx</span> column, enter the filename for
-                    each <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> file in the output, corresponding to the image
-                    filename in the <span class="ph uicontrol">image-fn</span> column.</span>
-                <div class="itemgroup tutorialinfo">This may take some time. <a href="../glossary/g_afr.html" title="A proprietary software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a> may miss a page, or it
-                    may add a blank page. Take your time. If in doubt, always consult the original
-                    page images to make sure the text in the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> file represents
-                    the text in the corresponding image file.</div>
+                <span class="ph cmd">In the <span class="ph uicontrol">output-fn.docx</span> column, enter the filename for each <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> file in the output, corresponding to the image filename in the
+                        <span class="ph uicontrol">image-fn</span> column.</span>
+                <div class="itemgroup tutorialinfo">This may take some time. <a href="../glossary/g_afr.html" title="A proprietary software program that scans image files and outputs text using OCR technology."><dfn class="term">ABBYY FineReader</dfn></a> may miss a page, or it may add a blank
+                    page. Take your time. If in doubt, always consult the original page images to make sure the text in
+                    the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> file represents the text in the corresponding image file.</div>
             </li><li class="li step stepexpand">
                 <span class="ph cmd">Add the initials for the person drawing boxes on each page in column F,
-                        <span class="ph uicontrol">scan-by</span>. If one person did the entire section, you
-                    only need to enter it once.</span>
+                        <span class="ph uicontrol">scan-by</span>. If one person did the entire section, you only need to enter it
+                    once.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">Add the date the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> files were created in the
-                        <span class="ph uicontrol">output-dt</span> column.</span>
+                <span class="ph cmd">Add the date the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> files were created in the <span class="ph uicontrol">output-dt</span>
+                    column.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">The <span class="ph uicontrol">tei-fn.xml</span> column lists the filenames for the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> files, after the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> files are
-                    transformed.</span>
+                <span class="ph cmd">The <span class="ph uicontrol">tei-fn.xml</span> column lists the filenames for the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a>
+                    files, after the <a href="../glossary/g_docx.html" title="A file format for Microsoft Word documents that is par of OOXML, an XML-based schema for Office Open developed by Microsoft in 2006. It is a competing standard to that of Open Office XML."><dfn class="term">docx</dfn></a> files are transformed.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">The <span class="ph uicontrol">valid-dt</span> column indicates when the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> files were validated by the supervisor, as part of the
-                    quality-control process.</span>
+                <span class="ph cmd">The <span class="ph uicontrol">valid-dt</span> column indicates when the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> files were
+                    validated by the supervisor, as part of the quality-control process.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">The <span class="ph uicontrol">cleanup-dt</span> column documents when the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> encoding is cleaned up in <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a>.</span>
+                <span class="ph cmd">The <span class="ph uicontrol">cleanup-dt</span> column documents when the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="term">TEI</dfn></a> encoding is
+                    cleaned up in <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a>.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">The <span class="ph uicontrol">afr-comments</span> column is for recording page anomalies.
-                    Use this column to note any pages with Hebrew-language text, footnote text that
-                    runs over from one page to another, complex tables that cannot be captured
-                    appropriately, or any other information we will need to know for later in the
-                    production process. See <a class="xref" href="t_special_cases.html" title="Situations requiring a note in the page-inventory file.">Special Cases</a>.</span>
+                <span class="ph cmd">The <span class="ph uicontrol">afr-comments</span> column is for recording page anomalies. Use this column to
+                    note any pages with Hebrew-language text, footnote text that runs over from one page to another,
+                    complex tables that cannot be captured appropriately, or any other information we will need to know
+                    for later in the production process. See <a class="xref" href="t_special_cases.html" title="Situations requiring a note in the page-inventory file.">Special Cases</a>.</span>
             </li><li class="li step stepexpand">
-                <span class="ph cmd">The <span class="ph uicontrol">tei-p-comments</span> column is for recording any changes
-                    to the <a href="../glossary/g_page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a> made by the operator.</span>
+                <span class="ph cmd">The <span class="ph uicontrol">tei-p-comments</span> column is for recording any changes to the <a href="../glossary/g_page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page file</dfn></a> made by the operator.</span>
             </li></ol></section>
     </div>
     
