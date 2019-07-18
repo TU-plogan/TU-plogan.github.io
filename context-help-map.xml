@@ -117,7 +117,6 @@
    <appContext helpID="untitled2" path="source/r_oxygen-interface.html"/>
    <appContext helpID="create_a_new_oxygen_project"
                path="source/t_create_a_new_xml_project.html"/>
-   <appContext helpID="convert-docx2tei" path="source/c_convert_docx2tei.html"/>
    <appContext helpID="transform_docx_files" path="source/t_transform_docx2tei.html"/>
    <appContext helpID="import_a_scenario" path="source/t_import_a_scenario.html"/>
    <appContext helpID="processing_entry_files"
@@ -133,6 +132,13 @@
                path="source/c_convert_pages_to_entries.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
+   <appContext helpID="c_cleanup_extra_space" path="source/c_cleanup_extra_space.html"/>
+   <appContext helpID="fractions" path="source/c-fractions.html"/>
+   <appContext helpID="t_review_inventory_notes_0"
+               path="source/t_review_inventory_notes_0.html"/>
+   <appContext helpID="t_convert_marginal_notes"
+               path="source/c_convert_marginal_notes.html"/>
+   <appContext helpID="t_find_lists" path="source/t_find_lists.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
    <appContext helpID="c.proof-entry-terms" path="source/c_check-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
