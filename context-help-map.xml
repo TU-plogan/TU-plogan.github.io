@@ -134,11 +134,11 @@
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="c_cleanup_extra_space" path="source/c_cleanup_extra_space.html"/>
    <appContext helpID="fractions" path="source/c-fractions.html"/>
-   <appContext helpID="t_review_inventory_notes_0"
-               path="source/t_review_inventory_notes_0.html"/>
    <appContext helpID="t_convert_marginal_notes"
                path="source/c_convert_marginal_notes.html"/>
    <appContext helpID="t_find_lists" path="source/t_find_lists.html"/>
+   <appContext helpID="t_review_inventory_notes_0"
+               path="source/t_review_inventory_notes_0.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
    <appContext helpID="c.proof-entry-terms" path="source/c_check-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>

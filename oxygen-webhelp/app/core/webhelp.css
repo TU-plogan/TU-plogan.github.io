@@ -1,7 +1,7 @@
-@import "fonts.css?buildId=2019052017";
-@import "icons.css?buildId=2019052017";
-@import "../indexterms/indexterms.css?buildId=2019052017";
-@import "webhelp-dot3x.css?buildId=2019052017";
+@import "fonts.css?buildId=2019071610";
+@import "icons.css?buildId=2019071610";
+@import "../indexterms/indexterms.css?buildId=2019071610";
+@import "webhelp-dot3x.css?buildId=2019071610";
 
 .container-fluid {
     margin-right: auto;
@@ -1543,7 +1543,7 @@ body {
     .wh_main_page_toc_entry,
     .wh_top_menu ul,
     .wh_breadcrumb ol {
-        word-break: break-all;
+        word-break: break-word;
         overflow-wrap: break-word;
         word-wrap: break-word;
     }
