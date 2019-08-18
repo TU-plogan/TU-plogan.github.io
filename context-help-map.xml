@@ -99,7 +99,7 @@
    <appContext helpID="c.illustrations" path="source/c_illustrations.html"/>
    <appContext helpID="c.catchwords" path="source/c_catchwords.html"/>
    <appContext helpID="c.author-initials" path="source/c_author_initials.html"/>
-   <appContext helpID="t.unnumbered-pages" path="source/t_pages_withou-text.html"/>
+   <appContext helpID="t.unnumbered-pages" path="source/t_pages_without-text.html"/>
    <appContext helpID="c.special-cases" path="source/t_special_cases.html"/>
    <appContext helpID="c.page-recognition" path="source/c_page_recognition.html"/>
    <appContext helpID="verification" path="source/t_verification.html"/>
