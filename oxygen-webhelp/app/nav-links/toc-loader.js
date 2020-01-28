@@ -209,6 +209,22 @@ define(["options", "jquery", "nav"], function (options, $, navConfig) {
             href: linkHref,
             html: topic.title
         });
+        // WH-2368 Update the relative links
+        var pathToRoot = getPathToRoot();
+        var linksInLink = link.find("a[href]");
+        linksInLink.each(function () {
+            var href = $(this).attr("href");
+            if (!(href.startsWith("http:") || href.startsWith("https:"))) {
+                $(this).attr("href", pathToRoot + href);
+            }
+        });
+        var imgsInLink = link.find("img[src]");
+        imgsInLink.each(function () {
+            var src = $(this).attr("src");
+            if (!(src.startsWith("http:") || src.startsWith("https:"))) {
+                $(this).attr("src", pathToRoot + src);
+            }
+        });
 
         link.attr("id", getTopicLinkID(topic));
 
@@ -231,7 +247,6 @@ define(["options", "jquery", "nav"], function (options, $, navConfig) {
 			/* WH-1518: Check if the tooltip has content. */
             if (tooltipSpan.find('.shortdesc:empty').length == 0) {
                 // Update the relative links
-                var pathToRoot = getPathToRoot();
                 var links = tooltipSpan.find("a[href]");
                 links.each(function () {
                     var href = $(this).attr("href");
@@ -239,6 +254,14 @@ define(["options", "jquery", "nav"], function (options, $, navConfig) {
                         $(this).attr("href", pathToRoot + href);
                     }
                 });
+                var imgs = tooltipSpan.find("img[src]");
+                imgs.each(function () {
+                    var src = $(this).attr("src");
+                    if (!(src.startsWith("http:") || src.startsWith("https:"))) {
+                        $(this).attr("src", pathToRoot + src);
+                    }
+                });
+
                 titleSpan.append(tooltipSpan);
             }
         }

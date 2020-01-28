@@ -151,5 +151,6 @@
    <appContext helpID="r_missing_text" path="source/r_text_problems.html"/>
    <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
    <appContext helpID="untitled1" path="source/r_verse-drama.html"/>
+   <appContext helpID="entry_subdivisions" path="source/entry_subdivisions.html"/>
    <appContext helpID="unicode_characters" path="source/r_unicode_characters.html"/>
 </map>

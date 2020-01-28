@@ -205,6 +205,23 @@ define(["options", "jquery", "nav"], function (options, $, navConfig) {
             html: topic.title
         });
 
+        // WH-2368 Update the relative links
+        var pathToRoot = getPathToRoot();
+        var linksInLink = link.find("a[href]");
+        linksInLink.each(function () {
+            var href = $(this).attr("href");
+            if (!(href.startsWith("http:") || href.startsWith("https:"))) {
+                $(this).attr("href", pathToRoot + href);
+            }
+        });
+        var imgsInLink = link.find("img[src]");
+        imgsInLink.each(function () {
+            var src = $(this).attr("src");
+            if (!(src.startsWith("http:") || src.startsWith("https:"))) {
+                $(this).attr("src", pathToRoot + src);
+            }
+        });
+
         if (isExternalReference) {
             link.attr("target", "_blank");
         }
