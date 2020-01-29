@@ -139,6 +139,7 @@
    <appContext helpID="t_find_lists" path="source/t_find_lists.html"/>
    <appContext helpID="t_review_inventory_notes_0"
                path="source/t_review_inventory_notes_0.html"/>
+   <appContext helpID="editorial_notes" path="source/editorial_notes.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
    <appContext helpID="c.proof-entry-terms" path="source/c_check-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
