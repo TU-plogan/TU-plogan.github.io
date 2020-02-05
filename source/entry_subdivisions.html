@@ -84,36 +84,56 @@
     <div class="body refbody"><p class="shortdesc">Encoding for subdivisions in entries.</p>
         <section class="section">
             <p class="p">Use <code class="keyword markupname xmlelement">&lt;div&gt;</code> codes with the appropriate <code class="keyword markupname xmlatt">@type</code> to
-                indicate major subdivisions of long entries. Use <code class="keyword markupname xmlelement">&lt;label&gt;</code> for
-                section headings when included in the original.</p>
-            <table class="table"><caption></caption><colgroup><col /><col /></colgroup><thead class="thead">
+                indicate subdivisions of long entries. Use <code class="keyword markupname xmlelement">&lt;head&gt;</code> for section
+                headings. </p>
+            <table class="table"><caption></caption><colgroup><col /><col /><col /></colgroup><thead class="thead">
                         <tr>
-                            <th class="entry" id="entry_subdivisions__entry__1">type values</th>
-                            <th class="entry" id="entry_subdivisions__entry__2">usage</th>
+                            <th class="entry" id="entry_subdivisions__entry__1">@type value</th>
+                            <th class="entry" id="entry_subdivisions__entry__2">level</th>
+                            <th class="entry" id="entry_subdivisions__entry__3">usage</th>
                         </tr>
                     </thead><tbody class="tbody">
                         <tr>
                             <td class="entry" headers="entry_subdivisions__entry__1 ">"entry"</td>
-                            <td class="entry" headers="entry_subdivisions__entry__2 ">The outermost tag for the entire entry. See <a class="xref" href="r_page_numbers.html" title="Specifies encoding method for page numbers in TEI.">Page Numbers</a>.</td>
+                            <td class="entry" headers="entry_subdivisions__entry__2 ">1</td>
+                            <td class="entry" headers="entry_subdivisions__entry__3 ">The outermost tag for the entire entry. See <a class="xref" href="r_page_numbers.html" title="Specifies encoding method for page numbers in TEI.">Page Numbers</a>.</td>
                         </tr>
                         <tr>
-                            <td class="entry" headers="entry_subdivisions__entry__1 ">"sub1"</td>
-                            <td class="entry" headers="entry_subdivisions__entry__2 ">A level-one subdivision nested within an entry.</td>
+                            <td class="entry" headers="entry_subdivisions__entry__1 ">"section"</td>
+                            <td class="entry" headers="entry_subdivisions__entry__2 ">2</td>
+                            <td class="entry" headers="entry_subdivisions__entry__3 ">A subdivision nested within an entry.</td>
                         </tr>
                         <tr>
-                            <td class="entry" headers="entry_subdivisions__entry__1 ">"sub2"</td>
-                            <td class="entry" headers="entry_subdivisions__entry__2 ">A level-two subdivision for a named section nexted within a
-                                level-one subdivision.</td>
+                            <td class="entry" headers="entry_subdivisions__entry__1 ">"subsection"</td>
+                            <td class="entry" headers="entry_subdivisions__entry__2 ">3-∞</td>
+                            <td class="entry" headers="entry_subdivisions__entry__3 ">A subdivision nested with a section or a subsection.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry" headers="entry_subdivisions__entry__1 ">"index"</td>
+                            <td class="entry" headers="entry_subdivisions__entry__2 "> 2</td>
+                            <td class="entry" headers="entry_subdivisions__entry__3 "> An index section for an entry.</td>
                         </tr>
                     </tbody></table>
+            <p class="p">If a section has both a heading and a subheading immediately following, but there are
+                no subsections, then add <code class="keyword markupname xmlatt">@type</code>="sub" to
+                    <code class="keyword markupname xmlelement">&lt;head&gt;</code> instead of creating a new
+                    <code class="keyword markupname xmlelement">&lt;div&gt;</code>. If a section has <em class="ph i">multiple</em> subsections, then
+                use <code class="keyword markupname xmlelement">&lt;div&gt;</code>s to define them. </p>
+            <p class="p">This is a minimalist encoding scheme that leaves room for further refinement, with
+                additional divs for things like poems and quotes. For now, we are just trying to
+                encode the sections already identified in the entry by the author. </p>
             <p class="p">Example:</p>
             <pre class="pre codeblock"><code><code class="keyword markupname">&lt;div type="entry"&gt;</code>
    <code class="keyword markupname xmlelement">&lt;p&gt;</code><code class="keyword markupname xmlelement">&lt;label&gt;</code>STEAM<code class="keyword markupname xmlelement">&lt;/label&gt;</code><code class="keyword markupname xmlelement">&lt;/p&gt;</code>
-      <code class="keyword markupname">&lt;div type="sub1"&gt;</code>
-         <code class="keyword markupname xmlelement">&lt;p&gt;</code><code class="keyword markupname xmlelement">&lt;label&gt;</code>SECTION I —CONSIDERATIONS OF A GENERAL NATURE OF STEAM.<code class="keyword markupname">&lt;/label&gt;</code><code class="keyword markupname">&lt;/p&gt;</code>
+      <code class="keyword markupname">&lt;div type="section"&gt;</code>
+         <code class="keyword markupname xmlelement">&lt;head&gt;</code>SECTION I — THE GENERAL NATURE OF STEAM.<code class="keyword markupname xmlelement">&lt;/head&gt;</code>
                 . . .
-      <code class="keyword markupname">&lt;/div&gt;</code>
-<code class="keyword markupname">&lt;/div&gt;</code>
+               <code class="keyword markupname">&lt;div type="subsection"&gt;</code>
+                    <code class="keyword markupname xmlelement">&lt;head&gt;</code>Pressurization<code class="keyword markupname xmlelement">&lt;/head&gt;</code>
+                    . . .
+                <code class="keyword markupname xmlelement">&lt;/div&gt;</code>
+       <code class="keyword markupname xmlelement">&lt;/div&gt;</code>
+<code class="keyword markupname xmlelement">&lt;/div&gt;</code>
 </code></pre>
         </section>
     </div>
