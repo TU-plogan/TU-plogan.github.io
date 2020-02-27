@@ -42,14 +42,14 @@
                path="source/t_edition_section_system.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
+   <appContext helpID="repos-all" path="source/c_repos_all.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
-   <appContext helpID="c_kp_corpus1_repository" path="source/c_kp1_repository.html"/>
-   <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
-   <appContext helpID="ocr_folder" path="source/c_ocr_folder.html"/>
+   <appContext helpID="ebnn_repositories" path="source/c_print_ed_repos.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
    <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
-   <appContext helpID="c.images-fdr" path="source/c_images_folder.html"/>
-   <appContext helpID="c_records_folder" path="source/c_records_folder.html"/>
+   <appContext helpID="c_kp1_repository" path="source/c_kp1_repository.html"/>
+   <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
+   <appContext helpID="metadata_folder" path="source/metadata_folder.html"/>
    <appContext helpID="c_kp_corpus2_repository" path="source/c_kp2_repository.html"/>
    <appContext helpID="c.code_folder" path="source/c_code_folder.html"/>
    <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
@@ -61,6 +61,7 @@
    <appContext helpID="c.page_fdr" path="source/c_page_folder.html"/>
    <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
    <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
+   <appContext helpID="c_records_folder" path="source/c_records_folder.html"/>
    <appContext helpID="t_setting_up_the_repositories"
                path="source/t_setting_up_the_repositories.html"/>
    <appContext helpID="t_install_drive_file_stream"
@@ -133,13 +134,13 @@
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="c_cleanup_extra_space" path="source/c_cleanup_extra_space.html"/>
-   <appContext helpID="fractions" path="source/c-fractions.html"/>
+   <appContext helpID="fractions" path="source/c_fractions.html"/>
    <appContext helpID="t_convert_marginal_notes"
                path="source/c_convert_marginal_notes.html"/>
    <appContext helpID="t_find_lists" path="source/t_find_lists.html"/>
    <appContext helpID="t_review_inventory_notes_0"
                path="source/t_review_inventory_notes_0.html"/>
-   <appContext helpID="editorial_notes" path="source/editorial_notes.html"/>
+   <appContext helpID="editorial_notes" path="source/c_editorial_notes.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
    <appContext helpID="c.proof-entry-terms" path="source/c_check-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
@@ -152,6 +153,6 @@
    <appContext helpID="r_missing_text" path="source/r_text_problems.html"/>
    <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
    <appContext helpID="untitled1" path="source/r_verse-drama.html"/>
-   <appContext helpID="entry_subdivisions" path="source/entry_subdivisions.html"/>
+   <appContext helpID="entry_subdivisions" path="source/c_entry_subdivisions.html"/>
    <appContext helpID="unicode_characters" path="source/r_unicode_characters.html"/>
 </map>

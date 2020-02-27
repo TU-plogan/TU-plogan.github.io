@@ -1,7 +1,7 @@
-@import "fonts.css?buildId=2019112512";
-@import "icons.css?buildId=2019112512";
-@import "../indexterms/indexterms.css?buildId=2019112512";
-@import "webhelp-dot3x.css?buildId=2019112512";
+@import "fonts.css?buildId=2020021011";
+@import "icons.css?buildId=2020021011";
+@import "../indexterms/indexterms.css?buildId=2020021011";
+@import "webhelp-dot3x.css?buildId=2020021011";
 
 .container-fluid {
     margin-right: auto;
@@ -201,7 +201,7 @@ li.hide-after, li.hide-before{display:none}
 .table>thead:first-child>tr:first-child>th {
     /*
        WH-1947 In order for the default alignment to apply as it is defined
-       in elements-styles.css we need not to override it from this very specific rule.
+       in elements.css we need not to override it from this very specific rule.
     */
     /*  vertical-align:inherit ;*/
     border-color:inherit;
