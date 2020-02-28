@@ -1,0 +1,222 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+    <head><link rel="shortcut icon" href="../favicon.ico"><!----></link><link rel="icon" href="../favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="DC.type" content="task" /><meta name="description" content="Add Drive File Stream to the computer for accessing the ebnn and metadata repositories." /><meta name="indexterms" content="ebnn repository, repository, ebnn, Google drive, Google Drive File Stream, installing" /><meta name="DC.relation" scheme="URI" content="../source/t_setting_up_the_repositories.html" /><meta name="DC.contributor" content="Peter" /><meta name="DC.creator" content="Peter M. Logan" /><meta name="DC.contributor" content="Peter" /><meta name="rights" content="© 2019 Peter M. Logan" /><meta name="DC.date.modified" content="2020/02/26" /><meta name="DC.date.modified" content="2020/02/27" /><meta name="DC.date.modified" content="2020/02/28" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="t_install_drive_file_stream" />        
+      <title>Install Drive File Stream</title><!--  Generated with Oxygen version 22.0, build number 2020021011.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="t_install_drive_file_stream-d61e1958" />
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2020021011" />
+    
+    
+    <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.4.1.min.js"><!----></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/orange.css?buildId=2020021011" /></head>
+
+    <body id="t_install_drive_file_stream" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="22.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Nineteenth-Century Knowledge Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul xmlns:xhtml="http://www.w3.org/1999/xhtml" role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.introduction-d61e1123-mi" data-tocid="c.introduction-d61e1123" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.data_organization-d61e1184-mi" data-tocid="c.data_organization-d61e1184" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Organization</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.intro-afr-d61e2061-mi" data-tocid="c.intro-afr-d61e2061" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_ocr.html">OCR</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.oxygen-d61e3308-mi" data-tocid="c.oxygen-d61e3308" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">XML</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="processing_entry_files-d61e3461-mi" data-tocid="processing_entry_files-d61e3461" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Entry Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="reference_manual-d61e3947-mi" data-tocid="reference_manual-d61e3947" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div></form></div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Organization</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">With hundreds of thousands of files, the <a href="../glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Nineteenth-Century Knowledge Project</dfn></a> needs a         clear means of organizing its data. We use specific naming conventions for all files and         folders to order the material.</p></span></span></span></li><li><span class="topicref" data-id="t_setting_up_the_repositories"><span class="title"><a href="../source/t_setting_up_the_repositories.html">Setting Up the Repositories</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Create local copies of the remote repositories</p></span></span></span></li><li class="active"><span class="topicref" data-id="t_install_drive_file_stream"><span class="title"><a href="../source/t_install_drive_file_stream.html">Install Drive File Stream</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Add Drive File Stream to the computer for accessing the <span class="ph filepath">ebnn</span> and             <span class="ph filepath">metadata</span> repositories.</p></span></span></span></li></ol></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="collapse col-lg-3 col-md-3 col-sm-12 d-md-block">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="c.data_organization-d61e1184" class="topicref" data-id="c.data_organization" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c.data_organization-d61e1184-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_data_organization.html" id="c.data_organization-d61e1184-link">Organization</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">With hundreds of thousands of files, the <a href="../glossary/g_c19_project.html" title="A research project in the Digital Scholarship Center of Temple University Libraries exploring trends in the construction of knowledge by analyzing a data set of text from four historical editions of the Encyclopedia Britannica."><dfn class="term">Nineteenth-Century Knowledge Project</dfn></a> needs a         clear means of organizing its data. We use specific naming conventions for all files and         folders to order the material.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="false"><span data-tocid="t_edition_section_system-d61e1216" class="topicref" data-id="t_edition_section_system" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action t_edition_section_system-d61e1216-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_edition_section_system.html" id="t_edition_section_system-d61e1216-link">Edition-Section System</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">File organization depends on two basic folder types</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="repos-all-d61e1306" class="topicref" data-id="repos-all" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action repos-all-d61e1306-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_repos_all.html" id="repos-all-d61e1306-link">Repositories</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">A guide to the different repositories used to store <a href="../glossary/g_ocr_project.html" title="A collection of files used by ABBYY FineReader and stored as a single group."><dfn class="term">ocr-project</dfn></a>         data.</p></span></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="t_setting_up_the_repositories-d61e1928" class="topicref" data-id="t_setting_up_the_repositories" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action t_setting_up_the_repositories-d61e1928-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_setting_up_the_repositories.html" id="t_setting_up_the_repositories-d61e1928-link">Setting Up the Repositories</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Create local copies of the remote repositories</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="t_install_drive_file_stream-d61e1958" class="topicref" data-id="t_install_drive_file_stream" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_install_drive_file_stream.html" id="t_install_drive_file_stream-d61e1958-link">Install Drive File Stream</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Add Drive File Stream to the computer for accessing the <span class="ph filepath">ebnn</span> and             <span class="ph filepath">metadata</span> repositories.</p></span></span></span></li><li role="treeitem"><span data-tocid="t_install_github_desktop-d61e1994" class="topicref" data-id="t_install_github_desktop" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_install_github_desktop.html" id="t_install_github_desktop-d61e1994-link">Install Github Desktop</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Set up GitHub to create the <span class="ph filepath">outputs</span> repository on your machine. </p></span></span></span></li><li role="treeitem"><span data-tocid="t_using_github-d61e2027" class="topicref" data-id="t_using_github" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_using_github.html" id="t_using_github-d61e2027-link">Using Github</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Pull and push files at the beginning and end of every session with             <span class="ph filepath">outputs</span>.</p></span></span></span></li></ul></li></ul></li></ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Install Drive File Stream</h1>
+    
+    
+    <div class="- topic/body task/taskbody body taskbody"><p class="- topic/shortdesc shortdesc">Add Drive File Stream to the computer for accessing the <span class="+ topic/ph sw-d/filepath ph filepath">ebnn</span> and
+            <span class="+ topic/ph sw-d/filepath ph filepath">metadata</span> repositories.</p>
+        <section class="- topic/section task/context section context">
+            <p class="- topic/p p"><a href="../glossary/g_gdfs.html" title="A software program that creates a new drive icon on a computer that lets you access all files on Google Drive from within File Explorer."><dfn class="- topic/term term">Google Drive File Stream</dfn></a> is a software program that allows you to access repositories
+                stored on <a href="../glossary/g_google_drive.html" title="A cloud-based storage system created by Google. We use a Google Shared Drive, provided by Temple University, that works well with large image files."><dfn class="- topic/term term">Google Drive</dfn></a> directly on your computer. It creates a new
+                drive letter on the computer, so you can access the cloud repository within the
+                local File Explorer. These files remain in the cloud. We copy the necessary
+                    <span class="+ topic/ph sw-d/filepath ph filepath">ebnn</span> repository from Google Drive File Stream to the
+                    <span class="+ topic/ph sw-d/filepath ph filepath">ebnn</span> folder on the external hard drive. </p>
+            <div class="- topic/note note note note_note"><span class="note__title">Note:</span> Your supervisor must add you to the Google Shared Drive
+                prior to installing the Google Drive File Stream software.</div>
+        </section>
+        <section><ol class="- topic/ol task/steps ol steps"><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Download and install <a class="- topic/xref xref" href="https://dl.google.com/drive-file-stream/googledrivefilestream.exe" target="_blank">Drive File Stream for Windows</a>.</span>
+                <div class="- topic/itemgroup task/stepresult itemgroup stepresult">This adds a virtual drive to the computer, called <span class="+ topic/ph sw-d/filepath ph filepath">Google Drive
+                        File Stream</span>. To work on files, open that drive in
+                        <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Explorer</span>, just like before.</div>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">To open <span class="+ topic/ph sw-d/filepath ph filepath">ebnn</span>, go to <span class="+ topic/ph sw-d/filepath ph filepath">Google Drive File
+                        Stream/Shared drives/ebnn</span>.</span>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Show the <span class="- topic/keyword keyword">Drive File Stream</span> icon <img class="- topic/image image" src="image/gdfs-icon.png" />
+                    in the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">taskbar</span>.</span>
+                <ol type="a" class="- topic/ol task/substeps ol substeps">
+                    <li class="- topic/li task/substep li substep substepexpand">
+                        <span class="- topic/ph task/cmd ph cmd">Place the cursor over a blank space in the taskbar, right-click, and
+                            select <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Taskbar Settings</span>.</span>
+                        <div class="- topic/itemgroup task/stepresult itemgroup stepresult"> The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Settings</span> window appears.</div>
+                    </li>
+                    <li class="- topic/li task/substep li substep substepexpand">
+                        <span class="- topic/ph task/cmd ph cmd">Halfway down the page, click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Select which icons appear on
+                                the taskbar</span>.</span>
+                    </li>
+                    <li class="- topic/li task/substep li substep substepexpand">
+                        <span class="- topic/ph task/cmd ph cmd">Change <span class="- topic/keyword keyword">Google Drive File Stream</span> from
+                                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">off</span> to <span class="+ topic/ph ui-d/uicontrol ph uicontrol">on</span>.</span>
+                    </li>
+                </ol>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Change the cached files directory.</span>
+                <ol type="a" class="- topic/ol task/substeps ol substeps">
+                    <li class="- topic/li task/substep li substep">
+                        <span class="- topic/ph task/cmd ph cmd">Right-click the <span class="- topic/keyword keyword">Drive File Stream</span> icon <img class="- topic/image image" src="image/gdfs-icon.png" /> in the taskbar, open
+                                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Settings</span>, and select <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Open
+                                Preferences</span>.</span>
+                    </li>
+                    <li class="- topic/li task/substep li substep">
+                        <span class="- topic/ph task/cmd ph cmd">Click <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Change</span> next to <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Local cached
+                                files directory</span>.</span>
+                    </li>
+                    <li class="- topic/li task/substep li substep">
+                        <span class="- topic/ph task/cmd ph cmd">Navigate to the <span class="+ topic/ph sw-d/filepath ph filepath">D:</span> drive and create a new folder
+                            called <span class="+ topic/ph sw-d/filepath ph filepath">gdfs</span>. Select that folder for the Local
+                            cached files directory.</span>
+                    </li>
+                </ol>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Tell <span class="- topic/keyword keyword">Google Shared Drive </span><em class="+ topic/ph hi-d/i ph i">not</em> to
+                    change file formats.</span>
+                <ol type="a" class="- topic/ol task/substeps ol substeps">
+                    <li class="- topic/li task/substep li substep substepexpand">
+                        <span class="- topic/ph task/cmd ph cmd">In a web browser, open <a class="- topic/xref xref" href="https://drive.google.com/drive/my-drive" target="_blank">Google Drive</a>.</span>
+                    </li>
+                    <li class="- topic/li task/substep li substep substepexpand">
+                        <span class="- topic/ph task/cmd ph cmd">In <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Shared drives</span>, open the
+                                <span class="+ topic/ph sw-d/filepath ph filepath">ebnn</span> repo.</span>
+                    </li>
+                    <li class="- topic/li task/substep li substep substepexpand">
+                        <span class="- topic/ph task/cmd ph cmd">Click the hamburger <img class="- topic/image image" src="image/gdfs-hamburger-icon.png" /> at the top of the
+                            screen and select <span class="+ topic/ph ui-d/uicontrol ph uicontrol">settings</span>.</span>
+                        <div class="- topic/itemgroup task/stepresult itemgroup stepresult">The <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Settings</span> window opens</div>
+                    </li>
+                    <li class="- topic/li task/substep li substep substepexpand">
+                        <span class="- topic/ph task/cmd ph cmd">Uncheck the box for <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Convert uploads</span> and click
+                                <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Done</span>.</span>
+                    </li>
+                </ol>
+            </li></ol></section>
+        <section class="- topic/section task/postreq section postreq">When finished, your will have Google Drive Files Stream correctly installed on the
+            computer. Look in File Explorer to see what drive letter it has (normally
+                <span class="+ topic/ph sw-d/filepath ph filepath">G:</span>). And look at the drive letter assigned to your external
+            hard drive. These should be the drives in the SyncBack Free backup profile for the
+                <span class="+ topic/ph sw-d/filepath ph filepath">ebnn</span> repository. This profile copies files <em class="+ topic/ph hi-d/i ph i">from</em> the
+            external hard drive <em class="+ topic/ph hi-d/i ph i">to</em> the repository in Google Drive File Stream. From there,
+            file are automatically uploaded to the <span class="+ topic/ph sw-d/filepath ph filepath">ebnn</span> repository on Google
+            Shared Drive. </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="22.0">
+  <div class=" footer-container mx-auto ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+        <p style="text-align: center">Project Director <a href="mailto:peter.logan@temple.edu?Subject=Knowledge%20Project">Peter Melville Logan</a></p>
+        <p style="text-align: center">ORCHiD ID: <a href="https://orcid.org/0000-0003-2362-8282">https://orcid.org/0000-0003-2362-8282</a></p>
+    
+    </body>
+</html>

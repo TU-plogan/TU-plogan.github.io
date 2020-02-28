@@ -1,0 +1,186 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+    <head><link rel="shortcut icon" href="../favicon.ico"><!----></link><link rel="icon" href="../favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="DC.type" content="task" /><meta name="description" content="Use AFR's built-in program to verify recognition accuracy on each page." /><meta name="indexterms" content="verification, OCR, fractions, hyphens, verification, fractions, hyphens" /><meta name="DC.relation" scheme="URI" content="../source/c_page_recognition.html" /><meta name="DC.relation" scheme="URI" content="../source/c_page_recognition.html" /><meta name="DC.relation" scheme="URI" content="../source/c_ocr_for_eb03.html" /><meta name="DC.contributor" content="Peter" /><meta name="DC.creator" content="Peter M. Logan" /><meta name="rights" content="© 2019 Peter M. Logan" /><meta name="DC.date.modified" content="2020/02/26" /><meta name="DC.date.modified" content="2020/02/27" /><meta name="DC.date.modified" content="2020/02/28" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="verification" />        
+      <title>Verification</title><!--  Generated with Oxygen version 22.0, build number 2020021011.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="verification-d61e3004" />
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2020021011" />
+    
+    
+    <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.4.1.min.js"><!----></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/orange.css?buildId=2020021011" /></head>
+
+    <body id="verification" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="22.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Nineteenth-Century Knowledge Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul xmlns:xhtml="http://www.w3.org/1999/xhtml" role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.introduction-d61e1123-mi" data-tocid="c.introduction-d61e1123" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.data_organization-d61e1184-mi" data-tocid="c.data_organization-d61e1184" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Organization</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.intro-afr-d61e2061-mi" data-tocid="c.intro-afr-d61e2061" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_ocr.html">OCR</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.oxygen-d61e3308-mi" data-tocid="c.oxygen-d61e3308" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">XML</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="processing_entry_files-d61e3461-mi" data-tocid="processing_entry_files-d61e3461" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Entry Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="reference_manual-d61e3947-mi" data-tocid="reference_manual-d61e3947" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div></form></div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="c.intro-afr"><span class="title"><a href="../source/c_ocr.html">OCR</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The procedures we use to get the best quality text recognition in ABBYY Fine         Reader.</p></span></span></span></li><li><span class="topicref" data-id="c.page-recognition"><span class="title"><a href="../source/c_page_recognition.html">Page Recognition</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Excellent page recognition depends on preparing pages properly.</p></span></span></span></li><li class="active"><span class="topicref" data-id="verification"><span class="title"><a href="../source/t_verification.html">Verification</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use AFR's built-in program to verify recognition accuracy on each page.</p></span></span></span></li></ol></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="../source/c_page_recognition.html" title="Page Recognition" aria-label="Previous topic: Page Recognition" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="../source/c_ocr_for_eb03.html" title="OCR for eb03" aria-label="Next topic: OCR for eb03" rel="next"></a></span>  </span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="collapse col-lg-3 col-md-3 col-sm-12 d-md-block">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="c.intro-afr-d61e2061" class="topicref" data-id="c.intro-afr" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c.intro-afr-d61e2061-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_ocr.html" id="c.intro-afr-d61e2061-link">OCR</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The procedures we use to get the best quality text recognition in ABBYY Fine         Reader.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="r.afr-interface-d61e2091" class="topicref" data-id="r.afr-interface" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/r_afr-interface.html" id="r.afr-interface-d61e2091-link">AFR Interface</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Learn about the main elements of the program interface</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="create_an_image_collection-d61e2121" class="topicref" data-id="create_an_image_collection" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action create_an_image_collection-d61e2121-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_create_an_image_collection.html" id="create_an_image_collection-d61e2121-link">Create an Image Collection</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Organize image files for scanning.</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="t.create-ocr-project-d61e2241" class="topicref" data-id="t.create-ocr-project" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action t.create-ocr-project-d61e2241-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_create_an_ocr_project.html" id="t.create-ocr-project-d61e2241-link">Create an OCR-Project</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">How to create and manage an OCR-Project.</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="c.afr-settings-d61e2301" class="topicref" data-id="c.afr-settings" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c.afr-settings-d61e2301-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_settings.html" id="c.afr-settings-d61e2301-link">Settings</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Recommended settings for all options in ABBYY FineReader</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="c.draw-boxes-d61e2583" class="topicref" data-id="c.draw-boxes" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c.draw-boxes-d61e2583-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_draw_boxes.html" id="c.draw-boxes-d61e2583-link">Draw Boxes</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Manually creating text recognition boxes improves accuracy</p></span></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="c.page-recognition-d61e2974" class="topicref" data-id="c.page-recognition" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c.page-recognition-d61e2974-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_page_recognition.html" id="c.page-recognition-d61e2974-link">Page Recognition</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Excellent page recognition depends on preparing pages properly.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="verification-d61e3004" class="topicref" data-id="verification" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_verification.html" id="verification-d61e3004-link">Verification</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Use AFR's built-in program to verify recognition accuracy on each page.</p></span></span></span></li><li role="treeitem"><span data-tocid="t.ocr-eb03-d61e3034" class="topicref" data-id="t.ocr-eb03" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/c_ocr_for_eb03.html" id="t.ocr-eb03-d61e3034-link">OCR for eb03</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning eb03 requires special settings.</p></span></span></span></li><li role="treeitem"><span data-tocid="t.proofread-d61e3064" class="topicref" data-id="t.proofread" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_proofread.html" id="t.proofread-d61e3064-link">Proofread</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">How much additional proofreading is appropriate?</p></span></span></span></li><li role="treeitem"><span data-tocid="t.add-dictionary-words-d61e3094" class="topicref" data-id="t.add-dictionary-words" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_add_dictionary_words.html" id="t.add-dictionary-words-d61e3094-link">Add Dictionary Words</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Teach AFR how to spell.</p></span></span></span></li><li role="treeitem"><span data-tocid="t.code-footnotes-d61e3124" class="topicref" data-id="t.code-footnotes" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_code_footnotes.html" id="t.code-footnotes-d61e3124-link">Code Footnotes </a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Using <code class="ph codeph">@</code>-codes for footnotes.</p></span></span></span></li><li role="treeitem"><span data-tocid="marginal_notes-d61e3157" class="topicref" data-id="marginal_notes" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/c_marginal_notes.html" id="marginal_notes-d61e3157-link">Marginal Notes</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Marginal notes occur frequently in early editions as well as footnotes.</p></span></span></span></li><li role="treeitem"><span data-tocid="formulas-d61e3187" class="topicref" data-id="formulas" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/c_formulas.html" id="formulas-d61e3187-link">Formulas and Equations</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Scanning simple and complex math and chemical formulas.</p></span></span></span></li><li role="treeitem"><span data-tocid="t.train-ocr-d61e3217" class="topicref" data-id="t.train-ocr" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_train_ocr.html" id="t.train-ocr-d61e3217-link">Train OCR </a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Advanced users can improve recognition with user patterns.</p></span></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="t.save-and-output-d61e3247" class="topicref" data-id="t.save-and-output" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action t.save-and-output-d61e3247-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_save_and_output.html" id="t.save-and-output-d61e3247-link">Save and Output</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">How to output your OCR results.</p></span></span></span></li></ul></li></ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Verification</h1>
+    
+    
+    <div class="- topic/body task/taskbody body taskbody"><p class="- topic/shortdesc shortdesc">Use AFR's built-in program to verify recognition accuracy on each page.</p>
+        <section class="- topic/section task/context section context">
+            <p class="- topic/p p">Verifying a page asks you to check the accuracy of all "low-confidence" characters and words that are not
+                in the dictionary. It is helpful for correcting small details, like a comma that should be a period. It
+                will not catch all errors; sometimes the OCR engine is confident in wrong results. After completing the
+                verification process, visually scan the page looking for obvious errors.</p>
+        </section>
+        <section><ol class="- topic/ol task/steps ol steps"><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Click the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Verify</span> icon. <img class="- topic/image image" src="image/afr-guide/verify-button.png" />.</span>
+                <div class="- topic/itemgroup task/stepresult itemgroup stepresult"><p class="- topic/p p">The Verification window opens.</p><figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">Verification window.</span></figcaption>
+                        
+                        <br /><div class="imageleft"><img class="- topic/image image imageleft" src="image/afr-guide/verification1.png" /></div><br />
+                    </figure></div>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Compare the highlighted word in the lower window to the source text in the top window. To verify a
+                    highlighted word, click <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Skip</span>. The dialogue moves to the next questionable
+                    letter or word.</span>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Correct errors in the lower window. The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Skip</span> button changes to
+                        <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Confirm</span>, and you click it to accept the change and move to the next letter
+                    or word.</span>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Suggestions</span> window contains possible corrections. Use the
+                        <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Replace</span> button to automatically correct the error.</span>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">The drop-down menu below the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Suggestions</span> window indicates the dictionary <a href="../glossary/g_afr.html" title="A proprietary software program that scans image files and outputs text using OCR technology."><dfn class="- topic/term term">ABBYY FineReader</dfn></a> is using. If you are getting a lot of spelling questions, the program may be
+                    assigning the wrong language to the text. This usually requires a change to the <a class="- topic/xref xref" href="t_train_ocr.html" title="Advanced users can improve recognition with user patterns.">user file</a> to correct. Alert your supervisor to the problem
+                    immediately.</span>
+            </li></ol><div class="- topic/li task/stepsection li stepsection"><p class="- topic/p p">The following guidelines can help in addressing common situations when verifying text.
+                    Further information is contained in <a class="- topic/xref xref" href="c_editorial_standards.html" title="The following editorial principles are employed in creating this digital edition.">Editorial standards</a>.</p></div><ol class="- topic/ol task/steps ol steps" start="6"><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Old-fashioned spellings in words should be preserved and can be included in the dictionary with the
+                        <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Add to Dictionary</span> button.</span>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Any remaining hard hyphens, as in the example, should be removed. Soft, or "optional," hyphens are
+                    indicated with " ¬ " and can be safely ignored.</span>
+                <div class="- topic/itemgroup task/stepxmp itemgroup stepxmp">
+                    <br /><div class="imageleft"><img class="- topic/image image imageleft" src="image/afr-guide/verification-hard-hyphen.png" /></div><br />
+                </div>
+            </li><li class="- topic/li task/step li step stepexpand">
+                <span class="- topic/ph task/cmd ph cmd">Common fractions can be found on the symbol chart, in the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Latin-1 Supplement</span>
+                    and the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Number Forms</span> subsections (see <a class="- topic/xref xref" href="r_unicode_characters.html" title="List of unicode characters and entities used frequently in the Encyclopedia and not on the standard US keyboard.">Unicode Characters</a>). Create a reasonable substitute for other
+                    fractions by using a combination of superscript numerals for the nominator, a Fraction Slash ⁄
+                        (<code class="+ topic/ph pr-d/codeph ph codeph">U+2044</code>), and subscript numerals for the denominator.</span>
+                <div class="- topic/itemgroup task/stepxmp itemgroup stepxmp"><img class="- topic/image image" src="image/afr-guide/verification5.png" /></div>
+                <div class="- topic/itemgroup task/info itemgroup info">To quickly insert a Fraction Slash, open the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Symbols</span> window and type
+                        <kbd class="+ topic/ph sw-d/userinput ph userinput">2044</kbd> in the <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Character code</span> box.</div>
+                <div class="- topic/itemgroup task/stepxmp itemgroup stepxmp"><br /><img class="- topic/image image" src="image/afr-symbols-slash.png" /><br /></div>
+            </li></ol></section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="22.0">
+  <div class=" footer-container mx-auto ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+        <p style="text-align: center">Project Director <a href="mailto:peter.logan@temple.edu?Subject=Knowledge%20Project">Peter Melville Logan</a></p>
+        <p style="text-align: center">ORCHiD ID: <a href="https://orcid.org/0000-0003-2362-8282">https://orcid.org/0000-0003-2362-8282</a></p>
+    
+    </body>
+</html>

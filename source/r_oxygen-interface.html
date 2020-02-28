@@ -1,0 +1,188 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+    <head><link rel="shortcut icon" href="../favicon.ico"><!----></link><link rel="icon" href="../favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="UTF-8" /><meta name="DC.type" content="reference" /><meta name="description" content="An introduction to the main components of the Oxygen interface." /><meta name="indexterms" content="Oxygen, interface" /><meta name="DC.relation" scheme="URI" content="../source/c_oxygen-xml-editor.html" /><meta name="DC.relation" scheme="URI" content="../source/c_oxygen-xml-editor.html" /><meta name="DC.relation" scheme="URI" content="../source/t_create_a_new_xml_project.html" /><meta name="DC.contributor" content="Peter" /><meta name="DC.creator" content="Peter M. Logan" /><meta name="rights" content="© 2019 Peter M. Logan" /><meta name="DC.date.modified" content="2020/02/26" /><meta name="DC.date.modified" content="2020/02/27" /><meta name="DC.date.modified" content="2020/02/28" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="untitled2" />        
+      <title>Oxygen Interface</title><!--  Generated with Oxygen version 22.0, build number 2020021011.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="untitled2-d61e3340" />
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2020021011" />
+    
+    
+    <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.4.1.min.js"><!----></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/orange.css?buildId=2020021011" /></head>
+
+    <body id="untitled2" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="22.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Nineteenth-Century Knowledge Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul xmlns:xhtml="http://www.w3.org/1999/xhtml" role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.introduction-d61e1123-mi" data-tocid="c.introduction-d61e1123" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.data_organization-d61e1184-mi" data-tocid="c.data_organization-d61e1184" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Organization</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.intro-afr-d61e2061-mi" data-tocid="c.intro-afr-d61e2061" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_ocr.html">OCR</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.oxygen-d61e3308-mi" data-tocid="c.oxygen-d61e3308" data-state="not-ready" class=" topicref " data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">XML</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="processing_entry_files-d61e3461-mi" data-tocid="processing_entry_files-d61e3461" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Entry Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="reference_manual-d61e3947-mi" data-tocid="reference_manual-d61e3947" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div></form></div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="c.oxygen"><span class="title"><a href="../source/c_oxygen-xml-editor.html">XML</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This introduction to <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a> shows you how to navigate the         interface and perform standard procedures on the Encyclopedia files.</p></span></span></span></li><li class="active"><span class="topicref" data-id="untitled2"><span class="title"><a href="../source/r_oxygen-interface.html">Oxygen Interface</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">An introduction to the main components of the Oxygen interface.</p></span></span></span></li></ol></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  
+<span class="navprev"><a class="- topic/link link" href="../source/c_oxygen-xml-editor.html" title="XML" aria-label="Previous topic: XML" rel="prev"></a></span>  
+<span class="navnext"><a class="- topic/link link" href="../source/t_create_a_new_xml_project.html" title="Create an XML-Project" aria-label="Next topic: Create an XML-Project" rel="next"></a></span>  </span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="collapse col-lg-3 col-md-3 col-sm-12 d-md-block">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="c.oxygen-d61e3308" class="topicref" data-id="c.oxygen" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c.oxygen-d61e3308-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_oxygen-xml-editor.html" id="c.oxygen-d61e3308-link">XML</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">This introduction to <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="term">Oxygen XML Editor</dfn></a> shows you how to navigate the         interface and perform standard procedures on the Encyclopedia files.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" class="active"><span data-tocid="untitled2-d61e3340" class="topicref" data-id="untitled2" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/r_oxygen-interface.html" id="untitled2-d61e3340-link">Oxygen Interface</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">An introduction to the main components of the Oxygen interface.</p></span></span></span></li><li role="treeitem"><span data-tocid="create_a_new_oxygen_project-d61e3370" class="topicref" data-id="create_a_new_oxygen_project" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_create_a_new_xml_project.html" id="create_a_new_oxygen_project-d61e3370-link">Create an XML-Project</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Using Oxygen XML Editor to organize files.</p></span></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="transform_docx_files-d61e3400" class="topicref" data-id="transform_docx_files" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action transform_docx_files-d61e3400-link" class="wh-expand-btn"></span><span class="title"><a href="../source/t_transform_docx2tei.html" id="transform_docx_files-d61e3400-link">Transform DOCX to TEI</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">How to convert DOCX files to TEI in Oxygen.</p></span></span></span></li></ul></li></ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Oxygen Interface</h1>
+    
+    
+    <div class="- topic/body reference/refbody body refbody"><p class="- topic/shortdesc shortdesc">An introduction to the main components of the Oxygen interface.</p>
+        <div class="- topic/example example">
+            <p class="- topic/p p">When you open <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="- topic/term term">Oxygen XML Editor</dfn></a>, you will see the editor in <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Text Editing
+                    Mode</span>, as below. If instead you see the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Welcome</span> dialogue box, uncheck
+                    <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Show at startup</span> in the lower left corner and click
+                    <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Close</span>.</p>
+            <figure class="- topic/fig fig fignone"><figcaption class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure <span class="fig--title-label-number">1. </span></span><span class="fig--title">Oxygen Interface</span></figcaption>
+                
+                <img class="- topic/image image" src="image/oxygen/0xygen-interface.png" height="770" width="1161" />
+            </figure>
+        </div>
+        <section class="- topic/section section">
+            <p class="- topic/p p"> Begin by familiarizing yourself with the different sections of the <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="- topic/term term">Oxygen</dfn></a> interface. </p>
+            <ol class="- topic/ol ol">
+                <li class="- topic/li li">The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Menus</span> at the top are similar to other <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Windows</span>
+                    programs, although the options are different.</li>
+                <li class="- topic/li li">The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Toolbars</span> below the <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Menus</span> provide easy access to common
+                    functions. They are also fully configurable by right-clicking in an empty part of the menu bars. The
+                    image above contains several menus in addition to the default menus.</li>
+                <li class="- topic/li li"> The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Editor Pane</span> in the center of the interface allows you to work with files
+                    in three different <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Editing Modes</span>, which you select at the bottom of the pane.
+                        <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Text</span> mode is shown, where you can see the coding directly.
+                        <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Author</span> mode provides something similar to a WYSIWYG interface, where you
+                    can see an approximation of the final appearance of page, but it is less convenient to work in when
+                    editing or proofing documents.</li>
+                <li class="- topic/li li">The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Project View</span> in the left-hand pane is one of several different views that
+                    you can dock in place. <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Project View</span> lets you see all of the files and folders
+                    in the current <a href="../glossary/g_xml_project.html" title="A collection of files used by Oxygen XML Editor and stored as a single group."><dfn class="- topic/term term">xml-project</dfn></a>. By right-clicking a file or folder, you can also
+                    check validation and run transformation scenarios on the selected files.</li>
+                <li class="- topic/li li">The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Model View</span> on the right is, again, one of several different helper views
+                    that can be docked in place or hidden from view. The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Model View</span> shows the
+                    definition of the <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="- topic/term term">XML</dfn></a> element at the cursor placement. Additional views can be
+                    seen by clicking the tabs on the right. </li>
+                <li class="- topic/li li">The <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Results View</span> displays the messages generated as a result of user actions
+                    such as validations, transformations, search operations, and others. Each message is a link to the
+                    location related to the event that triggered the message. Double-clicking a message opens the file
+                    containing the location and positions the cursor at the location offset. </li>
+                <li class="- topic/li li">The blue <span class="+ topic/keyword ui-d/wintitle keyword wintitle">Status Bar</span> at the bottom of the window includes the following
+                    information, in the order it is displayed from left to right: <ul class="- topic/ul ul">
+                        <li class="- topic/li li">The path of the current document.</li>
+                        <li class="- topic/li li">Information about the most recent operation, such as formatting or validating.</li>
+                        <li class="- topic/li li">The Unicode value for the character directly to the right of the current cursor
+                            position</li>
+                        <li class="- topic/li li">The status of the current document. The status of Modified is displayed for documents that
+                            have not yet been saved. Otherwise, this section is left blank.</li>
+                        <li class="- topic/li li">In Text editing mode, the current line and character position is displayed.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="22.0">
+  <div class=" footer-container mx-auto ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+        <p style="text-align: center">Project Director <a href="mailto:peter.logan@temple.edu?Subject=Knowledge%20Project">Peter Melville Logan</a></p>
+        <p style="text-align: center">ORCHiD ID: <a href="https://orcid.org/0000-0003-2362-8282">https://orcid.org/0000-0003-2362-8282</a></p>
+    
+    </body>
+</html>
