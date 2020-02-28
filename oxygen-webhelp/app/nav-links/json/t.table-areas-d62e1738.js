@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"Edit tables","shortdesc":"Table columns and rows can be adjusted before recognition.","href":"source\/t_edit_tables.html","attributes": {"data-id":"edit_tables",},"menu": {"hasChildren":false,},"tocID":"edit_tables-d62e1758","topics":[]}]});

@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"About","shortdesc":"Acknowledgements for all contributors.","href":"source\/r_about.html","attributes": {"data-id":"untitled1",},"menu": {"hasChildren":false,},"tocID":"untitled1-d62e645","topics":[]}]});

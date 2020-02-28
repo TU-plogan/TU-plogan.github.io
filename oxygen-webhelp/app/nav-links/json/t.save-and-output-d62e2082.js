@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"Cleanup AFR Output filenames","shortdesc":"Explains how to change auto-generated filenames created by AFR. ","href":"source\/t_cleanup_afr_output.html","attributes": {"data-id":"cleanup_afr_output",},"menu": {"hasChildren":false,},"tocID":"cleanup_afr_output-d62e2102","topics":[]}]});

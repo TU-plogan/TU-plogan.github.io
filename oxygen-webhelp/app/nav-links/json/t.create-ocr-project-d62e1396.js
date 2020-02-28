@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"Image Preprocessing","shortdesc":"Preprocess all images in a new OCR Project before drawing boxes.","href":"source\/t_image_preprocessing.html","attributes": {"data-id":"image_preprocessing",},"menu": {"hasChildren":false,},"tocID":"image_preprocessing-d62e1416","topics":[]}]});
