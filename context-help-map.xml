@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
+   <appContext helpID="g_google_drive" path="g_google_drive.html"/>
+   <appContext helpID="g_gdfs" path="g_google_drive_file_stream.html"/>
+   <appContext helpID="g_syncback_free" path="g_syncback_free.html"/>
    <appContext helpID="g.afr" path="glossary/g_afr.html"/>
    <appContext helpID="g.at_codes" path="glossary/g_at_codes.html"/>
    <appContext helpID="bru" path="glossary/g_bru.html"/>
@@ -13,8 +16,8 @@
    <appContext helpID="g.epub" path="glossary/g_epub.html"/>
    <appContext helpID="g_hive" path="glossary/g_hive.html"/>
    <appContext helpID="g.html" path="glossary/g_html.html"/>
-   <appContext helpID="g.kp1" path="glossary/g_kp1.html"/>
-   <appContext helpID="g_kp2" path="glossary/g_kp2.html"/>
+   <appContext helpID="g.ebnn" path="glossary/g_ebnn.html"/>
+   <appContext helpID="g_outputs" path="glossary/g_outputs.html"/>
    <appContext helpID="g_master_files" path="glossary/g_master_files.html"/>
    <appContext helpID="g.knowledge-project" path="glossary/g_c19_project.html"/>
    <appContext helpID="g.ocr_project" path="glossary/g_ocr_project.html"/>
@@ -35,6 +38,8 @@
    <appContext helpID="g.xml" path="glossary/g_xml.html"/>
    <appContext helpID="g.xml_project" path="glossary/g_xml_project.html"/>
    <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
+   <appContext helpID="github" path="glossary/github.html"/>
+   <appContext helpID="github_desktop" path="glossary/github_desktop.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
@@ -44,13 +49,12 @@
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
    <appContext helpID="repos-all" path="source/c_repos_all.html"/>
    <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
-   <appContext helpID="ebnn_repositories" path="source/c_print_ed_repos.html"/>
+   <appContext helpID="ebnn_repositories" path="source/c_ebnn_repos.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
    <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
-   <appContext helpID="c_kp1_repository" path="source/c_kp1_repository.html"/>
-   <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
-   <appContext helpID="metadata_folder" path="source/metadata_folder.html"/>
-   <appContext helpID="c_kp_corpus2_repository" path="source/c_kp2_repository.html"/>
+   <appContext helpID="c_metadata_repository" path="source/c_metadata_repository.html"/>
+   <appContext helpID="c_kp_corpus2_repository"
+               path="source/c_outputs_repository.html"/>
    <appContext helpID="c.code_folder" path="source/c_code_folder.html"/>
    <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
    <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
@@ -58,6 +62,7 @@
    <appContext helpID="c_4_entry_tei_folder" path="source/c_4_entry_tei_folder.html"/>
    <appContext helpID="c_5_entry_md_folder" path="source/c_5_entry_md_folder.html"/>
    <appContext helpID="c.6_master_tei_folder" path="source/c_6_master_tei_folder.html"/>
+   <appContext helpID="c.information-fdr" path="source/c_information_folder.html"/>
    <appContext helpID="c.page_fdr" path="source/c_page_folder.html"/>
    <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
    <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
