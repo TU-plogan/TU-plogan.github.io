@@ -140,7 +140,6 @@
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="c_cleanup_extra_space" path="source/c_cleanup_extra_space.html"/>
-   <appContext helpID="fractions" path="source/c_fractions.html"/>
    <appContext helpID="t_convert_marginal_notes"
                path="source/c_convert_marginal_notes.html"/>
    <appContext helpID="t_find_lists" path="source/t_find_lists.html"/>
