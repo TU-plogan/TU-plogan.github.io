@@ -109,7 +109,6 @@
    <appContext helpID="c.special-cases" path="source/t_special_cases.html"/>
    <appContext helpID="c.page-recognition" path="source/c_page_recognition.html"/>
    <appContext helpID="verification" path="source/t_verification.html"/>
-   <appContext helpID="t.ocr-eb03" path="source/c_ocr_for_eb03.html"/>
    <appContext helpID="t.proofread" path="source/t_proofread.html"/>
    <appContext helpID="t.add-dictionary-words"
                path="source/t_add_dictionary_words.html"/>
@@ -117,6 +116,7 @@
    <appContext helpID="marginal_notes" path="source/c_marginal_notes.html"/>
    <appContext helpID="formulas" path="source/c_formulas.html"/>
    <appContext helpID="t.train-ocr" path="source/t_train_ocr.html"/>
+   <appContext helpID="t.ocr-eb03" path="source/c_ocr_for_eb03.html"/>
    <appContext helpID="t.save-and-output" path="source/t_save_and_output.html"/>
    <appContext helpID="cleanup_afr_output" path="source/t_cleanup_afr_output.html"/>
    <appContext helpID="c.oxygen" path="source/c_oxygen-xml-editor.html"/>

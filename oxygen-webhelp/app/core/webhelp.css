@@ -1,7 +1,7 @@
-@import "fonts.css?buildId=2020030411";
-@import "icons.css?buildId=2020030411";
-@import "../indexterms/indexterms.css?buildId=2020030411";
-@import "webhelp-dot3x.css?buildId=2020030411";
+@import "fonts.css?buildId=2020051510";
+@import "icons.css?buildId=2020051510";
+@import "../indexterms/indexterms.css?buildId=2020051510";
+@import "webhelp-dot3x.css?buildId=2020051510";
 
 .container-fluid {
     margin-right: auto;
@@ -1436,11 +1436,6 @@ ui-menu-item > .ui-state-active{
     border-radius:0 7px 0 0px;
 }
 
-code{
-    background-color: #e7e7e7;
-    color: #222222;
-}
-
 .copyTooltip::before{
     content: " Copy ";
     line-height: 2em;
@@ -1508,8 +1503,13 @@ div.edit-link-container {
  */ 
  
  @media screen {
- 	.fig--title-label-number {
+ 	.fig--title-label-number,
+ 	.fig--title-label-punctuation {
  		display:none;
+ 	}
+ 	
+ 	.fig--title-label:after {
+ 		content:": ";
  	}
  }
  
