@@ -48,12 +48,13 @@
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
    <appContext helpID="repos-all" path="source/c_repos_all.html"/>
-   <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
+   <appContext helpID="untitled1" path="source/google-drive-repos.html"/>
    <appContext helpID="ebnn_repositories" path="source/c_ebnn_repos.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
    <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_repo.html"/>
    <appContext helpID="c_metadata_repository" path="source/c_metadata_repository.html"/>
+   <appContext helpID="github_repositories" path="source/github_repositories.html"/>
    <appContext helpID="c_kp_corpus2_repository"
                path="source/c_outputs_repository.html"/>
    <appContext helpID="c.code_folder" path="source/c_code_folder.html"/>
@@ -67,6 +68,7 @@
    <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
    <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
    <appContext helpID="c_records_folder" path="source/c_records_folder.html"/>
+   <appContext helpID="c.archive_folder" path="source/c_archive_repo.html"/>
    <appContext helpID="t_setting_up_the_repositories"
                path="source/t_setting_up_the_repositories.html"/>
    <appContext helpID="t_install_drive_file_stream"
