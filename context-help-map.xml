@@ -139,6 +139,7 @@
                path="source/t_check_footnote_coding_2.html"/>
    <appContext helpID="convert_pages_to_entries"
                path="source/c_convert_pages_to_entries.html"/>
+   <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="c_cleanup_extra_space" path="source/c_cleanup_extra_space.html"/>
@@ -148,7 +149,6 @@
    <appContext helpID="t_review_inventory_notes_0"
                path="source/t_review_inventory_notes_0.html"/>
    <appContext helpID="editorial_notes" path="source/c_editorial_notes.html"/>
-   <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
    <appContext helpID="c.proof-entry-terms" path="source/c_check-entry-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
