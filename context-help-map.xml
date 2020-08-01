@@ -131,12 +131,13 @@
                path="source/c_processing_entry_files.html"/>
    <appContext helpID="untitled1" path="source/c_convert_page_to_entry.html"/>
    <appContext helpID="t.partial-entries" path="source/t_partial_entries.html"/>
-   <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
+   <appContext helpID="remove_empty_p" path="source/remove_empty_p.html"/>
    <appContext helpID="replace_fractions" path="source/replace_fractions.html"/>
    <appContext helpID="check_footnote_coding"
                path="source/t_check_footnote_coding_1.html"/>
    <appContext helpID="check_footnote_coding_2"
                path="source/t_check_footnote_coding_2.html"/>
+   <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="convert_pages_to_entries"
                path="source/c_convert_pages_to_entries.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
