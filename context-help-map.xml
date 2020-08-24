@@ -47,6 +47,7 @@
                path="source/t_edition_section_system.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
+   <appContext helpID="numbered_folder_names" path="source/numbered_folder_names.html"/>
    <appContext helpID="repos-all" path="source/c_repos_all.html"/>
    <appContext helpID="untitled1" path="source/google-drive-repos.html"/>
    <appContext helpID="ebnn_repositories" path="source/c_ebnn_repos.html"/>
