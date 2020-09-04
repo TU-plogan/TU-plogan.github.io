@@ -100,21 +100,23 @@
         <table class="- topic/table table"><caption></caption><colgroup><col /><col /></colgroup><tbody class="- topic/tbody tbody">
                     <tr class="- topic/row">
                         <td class="- topic/entry entry">find</td>
-                        <td class="- topic/entry entry"><code class="+ topic/ph pr-d/codeph ph codeph">&lt;note\s+anchored="true"\s+n="(\d{1,3})"\s+place="bottom"\s+type="authorial"\s*&gt;&lt;p&gt;\[m\]\s+</code></td>
+                        <td class="- topic/entry entry"><code class="+ topic/ph pr-d/codeph ph codeph">&lt;note\s+anchored=\"true\"\s+n=\"(\d{1,3})\"\s+place=\"bottom\"\s+type=\"authorial\"\s*&gt;&lt;p&gt;(&lt;hi
+                                rend=\"[\w\s]*\"&gt;)*\s*\[m\]\s*</code></td>
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry">replace</td>
                         <td class="- topic/entry entry"><code class="+ topic/ph pr-d/codeph ph codeph">&lt;note anchored="true" n="\1" place="margin"
-                                type="authorial"&gt;&lt;p&gt;</code></td>
+                                type="authorial"&gt;&lt;p&gt;\2</code></td>
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry">find</td>
-                        <td class="- topic/entry entry"><code class="+ topic/ph pr-d/codeph ph codeph">&lt;note\s+anchored="true"\s+n="(\d{1,3})"\s+place="bottom"\s+type="authorial"\s*&gt;&lt;p&gt;\[mu\]\s+</code></td>
+                        <td class="- topic/entry entry"><code class="+ topic/ph pr-d/codeph ph codeph">&lt;note\s+anchored=\"true\"\s+n=\"(\d{1,3})\"\s+place=\"bottom\"\s+type=\"authorial\"\s*&gt;&lt;p&gt;(&lt;hi
+                                rend=\"[\w\s]*\"&gt;)*\s*\[mu\]\s*</code></td>
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry">replace</td>
                         <td class="- topic/entry entry"><code class="+ topic/ph pr-d/codeph ph codeph">&lt;note anchored="false" n="\1" place="margin"
-                                type="authorial"&gt;&lt;p&gt;</code></td>
+                                type="authorial"&gt;&lt;p&gt;\2</code></td>
                     </tr>
                 </tbody></table>
     </div>
