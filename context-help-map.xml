@@ -138,10 +138,15 @@
    <appContext helpID="check_footnote_coding_2"
                path="source/t_check_footnote_coding_2.html"/>
    <appContext helpID="replace_fractions" path="source/replace_fractions.html"/>
+   <appContext helpID="untitled1" path="source/r_cleanup_entry-terms.html"/>
    <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="convert_pages_to_entries"
                path="source/c_convert_pages_to_entries.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
+   <appContext helpID="t_quick_check_of_entry_terms"
+               path="source/t_quick_check_entry_terms.html"/>
+   <appContext helpID="c.proof-entry-terms"
+               path="source/c_full-check-entry-terms.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="t_convert_marginal_notes"
@@ -149,7 +154,7 @@
    <appContext helpID="t_review_inventory_notes_0"
                path="source/t_review_inventory_notes_0.html"/>
    <appContext helpID="editorial_notes" path="source/c_editorial_notes.html"/>
-   <appContext helpID="c.proof-entry-terms" path="source/c_check-entry-terms.html"/>
+   <appContext helpID="t_runover_entries" path="source/t_runover_entries.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
