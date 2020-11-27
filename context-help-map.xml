@@ -13,6 +13,7 @@
    <appContext helpID="untitled3" path="glossary/g_eb.html"/>
    <appContext helpID="g.entry_file" path="glossary/g_entry_file.html"/>
    <appContext helpID="g.entry-inventory" path="glossary/g_e_inventory.html"/>
+   <appContext helpID="g_entry_section" path="glossary/g_entry_section.html"/>
    <appContext helpID="g.epub" path="glossary/g_epub.html"/>
    <appContext helpID="g_hive" path="glossary/g_hive.html"/>
    <appContext helpID="g.html" path="glossary/g_html.html"/>
@@ -31,7 +32,7 @@
    <appContext helpID="repository" path="glossary/g_repository.html"/>
    <appContext helpID="repository" path="glossary/g_edition_repo.html"/>
    <appContext helpID="g.regex" path="glossary/g_regex.html"/>
-   <appContext helpID="g.section" path="glossary/g_section.html"/>
+   <appContext helpID="g.page-section" path="glossary/g_section.html"/>
    <appContext helpID="g.spreadsheet" path="glossary/g_spreadsheet.html"/>
    <appContext helpID="g.tei" path="glossary/g_tei.html"/>
    <appContext helpID="g.txt" path="glossary/g_txt.html"/>
@@ -48,24 +49,22 @@
                path="source/t_edition_section_system.html"/>
    <appContext helpID="c.print-ed-fdr" path="source/c_print_edition_folder.html"/>
    <appContext helpID="c.section-fdr" path="source/c_section_folder.html"/>
-   <appContext helpID="numbered_folder_names" path="source/numbered_folder_names.html"/>
+   <appContext helpID="folder_names" path="source/r_folder_names.html"/>
    <appContext helpID="repos-all" path="source/c_repos_all.html"/>
-   <appContext helpID="untitled1" path="source/google-drive-repos.html"/>
+   <appContext helpID="good_drive_repo" path="source/r_google-drive-repos.html"/>
    <appContext helpID="ebnn_repositories" path="source/c_ebnn_repos.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
-   <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_repo.html"/>
    <appContext helpID="c_metadata_repository" path="source/c_metadata_repository.html"/>
-   <appContext helpID="github_repositories" path="source/github_repositories.html"/>
+   <appContext helpID="github_repositories" path="source/r_github_repositories.html"/>
    <appContext helpID="c_kp_corpus2_repository"
                path="source/c_outputs_repository.html"/>
    <appContext helpID="c.code_folder" path="source/c_code_folder.html"/>
    <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
    <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
-   <appContext helpID="untitled1" path="source/c_entry_fdr.html"/>
-   <appContext helpID="c_4_entry_tei_folder" path="source/c_4_entry_tei_folder.html"/>
-   <appContext helpID="c_5_entry_md_folder" path="source/c_5_entry_md_folder.html"/>
-   <appContext helpID="c.6_master_tei_folder" path="source/c_6_master_tei_folder.html"/>
+   <appContext helpID="c_4_entry_tei_folder" path="source/c_entry_folder.html"/>
+   <appContext helpID="c.6_master_tei_folder" path="source/c_master_folder.html"/>
+   <appContext helpID="c_metadata_folder" path="source/c_metadata_folder.html"/>
    <appContext helpID="c.page_fdr" path="source/c_page_folder.html"/>
    <appContext helpID="c.page-docx-fdr" path="source/c_2_page_docx_folder.html"/>
    <appContext helpID="c.page-tei-fdr" path="source/c_3_page_tei_folder.html"/>
@@ -80,6 +79,7 @@
    <appContext helpID="t_using_github" path="source/t_using_github.html"/>
    <appContext helpID="c.intro-afr" path="source/c_ocr.html"/>
    <appContext helpID="r.afr-interface" path="source/r_afr-interface.html"/>
+   <appContext helpID="t.pg-inventory" path="source/t_page_inventory.html"/>
    <appContext helpID="create_an_image_collection"
                path="source/c_create_an_image_collection.html"/>
    <appContext helpID="t_identify_the_print_pages"
@@ -137,7 +137,7 @@
                path="source/t_check_footnote_coding_1.html"/>
    <appContext helpID="check_footnote_coding_2"
                path="source/t_check_footnote_coding_2.html"/>
-   <appContext helpID="replace_fractions" path="source/replace_fractions.html"/>
+   <appContext helpID="replace_fractions" path="source/t_replace_fractions.html"/>
    <appContext helpID="untitled1" path="source/r_cleanup_entry-terms.html"/>
    <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="convert_pages_to_entries"
@@ -153,8 +153,8 @@
                path="source/c_convert_marginal_notes.html"/>
    <appContext helpID="t_review_inventory_notes_0"
                path="source/t_review_inventory_notes_0.html"/>
+   <appContext helpID="t_runover_entries" path="source/t_runovers.html"/>
    <appContext helpID="editorial_notes" path="source/c_editorial_notes.html"/>
-   <appContext helpID="t_runover_entries" path="source/t_runover_entries.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
