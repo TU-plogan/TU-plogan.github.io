@@ -101,11 +101,11 @@ define(function() {
         paths : modulePaths,
         shim : shimConfig,
         urlArgs: function(id, url) {
-            var args = '2020111801';
+            var args = '2020121702';
         	
             if(id === 'index-1' || id === 'index-2' || id === 'index-3' || id === 'stopwords' 
             ||id === 'htmlFileInfoList' || id === 'keywords') {
-                args = '20201127171757';
+                args = '20210209212944';
         	} 
 	
 	        return (url.indexOf('?') === -1 ? '?' : '&') + args;
