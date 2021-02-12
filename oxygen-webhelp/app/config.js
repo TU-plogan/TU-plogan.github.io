@@ -105,7 +105,7 @@ define(function() {
         	
             if(id === 'index-1' || id === 'index-2' || id === 'index-3' || id === 'stopwords' 
             ||id === 'htmlFileInfoList' || id === 'keywords') {
-                args = '20210211174907';
+                args = '20210212114159';
         	} 
 	
 	        return (url.indexOf('?') === -1 ? '?' : '&') + args;

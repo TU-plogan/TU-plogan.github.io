@@ -147,8 +147,7 @@
                path="source/t_quick_check_entry_terms.html"/>
    <appContext helpID="c.proof-entry-terms"
                path="source/c_full-check-entry-terms.html"/>
-   <appContext helpID="validate_the_files_in_oxygen"
-               path="source/t_validating_entry_files.html"/>
+   <appContext helpID="process_entry_files" path="source/process_entry_files.html"/>
    <appContext helpID="t_review_inventory_notes_0"
                path="source/t_review_inventory_notes_0.html"/>
    <appContext helpID="t_runover_entries" path="source/t_runovers.html"/>
@@ -156,6 +155,8 @@
                path="source/c_convert_marginal_notes.html"/>
    <appContext helpID="editorial_notes" path="source/t_editorial_notes.html"/>
    <appContext helpID="life_dates_entry_terms" path="source/r_life_dates.html"/>
+   <appContext helpID="validate_the_files_in_oxygen"
+               path="source/t_validating_entry_files.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
