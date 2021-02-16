@@ -147,7 +147,7 @@
                path="source/t_quick_check_entry_terms.html"/>
    <appContext helpID="c.proof-entry-terms"
                path="source/c_full-check-entry-terms.html"/>
-   <appContext helpID="process_entry_files" path="source/process_entry_files.html"/>
+   <appContext helpID="process_entry_files" path="source/c_process_entry_files.html"/>
    <appContext helpID="t_runover_entries" path="source/t_runovers.html"/>
    <appContext helpID="t_convert_marginal_notes"
                path="source/c_convert_marginal_notes.html"/>
