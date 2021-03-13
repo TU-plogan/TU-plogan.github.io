@@ -167,7 +167,7 @@
    <appContext helpID="note" path="source/r_notes.html"/>
    <appContext helpID="pagebreak" path="source/r_page_numbers.html"/>
    <appContext helpID="r_missing_text" path="source/r_text_problems.html"/>
-   <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
    <appContext helpID="entry_subdivisions" path="source/c_subdivisions.html"/>
+   <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
    <appContext helpID="unicode_characters" path="source/r_unicode_characters.html"/>
 </map>
