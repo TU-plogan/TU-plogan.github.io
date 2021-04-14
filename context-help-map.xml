@@ -43,6 +43,7 @@
    <appContext helpID="github" path="glossary/g_github.html"/>
    <appContext helpID="github_desktop" path="glossary/g_github_desktop.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
+   <appContext helpID="why-analyze-eb" path="source/c_why_analyze_eb.html"/>
    <appContext helpID="untitled1" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="t_edition_section_system"
@@ -138,7 +139,6 @@
                path="source/t_check_footnote_coding_1.html"/>
    <appContext helpID="check_footnote_coding_2"
                path="source/t_check_footnote_coding_2.html"/>
-   <appContext helpID="replace_fractions" path="source/t_replace_fractions.html"/>
    <appContext helpID="untitled1" path="source/r_cleanup_entry-terms.html"/>
    <appContext helpID="convert_pages_to_entries"
                path="source/c_convert_pages_to_entries.html"/>
