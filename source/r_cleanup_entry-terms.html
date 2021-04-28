@@ -150,17 +150,17 @@
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1 untitled1__entry__2 untitled1__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Find hidden entries</strong></td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1 untitled1__entry__2 untitled1__entry__3" colspan="3">Remove unneeded characters between &lt;p&gt;
-                            and entry terms beginning with a consonant (sample uses "Z")</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1 untitled1__entry__2 untitled1__entry__3" colspan="3">For consonants, remove unneeded characters
+                                between &lt;p&gt; and entry terms (sample uses "X")</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;[^A-Z]{1,3}(Z[A-Z]+)</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;[^A-Z]{1,3}(X[A-Z]+)</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;\1</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">case sensitive; regex; check each instance</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1 untitled1__entry__2 untitled1__entry__3" colspan="3">Remove unneeded characters between &lt;p&gt;
-                            and entry terms beginning with a vowel (sample uses "A")</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1 untitled1__entry__2 untitled1__entry__3" colspan="3">For vowels, remove unneeded characters
+                                between &lt;p&gt; and entry terms (sample uses "A")</td>
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;[^A-Z]{1,3}([AÀ-ÆĀĂĄ][A-ZÀ-Ý]+)</code></pre></td>
@@ -169,19 +169,19 @@
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1 untitled1__entry__2 untitled1__entry__3" colspan="3">Identify entry terms that are not on a new
-                            line (sample initial letters are "A or B")</td>
+                                line (sample uses XY)</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>([\s\.])([AB][A-Z]{2,})</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>([\s\.])([XY][A-Z]{2,})</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1&lt;/p&gt;&lt;p&gt;\2</code></pre> </td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">case sensitive; regex; check each instance </td>
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1 untitled1__entry__2 untitled1__entry__3" colspan="3">Find entry terms with a space or non-Roman
-                            letter after the first term (sample initial letter is "Z")</td>
+                                letter after the first term (sample initial letter is "X")</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;Z)\W([A-Z])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;X)\W([A-Z])</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\2</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">case sensitive; regex; check each instance</td>
                     </tr>
@@ -194,18 +194,21 @@
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3"></td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>[^&gt;]{1,3}@@@</code></pre></td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>@@@</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1">
+                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_qz1_tnc_lpb" data-ofbid="untitled1__codeblock_qz1_tnc_lpb"><code>&lt;p&gt;\s*(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;)?@{3}</code></pre>
+                            </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1@@@</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">regex; check each instance</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1">Find @@@ note on a new line</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1">Fix instances of multiple @@@s on the same line</td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3"></td>
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1">
-                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_axq_sxq_kpb" data-ofbid="untitled1__codeblock_axq_sxq_kpb"><code>(\.|\"|\?|\:)\s*(&lt;(?:\w|"|=|\(|\)|\s)+&gt;)?\@{3}</code></pre> </td>
+                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_mkt_2nc_lpb" data-ofbid="untitled1__codeblock_mkt_2nc_lpb"><code>([\.\"?:*])\s*(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;)?@{3}</code></pre>
+                            </td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2">
                             <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_ks5_txq_kpb" data-ofbid="untitled1__codeblock_ks5_txq_kpb"><code>\1&lt;/p&gt;&lt;p&gt;\2@@@</code></pre> </td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">regex; check each instance</td>
@@ -248,25 +251,9 @@
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">case-sensitive; regex</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\bHI\.\b</code></pre></td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>III.</code></pre></td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">case-sensitive; regex</td>
-                    </tr>
-                    <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1">
-                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_xmb_zvq_kpb" data-ofbid="untitled1__codeblock_xmb_zvq_kpb"><code>([IVXLCM\s])VH([IVXLCM\.])</code></pre> </td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_pg1_1wq_kpb" data-ofbid="untitled1__codeblock_pg1_1wq_kpb"><code>\1VII\2</code></pre> </td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">case-sensitive; regex</td>
-                    </tr>
-                    <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1">
-                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_nvj_1wq_kpb" data-ofbid="untitled1__codeblock_nvj_1wq_kpb"><code>([IVXLCM\s])Π([IVXLCM\.])</code></pre> </td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_ifq_1wq_kpb" data-ofbid="untitled1__codeblock_ifq_1wq_kpb"><code>\1II\2</code></pre> </td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">case-sensitive; regex</td>
-                    </tr>
-                    <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__1"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_klt_hwq_kpb" data-ofbid="untitled1__codeblock_klt_hwq_kpb"><code>XL\b</code></pre> </td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_p1b_3wq_kpb" data-ofbid="untitled1__codeblock_p1b_3wq_kpb"><code>XI.</code></pre> </td>
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_xmb_zvq_kpb" data-ofbid="untitled1__codeblock_xmb_zvq_kpb"><code>([IVXLCM\s])[HΠ]([IVXLCM\.])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="untitled1__codeblock_pg1_1wq_kpb" data-ofbid="untitled1__codeblock_pg1_1wq_kpb"><code>\1II\2</code></pre> </td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="untitled1__entry__3">case-sensitive; regex</td>
                     </tr>
                     <tr class="- topic/row">
