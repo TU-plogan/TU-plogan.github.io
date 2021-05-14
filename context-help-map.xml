@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map>
+   <appContext helpID="g_index_term" path="glossary/g_index_term.html"/>
+   <appContext helpID="g_named_entity_recognition" path="glossary/g_ner.html"/>
+   <appContext helpID="g_library_of_congress_subject_headings"
+               path="glossary/g_lcsh.html"/>
+   <appContext helpID="g_1910lcsh" path="glossary/g_1910_LCSH.html"/>
+   <appContext helpID="g_fast" path="glossary/g_fast.html"/>
+   <appContext helpID="g_automated_indexing" path="glossary/g_automated_indexing.html"/>
+   <appContext helpID="g_controlled_vocabulary"
+               path="glossary/g_controlled_vocabulary.html"/>
+   <appContext helpID="g_natural_language_keyword"
+               path="glossary/g_natural_language_keyword.html"/>
+   <appContext helpID="master_file" path="glossary/g_master_file.html"/>
    <appContext helpID="g_google_drive" path="glossary/g_google_drive.html"/>
    <appContext helpID="g_gdfs" path="glossary/g_gdfs.html"/>
    <appContext helpID="g_syncback_free" path="glossary/g_syncback.html"/>
@@ -19,7 +31,6 @@
    <appContext helpID="g.html" path="glossary/g_html.html"/>
    <appContext helpID="g.ebnn" path="glossary/g_ebnn.html"/>
    <appContext helpID="g_outputs" path="glossary/g_outputs.html"/>
-   <appContext helpID="g_master_files" path="glossary/g_master_files.html"/>
    <appContext helpID="g.knowledge-project" path="glossary/g_c19_project.html"/>
    <appContext helpID="g.ocr_project" path="glossary/g_ocr_project.html"/>
    <appContext helpID="g.ocr" path="glossary/g_ocr.html"/>
@@ -30,7 +41,7 @@
    <appContext helpID="g.print_edition" path="glossary/g_print_edition.html"/>
    <appContext helpID="g.python" path="glossary/g_python.html"/>
    <appContext helpID="repository" path="glossary/g_repository.html"/>
-   <appContext helpID="repository" path="glossary/g_edition_repo.html"/>
+   <appContext helpID="edition_repository" path="glossary/g_edition_repo.html"/>
    <appContext helpID="g.regex" path="glossary/g_regex.html"/>
    <appContext helpID="g.page-section" path="glossary/g_section.html"/>
    <appContext helpID="g.spreadsheet" path="glossary/g_spreadsheet.html"/>
@@ -44,7 +55,7 @@
    <appContext helpID="github_desktop" path="glossary/g_github_desktop.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="why-analyze-eb" path="source/c_why_analyze_eb.html"/>
-   <appContext helpID="untitled1" path="source/r_about.html"/>
+   <appContext helpID="acknowledgment" path="source/r_about.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="t_edition_section_system"
                path="source/t_edition_section_system.html"/>
@@ -56,10 +67,11 @@
    <appContext helpID="ebnn_repositories" path="source/c_ebnn_repos.html"/>
    <appContext helpID="c.afr-project-fdr" path="source/c_1_afr_project_folder.html"/>
    <appContext helpID="c.information-fdr" path="source/c_information_repo.html"/>
-   <appContext helpID="c_metadata_repository" path="source/c_metadata_repository.html"/>
+   <appContext helpID="c_metadata_repository" path="source/c_metainfo_repository.html"/>
    <appContext helpID="github_repositories" path="source/r_github_repositories.html"/>
    <appContext helpID="c_kp_corpus2_repository"
                path="source/c_outputs_repository.html"/>
+   <appContext helpID="autoindex_folder" path="source/autoindex_folder.html"/>
    <appContext helpID="c.code_folder" path="source/c_code_folder.html"/>
    <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
    <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
@@ -132,10 +144,10 @@
    <appContext helpID="import_a_scenario" path="source/t_import_a_scenario.html"/>
    <appContext helpID="processing_entry_files"
                path="source/c_processing_entry_files.html"/>
-   <appContext helpID="untitled1" path="source/c_convert_page_to_entry.html"/>
-   <appContext helpID="untitled1" path="source/t_review_inventory_notes.html"/>
+   <appContext helpID="page2entry" path="source/c_convert_page_to_entry.html"/>
+   <appContext helpID="revinvcom" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="t.partial-entries" path="source/t_partial_entries.html"/>
-   <appContext helpID="untitled1" path="source/r_cleanup_entry-terms.html"/>
+   <appContext helpID="cleanup" path="source/r_cleanup_entry-terms.html"/>
    <appContext helpID="convert_pages_to_entries"
                path="source/c_convert_pages_to_entries.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
@@ -153,12 +165,18 @@
                path="source/t_review_inventory_notes_0.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
                path="source/t_validating_entry_files.html"/>
+   <appContext helpID="c_master_files" path="source/c_master_files.html"/>
+   <appContext helpID="c_generate_index_terms" path="source/c_auto_md_process.html"/>
+   <appContext helpID="c_named_entity_recognition" path="source/t_ner.html"/>
+   <appContext helpID="c_generating_a_manifest" path="source/t_generate_manifest.html"/>
+   <appContext helpID="c_saving_hive_output" path="source/t_run_HIVE.html"/>
+   <appContext helpID="untitled1" path="source/t_add-index-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
    <appContext helpID="naming_conventions" path="source/r_file_and_folder_names.html"/>
    <appContext helpID="tei_style_manual" path="source/r_tei_style_manual.html"/>
-   <appContext helpID="untitled1" path="source/r_verse-drama.html"/>
+   <appContext helpID="citation" path="source/r_verse-drama.html"/>
    <appContext helpID="t_find_lists" path="source/r_lists.html"/>
    <appContext helpID="note" path="source/r_notes.html"/>
    <appContext helpID="pagebreak" path="source/r_page_numbers.html"/>

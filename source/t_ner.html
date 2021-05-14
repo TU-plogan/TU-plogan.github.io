@@ -1,0 +1,218 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en" whc:version="22.0">
+    <head><link rel="shortcut icon" href="../favicon.ico"><!----></link><link rel="icon" href="../favicon.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="task"/><meta name="description" content="Running named entity recognition on entries"/><meta name="DC.relation" scheme="URI" content="../source/c_auto_md_process.html"/><meta name="DC.contributor" content="Peter"/><meta name="DC.creator" content="Peter M. Logan"/><meta name="DC.contributor" content="Peter"/><meta name="rights" content="© 2019 Peter M. Logan"/><meta name="DC.date.modified" content="2020/02/26"/><meta name="DC.date.modified" content="2020/02/27"/><meta name="DC.date.modified" content="2020/02/28"/><meta name="DC.date.modified" content="2020/02/29"/><meta name="DC.date.modified" content="2020/06/09"/><meta name="DC.date.modified" content="2020/06/12"/><meta name="DC.date.modified" content="2020/06/20"/><meta name="DC.date.modified" content="2020/07/31"/><meta name="DC.date.modified" content="2020-08-24"/><meta name="DC.date.modified" content="2020-09-01"/><meta name="DC.date.modified" content="2020-09-02"/><meta name="DC.date.modified" content="2020-11-26"/><meta name="DC.date.modified" content="2020-11-27"/><meta name="DC.date.modified" content="2021-02-09"/><meta name="DC.date.modified" content="2021-02-12"/><meta name="DC.date.modified" content="2021-03-13"/><meta name="DC.date.modified" content="2021-04-07"/><meta name="DC.date.modified" content="2021-04-14"/><meta name="DC.date.modified" content="2021-04-26"/><meta name="DC.date.modified" content="2021-05-07"/><meta name="DC.date.modified" content="2021-05-08"/><meta name="DC.date.modified" content="2021-05-12"/><meta name="DC.date.modified" content="2021-05-13"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="c_named_entity_recognition"/>        
+      <title>Named Entity Recognition</title><!--  Generated with Oxygen version 23.1, build number 2021040717.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="c_named_entity_recognition-d1242e10726"/><meta name="wh-source-relpath" content="source/t_ner.dita"/><meta name="wh-out-relpath" content="source/t_ner.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2021040717"/>
+    
+    
+    <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/orange.css?buildId=2021040717"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/notes.css?buildId=2021040717"/><link rel="stylesheet" type="text/css" href="../wh-responsive2.css"/></head>
+
+    <body id="c_named_entity_recognition" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Nineteenth-Century Knowledge Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.introduction-d1242e3587-mi" data-tocid="c.introduction-d1242e3587" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.data_organization-d1242e3810-mi" data-tocid="c.data_organization-d1242e3810" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Organization</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.intro-afr-d1242e5994-mi" data-tocid="c.intro-afr-d1242e5994" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_ocr.html">Page Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="processing_entry_files-d1242e9403-mi" data-tocid="processing_entry_files-d1242e9403" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Entry Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c_master_files-d1242e10577-mi" data-tocid="c_master_files-d1242e10577" data-state="not-ready" class=" topicref " data-id="c_master_files"><span class="title"><a href="../source/c_master_files.html">Master Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="reference_manual-d1242e11021-mi" data-tocid="reference_manual-d1242e11021" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <!-- Search form -->
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><span class="topicref" data-id="c_master_files"><span class="title"><a href="../source/c_master_files.html">Master Files</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">After creating entry files, we run an automated metadata generation process to add         <a href="../glossary/g_index_term.html" title="A term indicating the subject matter of the text; also called a &#34;subject heading.&#34;"><dfn class="term">index terms</dfn></a> to each entry.</p></span></span></span></li><li><span class="topicref" data-id="c_generate_index_terms"><span class="title"><a href="../source/c_auto_md_process.html">Automated Metadata Procedure</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How we create subject headings for every entry file.</p></span></span></span></li><li class="active"><span class="topicref" data-id="c_named_entity_recognition"><span class="title"><a href="../source/t_ner.html">Named Entity Recognition</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Running <a href="../glossary/g_ner.html" title="A software program that recognizes different types of named objects, such as geographical, temporal, and proper names."><dfn class="term">named entity recognition</dfn></a> on entries</p></span></span></span></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        
+                        <!-- External resource link -->
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" data-target="#wh_publication_toc" id="wh_toc_button" data-toggle="collapse" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        
+                        <nav id="wh_publication_toc" class="collapse col-lg-3 col-md-3 col-sm-12 d-md-block d-print-none" aria-label="Table of Contents Container">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="c_master_files-d1242e10577" class="topicref" data-id="c_master_files" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c_master_files-d1242e10577-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_master_files.html" id="c_master_files-d1242e10577-link">Master Files</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">After creating entry files, we run an automated metadata generation process to add         <a href="../glossary/g_index_term.html" title="A term indicating the subject matter of the text; also called a &#34;subject heading.&#34;"><dfn class="term">index terms</dfn></a> to each entry.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true"><span data-tocid="c_generate_index_terms-d1242e10653" class="topicref" data-id="c_generate_index_terms" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c_generate_index_terms-d1242e10653-link" class="wh-expand-btn"></span><span class="title"><a href="../source/c_auto_md_process.html" id="c_generate_index_terms-d1242e10653-link">Automated Metadata Procedure</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">How we create subject headings for every entry file.</p></span></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" class="active"><span data-tocid="c_named_entity_recognition-d1242e10726" class="topicref" data-id="c_named_entity_recognition" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_ner.html" id="c_named_entity_recognition-d1242e10726-link">Named Entity Recognition</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Running <a href="../glossary/g_ner.html" title="A software program that recognizes different types of named objects, such as geographical, temporal, and proper names."><dfn class="term">named entity recognition</dfn></a> on entries</p></span></span></span></li><li role="treeitem"><span data-tocid="c_generating_a_manifest-d1242e10801" class="topicref" data-id="c_generating_a_manifest" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_generate_manifest.html" id="c_generating_a_manifest-d1242e10801-link">Generating the Manifest</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">The manifest stores all of the parameters for HIVE</p></span></span></span></li><li role="treeitem"><span data-tocid="c_saving_hive_output-d1242e10874" class="topicref" data-id="c_saving_hive_output" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_run_HIVE.html" id="c_saving_hive_output-d1242e10874-link">Run HIVE2</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">With the NER output, plain text, and a manifest in place, we are ready to generate         the index terms.</p></span></span></span></li><li role="treeitem"><span data-tocid="untitled1-d1242e10947" class="topicref" data-id="untitled1" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../source/t_add-index-terms.html" id="untitled1-d1242e10947-link">Add index terms to master files</a><span class="wh-tooltip"><p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc">Adding index terms to the master files</p></span></span></span></li></ul></li></ul></li></ul></div>
+                        </nav>
+                        
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Named Entity Recognition</h1>
+    
+    
+    <div class="- topic/body task/taskbody body taskbody"><p class="- topic/shortdesc shortdesc">Running <a href="../glossary/g_ner.html" title="A software program that recognizes different types of named objects, such as geographical, temporal, and proper names."><dfn class="- topic/term term">named entity recognition</dfn></a> on entries</p>
+        <section class="- topic/section task/context section context"> <p class="- topic/p p"></p> </section>
+        <section class="- topic/ol task/steps ol steps"><ol class="- topic/ol task/steps ol steps"><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd">Create a batch folder for processing the group of files in the
+                    <span class="+ topic/ph sw-d/filepath ph filepath">outputs\metadata</span> directory, using the same alphabetical
+                    folder tree as the entry files.</span>
+                <div class="- topic/itemgroup task/stepxmp itemgroup stepxmp"><span class="+ topic/ph sw-d/filepath ph filepath">outputs\metadata\eb03\A\</span></div>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd">In <a href="../glossary/g_oxygen.html" title="A program for creating and editing XML files and running XSL scripts."><dfn class="- topic/term term">Oxygen XML Editor</dfn></a>, use <span class="+ topic/ph sw-d/filepath ph filepath">tei-to-text.xsl</span> to
+                    create <a href="../glossary/g_txt.html" title="A kind of computer file that is structured as a sequence of lines of electronic text and using the file extension .txt. Text files can contain plain text but are not limited to that."><dfn class="- topic/term term">TXT</dfn></a> versions of the <a href="../glossary/g_xml.html" title="eXtensible Markup Language: a flexible language for encoding data, including text."><dfn class="- topic/term term">XML</dfn></a> entry
+                    files. Keep the same base filename. Output the TXT files to the batch folder. We
+                    will use these to generate our NER data and to process it in <a href="../glossary/g_hive.html" title="An automated system for generating metadata. HIVE stands for Helping Interdisciplinary Vocabulary Engineering. It is run by the Metadata Research Center at Drexel University."><dfn class="- topic/term term">HIVE2</dfn></a>.</span>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd">To generate the NER data, use <a class="- topic/xref xref" href="https://stanfordnlp.github.io/stanza/" target="_blank" rel="external noopener">Stanza</a>, the
+                    Stanford NLP Group’s current natural language processing toolkit for <a href="../glossary/g_python.html" title="An object-oriented programming language."><dfn class="- topic/term term">Python</dfn></a>, which includes Stanford NER. Run Stanza on the TXT batch
+                    using two different NER subsets:</span>
+                <ol type="a" class="- topic/ol task/substeps ol substeps">
+                    <li class="- topic/li task/substep li substep">
+                        <span class="- topic/ph task/cmd ph cmd"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">General entities (NER Topics).</span> Save results in
+                            the batch folder as <a href="../glossary/g_csv.html" title="Comma-Separate Values is a file format for storing date separate by commas."><dfn class="- topic/term term">csv</dfn></a> files, with
+                            <span class="+ topic/ph sw-d/filepath ph filepath">a</span> appended to the base filename.</span>
+                    </li>
+                    <li class="- topic/li task/substep li substep">
+                        <span class="- topic/ph task/cmd ph cmd"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Locations (NER Geo).</span> Save results in the batch
+                            folder as CSV files, with <span class="+ topic/ph sw-d/filepath ph filepath">b</span> appended to the base
+                            filename.</span>
+                    </li>
+                </ol>
+            </li><li class="- topic/li task/step li step">
+                <span class="- topic/ph task/cmd ph cmd">Each entry will now have three files in the batch folder:</span>
+                <div class="- topic/itemgroup task/stepxmp itemgroup stepxmp"> <table class="- topic/table table"><caption></caption><colgroup><col/><col/><col/></colgroup><tbody class="- topic/tbody tbody">
+                            <tr class="- topic/row">
+                                <td class="- topic/entry entry colsep-0 rowsep-0">each entry</td>
+                                <td class="- topic/entry entry colsep-0 rowsep-0">full text</td>
+                                <td class="- topic/entry entry colsep-0 rowsep-0"><span class="+ topic/ph sw-d/filepath ph filepath">kp*.txt</span></td>
+                            </tr>
+                            <tr class="- topic/row">
+                                <td class="- topic/entry entry colsep-0 rowsep-0">each entry</td>
+                                <td class="- topic/entry entry colsep-0 rowsep-0">NER Topics </td>
+                                <td class="- topic/entry entry colsep-0 rowsep-0"><span class="+ topic/ph sw-d/filepath ph filepath">kp*a.csv</span></td>
+                            </tr>
+                            <tr class="- topic/row">
+                                <td class="- topic/entry entry colsep-0 rowsep-0">each entry</td>
+                                <td class="- topic/entry entry colsep-0 rowsep-0">NER Geo</td>
+                                <td class="- topic/entry entry colsep-0 rowsep-0"><span class="+ topic/ph sw-d/filepath ph filepath">kp*b.csv</span></td>
+                            </tr>
+                        </tbody></table></div>
+            </li></ol></section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div class=" footer-container mx-auto ">
+    
+            Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+            &lt;oXygen/&gt; XML WebHelp
+            </a>
+        
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+        <title></title>
+    
+        <p style="text-align: center">Project Director <a href="mailto:peter.logan@temple.edu?Subject=Knowledge%20Project">Peter Melville
+                Logan</a><br/>National Endowment for the Humanities <a href="https://cutt.ly/3r5Ek3q">HAA-261228-18</a></p>
+    
+        
+    </body>
+</html>
