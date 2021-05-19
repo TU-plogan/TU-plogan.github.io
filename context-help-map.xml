@@ -176,6 +176,7 @@
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
    <appContext helpID="naming_conventions" path="source/r_file_and_folder_names.html"/>
    <appContext helpID="tei_style_manual" path="source/r_tei_style_manual.html"/>
+   <appContext helpID="r_author_names" path="source/r_author_names.html"/>
    <appContext helpID="citation" path="source/r_verse-drama.html"/>
    <appContext helpID="t_find_lists" path="source/r_lists.html"/>
    <appContext helpID="note" path="source/r_notes.html"/>
