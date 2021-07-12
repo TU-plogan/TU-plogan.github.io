@@ -53,6 +53,8 @@
    <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
    <appContext helpID="github" path="glossary/g_github.html"/>
    <appContext helpID="github_desktop" path="glossary/g_github_desktop.html"/>
+   <appContext helpID="v1" path="glossary/g_v1.html"/>
+   <appContext helpID="v2" path="glossary/g_v2.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="why-analyze-eb" path="source/c_why_analyze_eb.html"/>
    <appContext helpID="acknowledgment" path="source/r_about.html"/>
@@ -177,8 +179,15 @@
    <appContext helpID="naming_conventions" path="source/r_file_and_folder_names.html"/>
    <appContext helpID="tei_style_manual" path="source/r_tei_style_manual.html"/>
    <appContext helpID="r_author_names" path="source/r_author_names.html"/>
+   <appContext helpID="r_bidirectional_text" path="source/r_bidirectional_text.html"/>
+   <appContext helpID="r_callouts" path="source/r_callouts.html"/>
    <appContext helpID="citation" path="source/r_verse-drama.html"/>
+   <appContext helpID="r_cross_references" path="source/r_cross_references.html"/>
+   <appContext helpID="r_foreign_text" path="source/r_foreign_text.html"/>
+   <appContext helpID="r_formulas" path="source/r_formulas.html"/>
+   <appContext helpID="r_images" path="source/r_images.html"/>
    <appContext helpID="t_find_lists" path="source/r_lists.html"/>
+   <appContext helpID="r_music" path="source/r_music.html"/>
    <appContext helpID="note" path="source/r_notes.html"/>
    <appContext helpID="pagebreak" path="source/r_page_numbers.html"/>
    <appContext helpID="r_missing_text" path="source/r_text_problems.html"/>
