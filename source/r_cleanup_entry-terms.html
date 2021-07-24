@@ -129,20 +129,21 @@
                     </tr>
                 </thead><tbody class="- topic/tbody tbody">
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Cleanup entry terms</strong></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Replace numerals  in entry terms with
+                                letters</strong></td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-Z]+)1([A-Z])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)1([A-ZÀ-Ù])</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1I\2</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex </td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-Z]+)0([A-Z])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)0([A-ZÀ-Ù])</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1O\2</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-Z]+)Ľ([A-Z])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)Ľ([A-ZÀ-Ù])</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1E\2</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
                     </tr>
@@ -154,7 +155,7 @@
                             between &lt;p&gt; and entry terms (sample uses "X")</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;)[^A-Z]{1,3}(X[A-Z]+)</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;)[^A-ZÀ-Ù]{1,3}(C[A-ZÀ-Ù]+)</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\2</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
                     </tr>
@@ -172,7 +173,7 @@
                             line (sample uses XY)</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>([\s\.])([XY][A-Z]{2,})</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>([\s\.])([C][A-ZÀ-Ù]{2,})</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1&lt;/p&gt;&lt;p&gt;\2</code></pre> </td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance </td>
                     </tr>
@@ -181,7 +182,7 @@
                             letter after the first term (sample initial letter is "X")</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;X)\W([A-Z])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;C)[\s\W]([A-ZÀ-Ù])</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\2</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
                     </tr>
@@ -195,7 +196,7 @@
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qz1_tnc_lpb" data-ofbid="cleanup__codeblock_qz1_tnc_lpb"><code>&lt;p&gt;\s*(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;)?@{3}</code></pre> </td>
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qz1_tnc_lpb" data-ofbid="cleanup__codeblock_qz1_tnc_lpb"><code>&lt;p&gt;[\s\W]+(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;)?@{3}</code></pre> </td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1@@@</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; check each instance</td>
                     </tr>
