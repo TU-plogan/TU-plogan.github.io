@@ -150,6 +150,7 @@
    <appContext helpID="revinvcom" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="t.partial-entries" path="source/t_partial_entries.html"/>
    <appContext helpID="cleanup" path="source/r_cleanup_entry-terms.html"/>
+   <appContext helpID="run_note_counts_py" path="source/run_note_counts_py.html"/>
    <appContext helpID="convert_pages_to_entries"
                path="source/c_convert_pages_to_entries.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
