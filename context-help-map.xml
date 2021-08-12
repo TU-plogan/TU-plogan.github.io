@@ -55,6 +55,7 @@
    <appContext helpID="github_desktop" path="glossary/g_github_desktop.html"/>
    <appContext helpID="v1" path="glossary/g_v1.html"/>
    <appContext helpID="v2" path="glossary/g_v2.html"/>
+   <appContext helpID="g_pg" path="glossary/g_pg.html"/>
    <appContext helpID="c.introduction" path="source/c_introduction.html"/>
    <appContext helpID="why-analyze-eb" path="source/c_why_analyze_eb.html"/>
    <appContext helpID="acknowledgment" path="source/r_about.html"/>
@@ -181,7 +182,7 @@
    <appContext helpID="tei_style_manual" path="source/r_tei_style_manual.html"/>
    <appContext helpID="r_author_names" path="source/r_author_names.html"/>
    <appContext helpID="r_bidirectional_text" path="source/r_bidirectional_text.html"/>
-   <appContext helpID="r_callouts" path="source/r_callouts.html"/>
+   <appContext helpID="c_callouts" path="source/c_callouts.html"/>
    <appContext helpID="citation" path="source/r_verse-drama.html"/>
    <appContext helpID="r_cross_references" path="source/r_cross_references.html"/>
    <appContext helpID="r_foreign_text" path="source/r_foreign_text.html"/>
