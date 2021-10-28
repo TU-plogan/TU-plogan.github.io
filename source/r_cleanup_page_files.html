@@ -1,0 +1,391 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="24.0">
+    <head><link rel="shortcut icon" href="../favicon.ico"/><link rel="icon" href="../favicon.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="reference"/><meta name="description" content="Fix the most common OCR errors in the TEI-page files."/><meta name="DC.relation" content="../source/c_convert_page_to_entry.html"/><meta name="DC.contributor" content="Peter"/><meta name="DC.creator" content="Peter M. Logan"/><meta name="DC.creator" content="Peter"/><meta name="DC.contributor" content="Peter"/><meta name="rights" content="© 2019 Peter M. Logan"/><meta name="DC.date.modified" content="2020/02/26"/><meta name="DC.date.modified" content="2020/02/27"/><meta name="DC.date.modified" content="2020/02/28"/><meta name="DC.date.modified" content="2020/02/29"/><meta name="DC.date.modified" content="2020/06/09"/><meta name="DC.date.modified" content="2020/06/12"/><meta name="DC.date.modified" content="2020/06/20"/><meta name="DC.date.modified" content="2020/07/31"/><meta name="DC.date.modified" content="2020-08-24"/><meta name="DC.date.modified" content="2020-09-01"/><meta name="DC.date.modified" content="2020-09-02"/><meta name="DC.date.modified" content="2020-11-26"/><meta name="DC.date.modified" content="2020-11-27"/><meta name="DC.date.modified" content="2021-02-09"/><meta name="DC.date.modified" content="2021-02-12"/><meta name="DC.date.modified" content="2021-03-13"/><meta name="DC.date.modified" content="2021-04-07"/><meta name="DC.date.modified" content="2021-04-14"/><meta name="DC.date.modified" content="2021-04-26"/><meta name="DC.date.modified" content="2021-05-07"/><meta name="DC.date.modified" content="2021-05-08"/><meta name="DC.date.modified" content="2021-05-12"/><meta name="DC.date.modified" content="2021-05-13"/><meta name="DC.date.modified" content="2021-05-19"/><meta name="DC.date.modified" content="2021-07-12"/><meta name="DC.date.modified" content="2021-08-01"/><meta name="DC.date.modified" content="2021-08-11"/><meta name="DC.date.modified" content="2021-08-12"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="cleanup"/>        
+      <title>Cleanup Page Files</title><!--  Generated with Oxygen version 24.0, build number 2021101211.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="cleanup-d1313e11407"/><meta name="wh-source-relpath" content="source/r_cleanup_page_files.dita"/><meta name="wh-out-relpath" content="source/r_cleanup_page_files.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2021101211"/>
+    
+    
+    <script src="../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"></script>
+    
+    <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/orange.css?buildId=2021101211"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/notes.css?buildId=2021101211"/><link rel="stylesheet" type="text/css" href="../wh-responsive2.css"/></head>
+
+    <body id="cleanup" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="title">Nineteenth-Century Knowledge Project</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.introduction-d1313e4391-mi" data-tocid="c.introduction-d1313e4391" data-state="not-ready" class=" topicref " data-id="c.introduction"><span class="title"><a href="../source/c_introduction.html">Introduction</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.data_organization-d1313e4647-mi" data-tocid="c.data_organization-d1313e4647" data-state="not-ready" class=" topicref " data-id="c.data_organization"><span class="title"><a href="../source/c_data_organization.html">Organization</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c.intro-afr-d1313e7150-mi" data-tocid="c.intro-afr-d1313e7150" data-state="not-ready" class=" topicref " data-id="c.intro-afr"><span class="title"><a href="../source/c_ocr.html">Page Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="processing_entry_files-d1313e11065-mi" data-tocid="processing_entry_files-d1313e11065" data-state="not-ready" class=" topicref " data-id="processing_entry_files"><span class="title"><a href="../source/c_processing_entry_files.html">Entry Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="c_master_files-d1313e12416-mi" data-tocid="c_master_files-d1313e12416" data-state="not-ready" class=" topicref " data-id="c_master_files"><span class="title"><a href="../source/c_master_files.html">Master Files</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="reference_manual-d1313e12926-mi" data-tocid="reference_manual-d1313e12926" data-state="not-ready" class=" topicref " data-id="reference_manual"><span class="title"><a href="../source/c_reference_manual.html">Reference</a></span></span></li></ul></nav>
+                <div class=" wh_indexterms_link "><a href="../indexTerms.html" title="Index" aria-label="Go to index terms page"><span>Index</span></a></div>
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <!-- Search form -->
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li><li><div class="topicref" data-id="processing_entry_files"><div class="title"><a href="../source/c_processing_entry_files.html">Entry Files</a><div class="wh-tooltip"><p class="shortdesc">Procedures for converting single pages into Encyclopedia entries.</p></div></div></div></li><li><div class="topicref" data-id="page2entry"><div class="title"><a href="../source/c_convert_page_to_entry.html">Prep and Convert Pages to Entry Files</a><div class="wh-tooltip"><p class="shortdesc">Before <a href="../glossary/g_page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page files</dfn></a> can be converted to <a href="../glossary/g_entry_file.html" title="A file containing a single Encyclopedia entry term and its text."><dfn class="term">entry files</dfn></a>, we need to do some housekeeping.</p></div></div></div></li><li class="active"><div class="topicref" data-id="cleanup"><div class="title"><a href="../source/r_cleanup_page_files.html">Cleanup Page Files</a><div class="wh-tooltip"><p class="shortdesc">Fix the most common OCR errors in the TEI-page files.</p></div></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        
+                        <!-- External resource link -->
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        
+                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-sm-none d-print-none" aria-label="Table of Contents Container">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem" aria-expanded="true"><div data-tocid="processing_entry_files-d1313e11065" class="topicref" data-id="processing_entry_files" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action processing_entry_files-d1313e11065-link" class="wh-expand-btn"></span><div class="title"><a href="../source/c_processing_entry_files.html" id="processing_entry_files-d1313e11065-link">Entry Files</a><div class="wh-tooltip"><p class="shortdesc">Procedures for converting single pages into Encyclopedia entries.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true"><div data-tocid="page2entry-d1313e11149" class="topicref" data-id="page2entry" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action page2entry-d1313e11149-link" class="wh-expand-btn"></span><div class="title"><a href="../source/c_convert_page_to_entry.html" id="page2entry-d1313e11149-link">Prep and Convert Pages to Entry Files</a><div class="wh-tooltip"><p class="shortdesc">Before <a href="../glossary/g_page_file.html" title="A file containing a single page of text from the print edition."><dfn class="term">page files</dfn></a> can be converted to <a href="../glossary/g_entry_file.html" title="A file containing a single Encyclopedia entry term and its text."><dfn class="term">entry files</dfn></a>, we need to do some housekeeping.</p></div></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="revinvcom-d1313e11239" class="topicref" data-id="revinvcom" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../source/t_review_inventory_notes.html" id="revinvcom-d1313e11239-link">Review Inventory Comments</a><div class="wh-tooltip"><p class="shortdesc">Correct resolvable issues noted in the comments</p></div></div></div></li><li role="treeitem"><div data-tocid="t.partial-entries-d1313e11323" class="topicref" data-id="t.partial-entries" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../source/t_partial_entries.html" id="t.partial-entries-d1313e11323-link">Add Titles to Partial Entries</a><div class="wh-tooltip"><p class="shortdesc">Prepare the first entry in the section for inclusion.</p></div></div></div></li><li role="treeitem" class="active"><div data-tocid="cleanup-d1313e11407" class="topicref" data-id="cleanup" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../source/r_cleanup_page_files.html" id="cleanup-d1313e11407-link">Cleanup Page Files</a><div class="wh-tooltip"><p class="shortdesc">Fix the most common OCR errors in the TEI-page files.</p></div></div></div></li><li role="treeitem"><div data-tocid="run_note_counts_py-d1313e11491" class="topicref" data-id="run_note_counts_py" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../source/run_note_counts_py.html" id="run_note_counts_py-d1313e11491-link">Check @-codes</a><div class="wh-tooltip"><p class="shortdesc">Check @-codes by running a Python script.</p></div></div></div></li><li role="treeitem"><div data-tocid="convert_pages_to_entries-d1313e11575" class="topicref" data-id="convert_pages_to_entries" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="../source/c_convert_pages_to_entries.html" id="convert_pages_to_entries-d1313e11575-link">Convert Pages to Entries</a><div class="wh-tooltip"><p class="shortdesc">Use Python to convert an entire section of page files into entry files.</p></div></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="t.ent-inventory-d1313e11659" class="topicref" data-id="t.ent-inventory" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action t.ent-inventory-d1313e11659-link" class="wh-expand-btn"></span><div class="title"><a href="../source/t_entry_inventory.html" id="t.ent-inventory-d1313e11659-link">Entry-Inventory File</a><div class="wh-tooltip"><p class="shortdesc">Document the filenames of every entry in a section using the entry-inventory         file.</p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="process_entry_files-d1313e11910" class="topicref" data-id="process_entry_files" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action process_entry_files-d1313e11910-link" class="wh-expand-btn"></span><div class="title"><a href="../source/c_process_entry_files.html" id="process_entry_files-d1313e11910-link">Process Entry Files</a><div class="wh-tooltip"><p class="shortdesc">Run cleanup routine on all new entry files</p></div></div></div></li></ul></li></ul></div>
+                        </nav>
+                        
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+                            <span class="close-toc-icon-container">
+                                <span class="close-toc-icon"></span>     
+                            </span>
+                        </button>
+                        
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Cleanup Page Files</h1>
+    
+    
+    <div class="- topic/body reference/refbody body refbody"><p class="- topic/shortdesc shortdesc">Fix the most common OCR errors in the TEI-page files.</p>
+        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Run search and replace on batches of page files to correct common OCR
+            errors.</h2>  <table class="- topic/table table" data-cols="3"><caption></caption><colgroup><col/><col/><col/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__1">search</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__2">replace</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__3">settings</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Replace OCR errors in entry
+                            terms</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)[1l]([A-ZÀ-Ù])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1I\2</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)0([A-ZÀ-Ù])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1O\2</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)Ľ([A-ZÀ-Ù])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1E\2</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_avv_ywt_4qb" data-ofbid="cleanup__codeblock_avv_ywt_4qb"><code>(&lt;p&gt;[A-ZÀ-Ù]+)Λ([A-ZÀ-Ù])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_orh_cxt_4qb" data-ofbid="cleanup__codeblock_orh_cxt_4qb"><code>\1A\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"> <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)Γ([A-ZÀ-Ù])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1T\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Find hidden entries</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For <em class="+ topic/ph hi-d/i ph i">consonants</em>, remove unneeded
+                            characters between <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> and the entry term (sample
+                            uses "B" for the variable letter)</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;)[^A-ZÀ-Ù]{1,3}(B[A-ZÀ-Ù]+)</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\2</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For <em class="+ topic/ph hi-d/i ph i">vowels</em>, remove unneeded
+                            characters between <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> and entry terms (sample
+                            uses "A" and it's accented forms)</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;[^A-Z]{1,3}([AÀ-ÆĀĂĄ][A-ZÀ-Ý]+)</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;\1</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Identify entry terms that are not on a new
+                            line (sample uses "B")</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>([\s\.])(B[A-ZÀ-Ù]{2,})</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1&lt;/p&gt;&lt;p&gt;\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Find entry terms with a space or non-Roman
+                            character after the first term (sample initial letter is "B")</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;B)[\s\W]([A-ZÀ-Ù])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\2</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Remove extra space around "A" in entry
+                            terms</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_nbv_jx3_krb" data-ofbid="cleanup__codeblock_nbv_jx3_krb"><code>([A-ZÀ-Ù]+)\sA\s?([A-ZÀ-Ù])</code></pre>
+                            </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
+                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_c32_nx3_krb" data-ofbid="cleanup__codeblock_c32_nx3_krb"><code>\1A\2</code></pre>
+                            </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_tmk_mx3_krb" data-ofbid="cleanup__codeblock_tmk_mx3_krb"><code>([A-ZÀ-Ù]+)\?sA\s([A-ZÀ-Ù])</code></pre>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
+                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_jm1_4x3_krb" data-ofbid="cleanup__codeblock_jm1_4x3_krb"><code>\1A\2</code></pre>
+                            </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                        </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Clean up footnote @@@s </strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Remove dirt preceding @@@ at the beginning of a line</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qz1_tnc_lpb" data-ofbid="cleanup__codeblock_qz1_tnc_lpb"><code>&lt;p&gt;[\s\W]+(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;?@{3})</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;\1</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Fix instances of multiple @@@s on the same line</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_mkt_2nc_lpb" data-ofbid="cleanup__codeblock_mkt_2nc_lpb"><code>([\.\"?:*])\s*(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;)?@{3}</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_ks5_txq_kpb" data-ofbid="cleanup__codeblock_ks5_txq_kpb"><code>\1&lt;/p&gt;&lt;p&gt;\2@@@</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Remove <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;seg&gt;</code> surrounding @@@</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_udp_clf_lpb" data-ofbid="cleanup__codeblock_udp_clf_lpb"><code>&lt;seg rend=\"[a-z\-]+\"&gt;(@@@.{0,2})&lt;/seg&gt;</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_egz_v5q_kpb" data-ofbid="cleanup__codeblock_egz_v5q_kpb"><code>\1</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Find @@ after @@@</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qym_qvq_kpb" data-ofbid="cleanup__codeblock_qym_qvq_kpb"><code>(@{3})([\w\s&lt;&gt;.,;\-—&amp;/=\"]*)(?&lt;!@)(@{2}[^@])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; manual cleanup</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For eb03, find @@@s + note siglum inside
+                            parentheses and move @@@s outside parens., i.e. (@@@a) ==&gt;
+                            @@@(a)</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;)(&lt;hi rend=\"smallcaps\"&gt;)?\(\s*(&lt;/hi&gt;)?(&lt;hi rend=\"smallcaps\"&gt;)?(@{3,})(&lt;/hi&gt;)?(&lt;hi rend=\"[a-z]+\"&gt;)?(.)\)?(&lt;/hi&gt;)?\)?</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\5(&lt;hi rend="smallcaps"&gt;\8&lt;/hi&gt;)</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Remove dirt after the letter
+                            <em class="+ topic/ph hi-d/i ph i">w</em></strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>w\s*&lt;hi rend="superscript"&gt;\s*(,|τ|r|f|T|7)\s*&lt;/hi&gt;(\s*)</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>w\2</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Fix roman numerals</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\b([IVXCM])L\b([^\.])</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1I.\2</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_xmb_zvq_kpb" data-ofbid="cleanup__codeblock_xmb_zvq_kpb"><code>([IVXLCM\s])[HΠ]([IVXLCM\.])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_pg1_1wq_kpb" data-ofbid="cleanup__codeblock_pg1_1wq_kpb"><code>\1II\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Fix life dates in entry terms</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\s*\(c\.&lt;\/hi&gt;</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;/hi&gt; (&lt;hi rend="italic"&gt;c.&lt;/hi&gt;</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Remove "normalweight" value from
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code> </strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_x22_lvn_4qb" data-ofbid="cleanup__codeblock_x22_lvn_4qb"><code>&lt;hi rend="normalweight"&gt;(.*?)&lt;\/hi&gt;</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_dgz_lvn_4qb" data-ofbid="cleanup__codeblock_dgz_lvn_4qb"><code>\1</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Remove all instances of &lt;hi
+                            rend="CharStyle13" xml:space="preserve"&gt;</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qk3_5w3_krb" data-ofbid="cleanup__codeblock_qk3_5w3_krb"><code>&lt;hi\s*rend=\"CharStyle\d{1,2}\"\s*(xml\:space=\"preserve\")?&gt;(.*?)?&lt;/hi&gt;</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_hqm_vw3_krb" data-ofbid="cleanup__codeblock_hqm_vw3_krb"><code>\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Fix legal citations</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>Viet.</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>Vict.</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
+                    </tr>
+                </tbody></table> </section>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    <div>Generated by <a class="oxyFooter" href="http://www.oxygenxml.com/xml_webhelp.html" target="_blank">
+ &lt;oXygen/&gt; XML WebHelp
+ </a></div>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <div id="modal_img_container"></div>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+        <title></title>
+    
+        <p style="text-align: center">Project Director <a href="mailto:peter.logan@temple.edu?Subject=Knowledge%20Project">Peter Melville
+                Logan</a><br/>National Endowment for the Humanities <a href="https://cutt.ly/3r5Ek3q">HAA-261228-18</a></p>
+    
+        
+    </body>
+</html>
