@@ -211,22 +211,16 @@
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_nbv_jx3_krb" data-ofbid="cleanup__codeblock_nbv_jx3_krb"><code>([A-ZÀ-Ù]+)\sA\s?([A-ZÀ-Ù])</code></pre>
-                            </td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_c32_nx3_krb" data-ofbid="cleanup__codeblock_c32_nx3_krb"><code>\1A\2</code></pre>
-                            </td>
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_nbv_jx3_krb" data-ofbid="cleanup__codeblock_nbv_jx3_krb"><code>([A-ZÀ-Ù]+)\sA\s?([A-ZÀ-Ù])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_c32_nx3_krb" data-ofbid="cleanup__codeblock_c32_nx3_krb"><code>\1A\2</code></pre> </td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
                     </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_tmk_mx3_krb" data-ofbid="cleanup__codeblock_tmk_mx3_krb"><code>([A-ZÀ-Ù]+)\?sA\s([A-ZÀ-Ù])</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_jm1_4x3_krb" data-ofbid="cleanup__codeblock_jm1_4x3_krb"><code>\1A\2</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
-                        </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_tmk_mx3_krb" data-ofbid="cleanup__codeblock_tmk_mx3_krb"><code>([A-ZÀ-Ù]+)\?sA\s([A-ZÀ-Ù])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_jm1_4x3_krb" data-ofbid="cleanup__codeblock_jm1_4x3_krb"><code>\1A\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Clean up footnote @@@s </strong></td>
                     </tr>
@@ -279,7 +273,8 @@
                             @@@(a)</td>
                     </tr>
                     <tr class="- topic/row">
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;)(&lt;hi rend=\"smallcaps\"&gt;)?\(\s*(&lt;/hi&gt;)?(&lt;hi rend=\"smallcaps\"&gt;)?(@{3,})(&lt;/hi&gt;)?(&lt;hi rend=\"[a-z]+\"&gt;)?(.)\)?(&lt;/hi&gt;)?\)?</code></pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;)(&lt;hi rend=\"smallcaps\"&gt;)?\(\s*(&lt;/hi&gt;)?(&lt;hi rend=\"smallcaps\"&gt;)?
+(@{3,})(&lt;/hi&gt;)?(&lt;hi rend=\"[a-z]+\"&gt;)?(.)\)?(&lt;/hi&gt;)?\)?</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\5(&lt;hi rend="smallcaps"&gt;\8&lt;/hi&gt;)</code></pre></td>
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
                     </tr>
