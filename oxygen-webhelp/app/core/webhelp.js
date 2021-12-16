@@ -266,13 +266,14 @@ function closePublicationToc(sideToc, pageToc) {
         }
         
         // Check publication toc is displayed to the user.
-        if(sideToc.hasClass("d-md-block")) {
+        if(sideToc.hasClass("d-md-block") && sideToc.is(':visible')) {
             $('#wh_close_publication_toc_button').attr('aria-expanded', false);
             $('#wh_toc_button').attr('aria-expanded', false);
             $('#wh_close_publication_toc_button').addClass("clicked");
             sideToc.removeClass(`col-lg-${publicationTocColumns} col-md-${publicationTocColumns}`);
             sideToc.removeClass("d-sm-block");
             sideToc.removeClass("d-md-block");
+            sideToc.addClass("d-none");
             sideToc.addClass("d-sm-none");
             sideToc.addClass("d-md-none");
             
@@ -287,6 +288,7 @@ function closePublicationToc(sideToc, pageToc) {
             $('#wh_toc_button').attr('aria-expanded', true);
             $('#wh_close_publication_toc_button').removeClass("clicked");
             sideToc.addClass(`col-lg-${publicationTocColumns} col-md-${publicationTocColumns}`);
+            sideToc.removeClass("d-none");
             sideToc.removeClass("d-sm-none");
             sideToc.removeClass("d-md-none");
             sideToc.addClass("d-sm-block");

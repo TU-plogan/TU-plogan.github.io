@@ -37,7 +37,7 @@ define(["options", "dom-sanitizer", "jquery", "nav"], function (options, domSani
         	container.append(tooltip);
     		var top = $(this).offset().top - $("#wh_publication_toc").offset().top;
     		var left = $(this).offset().left - ($("#wh_publication_toc").offset().left + parseInt($("#wh_publication_toc").css("padding-left")));
-    	    container.css("position", "relative").css("top", top).css("left", left).css("width", $(this).width()).css("height", $(this).height()).css("float", "left");
+    	    container.css("position", "absolute").css("top", top).css("left", left).css("width", $(this).width() + left).css("height", $(this).height()).css("float", "left");
     	    domSanitizer.appendHtmlNode(container, $("#wh_publication_toc"));
     	    
     	    setTimeout(function(){ $(".wh-toc-tooltip").addClass("wh-display-tooltip"); }, 50);

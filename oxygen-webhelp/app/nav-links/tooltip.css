@@ -2,6 +2,7 @@
 .wh_breadcrumb title,
 .wh_publication_toc .title {
     position: relative;
+    z-index: 2;
    /* display: inline-block;*/
 }
 
