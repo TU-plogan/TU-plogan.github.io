@@ -106,11 +106,11 @@ define(function() {
         paths : modulePaths,
         shim : shimConfig,
         urlArgs: function(id, url) {
-            var args = '2021121314';
+            var args = '2022012605';
         	
             if(id === 'index-1' || id === 'index-2' || id === 'index-3' || id === 'stopwords' 
             ||id === 'htmlFileInfoList' || id === 'keywords') {
-                args = '20211216173434';
+                args = '20220210140421';
         	} 
 	
 	        return (url.indexOf('?') === -1 ? '?' : '&') + args;

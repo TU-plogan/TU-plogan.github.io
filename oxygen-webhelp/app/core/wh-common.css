@@ -130,6 +130,10 @@ body {
     margin-left: 1em;
 }
 
+.navbar {
+	background: white;
+}
+
 @media screen {
     .wh_topic_toc li,
     .wh_publication_toc li,

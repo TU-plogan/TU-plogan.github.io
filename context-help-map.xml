@@ -160,9 +160,9 @@
    <appContext helpID="c.proof-entry-terms"
                path="source/c_full-check-entry-terms.html"/>
    <appContext helpID="process_entry_files" path="source/c_process_entry_files.html"/>
-   <appContext helpID="t_runover_entries" path="source/t_runovers.html"/>
    <appContext helpID="remove_ats" path="source/r_clean_entries.html"/>
    <appContext helpID="editorial_notes" path="source/t_editorial_notes.html"/>
+   <appContext helpID="t_runover_entries" path="source/t_runovers.html"/>
    <appContext helpID="t_review_inventory_notes_0"
                path="source/t_review_inventory_notes_0.html"/>
    <appContext helpID="validate_the_files_in_oxygen"
