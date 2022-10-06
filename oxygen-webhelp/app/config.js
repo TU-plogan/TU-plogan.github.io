@@ -110,11 +110,11 @@ define(function() {
         paths : modulePaths,
         shim : shimConfig,
         urlArgs: function(id, url) {
-            var args = '2022041502';
+            var args = '2022061800';
         	
             if(id === 'index-1' || id === 'index-2' || id === 'index-3' || id === 'stopwords' 
             ||id === 'htmlFileInfoList' || id === 'keywords') {
-                args = '20220617175259';
+                args = '20220824165554';
         	} 
 	
 	        return (url.indexOf('?') === -1 ? '?' : '&') + args;
