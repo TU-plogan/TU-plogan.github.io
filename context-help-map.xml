@@ -183,6 +183,7 @@
    <appContext helpID="c_callouts" path="source/c_callouts.html"/>
    <appContext helpID="citation" path="source/r_verse-drama.html"/>
    <appContext helpID="r_cross_references" path="source/r_cross_references.html"/>
+   <appContext helpID="r_entry_terms" path="source/r_entry_terms.html"/>
    <appContext helpID="r_foreign_text" path="source/r_foreign_text.html"/>
    <appContext helpID="r_formulas" path="source/r_formulas.html"/>
    <appContext helpID="r_images" path="source/r_images.html"/>

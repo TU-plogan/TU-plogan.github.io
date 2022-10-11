@@ -32,7 +32,7 @@ highlight v3                                                                    
 (https://johannburkard.de/blog/programming/javascript/highlight-javascript-text-higlighting-jquery-plugin.html)
   - oxygen-webhelp/lib/jquery-highlight/jquery.highlight-3.js
   
-jQuery UI v1.13.0  (http://jqueryui.com)                                        MIT License (https://jquery.org/license/) 
+jQuery UI v1.13.2  (http://jqueryui.com)                                        MIT License (https://jquery.org/license/) 
   - oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css
   - oxygen-webhelp/lib/jquery-ui/jquery-ui.min.js
   
