@@ -8,9 +8,9 @@
     <script>
         var oxy_webhelp_navlinks = {};
     </script>
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20221209220612"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20221210174917"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2022110500"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20221209220612"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20221210174917"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2022110500"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2022110500"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/cobalt.css?buildId=2022110500"/><link rel="stylesheet" type="text/css" href="../kp-public.css"/></head>
@@ -123,16 +123,17 @@
             <li class="- topic/li li">For all of the page files in one <a href="../glossary/g_section.html" title="A batch of pages from a specified letter in the Encyclopedia. Page sections are named with the entry letter and a two-digit number indicating their position in the sequence of sections, such as &#34;b02&#34; and &#34;r05.&#34; Their files are always numbered from 1-250."><dfn class="- topic/term term">page section</dfn></a>, it creates a copy and removes the TEI
                 header, leaving just the body text.</li>
             <li class="- topic/li li">It then concatenates all of these page texts into a single file, while retaining a record of where each
-                page starts and ends by inserting <code class="+ topic/ph pr-d/codeph ph codeph">&lt;pb&gt;</code> tags.</li>
-            <li class="- topic/li li">The script looks for all of the footnote anchors (<code class="+ topic/ph pr-d/codeph ph codeph">@@</code>) and pairs them with the
-                appropriate footnote text (<code class="+ topic/ph pr-d/codeph ph codeph">@@@</code>). It then moves the footnote text to the the anchor
-                point in the body text and inserts it, surrounded with the <code class="+ topic/ph pr-d/codeph ph codeph">&lt;note&gt;</code> tag. Finally, it
-                removes the <code class="+ topic/ph pr-d/codeph ph codeph">@</code> codes.</li>
+                page starts and ends by inserting <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;pb&gt;</code> tags.</li>
+            <li class="- topic/li li">The script looks for all of the footnote anchors (<code class="+ topic/ph pr-d/codeph ph codeph">@@</code>) and pairs
+                them with the appropriate footnote text (<code class="+ topic/ph pr-d/codeph ph codeph">@@@</code>). It then moves the
+                footnote text to the  anchor point in the body text and inserts it, surrounded with
+                the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;note&gt;</code> tag. Finally, it removes the <code class="+ topic/ph pr-d/codeph ph codeph">@</code>
+                codes.</li>
             <li class="- topic/li li">It then searches for all of the entry terms, to identify the start and end of each individual
                 entry.</li>
             <li class="- topic/li li">We need to include accurate page numbers and the name of the image file that we scanned to create the
                 text. Python open the <a href="../glossary/g_p_inventory.html" title="A spreadsheet used to record each step in the production sequence of page files for a specific Encyclopedia page section."><dfn class="- topic/term term">page-inventory</dfn></a> file, looks up the information, and inserts it
-                into the <code class="+ topic/ph pr-d/codeph ph codeph">&lt;pb&gt;</code> element. It appends a 2-digit sequence to the end of the page number,
+                into the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;pb&gt;</code> element. It appends a 2-digit sequence to the end of the page number,
                 to indicate whether the entry is the first, second, or other entry on the page. (See <a class="- topic/xref xref" href="r_page_numbers.html" title="Specifies encoding method for page numbers in TEI.">Page Numbers</a>.)</li>
             <li class="- topic/li li">Finally, it outputs the text for each entry into a single file, adds an empty TEI header, and save it
                 with a new filename indicating the edition, volume, section, page, and entry number. This is the <a href="../glossary/g_entry_file.html" title="A file containing a single Encyclopedia entry term and its text."><dfn class="- topic/term term">entry file</dfn></a>.</li>
@@ -146,7 +147,7 @@
                 <ol class="- topic/ol ol">
                     <li class="- topic/li li">unequal numbers of @@ and @@@ codes.</li>
                     <li class="- topic/li li">more than a single @@@ in the same <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code>.</li>
-                    <li class="- topic/li li">@@@ preceded by a text character instead of a tei element.</li>
+                    <li class="- topic/li li">@@@ preceded by a text character instead of a <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="- topic/term term">TEI</dfn></a> element.</li>
                     <li class="- topic/li li">@@ in a table when nested within a <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> inside <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;cell&gt;</code>. </li>
                 </ol>
             </section>

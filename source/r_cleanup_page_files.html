@@ -8,9 +8,9 @@
     <script>
         var oxy_webhelp_navlinks = {};
     </script>
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20221209220612"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20221210174917"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2022110500"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20221209220612"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20221210174917"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2022110500"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2022110500"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/cobalt.css?buildId=2022110500"/><link rel="stylesheet" type="text/css" href="../kp-public.css"/></head>
@@ -117,291 +117,264 @@
     
     <div class="- topic/body reference/refbody body refbody"><p class="- topic/shortdesc shortdesc">Fix the most common OCR errors in the TEI-page files.</p>
         <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Run search and replace on batches of page files to correct common OCR
-                errors.</h2>
-            
-            <div class="table-container"><table class="- topic/table table" data-cols="3"><caption></caption><colgroup><col/><col/><col/></colgroup><thead class="- topic/thead thead">
-                        <tr class="- topic/row">
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__1">search</th>
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__2">replace</th>
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__3">settings</th>
-                        </tr>
-                    </thead><tbody class="- topic/tbody tbody">
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Cleanup DOCX encoding</strong></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Remove all variants of
-                                    @rend="CharStyle<em class="+ topic/ph hi-d/i ph i">nn</em>" @xml:space="preserve"&gt; from &lt;hi&gt;
-                                and &lt;seg&gt;</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qk3_5w3_krb" data-ofbid="cleanup__codeblock_qk3_5w3_krb"><code>&lt;hi\s*rend=\"CharStyle\d{1,2}\"\s*(xml\:space=\"preserve\")?\/?&gt;(.*?)?&lt;\/hi&gt;</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_hqm_vw3_krb" data-ofbid="cleanup__codeblock_hqm_vw3_krb"><code>\2</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">replace all &lt;seg&gt; elements with
-                                &lt;hi&gt;</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_lyh_22s_srb" data-ofbid="cleanup__codeblock_lyh_22s_srb"><code>&lt;seg(\s*)(rend\=\"[a-z\s]+\")\s*&gt;(.*?)&lt;\/seg&gt;</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_shk_f2s_srb" data-ofbid="cleanup__codeblock_shk_f2s_srb"><code>&lt;hi\1\2&gt;\3&lt;/hi&gt;</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Replace OCR errors in entry terms:
-                                    rerun this set after first run</strong></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)[1lſ]([A-ZÀ-Ù])</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1I\2</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex </td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)[0θ]([A-ZÀ-Ù])</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1O\2</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)Ľ([A-ZÀ-Ù])</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1E\2</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_avv_ywt_4qb" data-ofbid="cleanup__codeblock_avv_ywt_4qb"><code>(&lt;p&gt;[A-ZÀ-Ù]+)Λ([A-ZÀ-Ù])</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_orh_cxt_4qb" data-ofbid="cleanup__codeblock_orh_cxt_4qb"><code>\1A\2</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;[A-ZÀ-Ù]+)Γ([A-ZÀ-Ù])</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; manually correct</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Find hidden entries</strong></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For <em class="+ topic/ph hi-d/i ph i">consonants</em>, remove unneeded
-                                characters between <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> and the entry term
-                                (sample uses "B" for the variable letter)</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;)[^A-ZÀ-Ù]{1,3}(B[A-ZÀ-Ù]+)</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\2</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For <em class="+ topic/ph hi-d/i ph i">vowels</em>, remove unneeded
-                                characters between <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> and entry terms
-                                (sample uses "A" and it's accented forms)</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;[^A-Z]{1,3}([AÀ-ÆĀĂĄ][A-ZÀ-Ý]+)</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;\1</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Identify entry terms that are not on a
-                                new line (sample uses "B")</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>([\s\.])(B[A-ZÀ-Ù]{2,})</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1&lt;/p&gt;&lt;p&gt;\2</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance </td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Find entry terms with a space or
-                                non-Roman character after the first term (sample initial letter is
-                                "B")</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;B)[\s\W]([A-ZÀ-Ù])</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\2</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Prevent terms in cells beginning with the entry letter from being mistaken for entries</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_vmk_yvr_nsb" data-ofbid="cleanup__codeblock_vmk_yvr_nsb"><code>(&lt;cell&gt;&lt;p&gt;)(B[A-Z].*?)(\&lt;\/p&gt;)</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_y5b_1wr_nsb" data-ofbid="cleanup__codeblock_y5b_1wr_nsb"><code>\1&lt;hi&gt;\2&lt;/hi&gt;\3</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Remove extra space around "A" in
-                                    entry terms</strong></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_nbv_jx3_krb" data-ofbid="cleanup__codeblock_nbv_jx3_krb"><code>(&lt;p&gt;[A-ZÀ-Ù]+)\sA\s?([A-ZÀ-Ù])</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_c32_nx3_krb" data-ofbid="cleanup__codeblock_c32_nx3_krb"><code>\1A\2</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_tmk_mx3_krb" data-ofbid="cleanup__codeblock_tmk_mx3_krb"><code>(&lt;p&gt;[A-ZÀ-Ù]+)\s?A\s([A-ZÀ-Ù])</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_jm1_4x3_krb" data-ofbid="cleanup__codeblock_jm1_4x3_krb"><code>\1A\2</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Clean up footnote @@@s </strong></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Remove dirt preceding @@@ at the beginning of a line</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qz1_tnc_lpb" data-ofbid="cleanup__codeblock_qz1_tnc_lpb"><code>&lt;p&gt;[\s\W]+(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;?@{3})</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;p&gt;\1</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; check each instance</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Fix instances of multiple @@@s on the same line</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_mkt_2nc_lpb" data-ofbid="cleanup__codeblock_mkt_2nc_lpb"><code>([\.\"?:*])\s*(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;)?@{3}</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_ks5_txq_kpb" data-ofbid="cleanup__codeblock_ks5_txq_kpb"><code>\1&lt;/p&gt;&lt;p&gt;\2@@@</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; check each instance</td>
-                        </tr>
-                        
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Find @@ after @@@</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qym_qvq_kpb" data-ofbid="cleanup__codeblock_qym_qvq_kpb"><code>(@{3})([\w\s&lt;&gt;.,;\-—&amp;/=\"]*)(?&lt;!@)(@{2}[^@])</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; manual cleanup</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Remove <code class="+ topic/ph pr-d/codeph ph codeph">&lt;hi&gt;</code> encoding
-                                around @@@'s</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;hi rend\=\"\w*\"&gt;(@@@[\[mu\]]*?)(\s?)&lt;\/hi&gt;</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\2</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For eb03, find @@@ + note siglum inside
-                                parentheses and move @@@ outside parens., i.e. (@@@a) ==&gt;
-                                @@@(a)</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(&lt;p&gt;)(&lt;hi rend=\"smallcaps\"&gt;)?\(\s*(&lt;/hi&gt;)?(&lt;hi rend=\"smallcaps\"&gt;)?</code></pre>
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>(@{3,})(&lt;/hi&gt;)?(&lt;hi rend=\"[a-z]+\"&gt;)?(.)\)?(&lt;/hi&gt;)?\)?</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1\5(&lt;hi rend="smallcaps"&gt;\8&lt;/hi&gt;)</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex (single line)</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Correct text errors</strong></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Replace <em class="+ topic/ph hi-d/i ph i">fécond </em>with
-                                <em class="+ topic/ph hi-d/i ph i">second</em></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>fécond</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>second</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Replace copyright and registered trademark symbols with
-                                <em class="+ topic/ph hi-d/i ph i">o</em></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>©|®</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>o</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Remove dirt after the letter
-                                <em class="+ topic/ph hi-d/i ph i">w</em></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>w(\s*&lt;hi rend=\"superscript\"&gt;\s*(,|τ|j|r|f|i|T|7)\s*&lt;/hi&gt;)(\s*)</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>w</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Fix legal citations (eb07, eb09, eb11
-                                only)</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>Viet.</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>Vict.</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Correct roman numerals</strong></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\b([IVXCM])L\b([^\.])</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>\1I.\2</code></pre></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex; check each instance</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_xmb_zvq_kpb" data-ofbid="cleanup__codeblock_xmb_zvq_kpb"><code>([IVXLCM\s])[HΠ]([IVXLCM\.])</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_pg1_1wq_kpb" data-ofbid="cleanup__codeblock_pg1_1wq_kpb"><code>\1II\2</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex; check each instance</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Fix life dates in entry
-                                terms</strong></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_dbc_cgs_srb" data-ofbid="cleanup__codeblock_dbc_cgs_srb"><code>\s*\(c\.&lt;\/hi&gt;</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
-                                <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_ebc_cgs_srb" data-ofbid="cleanup__codeblock_ebc_cgs_srb"><code>&lt;/hi&gt; (&lt;hi rend="italic"&gt;c.&lt;/hi&gt;</code></pre>
-                            </td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
-                        </tr>
-                    </tbody></table></div>
-        </section>
+            errors.</h2>  <div class="table-container"><table class="- topic/table table" data-cols="3"><caption></caption><colgroup><col/><col/><col/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__1">search</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__2">replace</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="cleanup__entry__3">settings</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Cleanup DOCX encoding</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Remove all variants of
+                            @rend="CharStyle<em class="+ topic/ph hi-d/i ph i">nn</em>" @xml:space="preserve"&gt; from &lt;hi&gt; and
+                            &lt;seg&gt;</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qk3_5w3_krb" data-ofbid="cleanup__codeblock_qk3_5w3_krb"><code>&lt;hi\s*rend=\"CharStyle\d{1,2}\"\s*(xml\:space=\"preserve\")?\/?&gt;(.*?)?&lt;\/hi&gt;</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_hqm_vw3_krb" data-ofbid="cleanup__codeblock_hqm_vw3_krb"><code>\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">replace all &lt;seg&gt; elements with
+                            &lt;hi&gt;</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_lyh_22s_srb" data-ofbid="cleanup__codeblock_lyh_22s_srb"><code>&lt;seg(\s*)(rend\=\"[a-z\s]+\")\s*&gt;(.*?)&lt;\/seg&gt;</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_shk_f2s_srb" data-ofbid="cleanup__codeblock_shk_f2s_srb"><code>&lt;hi\1\2&gt;\3&lt;/hi&gt;</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Replace OCR errors in entry terms: rerun
+                            this set after first run</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">(<strong class="hl-tag">&lt;p&gt;</strong>[A-ZÀ-Ù]+)[1lſ]([A-ZÀ-Ù])</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1I\2</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">(<strong class="hl-tag">&lt;p&gt;</strong>[A-ZÀ-Ù]+)[0θ]([A-ZÀ-Ù])</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1O\2</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">(<strong class="hl-tag">&lt;p&gt;</strong>[A-ZÀ-Ù]+)Ľ([A-ZÀ-Ù])</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1E\2</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_avv_ywt_4qb" data-ofbid="cleanup__codeblock_avv_ywt_4qb"><code>(&lt;p&gt;[A-ZÀ-Ù]+)Λ([A-ZÀ-Ù])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_orh_cxt_4qb" data-ofbid="cleanup__codeblock_orh_cxt_4qb"><code>\1A\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"> <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">(<strong class="hl-tag">&lt;p&gt;</strong>[A-ZÀ-Ù]+)Γ([A-ZÀ-Ù])</pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; manually correct</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Find hidden entries</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For <em class="+ topic/ph hi-d/i ph i">consonants</em>, remove unneeded
+                            characters between <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> and the entry term (sample
+                            uses "B" for the variable letter)</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">(<strong class="hl-tag">&lt;p&gt;</strong>)[^A-ZÀ-Ù]{1,3}(B[A-ZÀ-Ù]+)</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1\2</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For <em class="+ topic/ph hi-d/i ph i">vowels</em>, remove unneeded
+                            characters between <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code> and entry terms (sample
+                            uses "A" and it's accented forms)</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;p&gt;</strong></code>[^A-Z]{1,3}([AÀ-ÆĀĂĄ][A-ZÀ-Ý]+)</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;p&gt;</strong></code>\1</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Identify entry terms that are not on a new
+                            line (sample uses "B")</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">([\s\.])(B[A-ZÀ-Ù]{2,})</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;/p&gt;</strong></code><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;p&gt;</strong></code>\2</pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Find entry terms with a space or non-Roman
+                            character after the first term (sample initial letter is "B")</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;p&gt;</strong></code>B)[\s\W]([A-ZÀ-Ù])</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1\2</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Prevent terms in cells beginning with the
+                            entry letter from being mistaken for entries</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_vmk_yvr_nsb" data-ofbid="cleanup__codeblock_vmk_yvr_nsb"><code>(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;cell&gt;</code><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code>)(B[A-Z].*?)(\<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;\/p&gt;</code>)</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_y5b_1wr_nsb" data-ofbid="cleanup__codeblock_y5b_1wr_nsb"><code>\1<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;hi&gt;</code>\2<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;/hi&gt;</code>\3</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Remove extra space around "A" in entry
+                            terms</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_nbv_jx3_krb" data-ofbid="cleanup__codeblock_nbv_jx3_krb"><code>(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code>[A-ZÀ-Ù]+)\sA\s?([A-ZÀ-Ù])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_c32_nx3_krb" data-ofbid="cleanup__codeblock_c32_nx3_krb"><code>\1A\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_tmk_mx3_krb" data-ofbid="cleanup__codeblock_tmk_mx3_krb"><code>(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code>[A-ZÀ-Ù]+)\s?A\s([A-ZÀ-Ù])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_jm1_4x3_krb" data-ofbid="cleanup__codeblock_jm1_4x3_krb"><code>\1A\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Clean up footnote @@@s </strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Remove dirt preceding @@@ at the beginning of a line</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qz1_tnc_lpb" data-ofbid="cleanup__codeblock_qz1_tnc_lpb"><code><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code>[\s\W]+(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;?@{3})</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;p&gt;</strong></code>&gt;\1</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Fix instances of multiple @@@s on the same line</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_mkt_2nc_lpb" data-ofbid="cleanup__codeblock_mkt_2nc_lpb"><code>([\.\"?:*])\s*(&lt;(?:\w|\"|=|\(|\)|\s)+&gt;)?@{3}</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_ks5_txq_kpb" data-ofbid="cleanup__codeblock_ks5_txq_kpb"><code>\1<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;/p&gt;</code><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;p&gt;</code>\2@@@</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; check each instance</td>
+                    </tr>
+                    
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Find @@ after @@@</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_qym_qvq_kpb" data-ofbid="cleanup__codeblock_qym_qvq_kpb"><code>(@{3})([\w\s&lt;&gt;.,;\-—&amp;/=\"]*)(?&lt;!@)(@{2}[^@])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex; manual cleanup</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Remove
+                            <code class="+ topic/ph pr-d/codeph ph codeph"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;hi&gt;</code></code> encoding around
+                            @@@'s</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml"><strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rend\</span>=<span class="hl-value">\"\w*\"</span><strong class="hl-tag">&gt;</strong>(@@@[\[mu\]]*?)(\s?)<strong class="hl-tag">&lt;\</strong>/hi&gt;</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1\2</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">For eb03, find @@@ + note siglum inside
+                            parentheses and move @@@ outside parentheses, i.e. (@@@a) ==&gt;
+                            @@@(a)</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;p&gt;</strong></code>)(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rend</span>=<span class="hl-value">\"smallcaps\"</span><strong class="hl-tag">&gt;</strong></code>)?\(\s*(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;/hi&gt;</strong></code>)?(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rend</span>=<span class="hl-value">\"smallcaps\"</span><strong class="hl-tag">&gt;</strong></code>)?</pre>
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">(@{3,})(<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;/hi&gt;</strong></code>)?(<strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rend</span>=<span class="hl-value">\"[a-z]+\"</span><strong class="hl-tag">&gt;</strong>)?(.)\)?(<strong class="hl-tag">&lt;/hi&gt;</strong>)?\)?</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1\5(hi rend="smallcaps"\8<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement"><strong class="hl-tag">&lt;/hi&gt;</strong></code>)</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex (single line)</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Correct text errors</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Replace <em class="+ topic/ph hi-d/i ph i">fécond </em>with
+                            <em class="+ topic/ph hi-d/i ph i">second</em></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">fécond</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">second</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case sensitive</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">Replace copyright and registered trademark symbols with
+                            <em class="+ topic/ph hi-d/i ph i">o</em></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">©|®</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">o</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Remove dirt after the letter
+                            <em class="+ topic/ph hi-d/i ph i">w</em></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">w(\s*<strong class="hl-tag">&lt;hi</strong> <span class="hl-attribute">rend</span>=<span class="hl-value">\"superscript\"</span><strong class="hl-tag">&gt;</strong>\s*(,|τ|j|r|f|i|T|7)\s*<strong class="hl-tag">&lt;/hi&gt;</strong>)(\s*)</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">w</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3">Fix legal citations (eb07, eb09, eb11
+                            only)</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">Viet.</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">Vict.</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Correct roman numerals</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\b([IVXCM])L\b([^\.])</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"><pre class="+ topic/pre pr-d/codeblock pre codeblock language-xml">\1I.\2</pre></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_xmb_zvq_kpb" data-ofbid="cleanup__codeblock_xmb_zvq_kpb"><code>([IVXLCM\s])[HΠ]([IVXLCM\.])</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_pg1_1wq_kpb" data-ofbid="cleanup__codeblock_pg1_1wq_kpb"><code>\1II\2</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">case-sensitive; regex; check each instance</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1 cleanup__entry__2 cleanup__entry__3" colspan="3"><strong class="+ topic/ph hi-d/b ph b">Fix life dates in entry terms</strong></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__1"> <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_dbc_cgs_srb" data-ofbid="cleanup__codeblock_dbc_cgs_srb"><code>\s*\(c\.&lt;\/hi&gt;</code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__2">
+                            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="cleanup__codeblock_ebc_cgs_srb" data-ofbid="cleanup__codeblock_ebc_cgs_srb"><code><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;/hi&gt;</code> (<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;hi rend="italic"&gt;</code>c.<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;/hi&gt;</code></code></pre> </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="cleanup__entry__3">regex</td>
+                    </tr>
+                </tbody></table></div> </section>
     </div>
 </article></main></div>
                         
