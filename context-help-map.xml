@@ -56,9 +56,18 @@
    <appContext helpID="v1" path="glossary/g_v1.html"/>
    <appContext helpID="v2" path="glossary/g_v2.html"/>
    <appContext helpID="g_pg" path="glossary/g_pg.html"/>
-   <appContext helpID="c.introduction" path="source/c_introduction.html"/>
+   <appContext helpID="g_mrc" path="glossary/g_mrc.html"/>
+   <appContext helpID="about" path="source/c_about.html"/>
    <appContext helpID="why-analyze-eb" path="source/c_why_analyze_eb.html"/>
-   <appContext helpID="acknowledgment" path="source/r_about.html"/>
+   <appContext helpID="c_history" path="source/c_history.html"/>
+   <appContext helpID="contributors" path="source/r_contributors.html"/>
+   <appContext helpID="releases" path="source/r_releases.html"/>
+   <appContext helpID="r_3rd_edition" path="source/r_3rd_edition.html"/>
+   <appContext helpID="r_7th_edition" path="source/r_7th_edition.html"/>
+   <appContext helpID="r_9th_edition" path="source/r_9th_edition.html"/>
+   <appContext helpID="r_11th_edition" path="source/r_11th_edition.html"/>
+   <appContext helpID="r_schema" path="source/r_schema.html"/>
+   <appContext helpID="c.production" path="source/c_production.html"/>
    <appContext helpID="c.data_organization" path="source/c_data_organization.html"/>
    <appContext helpID="t_edition_section_system"
                path="source/t_edition_section_system.html"/>
@@ -132,7 +141,7 @@
    <appContext helpID="t.proofread" path="source/t_proofread.html"/>
    <appContext helpID="t.add-dictionary-words"
                path="source/t_add_dictionary_words.html"/>
-   <appContext helpID="t.code-footnotes" path="source/t_code_footnotes.html"/>
+   <appContext helpID="t.code-fnotes" path="source/t_code_fnotes.html"/>
    <appContext helpID="marginal_notes" path="source/c_marginal_notes.html"/>
    <appContext helpID="formulas" path="source/c_formulas.html"/>
    <appContext helpID="t.train-ocr" path="source/t_train_ocr.html"/>
@@ -151,7 +160,7 @@
    <appContext helpID="cleanup" path="source/r_cleanup_page_files.html"/>
    <appContext helpID="revinvcom" path="source/t_review_inventory_notes.html"/>
    <appContext helpID="t.partial-entries" path="source/t_partial_entries.html"/>
-   <appContext helpID="run_note_counts_py" path="source/run_note_counts_py.html"/>
+   <appContext helpID="run_note_counts_py" path="source/r_run_note_counts_py.html"/>
    <appContext helpID="convert_pages_to_entries"
                path="source/c_convert_pages_to_entries.html"/>
    <appContext helpID="t.ent-inventory" path="source/t_entry_inventory.html"/>
@@ -169,14 +178,14 @@
                path="source/t_validating_entry_files.html"/>
    <appContext helpID="c_master_files" path="source/c_master_files.html"/>
    <appContext helpID="c_generate_index_terms" path="source/c_auto_md_process.html"/>
-   <appContext helpID="c_named_entity_recognition" path="source/t_ner.html"/>
+   <appContext helpID="c_named_entity_recognition" path="source/t_named_er.html"/>
    <appContext helpID="c_generating_a_manifest" path="source/t_generate_manifest.html"/>
    <appContext helpID="c_saving_hive_output" path="source/t_run_HIVE.html"/>
    <appContext helpID="untitled1" path="source/t_add-index-terms.html"/>
    <appContext helpID="reference_manual" path="source/c_reference_manual.html"/>
    <appContext helpID="editorial_standards" path="source/c_editorial_standards.html"/>
    <appContext helpID="r.image-sources" path="source/r_image_sources.html"/>
-   <appContext helpID="naming_conventions" path="source/r_file_and_folder_names.html"/>
+   <appContext helpID="naming_conventions" path="source/r_naming_conventions.html"/>
    <appContext helpID="tei_style_manual" path="source/r_tei_style_manual.html"/>
    <appContext helpID="r_author_names" path="source/r_author_names.html"/>
    <appContext helpID="r_bidirectional_text" path="source/r_bidirectional_text.html"/>
@@ -193,6 +202,7 @@
    <appContext helpID="pagebreak" path="source/r_page_numbers.html"/>
    <appContext helpID="r_missing_text" path="source/r_text_problems.html"/>
    <appContext helpID="entry_subdivisions" path="source/c_subdivisions.html"/>
+   <appContext helpID="tei_header" path="source/t_tei_header.html"/>
    <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
    <appContext helpID="unicode_characters" path="source/r_unicode_characters.html"/>
 </map>

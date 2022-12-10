@@ -1,7 +1,7 @@
 var properties = 
   { "default.language" : "en",
-    "use.stemming" : "false",
-    "webhelp.enable.scroll.to.search.term" : "no",
+    "use.stemming" : "true",
+    "webhelp.enable.scroll.to.search.term" : "yes",
     "webhelp.enable.search.autocomplete" : "true",
     "webhelp.enable.search.kuromoji.js" : "true",
     "webhelp.enable.sticky.header" : "yes",

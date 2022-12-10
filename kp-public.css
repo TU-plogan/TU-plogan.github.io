@@ -1,0 +1,109 @@
+/* This file resides in the /templates/params/args.css directory. */
+
+.nested0,
+.p {
+    margin-top: 0.5em;
+}
+.sectiontitle {
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+    margin-top: 1em;
+}
+/* This is a term link */
+.\-.topic\/term.term {
+    text-decoration: none;
+    font-weight: normal;
+}
+/* This is all other links */
+.\-.topic\/xref.xref {
+    text-decoration: underline;
+}
+.topictitle1 {
+    font-size: 1.7em;
+    font-weight: 400;
+    margin-bottom: .5em;
+}
+.wh_content_area {
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
+.wh_footer {
+    background-color: #d6d7d9;
+    padding: 0.5em 0em;
+    color: #212121;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.wh_main_page_toc a {
+    font-size: 1.2em;
+    color: #02bfe7;
+}
+.wh_main_page_toc .wh_toc_shortdesc {
+    color: #ffffff;
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+.wh_main_page .wh_content_area {
+    background-color: #112e51;
+    padding: 1em 0 0.5em 0;
+    color: #205493;
+    text-align: center;
+    align-items: center;
+}
+.wh_publication_title {
+    font-size: 1.3em;
+}
+.wh_publication_title > a {
+    padding: 0;
+    color: #205493;
+    font-weight: bold;
+    line-height: 1em;
+    font-size: 2em;
+    font-family: 'Merriweather', sans-serif;
+}
+.wh_publication_title a {
+    display: inline-block;
+    margin: 1em 0;
+}
+.wh_related_links .related-links a,
+.wh_topic_content .related-links a,
+.wh_child_links a {
+    color: #0071bc;
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 1.0em;
+}
+.wh_search_textfield {
+    padding-right: 3em;
+}
+.wh_search_textfield {
+    height: 1.5em;
+    font-size: 1.5em;
+}
+.wh_search_button {
+    height: 1.5em;
+    font-size: 1.5em;
+    padding: 0 1.0em;
+}
+.wh_search_button {
+    border-radius: 0 6px 6px 0;
+    background-color: #0071bc;
+    color: #ffffff;
+}
+.wh_search_input {
+    padding: 1em 0;
+    margin: 0;
+    align-items: center;
+    color: #112e51;
+    background-color: #ffffff;
+    text-align: center;
+}
+.wh_topic_content a {
+    text-decoration: none;
+    color: #0071bc;
+    font-weight: normal;
+}
