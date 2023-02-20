@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI n="testms" xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TEI for Michael Field</title>
+                <author>Peter Logan</author>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>TEI Consortium</publisher>
+                <availability status="free">
+                    <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> Distributed
+                        under a Creative Commons Attribution-ShareAlike 3.0 Unported
+                        License</licence>
+                    <licence target="http://www.opensource.org/licenses/BSD-2-Clause"> <p>Copyright
+                        2013 TEI Consortium.</p> <p>All rights reserved.</p> <p>Redistribution and
+                        use in source and binary forms, with or without modification, are permitted
+                        provided that the following conditions are met:</p> <list>
+                        <item>Redistributions of source code must retain the above copyright notice,
+                            this list of conditions and the following disclaimer.</item>
+                        <item>Redistributions in binary form must reproduce the above copyright
+                            notice, this list of conditions and the following disclaimer in the
+                            documentation and/or other materials provided with the
+                            distribution.</item>
+                        </list> <p>This software is provided by the copyright holders and
+                        contributors "as is" and any express or implied warranties, including, but
+                        not limited to, the implied warranties of merchantability and fitness for a
+                        particular purpose are disclaimed. In no event shall the copyright holder or
+                        contributors be liable for any direct, indirect, incidental, special,
+                        exemplary, or consequential damages (including, but not limited to,
+                        procurement of substitute goods or services; loss of use, data, or profits;
+                        or business interruption) however caused and on any theory of liability,
+                        whether in contract, strict liability, or tort (including negligence or
+                        otherwise) arising in any way out of the use of this software, even if
+                        advised of the possibility of such damage.</p> </licence>
+                    <p>TEI material can be licensed differently depending on the use you intend to
+                        make of it. Hence it is made available under both the CC+BY and BSD-2
+                        licences. The CC+BY licence is generally appropriate for usages which treat
+                        TEI content as data or documentation. The BSD-2 licence is generally
+                        appropriate for usage of TEI content in a software environment. For further
+                        information or clarification, please contact the <ref target="mailto:info@tei-c.org">TEI Consortium</ref>.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Written from scratch.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>TEI for manuscript description</p>
+            <schemaSpec docLang="en" ident="tei_mField" prefix="tei_" start="TEI teiCorpus" targetLang="en">
+                <moduleRef key="verse"/>
+                <moduleRef key="certainty"/>
+                <moduleRef key="header"/>
+                <moduleRef key="linking"/>
+                <moduleRef key="core"/>
+                <moduleRef key="tei"/>
+                <moduleRef except="div1 div2 div3 div4 div5 div6 div7" key="textstructure"/>
+                <moduleRef key="namesdates"/>
+                <moduleRef key="transcr"/>
+                <moduleRef except="notatedMusic" key="figures"/>
+                <moduleRef key="msdescription"/>
+                <moduleRef include="actor castItem castList performance role roleDesc set tech view" key="drama"/>
+                <moduleRef include="particDesc" key="corpus"/>
+                <elementSpec ident="choice" mode="change">
+                    <attList>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="corresp" mode="delete"/>
+                        <attDef ident="synch" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="copyOf" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="exclude" mode="delete"/>
+                        <attDef ident="select" mode="delete"/>
+                        <attDef ident="resp" mode="change" usage="req">
+                            <valList mode="change" type="closed">
+                                <valItem ident="transcriber" mode="add"/>
+                                <valItem ident="encoder" mode="add"/>
+                                <valItem ident="editor" mode="add"/>
+                            </valList>
+                        </attDef>
+                        <attDef ident="source" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="date" mode="change">
+                    <classes mode="change">
+                        <memberOf key="att.editLike" mode="delete"/>
+                    </classes>
+                    <attList>
+                        <attDef ident="when-custom" mode="delete"/>
+                        <attDef ident="notBefore-custom" mode="delete"/>
+                        <attDef ident="notAfter-custom" mode="delete"/>
+                        <attDef ident="from-custom" mode="delete"/>
+                        <attDef ident="to-custom" mode="delete"/>
+                        <attDef ident="datingPoint" mode="delete"/>
+                        <attDef ident="datingMethod" mode="delete"/>
+                        <attDef ident="when-iso" mode="delete"/>
+                        <attDef ident="notBefore-iso" mode="delete"/>
+                        <attDef ident="notAfter-iso" mode="delete"/>
+                        <attDef ident="from-iso" mode="delete"/>
+                        <attDef ident="to-iso" mode="delete"/>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="div" mode="change">
+                    <classes mode="change">
+                        <memberOf key="att.divLike" mode="delete"/>
+                    <memberOf key="att.fragmentable"/><memberOf key="att.divLike" mode="delete"/></classes>
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="corresp" mode="delete"/>
+                        <attDef ident="synch" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="copyOf" mode="delete"/>
+                        <attDef ident="exclude" mode="delete"/>
+                        <attDef ident="select" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                        <attDef ident="type" mode="change" usage="req">
+                            <valList mode="change" type="closed">
+                                <valItem ident="entry" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">An entry in a log
+                                        or diary with dated entries.</desc>
+                                </valItem>
+                                <valItem ident="text" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">The default content
+                                        of an entry.</desc>
+                                </valItem>
+                                <valItem ident="letter" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">Any document in
+                                        epistolary form, i.e. addressed by a sender to a
+                                        recipient.</desc>
+                                </valItem>
+                                <valItem ident="poem" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">A poem.</desc>
+                                </valItem>
+                                <valItem ident="print" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">Any printed
+                                        matter.</desc>
+                                </valItem>
+                                <valItem ident="drama" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">A dramatic
+                                        text.</desc>
+                                </valItem>
+                                <valItem ident="prayer" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">A prayer.</desc>
+                                </valItem>
+                                <valItem ident="section" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">A generic section
+                                        of a larger work, including blank pages. </desc>
+                                </valItem>
+                                <valItem ident="subsection" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">A generic
+                                        subdivision of a section.</desc>
+                                </valItem>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="head" mode="change">
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="hi" mode="change">
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="rend" mode="change">
+                            <valList mode="change" type="closed">
+                                <valItem ident="italic" mode="add"/>
+                                <valItem ident="underline" mode="add"/>
+                                <valItem ident="superscript" mode="add"/>
+                                <valItem ident="subscript" mode="add"/>
+                                <valItem ident="doubleunderline" mode="add"/>
+                                <valItem ident="indent1" mode="add"/>
+                                <valItem ident="indent2" mode="add"/>
+                                <valItem ident="indent3" mode="add"/>
+                                <valItem ident="indent4" mode="add"/>
+                                <valItem ident="indent5" mode="add"/>
+                                <valItem ident="indent6" mode="add"/>
+                                <valItem ident="hand" mode="add"/>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="list" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="change">
+                            <valList mode="change" type="closed"/>
+                        </attDef>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="rend" mode="change" usage="req">
+                            <valList mode="change" type="closed">
+                                <valItem ident="bulleted" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">items preceded by
+                                        bullets or similar markings</desc>
+                                </valItem>
+                                <valItem ident="inline" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">items rendered
+                                        within continuous prose, with no linebreak</desc>
+                                </valItem>
+                                <valItem ident="numbered" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">items preceded by
+                                        numbers or letters</desc>
+                                </valItem>
+                                <valItem ident="simple" mode="add">
+                                    <desc versionDate="2023-01-25" xml:lang="en">items rendered as
+                                        blocks, but with no bullet or number</desc>
+                                </valItem>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="metamark" mode="change">
+                    <classes mode="change">
+                        <memberOf key="att.placement" mode="delete"/>
+                        <memberOf key="att.spanning" mode="delete"/>
+                    </classes>
+                    <attList>
+                        <attDef ident="function" mode="change" usage="rec">
+                            <valList mode="change" type="closed">
+                                <valItem ident="insert" mode="add"/>
+                                <valItem ident="delete" mode="add"/>
+                                <valItem ident="other" mode="add"/>
+                            </valList>
+                        </attDef>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="note" mode="change">
+                    <classes mode="change">
+                        <memberOf key="att.placement" mode="delete"/>
+                        <memberOf key="att.written" mode="delete"/>
+                    </classes>
+                    <attList>
+                        <attDef ident="targetEnd" mode="delete"/>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="resp" mode="change" usage="req">
+                            <valList mode="change" type="closed">
+                                <valItem ident="transcriber" mode="add"/>
+                                <valItem ident="encoder" mode="add"/>
+                                <valItem ident="proofreader" mode="add"/>
+                            </valList>
+                        </attDef>
+                        <attDef ident="rend" mode="delete"/>
+                        <attDef ident="style" mode="delete"/>
+                        <attDef ident="rendition" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                    <attDef ident="facs" mode="delete"/><attDef ident="targetLang" mode="delete"/><attDef ident="target" mode="delete"/><attDef ident="evaluate" mode="delete"/><attDef ident="anchored" mode="change" usage="req"/><attDef ident="place" usage="req"><datatype><dataRef key="teidata.enumerated"/></datatype><valList type="semi"><valItem ident="top"/><valItem ident="bottom"/><valItem ident="margin"/><valItem ident="opposite"/><valItem ident="overleaf"/><valItem ident="above"/><valItem ident="right"/><valItem ident="below"/><valItem ident="left"/><valItem ident="end"/><valItem ident="inline"/><valItem ident="inspace"/></valList></attDef></attList>
+                </elementSpec>
+                <elementSpec ident="pb" mode="change">
+                    <classes mode="change">
+                        <memberOf key="att.spanning" mode="delete"/>
+                    </classes>
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="change" usage="req"/>
+                        <attDef ident="xml:id" mode="change" usage="req"/>
+                        <attDef ident="corresp" mode="change" usage="req"/>
+                        <attDef ident="resp" mode="change" usage="req"/>
+                        <attDef ident="source" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="quote" mode="change">
+                    <classes mode="change">
+                        <memberOf key="att.notated" mode="delete"/>
+                    </classes>
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="cert" mode="delete"/>
+                        <attDef ident="resp" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="said" mode="change">
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                    </attList>
+                </elementSpec>
+                <elementSpec ident="sic" mode="change">
+                    <attList>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="corresp" mode="delete"/>
+                        <attDef ident="synch" mode="delete"/>
+                        <attDef ident="sameAs" mode="delete"/>
+                        <attDef ident="copyOf" mode="delete"/>
+                        <attDef ident="next" mode="delete"/>
+                        <attDef ident="prev" mode="delete"/>
+                        <attDef ident="exclude" mode="delete"/>
+                        <attDef ident="select" mode="delete"/>
+                        <attDef ident="resp" mode="change">
+                            <valList mode="change"/>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+            <elementSpec ident="author" mode="change"><content><macroRef key="macro.paraContent"/></content></elementSpec><elementSpec ident="lb" mode="change"><attList><attDef ident="ed" mode="delete"/><attDef ident="edRef" mode="delete"/><attDef ident="ana" mode="delete"/><attDef ident="change" mode="delete"/><attDef ident="facs" mode="delete"/><attDef ident="rend" mode="delete"/><attDef ident="style" mode="delete"/><attDef ident="rendition" mode="delete"/><attDef ident="source" mode="delete"/><attDef ident="spanTo" mode="delete"/></attList></elementSpec></schemaSpec>
+        </body>
+    </text>
+</TEI>
