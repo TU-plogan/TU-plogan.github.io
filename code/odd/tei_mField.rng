@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2023-02-20T16:52:31Z. .
+Schema generated from ODD source 2023-02-22T20:09:46Z. .
 TEI Edition: Version 4.5.0. Last updated on
         25th October 2022, revision 3e98e619e
 TEI Edition Location: https://www.tei-c.org/Vault/P5/Version 4.5.0/
@@ -9965,6 +9965,8 @@ You must supply at least two values for @target on <name/>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A generic section of a larger work, including blank pages. </a:documentation>
                <value>subsection</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A generic subdivision of a section.</a:documentation>
+               <value>temp</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A placeholder div to be removed later.</a:documentation>
             </choice>
          </attribute>
          <empty/>

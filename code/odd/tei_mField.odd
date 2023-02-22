@@ -160,7 +160,7 @@
                                     <desc versionDate="2023-01-25" xml:lang="en">A generic
                                         subdivision of a section.</desc>
                                 </valItem>
-                            </valList>
+                            <valItem mode="add" ident="temp"><desc versionDate="2023-02-22" xml:lang="en">A placeholder div to be removed later.</desc></valItem></valList>
                         </attDef>
                     </attList>
                 </elementSpec>
