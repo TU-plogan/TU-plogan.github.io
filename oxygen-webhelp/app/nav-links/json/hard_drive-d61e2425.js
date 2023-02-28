@@ -1,1 +1,0 @@
-define({"topics" : [{"title":"<span class=\"ph filepath\">archive</span> Repository","shortdesc":"<p class=\"shortdesc\">Long-term storage of image files</p>","href":"source\/c_archive_repo.html","attributes": {"data-id":"c.archive_folder",},"menu": {"hasChildren":false,},"tocID":"c.archive_folder-d61e2461","topics":[]}]});
