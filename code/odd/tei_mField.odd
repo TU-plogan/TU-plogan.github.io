@@ -12,27 +12,32 @@
                     <licence target="http://creativecommons.org/licenses/by-sa/3.0/"> Distributed
                         under a Creative Commons Attribution-ShareAlike 3.0 Unported
                         License</licence>
-                    <licence target="http://www.opensource.org/licenses/BSD-2-Clause"> <p>Copyright
-                        2013 TEI Consortium.</p> <p>All rights reserved.</p> <p>Redistribution and
-                        use in source and binary forms, with or without modification, are permitted
-                        provided that the following conditions are met:</p> <list>
-                        <item>Redistributions of source code must retain the above copyright notice,
-                            this list of conditions and the following disclaimer.</item>
-                        <item>Redistributions in binary form must reproduce the above copyright
-                            notice, this list of conditions and the following disclaimer in the
-                            documentation and/or other materials provided with the
-                            distribution.</item>
-                        </list> <p>This software is provided by the copyright holders and
-                        contributors "as is" and any express or implied warranties, including, but
-                        not limited to, the implied warranties of merchantability and fitness for a
-                        particular purpose are disclaimed. In no event shall the copyright holder or
-                        contributors be liable for any direct, indirect, incidental, special,
-                        exemplary, or consequential damages (including, but not limited to,
-                        procurement of substitute goods or services; loss of use, data, or profits;
-                        or business interruption) however caused and on any theory of liability,
-                        whether in contract, strict liability, or tort (including negligence or
-                        otherwise) arising in any way out of the use of this software, even if
-                        advised of the possibility of such damage.</p> </licence>
+                    <licence target="http://www.opensource.org/licenses/BSD-2-Clause">
+                        <p>Copyright 2013 TEI Consortium.</p>
+                        <p>All rights reserved.</p>
+                        <p>Redistribution and use in source and binary forms, with or without
+                            modification, are permitted provided that the following conditions are
+                            met:</p>
+                        <list>
+                            <item>Redistributions of source code must retain the above copyright
+                                notice, this list of conditions and the following disclaimer.</item>
+                            <item>Redistributions in binary form must reproduce the above copyright
+                                notice, this list of conditions and the following disclaimer in the
+                                documentation and/or other materials provided with the
+                                distribution.</item>
+                        </list>
+                        <p>This software is provided by the copyright holders and contributors "as
+                            is" and any express or implied warranties, including, but not limited
+                            to, the implied warranties of merchantability and fitness for a
+                            particular purpose are disclaimed. In no event shall the copyright
+                            holder or contributors be liable for any direct, indirect, incidental,
+                            special, exemplary, or consequential damages (including, but not limited
+                            to, procurement of substitute goods or services; loss of use, data, or
+                            profits; or business interruption) however caused and on any theory of
+                            liability, whether in contract, strict liability, or tort (including
+                            negligence or otherwise) arising in any way out of the use of this
+                            software, even if advised of the possibility of such damage.</p>
+                    </licence>
                     <p>TEI material can be licensed differently depending on the use you intend to
                         make of it. Hence it is made available under both the CC+BY and BSD-2
                         licences. The CC+BY licence is generally appropriate for usages which treat
@@ -44,7 +49,7 @@
             <sourceDesc>
                 <p>Written from scratch.</p>
             </sourceDesc>
-        </fileDesc>
+        </fileDesc><encodingDesc><appInfo><application ident="RomaJS" version="1.0.0" when="2024-01-28T22:23:21.226Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -56,12 +61,12 @@
                 <moduleRef key="linking"/>
                 <moduleRef key="core"/>
                 <moduleRef key="tei"/>
-                <moduleRef except="div1 div2 div3 div4 div5 div6 div7" key="textstructure"/>
+                <moduleRef except="div1 div2 div3 div4 div5 div6 div7 imprimatur" key="textstructure"/>
                 <moduleRef key="namesdates"/>
                 <moduleRef key="transcr"/>
                 <moduleRef except="notatedMusic" key="figures"/>
                 <moduleRef key="msdescription"/>
-                <moduleRef include="actor castItem castList performance role roleDesc set tech view" key="drama"/>
+                <moduleRef include="actor castItem castList performance role roleDesc set tech view castGroup epilogue move prologue" key="drama"/>
                 <moduleRef include="particDesc" key="corpus"/>
                 <elementSpec ident="choice" mode="change">
                     <attList>
@@ -112,7 +117,9 @@
                 <elementSpec ident="div" mode="change">
                     <classes mode="change">
                         <memberOf key="att.divLike" mode="delete"/>
-                    <memberOf key="att.fragmentable"/><memberOf key="att.divLike" mode="delete"/></classes>
+                        <memberOf key="att.fragmentable"/>
+                        <memberOf key="att.divLike" mode="delete"/>
+                    </classes>
                     <attList>
                         <attDef ident="ana" mode="delete"/>
                         <attDef ident="change" mode="delete"/>
@@ -160,7 +167,11 @@
                                     <desc versionDate="2023-01-25" xml:lang="en">A generic
                                         subdivision of a section.</desc>
                                 </valItem>
-                            <valItem mode="add" ident="temp"><desc versionDate="2023-02-22" xml:lang="en">A placeholder div to be removed later.</desc></valItem></valList>
+                                <valItem ident="temp" mode="add">
+                                    <desc versionDate="2023-02-22" xml:lang="en">A placeholder div
+                                        to be removed later.</desc>
+                                </valItem>
+                            </valList>
                         </attDef>
                     </attList>
                 </elementSpec>
@@ -264,7 +275,31 @@
                         <attDef ident="style" mode="delete"/>
                         <attDef ident="rendition" mode="delete"/>
                         <attDef ident="source" mode="delete"/>
-                    <attDef ident="facs" mode="delete"/><attDef ident="targetLang" mode="delete"/><attDef ident="target" mode="delete"/><attDef ident="evaluate" mode="delete"/><attDef ident="anchored" mode="change" usage="req"/><attDef ident="place" usage="req"><datatype><dataRef key="teidata.enumerated"/></datatype><valList type="semi"><valItem ident="top"/><valItem ident="bottom"/><valItem ident="margin"/><valItem ident="opposite"/><valItem ident="overleaf"/><valItem ident="above"/><valItem ident="right"/><valItem ident="below"/><valItem ident="left"/><valItem ident="end"/><valItem ident="inline"/><valItem ident="inspace"/></valList></attDef></attList>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="targetLang" mode="delete"/>
+                        <attDef ident="target" mode="delete"/>
+                        <attDef ident="evaluate" mode="delete"/>
+                        <attDef ident="anchored" mode="change" usage="req"/>
+                        <attDef ident="place" usage="req">
+                            <datatype>
+                                <dataRef key="teidata.enumerated"/>
+                            </datatype>
+                            <valList type="semi">
+                                <valItem ident="top"/>
+                                <valItem ident="bottom"/>
+                                <valItem ident="margin"/>
+                                <valItem ident="opposite"/>
+                                <valItem ident="overleaf"/>
+                                <valItem ident="above"/>
+                                <valItem ident="right"/>
+                                <valItem ident="below"/>
+                                <valItem ident="left"/>
+                                <valItem ident="end"/>
+                                <valItem ident="inline"/>
+                                <valItem ident="inspace"/>
+                            </valList>
+                        </attDef>
+                    </attList>
                 </elementSpec>
                 <elementSpec ident="pb" mode="change">
                     <classes mode="change">
@@ -318,7 +353,26 @@
                         </attDef>
                     </attList>
                 </elementSpec>
-            <elementSpec ident="author" mode="change"><content><macroRef key="macro.paraContent"/></content></elementSpec><elementSpec ident="lb" mode="change"><attList><attDef ident="ed" mode="delete"/><attDef ident="edRef" mode="delete"/><attDef ident="ana" mode="delete"/><attDef ident="change" mode="delete"/><attDef ident="facs" mode="delete"/><attDef ident="rend" mode="delete"/><attDef ident="style" mode="delete"/><attDef ident="rendition" mode="delete"/><attDef ident="source" mode="delete"/><attDef ident="spanTo" mode="delete"/></attList></elementSpec></schemaSpec>
+                <elementSpec ident="author" mode="change">
+                    <content>
+                        <macroRef key="macro.paraContent"/>
+                    </content>
+                </elementSpec>
+                <elementSpec ident="lb" mode="change">
+                    <attList>
+                        <attDef ident="ed" mode="delete"/>
+                        <attDef ident="edRef" mode="delete"/>
+                        <attDef ident="ana" mode="delete"/>
+                        <attDef ident="change" mode="delete"/>
+                        <attDef ident="facs" mode="delete"/>
+                        <attDef ident="rend" mode="delete"/>
+                        <attDef ident="style" mode="delete"/>
+                        <attDef ident="rendition" mode="delete"/>
+                        <attDef ident="source" mode="delete"/>
+                        <attDef ident="spanTo" mode="delete"/>
+                    </attList>
+                </elementSpec>
+            <classSpec ident="att.global.rendition" type="atts" mode="change"><attList><attDef ident="rend" mode="change"><valList type="closed" mode="change"><valItem mode="add" ident="doubleunderline"><desc versionDate="2024-01-28" xml:lang="en">Add two lines below the text</desc></valItem><valItem mode="add" ident="strikethrough"><desc versionDate="2024-01-28" xml:lang="en">Add a line through the text</desc></valItem><valItem mode="add" ident="subscript"><desc versionDate="2024-01-28" xml:lang="en">Create small characters at the base of the line</desc></valItem><valItem mode="add" ident="superscript"><desc versionDate="2024-01-28" xml:lang="en">Creates small characters at the top of the line</desc></valItem><valItem mode="add" ident="underline"><desc versionDate="2024-01-28" xml:lang="en">Adds a line below the text</desc></valItem><valItem mode="add" ident="space-above"><desc versionDate="2024-01-28" xml:lang="en">Inserts space before the paragraph</desc></valItem></valList></attDef></attList></classSpec></schemaSpec>
         </body>
     </text>
 </TEI>
