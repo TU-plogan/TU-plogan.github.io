@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-01-28T22:38:03Z. . 
+Schema generated from ODD source 2024-01-28T22:44:48Z. . 
 TEI Edition: P5 Version 4.7.0. Last updated on 16th November 2023, revision e5dd73ed0 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0/ 
   
@@ -847,6 +847,8 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">5-em left indent</a:documentation>
                      <value>indent6</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">6-em left indent</a:documentation>
+                     <value>inline</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Output as inline rather than block</a:documentation>
                   </choice>
                </oneOrMore>
             </list>
@@ -5015,6 +5017,8 @@ Suggested values include: 1] page; 2] column; 3] line; 4] book; 5] poem; 6] cant
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">5-em left indent</a:documentation>
                         <value>indent6</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">6-em left indent</a:documentation>
+                        <value>inline</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <value>italic</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                         <value>underline</value>
@@ -6064,6 +6068,8 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                      <value>indent6</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                     <value>inline</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">items rendered within continuous prose, with no linebreak</a:documentation>
                      <value>bulleted</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">items preceded by bullets or similar markings</a:documentation>
                      <value>inline</value>
