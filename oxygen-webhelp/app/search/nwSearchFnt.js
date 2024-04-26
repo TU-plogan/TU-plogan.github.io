@@ -1059,10 +1059,10 @@ function nwSearchFnt(index, options, stemmer, util) {
             indexerLanguage = indexerLanguage.toLowerCase();
             //WH-3248 More flexible match for languages
             const langs = ['zh', 'ko'];
-            for (var index in langs) {
-                if(indexerLanguage === langs[index] 
-                    || (indexerLanguage.lastIndexOf(langs[index] + "-") === 0)
-                    || (indexerLanguage.lastIndexOf(langs[index] + "_") === 0)){
+            for (var langIndex in langs) {
+                if(indexerLanguage === langs[langIndex] 
+                    || (indexerLanguage.lastIndexOf(langs[langIndex] + "-") === 0)
+                    || (indexerLanguage.lastIndexOf(langs[langIndex] + "_") === 0)){
                     useCJKTokenizing = true;
                     break;
                 }

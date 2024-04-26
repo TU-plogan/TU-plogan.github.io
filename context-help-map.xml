@@ -23,6 +23,7 @@
    <appContext helpID="g.digital_edition" path="glossary/g_digital_edition.html"/>
    <appContext helpID="g_docx" path="glossary/g_docx.html"/>
    <appContext helpID="untitled3" path="glossary/g_eb.html"/>
+   <appContext helpID="eb11" path="glossary/g_eb11.html"/>
    <appContext helpID="g.entry_file" path="glossary/g_entry_file.html"/>
    <appContext helpID="g.entry-inventory" path="glossary/g_e_inventory.html"/>
    <appContext helpID="g_entry_section" path="glossary/g_entry_section.html"/>
@@ -83,7 +84,7 @@
    <appContext helpID="github_repositories" path="source/r_github_repositories.html"/>
    <appContext helpID="c_kp_corpus2_repository"
                path="source/c_outputs_repository.html"/>
-   <appContext helpID="autoindex_folder" path="source/autoindex_folder.html"/>
+   <appContext helpID="autoindex_folder" path="source/c_autoindex_folder.html"/>
    <appContext helpID="c.code_folder" path="source/c_code_folder.html"/>
    <appContext helpID="c.python-fdr" path="source/c_python_folder.html"/>
    <appContext helpID="c.digital-ed-fdr" path="source/c_digital_edition_folder.html"/>
