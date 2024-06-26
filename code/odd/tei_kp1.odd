@@ -37,14 +37,23 @@
                         licences. The CC+BY licence is generally appropriate for usages which treat
                         TEI content as data or documentation. The BSD-2 licence is generally
                         appropriate for usage of TEI content in a software environment. For further
-                        information or clarification, please contact the <ref target="mailto:info@tei-c.org">TEI Consortium</ref>. </p>
+                        information or clarification, please contact the <ref
+                        target="mailto:info@tei-c.org">TEI Consortium</ref>. </p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
                 <p>Created from scratch by James Cummings, but looking at previous tei_minimal and
                     tei_bare exemplars by SPQR and LR.</p>
             </sourceDesc>
-        </fileDesc><encodingDesc><appInfo><application ident="RomaJS" version="1.0.0" when="2024-03-25T21:00:56.230Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="RomaJS" version="1.0.0" when="2024-03-25T21:00:56.230Z">
+                    <desc>File edited with <ref target="https://github.com/TEIC/romajs"
+                        >RomaJS</ref></desc>
+                </application>
+            </appInfo>
+        </encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -72,16 +81,37 @@
                 <moduleRef key="figures"/>
                 <moduleRef key="header"/>
                 <!-- required core elements (p and title for use in titleStmt) -->
-                <moduleRef include="p title abbr analytic author bibl biblScope biblStruct choice                     corr date emph editor desc expan foreign gap graphic head headItem headLabel hi                     item l label lg list listBibl milestone monogr note name orig pb ptr publisher                     pubPlace q quote ref reg said series sic sp speaker stage teiCorpus unclear                     email measure address addrLine cit citedRange ellipsis gloss imprint measureGrp                     noteGrp num relatedItem resp respStmt street term time unit" key="core"/>
+                <moduleRef include="p title abbr analytic author bibl biblScope biblStruct choice
+                    corr date emph editor desc expan foreign gap graphic head headItem headLabel hi
+                    item l label lg list listBibl milestone monogr note name orig pb ptr publisher
+                    pubPlace q quote ref reg said series sic sp speaker stage teiCorpus unclear
+                    email measure address addrLine cit citedRange ellipsis gloss imprint measureGrp
+                    noteGrp num relatedItem resp respStmt street term time unit" key="core"/>
                 <!-- required textstructure elements (TEI, text, and body) -->
-                <moduleRef include="TEI text body byline div group back closer dateline front                     opener argument docAuthor docDate docEdition docImprint docTitle epigraph                     floatingText imprimatur postscript salute signed titlePage titlePart trailer" key="textstructure"/>
+                <moduleRef include="TEI text body byline div group back closer dateline front
+                    opener argument docAuthor docDate docEdition docImprint docTitle epigraph
+                    floatingText imprimatur postscript salute signed titlePage titlePart trailer"
+                    key="textstructure"/>
                 <!-- required module tei instantiates lots of classes used for further expansion of this odd -->
                 <moduleRef key="tei"/>
-                <moduleRef include="ab when link alt altGrp anchor annotation join joinGrp linkGrp                     listAnnotation seg standOff timeline" key="linking"/>
-                <moduleRef include="org orgName persName person place addName affiliation age birth                     bloc climate country death district education event faith floruit forename                     gender genName geo geogFeat geogName langKnowledge langKnown listEvent listNym                     listObject listOrg listPerson listPlace listRelation location nameLink                     nationality nym object objectIdentifier objectName occupation offset persona                     personGrp persPronouns placeName population region relation residence roleName                     settlement sex socecStatus state surname terrain trait" key="namesdates"/>
+                <moduleRef include="ab when link alt altGrp anchor annotation join joinGrp linkGrp
+                    listAnnotation seg standOff timeline" key="linking"/>
+                <moduleRef include="org orgName persName person place addName affiliation age birth
+                    bloc climate country death district education event faith floruit forename
+                    gender genName geo geogFeat geogName langKnowledge langKnown listEvent listNym
+                    listObject listOrg listPerson listPlace listRelation location nameLink
+                    nationality nym object objectIdentifier objectName occupation offset persona
+                    personGrp persPronouns placeName population region relation residence roleName
+                    settlement sex socecStatus state surname terrain trait" key="namesdates"/>
                 <moduleRef include="facsimile supplied" key="transcr"/>
                 <moduleRef include="xr" key="dictionaries"/>
-                <moduleRef include="gi tag code alternate altIdent anyElement att attDef attList                     attRef classes classRef classSpec constraint constraintSpec content dataFacet                     dataRef dataSpec datatype defaultVal eg egXML elementRef elementSpec empty equiv                     exemplum ident listRef macroRef macroSpec memberOf model modelGrp modelSequence                     moduleRef moduleSpec outputRendition param paramList paramSpec remarks                     schemaSpec sequence specDesc specGrp specGrpRef specList textNode val valDesc                     valItem valList" key="tagdocs"/>
+                <moduleRef include="gi tag code alternate altIdent anyElement att attDef attList
+                    attRef classes classRef classSpec constraint constraintSpec content dataFacet
+                    dataRef dataSpec datatype defaultVal eg egXML elementRef elementSpec empty equiv
+                    exemplum ident listRef macroRef macroSpec memberOf model modelGrp modelSequence
+                    moduleRef moduleSpec outputRendition param paramList paramSpec remarks
+                    schemaSpec sequence specDesc specGrp specGrpRef specList textNode val valDesc
+                    valItem valList" key="tagdocs"/>
                 <elementSpec ident="title" mode="change">
                     <classes mode="change">
                         <memberOf key="att.canonical" mode="delete"/>
@@ -498,7 +528,49 @@
                         <attDef ident="part" mode="delete"/>
                     </attList>
                 </elementSpec>
-            <elementSpec ident="list" mode="change"><attList><attDef ident="type" mode="change"><valList type="closed" mode="change"><valItem mode="add" ident="basic"><desc versionDate="2024-03-25" xml:lang="en">a simple list of unordered items without description.</desc></valItem><valItem mode="add" ident="errata"><desc versionDate="2024-03-25" xml:lang="en">each item contains the error and correction, with a page number. Use <gi>label</gi> for the error and page number, followed by the correction as <gi>item</gi>. </desc></valItem></valList></attDef><attDef ident="rend" mode="change"><valList mode="change" type="closed"><valItem mode="add" ident="bulleted"><desc versionDate="2024-03-25" xml:lang="en">items preceded by bullets or symbols</desc></valItem><valItem mode="add" ident="inline"><desc versionDate="2024-03-25" xml:lang="en">items rendered within continuous prose, with no linebreaks</desc></valItem><valItem mode="add" ident="numbered"><desc versionDate="2024-03-25" xml:lang="en">items preceded by numbers or letters</desc></valItem><valItem mode="add" ident="simple"><desc versionDate="2024-03-25" xml:lang="en">items rendered as blocks, but with no bullet or number</desc></valItem></valList></attDef></attList></elementSpec></schemaSpec>
+                <elementSpec ident="list" mode="change">
+                    <attList>
+                        <attDef ident="type" mode="change">
+                            <valList mode="change" type="closed">
+                                <valItem ident="basic" mode="add">
+                                    <desc versionDate="2024-03-25" xml:lang="en">a simple list of
+                                        unordered items without description.</desc>
+                                </valItem>
+                                <valItem ident="errata" mode="add">
+                                    <desc versionDate="2024-03-25" xml:lang="en">each item contains
+                                        the error and correction, with a page number. Use
+                                        <gi>label</gi> for the error and page number, followed by
+                                        the correction as <gi>item</gi>. </desc>
+                                </valItem>
+                                <valItem ident="chronology" mode="add">
+                                    <desc versionDate="2024-06-10" xml:lang="en">Use <gi>label</gi>
+                                        for the date, followed by the event as <gi>item</gi>.</desc>
+                                </valItem>
+                            </valList>
+                        </attDef>
+                        <attDef ident="rend" mode="change">
+                            <valList mode="change" type="closed">
+                                <valItem ident="bulleted" mode="add">
+                                    <desc versionDate="2024-03-25" xml:lang="en">items preceded by
+                                        bullets or symbols</desc>
+                                </valItem>
+                                <valItem ident="inline" mode="add">
+                                    <desc versionDate="2024-03-25" xml:lang="en">items rendered
+                                        within continuous prose, with no linebreaks</desc>
+                                </valItem>
+                                <valItem ident="numbered" mode="add">
+                                    <desc versionDate="2024-03-25" xml:lang="en">items preceded by
+                                        numbers or letters</desc>
+                                </valItem>
+                                <valItem ident="simple" mode="add">
+                                    <desc versionDate="2024-03-25" xml:lang="en">items rendered as
+                                        blocks, but with no bullet or number</desc>
+                                </valItem>
+                            </valList>
+                        </attDef>
+                    </attList>
+                </elementSpec>
+            </schemaSpec>
         </body>
     </text>
 </TEI>
