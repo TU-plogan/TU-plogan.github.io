@@ -5,9 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2024041900"/>
     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2024041900"/>
 
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20240509172814"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20240626212629"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2024041900"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20240509172814"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20240626212629"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2024041900"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2024041900"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/cobalt.css?buildId=2024041900"/><link rel="stylesheet" type="text/css" href="../kp-public.css"/></head>
@@ -114,175 +114,178 @@
     
     <div class="- topic/body reference/refbody body refbody"><p class="- topic/shortdesc shortdesc">Formatting lists in TEI</p>
         <section class="- topic/section section"><div class="- topic/p p"> A <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code> is an organized series of items. They may be
-                unmarked, numbered, or alphabetized. For accuracy in the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="- topic/term term">OCR</dfn></a>
-                process, we disable the option in <a href="../glossary/g_afr.html" title="A proprietary software program that scans image files and outputs text using OCR technology."><dfn class="- topic/term term">ABBYY FineReader</dfn></a> to output lists. However,
-                occasionally it will be appropriate to encode output as a list in the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="- topic/term term">TEI</dfn></a>. In that case, use the following guidelines. <div class="- topic/note note note note_note"><span class="note__title">Note:</span> We do not use <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code> for numbered paragraphs of
-                    text—which were once in common stylistic use—unless the paragraphs group or
-                    sequence discrete items. </div></div>
-            <div class="table-container"><table class="- topic/table table" data-cols="3"><caption></caption><colgroup><col/><col/><col/></colgroup><thead class="- topic/thead thead">
-                        <tr class="- topic/row">
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__1">element</th>
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__2">attribute</th>
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__3">usage</th>
-                        </tr>
-                    </thead><tbody class="- topic/tbody tbody">
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">contains any sequence of items organized as a list.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3"></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3"></td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;head&gt;</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">(heading) contains the heading of a list.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type="list"</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">marks a syllogism, tabular, or glossary list in which each item
-                                is associated with a word or phrase rather than a numeric or
-                                alphabetic enumerator. Must have <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type="list"</code>. NB:
-                                if one item in a list is preceded by a label, all must be. </td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">contains one component of a list.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@n</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">supplies an enumerator for the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> when
-                                automatic processing is inadequate, similarly to
-                                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code>.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;headLabel&gt;</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">the heading for the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> column of a
-                                tabular list.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;headItem&gt;</code></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">the heading for the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> column of a
-                                tabular list.</td>
-                        </tr>
-                    </tbody></table></div>
-        </section>
-        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Tabular list</h2>
+            unmarked, numbered, or alphabetized. For accuracy in the <a href="../glossary/g_ocr.html" title="Optical Character Recognition, a method of identifying letter forms in images and recovering their textual data as text."><dfn class="- topic/term term">OCR</dfn></a> process,
+            we disable the option in <a href="../glossary/g_afr.html" title="A proprietary software program that scans image files and outputs text using OCR technology."><dfn class="- topic/term term">ABBYY FineReader</dfn></a> to output lists. However, occasionally
+            it will be appropriate to encode output as a list in the <a href="../glossary/g_tei.html" title="The Text Encoding Initiative standards for encoding textual data in eXtensible Markup Language format."><dfn class="- topic/term term">TEI</dfn></a>. In that
+            case, use the following guidelines. <div class="- topic/note note note note_note"><span class="note__title">Note:</span> We do not use
+            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code> for numbered paragraphs of text—which were once in common
+            stylistic use—unless the paragraphs group or sequence discrete items. </div></div> <div class="table-container"><table class="- topic/table table" data-cols="3"><caption></caption><colgroup><col/><col/><col/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__1">element</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__2">attribute</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__3">usage</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">contains any sequence of items organized as a list.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">required</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">required</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;head&gt;</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">(heading) contains the heading of a list.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type="list"</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">marks a syllogism, tabular, or glossary list in which each item is
+                            associated with a word or phrase rather than a numeric or alphabetic
+                            enumerator. Must have <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type="list"</code>. NB: if one item in a
+                            list is preceded by a label, all must be. </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">contains one component of a list.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@n</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">supplies an enumerator for the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> when
+                            automatic processing is inadequate, similarly to
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code>.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;headLabel&gt;</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">the heading for the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> column of a
+                            tabular list.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__1"><code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;headItem&gt;</code></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__2"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__3">the heading for the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> column of a tabular
+                            list.</td>
+                    </tr>
+                </tbody></table></div> <p class="- topic/p p">The most common list is a series of related items. Use
+            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code> to identify the list. Use <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>
+            for the individual items in the list.</p> <p class="- topic/p p">Certain frequent uses of lists, like for an
+            index or a list of errata, have designated <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> values, which are given
+            below in &lt;list <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code>&gt;.</p> <p class="- topic/p p">Lists may also have specific display
+            properties in the original, such as bullets or numbers. Use the <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code>
+            values to record those, shown in &lt;list <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code>&gt;. </p> <div class="- topic/note note note note_note"><span class="note__title">Note:</span> Both
+            <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> and <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code> are <em class="+ topic/ph hi-d/i ph i">required</em> attributes of
+            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code>. </div> <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Sample list:</strong></p>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list rend="bulleted" type="index"&gt;</code>
+        <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>First list member<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;\item&gt;</code>
+        <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>Second list member<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;\item&gt;</code>
+        <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>Third list member<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;\item&gt;</code>
+    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;/list&gt;</code></code></pre> </section>
+        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Tabular lists</h2>  <p class="- topic/p p">Lists like a glossary or chronology use
+            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> in addition to <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> for each
+            list item. Thus they resemble a table with two columns. They can present an advantage
+            over tables in indicating the relationship between the enumerator and list item. In the
+            example below, the original text is a syllogism, and the TEI markup follows.</p> <figure class="- topic/fig fig fignone"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">Original text</span></figcaption>
             
-            <p class="- topic/p p">Lists like a glossary or syllogism use <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> for each
-                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>. Thus they resemble a simple table with two
-                columns. They can present an advantage over tables in indicating the relationship
-                between the enumerator and list item. In the example below, the original text
-                demonstrates a syllogism, and the TEI markup follows.</p>
-            <figure class="- topic/fig fig fignone"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">Original text</span></figcaption>
-                
-                <br/><div class="imageleft"><img class="- topic/image image imageleft" src="image/oxygen/syllogism-orig.png"/></div><br/>
-            </figure>
-            <figure class="- topic/fig fig fignone"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 2</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">TEI encoding (missing the required <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> attribute for
-                        <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code>)</span></figcaption>
-                
-                <br/><div class="imageleft"><img class="- topic/image image imageleft" src="image/oxygen/syllogism-coding.png"/></div><br/>
-            </figure>
-        </section>
-        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">&lt;list <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code>&gt;</h2>
-            
-            <p class="- topic/p p">Use <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code> with <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> to describe the semantic
-                function of the list. </p>
-            <div class="table-container"><table class="- topic/table table" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><thead class="- topic/thead thead">
-                        <tr class="- topic/row">
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__31"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> value</th>
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__32">description</th>
-                        </tr>
-                    </thead><tbody class="- topic/tbody tbody">
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">basic</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">a vertical list of unordered items without description.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">chronology</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> describes an historical
-                                event, with a year or other date that is given by a
-                                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> element preceding the list
-                                    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">errata</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each item contains the error and correction, with a page number.
-                                Use <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> for the error and page number,
-                                followed by the correction as <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">gloss</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> glosses some term or
-                                concept, which is given by a <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> element
-                                preceding the list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">index</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is an entry in an index
-                                such as the alphabetical topical index at the back of a print
-                                volume.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">instructions</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is a step in a sequence
-                                of instructions, as in a recipe.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">litany</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is one of a sequence of
-                                petitions, supplications or invocations, typically in a religious
-                                ritual.</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">syllogism</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is part of an argument
-                                consisting of two or more propositions and a final conclusion
-                                derived from them.</td>
-                        </tr>
-                    </tbody></table></div>
-        </section>
-        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">&lt;list <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code>&gt;</h2>
-            
-            <p class="- topic/p p">Use <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;rend&gt;</code> to record the appearance of the list in the source text.</p>
-            <div class="table-container"><table class="- topic/table table" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><thead class="- topic/thead thead">
-                        <tr class="- topic/row">
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__49"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code> value</th>
-                            <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__50">description</th>
-                        </tr>
-                    </thead><tbody class="- topic/tbody tbody">
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__49">bulleted</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__50">items preceded by bullets or similar marking</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__49">inline</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__50">items rendered within continuous prose, with no
-                                linebreaks</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__49">numbered</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__50">items preceded by numbers or letters</td>
-                        </tr>
-                        <tr class="- topic/row">
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__49">simple</td>
-                            <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__50">items rendered as blocks, but with no bullet or number</td>
-                        </tr>
-                    </tbody></table></div>
-        </section>
+            <br/><div class="imageleft"><img class="- topic/image image imageleft" src="image/oxygen/syllogism-orig.png"/></div><br/>
+            </figure> <figure class="- topic/fig fig fignone">
+            <br/><div class="imageleft"><img class="- topic/image image imageleft" src="image/oxygen/syllogism.jpg"/></div><br/>
+            </figure> </section>
+        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">&lt;list <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code>&gt;</h2>  <p class="- topic/p p">Use
+            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code> with <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> to describe the semantic
+            function of the list. </p> <div class="table-container"><table class="- topic/table table" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__31"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> value</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__32">description</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">basic</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">a generic list of items.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">chronology</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> describes an historical
+                            event, with a year or other date that is given by a
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> element preceding the list
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">errata</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each item contains the error and correction, with a page number. Use
+                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> for the error and page number, followed
+                            by the correction as <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">gloss</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> glosses some term or concept,
+                            which is given by a <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> element preceding the
+                            list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">index</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is an entry in an index such
+                            as the alphabetical topical index at the back of a print volume.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">instructions</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is a step in a sequence of
+                            instructions, as in a recipe.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">litany</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is one of a sequence of
+                            petitions, supplications or invocations, typically in a religious
+                            ritual.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">syllogism</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is part of an argument
+                            consisting of two or more propositions and a final conclusion derived
+                            from them.</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">works</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> is one of a sequence of
+                            published works.</td>
+                    </tr>
+                </tbody></table></div> </section>
+        <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">&lt;list <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code>&gt;</h2>  <p class="- topic/p p">Use
+            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;rend&gt;</code> to record the appearance of the list in the source
+            text.</p> <div class="table-container"><table class="- topic/table table" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__51"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code> value</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__52">description</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__51">bulleted</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__52">items preceded by bullets or similar marking</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__51">inline</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__52">items rendered within continuous prose, with no linebreaks</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__51">numbered</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__52">items preceded by numbers or letters</td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__51">simple</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__52">items rendered as blocks, but with no bullet or number</td>
+                    </tr>
+                </tbody></table></div> </section>
     </div>
 </article></main></div>
                         
