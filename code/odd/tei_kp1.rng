@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-06-26T21:28:54Z. . 
+Schema generated from ODD source 2024-06-27T00:15:05Z. . 
 TEI Edition: P5 Version 4.7.0. Last updated on 16th November 2023, revision e5dd73ed0 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0/ 
   
@@ -139,7 +139,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d10e76700-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d10e76705-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -188,7 +188,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d10e78079-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d10e78084-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -5116,12 +5116,14 @@ attributes @target and @cRef may be supplied on <name/>.</report>
                <value>syllogism</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(syllogism) each list item is part of an argument consisting of two or more propositions and a final conclusion derived from them.</a:documentation>
                <value>basic</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a generic list of items</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">use for a generic list of items</a:documentation>
                <value>errata</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">each item contains the error and correction, with a page number. Use <code xmlns="http://www.w3.org/1999/xhtml">&lt;label&gt;</code> for the error and page number, followed by the correction as <code xmlns="http://www.w3.org/1999/xhtml">&lt;item&gt;</code>
                </a:documentation>
                <value>chronology</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">use <code xmlns="http://www.w3.org/1999/xhtml">&lt;label&gt;</code> for the date, followed by the event as <code xmlns="http://www.w3.org/1999/xhtml">&lt;item&gt;</code>.</a:documentation>
+               <value>works</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">use for a list of published works.</a:documentation>
             </choice>
          </attribute>
          <empty/>

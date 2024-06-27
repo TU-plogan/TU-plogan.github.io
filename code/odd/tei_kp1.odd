@@ -533,7 +533,7 @@
                         <attDef ident="type" mode="change" usage="req">
                             <valList mode="change" type="closed">
                                 <valItem ident="basic" mode="add">
-                                    <desc versionDate="2024-03-25" xml:lang="en">a generic list of items</desc>
+                                    <desc versionDate="2024-03-25" xml:lang="en">use for a generic list of items</desc>
                                 </valItem>
                                 <valItem ident="errata" mode="add">
                                     <desc versionDate="2024-03-25" xml:lang="en">each item contains
@@ -542,8 +542,12 @@
                                         the correction as <gi>item</gi> </desc>
                                 </valItem>
                                 <valItem ident="chronology" mode="add">
-                                    <desc versionDate="2024-06-10" xml:lang="en">use <gi>label</gi>
+                                    <desc versionDate="2024-06-26" xml:lang="en">use <gi>label</gi>
                                         for the date, followed by the event as <gi>item</gi>.</desc>
+                                </valItem>
+                                <valItem ident="works" mode="add">
+                                    <desc versionDate="2024-06-26" xml:lang="en">use for a list of
+                                        published works.</desc>
                                 </valItem>
                             </valList>
                         </attDef>
