@@ -191,6 +191,7 @@
    <appContext helpID="r_author_names" path="source/r_author_names.html"/>
    <appContext helpID="r_bidirectional_text" path="source/r_bidirectional_text.html"/>
    <appContext helpID="c_callouts" path="source/c_callouts.html"/>
+   <appContext helpID="r_choice" path="source/r_choice.html"/>
    <appContext helpID="citation" path="source/r_verse-drama.html"/>
    <appContext helpID="r_cross_references" path="source/r_cross_references.html"/>
    <appContext helpID="r_entry_terms" path="source/r_entry_terms.html"/>
