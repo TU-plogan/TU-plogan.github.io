@@ -37,8 +37,7 @@
                         licences. The CC+BY licence is generally appropriate for usages which treat
                         TEI content as data or documentation. The BSD-2 licence is generally
                         appropriate for usage of TEI content in a software environment. For further
-                        information or clarification, please contact the <ref
-                        target="mailto:info@tei-c.org">TEI Consortium</ref>. </p>
+                        information or clarification, please contact the <ref target="mailto:info@tei-c.org">TEI Consortium</ref>. </p>
                 </availability>
             </publicationStmt>
             <sourceDesc>
@@ -49,11 +48,10 @@
         <encodingDesc>
             <appInfo>
                 <application ident="RomaJS" version="1.0.0" when="2024-03-25T21:00:56.230Z">
-                    <desc>File edited with <ref target="https://github.com/TEIC/romajs"
-                        >RomaJS</ref></desc>
+                    <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
                 </application>
             </appInfo>
-        </encodingDesc>
+        <appInfo><application ident="RomaJS" version="1.1.2" when="2024-12-04T21:22:26.517Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -81,37 +79,16 @@
                 <moduleRef key="figures"/>
                 <moduleRef key="header"/>
                 <!-- required core elements (p and title for use in titleStmt) -->
-                <moduleRef include="p title abbr analytic author bibl biblScope biblStruct choice
-                    corr date emph editor desc expan foreign gap graphic head headItem headLabel hi
-                    item l label lg list listBibl milestone monogr note name orig pb ptr publisher
-                    pubPlace q quote ref reg said series sic sp speaker stage teiCorpus unclear
-                    email measure address addrLine cit citedRange ellipsis gloss imprint measureGrp
-                    noteGrp num relatedItem resp respStmt street term time unit" key="core"/>
+                <moduleRef include="p title abbr analytic author bibl biblScope biblStruct choice                     corr date emph editor desc expan foreign gap graphic head headItem headLabel hi                     item l label lg list listBibl milestone monogr note name orig pb ptr publisher                     pubPlace q quote ref reg said series sic sp speaker stage teiCorpus unclear                     email measure address addrLine cit citedRange ellipsis gloss imprint measureGrp                     noteGrp num relatedItem resp respStmt street term time unit" key="core"/>
                 <!-- required textstructure elements (TEI, text, and body) -->
-                <moduleRef include="TEI text body byline div group back closer dateline front
-                    opener argument docAuthor docDate docEdition docImprint docTitle epigraph
-                    floatingText imprimatur postscript salute signed titlePage titlePart trailer"
-                    key="textstructure"/>
+                <moduleRef include="TEI text body byline div group back closer dateline front                     opener argument docAuthor docDate docEdition docImprint docTitle epigraph                     floatingText imprimatur postscript salute signed titlePage titlePart trailer" key="textstructure"/>
                 <!-- required module tei instantiates lots of classes used for further expansion of this odd -->
                 <moduleRef key="tei"/>
-                <moduleRef include="ab when link alt altGrp anchor annotation join joinGrp linkGrp
-                    listAnnotation seg standOff timeline" key="linking"/>
-                <moduleRef include="org orgName persName person place addName affiliation age birth
-                    bloc climate country death district education event faith floruit forename
-                    gender genName geo geogFeat geogName langKnowledge langKnown listEvent listNym
-                    listObject listOrg listPerson listPlace listRelation location nameLink
-                    nationality nym object objectIdentifier objectName occupation offset persona
-                    personGrp persPronouns placeName population region relation residence roleName
-                    settlement sex socecStatus state surname terrain trait" key="namesdates"/>
+                <moduleRef include="ab when link alt altGrp anchor annotation join joinGrp linkGrp                     listAnnotation seg standOff timeline" key="linking"/>
+                <moduleRef include="org orgName persName person place addName affiliation age birth                     bloc climate country death district education event faith floruit forename                     gender genName geo geogFeat geogName langKnowledge langKnown listEvent listNym                     listObject listOrg listPerson listPlace listRelation location nameLink                     nationality nym object objectIdentifier objectName occupation offset persona                     personGrp persPronouns placeName population region relation residence roleName                     settlement sex socecStatus state surname terrain trait" key="namesdates"/>
                 <moduleRef include="facsimile supplied" key="transcr"/>
                 <moduleRef include="xr" key="dictionaries"/>
-                <moduleRef include="gi tag code alternate altIdent anyElement att attDef attList
-                    attRef classes classRef classSpec constraint constraintSpec content dataFacet
-                    dataRef dataSpec datatype defaultVal eg egXML elementRef elementSpec empty equiv
-                    exemplum ident listRef macroRef macroSpec memberOf model modelGrp modelSequence
-                    moduleRef moduleSpec outputRendition param paramList paramSpec remarks
-                    schemaSpec sequence specDesc specGrp specGrpRef specList textNode val valDesc
-                    valItem valList" key="tagdocs"/>
+                <moduleRef include="gi tag code alternate altIdent anyElement att attDef attList                     attRef classes classRef classSpec constraint constraintSpec content dataFacet                     dataRef dataSpec datatype defaultVal eg egXML elementRef elementSpec empty equiv                     exemplum ident listRef macroRef macroSpec memberOf model modelGrp modelSequence                     moduleRef moduleSpec outputRendition param paramList paramSpec remarks                     schemaSpec sequence specDesc specGrp specGrpRef specList textNode val valDesc                     valItem valList" key="tagdocs"/>
                 <elementSpec ident="title" mode="change">
                     <classes mode="change">
                         <memberOf key="att.canonical" mode="delete"/>
@@ -533,7 +510,8 @@
                         <attDef ident="type" mode="change" usage="req">
                             <valList mode="change" type="closed">
                                 <valItem ident="basic" mode="add">
-                                    <desc versionDate="2024-03-25" xml:lang="en">use for a generic list of items</desc>
+                                    <desc versionDate="2024-03-25" xml:lang="en">use for a generic
+                                        list of items</desc>
                                 </valItem>
                                 <valItem ident="errata" mode="add">
                                     <desc versionDate="2024-03-25" xml:lang="en">each item contains
@@ -573,7 +551,11 @@
                         </attDef>
                     </attList>
                 </elementSpec>
-            </schemaSpec>
+            <elementSpec ident="gap" mode="change"><attList><attDef ident="reason" mode="change" usage="rec"><valList type="open" mode="change"><valItem mode="add" ident="overbinding"><desc versionDate="2024-12-04" xml:lang="en">text is lost in the inside margin of the scanned imaged</desc></valItem><valItem mode="add" ident="omitted-in-original"><desc versionDate="2024-12-04" xml:lang="en">missing from the original scan</desc></valItem><valItem mode="add" ident="faded"><desc versionDate="2024-12-04" xml:lang="en">type is too light to be read confidently</desc></valItem><valItem mode="add" ident="eccentric_ductus"><desc versionDate="2024-12-04" xml:lang="en">illegibility due to an unusual, awkward, or incompetent execution of a glyph or glyphs</desc></valItem><valItem mode="add" ident="damage"><desc versionDate="2024-12-04" xml:lang="en">damage to the original from mold, staining, yellowing, etc.</desc></valItem><valItem mode="delete" ident="cancelled"/><valItem mode="delete" ident="deleted"/><valItem mode="delete" ident="editorial"/><valItem mode="delete" ident="inaudible"/><valItem mode="delete" ident="irrelevant"/><valItem mode="delete" ident="sampling"/></valList></attDef></attList></elementSpec><elementSpec ident="supplied" mode="change"><attList><attDef ident="reason" mode="change" usage="req"><valList mode="change"><valItem mode="add" ident="overbinding"><desc versionDate="2024-12-04" xml:lang="en">text is lost in the inside margin of the scanned imaged</desc></valItem><valItem mode="add" ident="omitted-in-original"><desc versionDate="2024-12-04" xml:lang="en">missing from the original scan</desc></valItem><valItem mode="add" ident="illegible"><desc versionDate="2024-12-04" xml:lang="en">other reasons for unreadability</desc></valItem><valItem mode="add" ident="faded"><desc versionDate="2024-12-04" xml:lang="en">type is too light to be read confidently</desc></valItem><valItem mode="add" ident="eccentric_ductus"><desc versionDate="2024-12-04" xml:lang="en">illegibility due to an unusual, awkward, or incompetent execution of a glyph or glyphs</desc></valItem><valItem mode="add" ident="damage"><desc versionDate="2024-12-04" xml:lang="en">damage to the original from mold, staining, yellowing, etc.</desc></valItem></valList></attDef><attDef ident="cert" mode="change" usage="rec"><valList mode="change" type="semi"><valItem mode="add" ident="unknown"><desc versionDate="2024-12-04" xml:lang="en">confidence level unknown</desc></valItem><valItem mode="add" ident="low"><desc versionDate="2024-12-04" xml:lang="en">a low degree of confidence</desc></valItem><valItem mode="add" ident="medium"><desc versionDate="2024-12-04" xml:lang="en">a moderate degree of confidence</desc></valItem><valItem mode="add" ident="high"><desc versionDate="2024-12-04" xml:lang="en">a high degree of confidence</desc></valItem></valList></attDef><attDef ident="evidence" mode="change" usage="rec"/><attDef ident="source" mode="change" usage="rec"><valList mode="change"><valItem mode="add" ident="#UM-HT"><desc versionDate="2024-12-04" xml:lang="en">U. of Michigan source in Hathi Trust</desc></valItem><valItem mode="add" ident="#NYPL-HT"><desc versionDate="2024-12-04" xml:lang="en">New York Public Library source in Hathi Trust</desc></valItem><valItem mode="add" ident="#GRI-HT"><desc versionDate="2024-12-04" xml:lang="en">Getty Research Institute source in Hathi Trust</desc></valItem><valItem mode="add" ident="#UCH-HT"><desc versionDate="2024-12-04" xml:lang="en">U. of Chicago source in Hathi Trust</desc></valItem><valItem mode="add" ident="#PSU-HT"><desc versionDate="2024-12-04" xml:lang="en">Pennsylvania State Univ. source in Hathi Trust</desc></valItem><valItem mode="add" ident="#UWI-HT"><desc versionDate="2024-12-04" xml:lang="en">U. of Wisconsin source in Hathi Trust</desc></valItem><valItem mode="add" ident="#CORU-HT"><desc versionDate="2024-12-04" xml:lang="en">Cornell U. source in Hathi Trust</desc></valItem><valItem mode="add" ident="#HU-HT"><desc versionDate="2024-12-04" xml:lang="en">Harvard U. source in Hathi Trust</desc></valItem><valItem mode="add" ident="#MSU-HT"><desc versionDate="2024-12-04" xml:lang="en">Michigan State U. source in Hathi Trust</desc></valItem><valItem mode="add" ident="#UC-HT"><desc versionDate="2024-12-04" xml:lang="en">U. of California source in Hathi Trust</desc></valItem><valItem mode="add" ident="#COLU-HT"><desc versionDate="2024-12-04" xml:lang="en">Columbia Univ. source in Hathi Trust</desc></valItem><valItem mode="add" ident="#UI-HT"><desc versionDate="2024-12-04" xml:lang="en">U. of Illinois source in Hathi Trust</desc></valItem><valItem mode="add" ident="#OSU-HT"><desc versionDate="2024-12-04" xml:lang="en">Ohio State U. source in Hathi Trust</desc></valItem><valItem mode="add" ident="#PU-HT"><desc versionDate="2024-12-04" xml:lang="en">Princeton U. source in Hathi Trust</desc></valItem><valItem mode="add" ident="#NLS"><desc versionDate="2024-12-04" xml:lang="en">National Library of Scotland</desc></valItem></valList></attDef></attList></elementSpec><elementSpec ident="unclear" mode="change"><attList><attDef ident="reason" mode="change" usage="rec"><valList mode="change"><valItem mode="change" ident="eccentric_ductus"><desc versionDate="2021-02-01" xml:lang="en">
+            indicates illegibility due to an unusual, awkward, or
+            incompetent execution of a glyph or glyphs
+            
+          </desc></valItem><valItem mode="add" ident="omitted-in-original"><desc versionDate="2024-12-04" xml:lang="en">missing from the original page scan</desc></valItem><valItem mode="add" ident="overbinding"><desc versionDate="2024-12-04" xml:lang="en">text is lost in the inside margin of the scanned imaged</desc></valItem><valItem mode="add" ident="damage"><desc versionDate="2024-12-04" xml:lang="en">damage to the original from mold, staining, yellowing, etc.</desc></valItem><valItem mode="delete" ident="inaudible"/><valItem mode="delete" ident="background_noise"/></valList></attDef><attDef ident="cert" mode="change" usage="rec"><valList mode="change" type="closed"><valItem mode="add" ident="high"><desc versionDate="2024-12-04" xml:lang="en">a high degree of confidence</desc></valItem><valItem mode="add" ident="medium"><desc versionDate="2024-12-04" xml:lang="en">a medium degree of confidence</desc></valItem><valItem mode="add" ident="low"><desc versionDate="2024-12-04" xml:lang="en">a low degree of confidence</desc></valItem><valItem mode="add" ident="unknown"><desc versionDate="2024-12-04" xml:lang="en">an unknown degree of confidence</desc></valItem></valList></attDef></attList></elementSpec></schemaSpec>
         </body>
     </text>
 </TEI>
