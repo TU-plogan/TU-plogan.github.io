@@ -1,0 +1,1 @@
+oxy_webhelp_navlinks = {"t.table-areas-d1380e11608":{"topics":[{"title":"Edit tables","shortdesc":"<p class=\"shortdesc\">Table columns and rows can be adjusted before recognition.<\/p>","href":"source\/t_edit_tables.html","attributes":{"data-id":"edit_tables"},"menu":{"hasChildren":false},"tocID":"edit_tables-d1380e11707","topics":[]}]}};

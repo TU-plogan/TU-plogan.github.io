@@ -1,0 +1,1 @@
+oxy_webhelp_navlinks = {"c.code_folder-d1380e7903":{"topics":[{"title":"<span class=\"ph filepath\">Python<\/span> Folder","shortdesc":"<p class=\"shortdesc\">Python script files.<\/p>","href":"source\/c_python_folder.html","attributes":{"data-id":"c.python-fdr"},"menu":{"hasChildren":false},"tocID":"c.python-fdr-d1380e8004","topics":[]}]}};
