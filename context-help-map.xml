@@ -206,5 +206,6 @@
    <appContext helpID="entry_subdivisions" path="source/c_subdivisions.html"/>
    <appContext helpID="tei_header" path="source/t_tei_header.html"/>
    <appContext helpID="type_attributes" path="source/r_type_attributes.html"/>
+   <appContext helpID="keywords" path="source/keywords.html"/>
    <appContext helpID="unicode_characters" path="source/r_unicode_characters.html"/>
 </map>
