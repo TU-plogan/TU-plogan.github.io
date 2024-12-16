@@ -198,7 +198,7 @@
    <appContext helpID="r_foreign_text" path="source/r_foreign_text.html"/>
    <appContext helpID="r_formulas" path="source/r_formulas.html"/>
    <appContext helpID="r_images" path="source/r_images.html"/>
-   <appContext helpID="keywords" path="source/keywords.html"/>
+   <appContext helpID="keywords" path="source/r_keywords.html"/>
    <appContext helpID="t_find_lists" path="source/r_lists.html"/>
    <appContext helpID="r_music" path="source/r_music.html"/>
    <appContext helpID="note" path="source/r_notes.html"/>
