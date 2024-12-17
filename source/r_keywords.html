@@ -5,9 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2024121223"/>
     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2024121223"/>
 
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20241216201058"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20241216205818"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2024121223"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20241216201058"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20241216205818"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2024121223"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2024121223"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/cobalt.css?buildId=2024121223"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/params/args.css/kp-public.css?buildId=2024121223"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/logan_customization/logan.css?buildId=2024121223"/></head>
@@ -139,7 +139,7 @@
             different list of terms. This is because we used three different controlled vocabularies
             to analyze the entry content. Each <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;keywords&gt;</code> represents the
             results from one of these vocabularies. </p> <p class="- topic/p p">The first two are from the <a href="../glossary/g_fast.html" title="Library of Congress Subject headings divided into subsections, or &#34;facets,&#34; and made available for automatic indexing servers by OCLC. FAST stands for Faceted Application of Subject Terminology."><dfn class="- topic/term term">OCLC's FAST</dfn></a> instantiation of the <a href="../glossary/g_lcsh.html" title="A comprehensive controlled vocabulary for indexing books created and maintained by the Library of Congress."><dfn class="- topic/term term">LCSH</dfn></a>. It contains the complete vocabulary of the LCSH divided into facets, or
-            subsections, of related terms. Each <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt; term&gt;</code> encloses an
+            subsections, of related terms. Each <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;term&gt;</code> encloses an
             <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@ref</code> showing which facet it references, the FAST Topical vocabulary, or
             FAST Geographical. Thus, the keyword "Poland" is from the latter. The
             <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@scheme</code> attribute of the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;keywords&gt;</code> element
@@ -149,21 +149,22 @@
             we selected it because of its historical value as the vocabulary closest in time to the
             historical encyclopedias themselves. Testing early in the project demonstrated better
             results because of its reliance on often archaic terms that were also present in the
-            data set. These results are often similar to those of FAST Topical, as you can see, but
-            because of the 100-year gap between the two vocabularies, they can have different
-            meanings. The keyword lists are similar but show slight variations that can help guide
-            interpretation. In the example, "Physicians" and "Physics" are the two most
-            highly-ranked keywords for FAST Topical; the 1910 LCSH add "Manners" to its top-ranked
-            list, a term missing from the more recent FAST keywords. At the same time, the older
-            vocabulary omits "French" and "Arts" from its list. </p> </section>
+            data set. These results are often similar to those of FAST Topical, as in the example,
+            but the can show variations that can help guide interpretation. In the example, the
+            keywords "Physicians" and "Physics" are the two most highly-ranked terms for both FAST
+            Topical and the 1910 LCSH, but the older vocabulary adds "Manners" to its top-ranked
+            list, a term absent in the newer FAST keywords. The older vocabulary also omits both
+            "French" and "Arts" from its list. Even when the two lists are the same, the 100-year
+            gap between the two vocabularies should be kept in mind, since even the same keyword can
+            have different meanings in each due to language change.</p> </section>
         <section class="- topic/section section" id="keywords__section_oay-pb1_rdc" data-ofbid="keywords__section_oay-pb1_rdc"><h2 class="- topic/title title sectiontitle">Ranking keywords </h2> <p class="- topic/p p">Each keyword term
             includes a value for the number of times the word occurs in the text. If you see
             <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@n="1"</code>, this means the algorithm recorded one usage of the keyword, so
             higher values reflect an increased usage—and presumably significance—of the term. Use
             this metric with caution. Not all word usages are counted as significant, so not every
             word is counted. Furthermore, the number of usages is relative to the size of the entry.
-            In a small entry, words appearing twice can be significant, as in the example. But in a
-            long entry, we get values in the hundreds. </p></section>
+            In a small entry, words appearing twice can be significant. But in a longer entry,
+            values in the hundreds are common. </p></section>
         <section class="- topic/section section" id="keywords__section_ayg_pbl_rdc" data-ofbid="keywords__section_ayg_pbl_rdc"><h2 class="- topic/title title sectiontitle">Linking to the semantic web</h2>  </section>
         <section class="- topic/section section" id="keywords__section_mxg_pbl_rdc" data-ofbid="keywords__section_mxg_pbl_rdc"> <p class="- topic/p p">The semantic web is a concept of the world wide web
             constructed with machine-readable data that can better connect web users to specific
@@ -177,20 +178,19 @@
             ends with a colon and is followed by the vocabulary's "Record ID," a unique identifier
             for that specific term. Combining the full URI with the ID takes you directly to the
             online named authority file for that term. <div class="- topic/note note note note_note" id="keywords__note_nxg_pbl_rdc" data-ofbid="keywords__note_nxg_pbl_rdc"><span class="note__title">Note:</span> <div class="note__body">The base URI for
-            FAST is http://id.worldcat.org/fast/". By appending the record ID for "Physicians" to
-            it, "1062841," we get the address of the named authority file for "Physicians": <a class="- topic/xref xref" href="http://id.worldcat.org/fast/1062841" target="_blank" rel="external noopener">http://id.worldcat.org/fast/1062841</a>.</div></div></div>
-            <p class="- topic/p p">When the TEI is transformed to HTML or another format, the conversion process expands
-            the abbreviated prefix into its full URI and joins it to the ID seamlessly. TEI was
-            designed with this system of using prefixes instead of repeating the full URI for every
-            keyword term. For all entries, <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;teiHeader&gt;</code> includes a definition
-            of the abbreviated prefix that supplies its full value:</p> <figure class="- topic/fig fig fignone"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 2</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">Prefixes are defined in the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;prefixDef&gt;</code> section of the TEI
+            FAST is <code class="+ topic/ph pr-d/codeph ph codeph">http://id.worldcat.org/fast/</code>. By appending the record ID for
+            "Physicians" to it, <code class="+ topic/ph pr-d/codeph ph codeph">1062841</code>, we get the address of the named authority
+            file for "Physicians": <a class="- topic/xref xref" href="http://id.worldcat.org/fast/1062841" target="_blank" rel="external noopener">http://id.worldcat.org/fast/1062841</a>.</div></div></div> <p class="- topic/p p">When the TEI is transformed to <a href="../glossary/g_html.html" title="hypertext markup language is used for encoding web pages."><dfn class="- topic/term term">HTML</dfn></a> or another format, the conversion process expands the abbreviated prefix
+            into its full URI and joins it to the ID seamlessly. TEI was designed with this system
+            of using prefixes instead of repeating the full URI for every keyword term. For all
+            entries, <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;teiHeader&gt;</code> includes a definition of the abbreviated
+            prefix that supplies its full value:</p> <figure class="- topic/fig fig fignone"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 2</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">Prefixes are defined in the <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;prefixDef&gt;</code> section of the TEI
                 header.</span></figcaption>
             
             <br/><img class="- topic/image image" id="keywords__image_ixf_gfl_rdc" src="image/prefixDef.jpg"/><br/>
             </figure> <p class="- topic/p p">The XSL transform script substitutes the replacement pattern value for the
-            prefix "fasttopic." The replacement pattern is a regular expression that substitutes the
-            record ID for "$1," and thus generates the complete URL for the named authority file.
-            </p> </section>
+            prefix <code class="+ topic/ph pr-d/codeph ph codeph">fasttopic</code>. The replacement pattern is a <a href="../glossary/g_regex.html" title="A simple, widely-used computer language for find and replace searches. Often shortened to &#34;regex,&#34; these formal expressions identify patterns in a text based on character sequences. Their power is due to the use of wildcards (&#34;d.*t&#34; will find all words beginning with &#34;d&#34; and ending with &#34;t&#34;) and of the ability to recall groups of characters from the found text and insert them into the replacement."><dfn class="- topic/term term">regular expression</dfn></a> that substitutes the record ID for <var class="+ topic/keyword sw-d/varname keyword varname">$1</var>, and
+            thus generates the complete URL for the named authority file. </p> </section>
     </div>
     
 </article></main></div>
