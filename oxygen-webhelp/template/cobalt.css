@@ -105,8 +105,7 @@ a:hover {
     border: none;
   }
   /* Menu bar */
-  .wh_top_menu ul li a:focus,
-  .wh_top_menu ul li a:hover,
+  .wh_top_menu ul li:hover a,
   .wh_top_menu.activated-on-click ul li.active a {
     background-color: #112e51;
     color: #ffffff;
@@ -114,17 +113,13 @@ a:hover {
   /* Sub menus */
   .wh_top_menu ul ul li {
     border: none;
+    background-color: #112e51;
   }
-  .wh_top_menu ul ul li a {
-    color: #ffffff;
-  }
-  .wh_top_menu ul li ul a:focus,
-  .wh_top_menu ul li ul a:hover,
+  .wh_top_menu ul li:hover ul a,
   .wh_top_menu.activated-on-click ul li.active ul a {
     color: #ffffff;
     transition: background-color 0.25s ease-out 0s, color 0.3s ease-out 0s;
   }
-  .wh_top_menu ul ul li a:focus,
   .wh_top_menu ul ul li a:hover {
     color: #ffffff;
     background-color: #112e51;
@@ -688,35 +683,6 @@ a:hover {
   border-color: transparent;
   border-left-color: #e1f3f8;
 }
-/*----------- Search facets -----------------------*/
-.wh-facet-label-header, .wh_facet_label {
-    font-size: 19px;
-}
-.wh_facet_label_checkbox {
-    font-size: 19px;
-}
-.wh_facet_value_count {
-  font-size: 16px;
-    height: 22px;
-}
-.wh_reset_facets_button {
-  font-size: 16px;
-  height: 24px;
-}
-.wh_facet_label_checkbox_disabled {
-    color: #767575;
-}
-/* Responsive styles for the facet widget*/
-@media screen and (max-width: 767px) {
-  .wh_search_results_facets {
-    background-color: #fafafa;
-  }
-  .wh_facet_label_checkbox_disabled {
-    color: #757070;
-  }
-}
-
-
 /*-------------------*/
 .showSimilarPages:hover {
   color: #205493;
