@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-12-29T21:09:24Z. . 
+Schema generated from ODD source 2025-01-02T19:08:03Z. . 
 TEI Edition: P5 Version 4.8.1. Last updated on 1st November 2024, revision 0a2bff95a 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/ 
   
@@ -140,7 +140,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/
          </zeroOrMore>
       </element>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-               id="d30956236e77531-constraint">
+               id="d40454688e77440-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -190,7 +190,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/
          </zeroOrMore>
       </element>
       <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-               id="d30956236e78946-constraint">
+               id="d40454688e78855-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -12588,79 +12588,58 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          <ref name="tei_att.global.responsibility.attribute.resp"/>
          <ref name="tei_att.editLike.attribute.instant"/>
          <ref name="tei_att.dimensions.attributes"/>
-         <optional>
-            <attribute name="cert">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(certainty) signifies the degree of certainty associated with the intervention or interpretation.
-Suggested values include: 1] unknown; 2] low; 3] medium; 4] high</a:documentation>
-               <choice>
-                  <value>unknown</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">confidence level unknown</a:documentation>
-                  <value>low</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a low degree of confidence</a:documentation>
-                  <value>medium</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a moderate degree of confidence</a:documentation>
-                  <value>high</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a high degree of confidence</a:documentation>
+         <attribute name="cert">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(certainty) Signifies text supplied by the editor when the original is completely illegible, or because of an obvious omission by the author.</a:documentation>
+            <choice>
+               <value>unknown</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">confidence level unknown</a:documentation>
+               <value>low</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a low degree of confidence</a:documentation>
+               <value>medium</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a moderate degree of confidence</a:documentation>
+               <value>high</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a high degree of confidence</a:documentation>
+            </choice>
+         </attribute>
+         <attribute name="source">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Identifies the source of external text used for the interpolation.</a:documentation>
+            <list>
+               <oneOrMore>
                   <choice>
-                     <data type="double">
-                        <param name="minInclusive">0</param> 
-                        <param name="maxInclusive">1</param>
-                     </data>
-                     <choice>
-                        <value>high</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                        <value>medium</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                        <value>low</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                        <value>unknown</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     </choice>
+                     <value>#UM-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of Michigan source in Hathi Trust</a:documentation>
+                     <value>#NYPL-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">New York Public Library source in Hathi Trust</a:documentation>
+                     <value>#GRI-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Getty Research Institute source in Hathi Trust</a:documentation>
+                     <value>#UCH-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of Chicago source in Hathi Trust</a:documentation>
+                     <value>#PSU-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Pennsylvania State Univ. source in Hathi Trust</a:documentation>
+                     <value>#UWI-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of Wisconsin source in Hathi Trust</a:documentation>
+                     <value>#CORU-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Cornell U. source in Hathi Trust</a:documentation>
+                     <value>#HU-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Harvard U. source in Hathi Trust</a:documentation>
+                     <value>#MSU-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Michigan State U. source in Hathi Trust</a:documentation>
+                     <value>#UC-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of California source in Hathi Trust</a:documentation>
+                     <value>#COLU-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Columbia Univ. source in Hathi Trust</a:documentation>
+                     <value>#UI-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of Illinois source in Hathi Trust</a:documentation>
+                     <value>#OSU-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Ohio State U. source in Hathi Trust</a:documentation>
+                     <value>#PU-HT</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Princeton U. source in Hathi Trust</a:documentation>
+                     <value>#NLS</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">National Library of Scotland</a:documentation>
                   </choice>
-               </choice>
-            </attribute>
-         </optional>
-         <optional>
-            <attribute name="source">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the source from which some aspect of this element is drawn.</a:documentation>
-               <list>
-                  <oneOrMore>
-                     <choice>
-                        <value>#UM-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of Michigan source in Hathi Trust</a:documentation>
-                        <value>#NYPL-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">New York Public Library source in Hathi Trust</a:documentation>
-                        <value>#GRI-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Getty Research Institute source in Hathi Trust</a:documentation>
-                        <value>#UCH-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of Chicago source in Hathi Trust</a:documentation>
-                        <value>#PSU-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Pennsylvania State Univ. source in Hathi Trust</a:documentation>
-                        <value>#UWI-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of Wisconsin source in Hathi Trust</a:documentation>
-                        <value>#CORU-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Cornell U. source in Hathi Trust</a:documentation>
-                        <value>#HU-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Harvard U. source in Hathi Trust</a:documentation>
-                        <value>#MSU-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Michigan State U. source in Hathi Trust</a:documentation>
-                        <value>#UC-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of California source in Hathi Trust</a:documentation>
-                        <value>#COLU-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Columbia Univ. source in Hathi Trust</a:documentation>
-                        <value>#UI-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">U. of Illinois source in Hathi Trust</a:documentation>
-                        <value>#OSU-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Ohio State U. source in Hathi Trust</a:documentation>
-                        <value>#PU-HT</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Princeton U. source in Hathi Trust</a:documentation>
-                        <value>#NLS</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">National Library of Scotland</a:documentation>
-                     </choice>
-                  </oneOrMore>
-               </list>
-            </attribute>
-         </optional>
+               </oneOrMore>
+            </list>
+         </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
                   id="tei_kp-supplied-source-only_1_ODD_source-constraint-rule-91">
@@ -12676,29 +12655,25 @@ Suggested values include: 1] unknown; 2] low; 3] medium; 4] high</a:documentatio
             </sch:report>
             </sch:rule>
          </pattern>
-         <optional>
-            <attribute name="evidence">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the nature of the evidence supporting the reliability or accuracy of the intervention or interpretation.
-Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentation>
-               <list>
-                  <oneOrMore>
-                     <choice>
-                        <value>internal</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is internal evidence to support the intervention.</a:documentation>
-                        <value>external</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is external evidence to support the intervention.</a:documentation>
-                        <value>conjecture</value>
-                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the intervention or interpretation has been made by the editor, cataloguer, or scholar on the basis of their expertise.</a:documentation>
-                        <data type="token">
-                           <param name="pattern">[^\p{C}\p{Z}]+</param>
-                        </data>
-                     </choice>
-                  </oneOrMore>
-               </list>
-            </attribute>
-         </optional>
+         <attribute name="evidence">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <list>
+               <oneOrMore>
+                  <choice>
+                     <value>internal</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is internal evidence to support the intervention.</a:documentation>
+                     <value>external</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">there is external evidence to support the intervention</a:documentation>
+                     <value>conjecture</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the intervention or interpretation has been made by the editor or scholar on the basis of their expertise</a:documentation>
+                     <value/>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  </choice>
+               </oneOrMore>
+            </list>
+         </attribute>
          <attribute name="reason">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">one or more words indicating why the text has had to be supplied, e.g. overbinding, faded-ink, lost-folio, omitted-in-original.</a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">one or more words indicating why the text has had to be supplied, e.g. overbinding, faded-ink, omitted-in-original.</a:documentation>
             <list>
                <oneOrMore>
                   <choice>
