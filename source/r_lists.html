@@ -5,9 +5,9 @@
     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/commons.css?buildId=2024121223"/>
     <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic.css?buildId=2024121223"/>
 
-    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20250121171459"></script>
+    <script src="../oxygen-webhelp/app/options/properties.js?buildId=20250122142926"></script>
     <script src="../oxygen-webhelp/app/localization/strings.js?buildId=2024121223"></script>
-    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20250121171459"></script>
+    <script src="../oxygen-webhelp/app/search/index/keywords.js?buildId=20250122142926"></script>
     <script defer="defer" src="../oxygen-webhelp/app/commons.js?buildId=2024121223"></script>
     <script defer="defer" src="../oxygen-webhelp/app/topic.js?buildId=2024121223"></script>
 <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/cobalt.css?buildId=2024121223"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/params/args.css/kp-public.css?buildId=2024121223"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/logan_customization/logan.css?buildId=2024121223"/></head>
@@ -187,11 +187,11 @@
             values to record those, shown in &lt;list <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code>&gt;. </p> <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Both
             <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> and <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@rend</code> are <em class="+ topic/ph hi-d/i ph i">required</em> attributes of
             <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code>. </div></div> <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Sample list:</strong></p>
-            <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list rend="bulleted" type="index"&gt;</code>
-        <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>First list member<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;\item&gt;</code>
-        <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>Second list member<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;\item&gt;</code>
-        <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>Third list member<code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;\item&gt;</code>
-    <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;/list&gt;</code></code></pre> </section>
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;list rend="bulleted" type="index"&gt;
+    &lt;item&gt;First list member&lt;\item&gt;
+    &lt;item&gt;Second list member&lt;\item&gt;
+    &lt;item&gt;Third list member&lt;\item&gt;
+&lt;/list&gt;</code></pre> </section>
         <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Tabular lists</h2>  <p class="- topic/p p">Lists like a glossary or chronology use
             <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> in addition to <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> for each
             list item. Thus they resemble a table with two columns. They can present an advantage
@@ -204,7 +204,7 @@
             </figure> </section>
         <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">&lt;list <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code>&gt;</h2>  <p class="- topic/p p">Use
             <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;list&gt;</code> with <code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> to describe the semantic
-            function of the list. </p> <div class="table-container"><table class="- topic/table table" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><thead class="- topic/thead thead">
+            function of the list.</p> <div class="table-container"><table class="- topic/table table" data-cols="2"><caption></caption><colgroup><col/><col/></colgroup><thead class="- topic/thead thead">
                     <tr class="- topic/row">
                         <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__31"><code class="+ topic/keyword markup-d/markupname xml-d/xmlatt keyword markupname xmlatt">@type</code> value</th>
                         <th class="- topic/entry entry colsep-0 rowsep-0" id="t_find_lists__entry__32">description</th>
@@ -216,14 +216,13 @@
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">chronology</td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> describes an historical
-                            event, with a year or other date that is given by a
-                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> element preceding the list
-                            <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code> describes an historical event,
+                            with a date given by a <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> element preceding
+                            the list <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
                     </tr>
                     <tr class="- topic/row">
                         <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__31">errata</td>
-                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each item contains the error and correction, with a page number. Use
+                        <td class="- topic/entry entry colsep-0 rowsep-0" headers="t_find_lists__entry__32">each list item contains the error, page number, and correction. Use
                             <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;label&gt;</code> for the error and page number, followed
                             by the correction as <code class="+ topic/keyword markup-d/markupname xml-d/xmlelement keyword markupname xmlelement">&lt;item&gt;</code>.</td>
                     </tr>
