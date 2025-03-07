@@ -54,8 +54,8 @@
    <appContext helpID="g.xslt" path="glossary/g_xslt.html"/>
    <appContext helpID="github" path="glossary/g_github.html"/>
    <appContext helpID="github_desktop" path="glossary/g_github_desktop.html"/>
-   <appContext helpID="v1" path="glossary/g_v1.html"/>
-   <appContext helpID="v2" path="glossary/g_v2.html"/>
+   <appContext helpID="v1" path="glossary/g_r1.html"/>
+   <appContext helpID="v2" path="glossary/g_r2.html"/>
    <appContext helpID="g_pg" path="glossary/g_pg.html"/>
    <appContext helpID="g_mrc" path="glossary/g_mrc.html"/>
    <appContext helpID="about" path="source/c_about.html"/>
