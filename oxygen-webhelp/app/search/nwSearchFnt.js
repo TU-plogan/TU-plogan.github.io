@@ -1728,7 +1728,7 @@ function nwSearchFnt(index, options, stemmer, util) {
      * @returns {boolean} True if the search query seems to be an URL or file path.
      */
     function isURLorFilePath(toTest) {
-        var re = new RegExp('[\./\\\-:_]');
+        var re = new RegExp('[./\\\-:_]');
         return re.test(toTest);
     }
 
